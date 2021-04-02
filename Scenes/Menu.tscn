@@ -1,0 +1,286 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Fonts/cardinal.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Fonts/smallCardinal.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=3]
+[ext_resource path="res://Textures/panel_blue.png" type="Texture" id=4]
+[ext_resource path="res://Textures/buttonLong_beige.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Menu.gd" type="Script" id=6]
+
+[node name="Menu" type="HBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -2.0
+margin_bottom = -2.0
+alignment = 1
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalContainer" type="VBoxContainer" parent="."]
+margin_right = 253.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 250, 600 )
+size_flags_horizontal = 3
+custom_constants/separation = 13
+alignment = 1
+
+[node name="NavalLbl" type="Label" parent="NavalContainer"]
+margin_top = 208.0
+margin_right = 253.0
+margin_bottom = 267.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Naval"
+align = 1
+
+[node name="Resupply" type="TextureButton" parent="NavalContainer"]
+margin_left = 31.0
+margin_top = 280.0
+margin_right = 221.0
+margin_bottom = 329.0
+size_flags_horizontal = 4
+toggle_mode = true
+pressed = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+
+[node name="RspLbl" type="Label" parent="NavalContainer/Resupply"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 4.0
+margin_bottom = 4.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Resupply"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Siege" type="TextureButton" parent="NavalContainer"]
+margin_left = 31.0
+margin_top = 342.0
+margin_right = 221.0
+margin_bottom = 391.0
+size_flags_horizontal = 4
+toggle_mode = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Siege" type="Label" parent="NavalContainer/Siege"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 4.0
+margin_bottom = 4.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Siege"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfContainer" type="VBoxContainer" parent="."]
+margin_left = 257.0
+margin_right = 510.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 250, 600 )
+size_flags_horizontal = 3
+custom_constants/separation = 13
+alignment = 1
+
+[node name="Inf" type="Label" parent="InfContainer"]
+margin_top = 177.0
+margin_right = 253.0
+margin_bottom = 236.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Infantry"
+align = 1
+
+[node name="InfSiege" type="TextureButton" parent="InfContainer"]
+margin_left = 31.0
+margin_top = 249.0
+margin_right = 221.0
+margin_bottom = 298.0
+size_flags_horizontal = 4
+toggle_mode = true
+pressed = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+
+[node name="InfSiege" type="Label" parent="InfContainer/InfSiege"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 4.0
+margin_bottom = 4.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Siege"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfRest" type="TextureButton" parent="InfContainer"]
+margin_left = 31.0
+margin_top = 311.0
+margin_right = 221.0
+margin_bottom = 360.0
+size_flags_horizontal = 4
+toggle_mode = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Inf Rest" type="Label" parent="InfContainer/InfRest"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 8.0
+margin_bottom = 8.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Rest"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Storm" type="TextureButton" parent="InfContainer"]
+margin_left = 31.0
+margin_top = 373.0
+margin_right = 221.0
+margin_bottom = 422.0
+size_flags_horizontal = 4
+toggle_mode = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Attempt Storm" type="Label" parent="InfContainer/Storm"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 5.0
+margin_bottom = 5.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Attempt Storm"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArtilleryContainer" type="VBoxContainer" parent="."]
+margin_left = 514.0
+margin_right = 767.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 250, 600 )
+size_flags_horizontal = 3
+custom_constants/separation = 13
+alignment = 1
+
+[node name="Artillery" type="Label" parent="ArtilleryContainer"]
+margin_top = 208.0
+margin_right = 253.0
+margin_bottom = 267.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Artillery"
+align = 1
+
+[node name="ArtillerySiege" type="TextureButton" parent="ArtilleryContainer"]
+margin_left = 31.0
+margin_top = 280.0
+margin_right = 221.0
+margin_bottom = 329.0
+size_flags_horizontal = 4
+toggle_mode = true
+pressed = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Artillery Siege" type="Label" parent="ArtilleryContainer/ArtillerySiege"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -19.5
+margin_bottom = 19.5
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Siege"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArtilleryRest" type="TextureButton" parent="ArtilleryContainer"]
+margin_left = 31.0
+margin_top = 342.0
+margin_right = 221.0
+margin_bottom = 391.0
+size_flags_horizontal = 4
+toggle_mode = true
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 3 )
+
+[node name="Artillery Rest" type="Label" parent="ArtilleryContainer/ArtilleryRest"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -19.5
+margin_bottom = 19.5
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Rest"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartContainer" type="VBoxContainer" parent="."]
+margin_left = 771.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="StartContainer"]
+margin_top = 223.0
+margin_right = 253.0
+margin_bottom = 273.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_vertical = 0
+
+[node name="StartButton" type="TextureButton" parent="StartContainer"]
+margin_left = 76.0
+margin_top = 277.0
+margin_right = 176.0
+margin_bottom = 377.0
+size_flags_horizontal = 4
+toggle_mode = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 4 )
+
+[node name="Start!" type="Label" parent="StartContainer/StartButton"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 2.0
+margin_top = -19.5
+margin_right = 2.0
+margin_bottom = 19.5
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Start!"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="NavalContainer/Resupply" to="." method="_on_Resupply_pressed"]
+[connection signal="pressed" from="NavalContainer/Siege" to="." method="_on_Naval_Siege_pressed"]
+[connection signal="pressed" from="InfContainer/InfSiege" to="." method="_on_Inf_Siege_pressed"]
+[connection signal="pressed" from="InfContainer/InfRest" to="." method="_on_Inf_Rest_pressed"]
+[connection signal="pressed" from="InfContainer/Storm" to="." method="_on_Storm_pressed"]
+[connection signal="pressed" from="ArtilleryContainer/ArtillerySiege" to="." method="_on_Artillery_Siege_pressed"]
+[connection signal="pressed" from="ArtilleryContainer/ArtilleryRest" to="." method="_on_Artillery_Rest_pressed"]

@@ -1,0 +1,274 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
+[ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
+[ext_resource path="res://Sprites/Structure/medievalStructure_02.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Structure/medievalStructure_06.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Structure/medievalStructure_05.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/GUI.gd" type="Script" id=8]
+[ext_resource path="res://Scenes/World.gd" type="Script" id=9]
+[ext_resource path="res://Fonts/smallCardinal.tres" type="DynamicFont" id=10]
+[ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=11]
+[ext_resource path="res://Textures/buttonLong_brown_pressed.png" type="Texture" id=12]
+
+[node name="World" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="env" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 0, -1073741822, 0, 1, -1073741822, 0, 2, -1073741822, 0, 3, -1073741822, 0, 4, -1073741822, 0, 5, -1073741822, 0, 6, -1073741822, 0, 7, -1073741822, 0, 8, -1073741822, 0, 9, -1073741822, 0, 10, -1073741822, 0, 11, -1073741822, 0, 12, -1073741822, 0, 13, -1073741822, 0, 14, -1073741822, 0, 15, -1073741824, 0, 65536, -1073741822, 0, 65537, -1073741822, 0, 65538, -1073741822, 0, 65539, -1073741822, 0, 65540, -1073741822, 0, 65541, -1073741822, 0, 65542, -1073741822, 0, 65543, -1073741822, 0, 65544, -1073741822, 0, 65545, -1073741822, 0, 65546, -1073741822, 0, 65547, -1073741822, 0, 65548, -1073741822, 0, 65549, -1073741822, 0, 65550, -1073741824, 0, 65551, -1073741820, 0, 131072, -1073741822, 0, 131073, -1073741822, 0, 131074, -1073741822, 0, 131075, -1073741822, 0, 131076, -1073741822, 0, 131077, -1073741822, 0, 131078, -1073741822, 0, 131079, -1073741822, 0, 131080, -1073741822, 0, 131081, -1073741822, 0, 131082, -1073741822, 0, 131083, -1073741824, 0, 131084, -1073741824, 0, 131085, -1073741824, 0, 131086, -1073741820, 0, 131087, 4, 0, 196608, -1073741822, 0, 196609, -1073741822, 0, 196610, -1073741822, 0, 196611, -1073741822, 0, 196612, -1073741822, 0, 196613, -1073741822, 0, 196614, -1073741822, 0, 196615, -1073741822, 0, 196616, -1073741824, 0, 196617, -1073741824, 0, 196618, -1073741824, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 4, 0, 196623, 4, 0, 262144, -1073741822, 0, 262145, -1073741822, 0, 262146, -1073741822, 0, 262147, -1073741822, 0, 262148, -1073741824, 0, 262149, -1073741824, 0, 262150, -1073741824, 0, 262151, -1073741824, 0, 262152, -1073741824, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 4, 0, 262159, 4, 0, 327680, -1073741822, 0, 327681, -1073741822, 0, 327682, -1073741824, 0, 327683, -1073741824, 0, 327684, -1073741824, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 4, 0, 327695, 4, 0, 393216, -1073741822, 0, 393217, -1073741822, 0, 393218, -1073741824, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 4, 0, 393230, 4, 0, 393231, 4, 0, 458752, -1073741824, 0, 458753, -1073741824, 0, 458754, -1073741820, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 4, 0, 458766, 4, 0, 458767, 4, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, -1073741820, 0, 524293, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 524297, 4, 0, 524298, 4, 0, 524299, 4, 0, 524300, 4, 0, 524301, 4, 0, 524302, 4, 0, 524303, 4, 0, 589824, 4, 0, 589825, 4, 0, 589826, 4, 0, 589827, 4, 0, 589828, 4, 0, 589829, 4, 0, 589830, 4, 0, 589831, 4, 0, 589832, 4, 0, 589833, 4, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 4, 0, 589839, 4, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="path" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+format = 1
+tile_data = PoolIntArray( 327690, -1073741823, 0, 327691, 0, 0, 327692, 0, 0, 393226, -1610612736, 0, 458755, -1073741823, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, -1610612735, 0, 524291, -1610612732, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="OurCastle" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="medievalStructure_02" type="Sprite" parent="OurCastle"]
+position = Vector2( 174, 468 )
+texture = ExtResource( 3 )
+
+[node name="medievalStructure_06" type="Sprite" parent="OurCastle"]
+position = Vector2( 174, 532 )
+texture = ExtResource( 4 )
+
+[node name="TheirCastle" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="medievalStructure_10" type="Sprite" parent="TheirCastle"]
+position = Vector2( 834, 320 )
+texture = ExtResource( 5 )
+
+[node name="medievalStructure_05" type="Sprite" parent="TheirCastle"]
+position = Vector2( 906, 319 )
+texture = ExtResource( 5 )
+
+[node name="medievalStructure_07" type="Sprite" parent="TheirCastle"]
+position = Vector2( 872, 360 )
+texture = ExtResource( 4 )
+
+[node name="medievalStructure_03" type="Sprite" parent="TheirCastle"]
+position = Vector2( 872, 298 )
+texture = ExtResource( 3 )
+
+[node name="medievalStructure_08" type="Sprite" parent="TheirCastle"]
+position = Vector2( 909, 384 )
+texture = ExtResource( 5 )
+
+[node name="medievalStructure_09" type="Sprite" parent="TheirCastle"]
+position = Vector2( 833, 384 )
+texture = ExtResource( 5 )
+
+[node name="medievalStructure_01" type="Sprite" parent="TheirCastle"]
+position = Vector2( 909, 320 )
+texture = ExtResource( 6 )
+
+[node name="medievalStructure_04" type="Sprite" parent="TheirCastle"]
+position = Vector2( 833, 320 )
+texture = ExtResource( 6 )
+
+[node name="medievalStructure_11" type="Sprite" parent="TheirCastle"]
+position = Vector2( 906, 255 )
+texture = ExtResource( 6 )
+
+[node name="medievalStructure_12" type="Sprite" parent="TheirCastle"]
+position = Vector2( 833, 256 )
+texture = ExtResource( 6 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GUI" type="CanvasLayer" parent="."]
+script = ExtResource( 8 )
+
+[node name="Menu" parent="GUI" instance=ExtResource( 7 )]
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.1
+anchor_bottom = 0.1
+margin_left = 200.0
+margin_top = 100.0
+margin_right = 1103.6
+margin_bottom = 560.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="NavalContainer" parent="GUI/Menu" index="0"]
+margin_right = 250.0
+
+[node name="NavalLbl" parent="GUI/Menu/NavalContainer" index="0"]
+margin_right = 250.0
+
+[node name="Resupply" parent="GUI/Menu/NavalContainer" index="1"]
+margin_left = 30.0
+margin_right = 220.0
+
+[node name="Siege" parent="GUI/Menu/NavalContainer" index="2"]
+margin_left = 30.0
+margin_right = 220.0
+
+[node name="InfContainer" parent="GUI/Menu" index="1"]
+margin_left = 254.0
+margin_right = 504.0
+
+[node name="Inf" parent="GUI/Menu/InfContainer" index="0"]
+margin_right = 250.0
+
+[node name="InfSiege" parent="GUI/Menu/InfContainer" index="1"]
+margin_left = 30.0
+margin_right = 220.0
+
+[node name="InfRest" parent="GUI/Menu/InfContainer" index="2"]
+margin_left = 30.0
+margin_right = 220.0
+
+[node name="Storm" parent="GUI/Menu/InfContainer" index="3"]
+margin_left = 30.0
+margin_right = 220.0
+
+[node name="ArtilleryContainer" parent="GUI/Menu" index="2"]
+margin_left = 508.0
+margin_right = 758.0
+
+[node name="Artillery" parent="GUI/Menu/ArtilleryContainer" index="0"]
+margin_right = 250.0
+
+[node name="ArtillerySiege" parent="GUI/Menu/ArtilleryContainer" index="1"]
+margin_left = 30.0
+margin_right = 220.0
+
+[node name="ArtilleryRest" parent="GUI/Menu/ArtilleryContainer" index="2"]
+margin_left = 30.0
+margin_right = 220.0
+
+[node name="StartContainer" parent="GUI/Menu" index="3"]
+margin_left = 762.0
+margin_right = 903.0
+
+[node name="MarginContainer" parent="GUI/Menu/StartContainer" index="0"]
+margin_right = 141.0
+
+[node name="StartButton" parent="GUI/Menu/StartContainer" index="1"]
+margin_left = 20.0
+margin_right = 120.0
+
+[node name="Recap" type="VBoxContainer" parent="GUI"]
+margin_left = 394.0
+margin_top = 134.0
+margin_right = 660.0
+margin_bottom = 526.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Week" type="Label" parent="GUI/Recap"]
+margin_right = 266.0
+margin_bottom = 45.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="InfDmg" type="Label" parent="GUI/Recap"]
+margin_top = 49.0
+margin_right = 266.0
+margin_bottom = 94.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="NavyDmg" type="Label" parent="GUI/Recap"]
+margin_top = 98.0
+margin_right = 266.0
+margin_bottom = 143.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="CannonDmg" type="Label" parent="GUI/Recap"]
+margin_top = 147.0
+margin_right = 266.0
+margin_bottom = 192.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="morale" type="Label" parent="GUI/Recap"]
+margin_top = 196.0
+margin_right = 266.0
+margin_bottom = 241.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="cannonballs" type="Label" parent="GUI/Recap"]
+margin_top = 245.0
+margin_right = 266.0
+margin_bottom = 290.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="manpower" type="Label" parent="GUI/Recap"]
+margin_top = 294.0
+margin_right = 266.0
+margin_bottom = 339.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="TextureButton" type="TextureButton" parent="GUI/Recap"]
+margin_left = 38.0
+margin_top = 343.0
+margin_right = 228.0
+margin_bottom = 392.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 12 )
+
+[node name="Label" type="Label" parent="GUI/Recap/TextureButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "OK"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="GUI/Menu/StartContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
+
+[editable path="GUI/Menu"]
