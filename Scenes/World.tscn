@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
@@ -32,6 +32,41 @@
 [ext_resource path="res://Textures/panel_brown.png" type="Texture" id=30]
 [ext_resource path="res://scripts/InfantryImage.gd" type="Script" id=31]
 [ext_resource path="res://scripts/CancelInfantry.gd" type="Script" id=32]
+[ext_resource path="res://scripts/QuickAttackInfantry.gd" type="Script" id=33]
+
+[sub_resource type="Animation" id=12]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
 
 [sub_resource type="Animation" id=1]
 resource_name = "Test"
@@ -137,6 +172,74 @@ tracks/0/keys = {
 
 [sub_resource type="GDScript" id=7]
 
+[sub_resource type="Animation" id=8]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
 [node name="World" type="Node2D"]
 script = ExtResource( 9 )
 
@@ -163,6 +266,12 @@ tile_data = PoolIntArray( 327690, -1073741823, 0, 327691, 0, 0, 327692, 0, 0, 39
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="GreyBackground" type="CanvasModulate" parent="."]
+visible = false
+modulate = Color( 0.125, 0.0634766, 0.0634766, 1 )
+color = Color( 0.466667, 0.466667, 0.466667, 1 )
+script = ExtResource( 17 )
 
 [node name="OurCastle" type="Node2D" parent="."]
 __meta__ = {
@@ -228,12 +337,6 @@ current = true
 __meta__ = {
 "_edit_lock_": true
 }
-
-[node name="GreyBackground" type="CanvasModulate" parent="."]
-visible = false
-modulate = Color( 0.125, 0.0634766, 0.0634766, 1 )
-color = Color( 0.466667, 0.466667, 0.466667, 1 )
-script = ExtResource( 17 )
 
 [node name="GUI" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
@@ -397,6 +500,7 @@ __meta__ = {
 }
 
 [node name="NextRoundButton" type="TextureButton" parent="GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
 margin_left = 828.467
 margin_top = 130.665
 margin_right = 1018.47
@@ -424,6 +528,12 @@ text = "Next Round"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="GUI/NextRoundButton"]
+anims/Test = SubResource( 12 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="GUI/NextRoundButton"]
+anims/Test = SubResource( 13 )
 
 [node name="ResumeButton" type="TextureButton" parent="GUI"]
 visible = false
@@ -524,6 +634,7 @@ anims/Test = SubResource( 2 )
 
 [node name="Artillery" type="TextureButton" parent="GUI"]
 visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
 margin_left = 425.34
 margin_top = 311.705
 margin_right = 615.34
@@ -828,7 +939,7 @@ margin_left = 842.0
 margin_top = 223.0
 margin_right = 905.0
 margin_bottom = 238.0
-value = 63.0
+value = 80.0
 texture_under = ExtResource( 7 )
 texture_progress = ExtResource( 30 )
 nine_patch_stretch = true
@@ -886,6 +997,7 @@ texture = ExtResource( 27 )
 
 [node name="QuickAttackInfantry" type="TextureButton" parent="GUI"]
 visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
 margin_left = 257.128
 margin_top = 266.673
 margin_right = 447.128
@@ -895,7 +1007,7 @@ focus_neighbour_top = NodePath("../NextRoundButton")
 focus_neighbour_bottom = NodePath("../UpgradeButton")
 texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 15 )
+script = ExtResource( 33 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -914,8 +1026,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="GreenAnimation" type="AnimationPlayer" parent="GUI/QuickAttackInfantry"]
+anims/Test = SubResource( 8 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="GUI/QuickAttackInfantry"]
+anims/Test = SubResource( 9 )
+
 [node name="DefendInfantry" type="TextureButton" parent="GUI"]
 visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
 margin_left = 588.128
 margin_top = 264.673
 margin_right = 778.128
@@ -943,6 +1062,12 @@ text = "Defend Base"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="GUI/DefendInfantry"]
+anims/Test = SubResource( 10 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="GUI/DefendInfantry"]
+anims/Test = SubResource( 11 )
 
 [node name="CancelInfantry" type="TextureButton" parent="GUI"]
 visible = false

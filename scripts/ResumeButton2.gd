@@ -50,6 +50,15 @@ func _on_Button_Pressed():
 	var labelArtillery = get_node("../LabelArtillery")
 	labelArtillery.visible = false
 	
+	var InfantryImage = get_node("../InfantryImage")
+	InfantryImage.visible = true
+	
+	var MyHealthBar = get_node("../MyHealthBar")
+	MyHealthBar.visible = true
+	
+	var TheirHealthBar = get_node("../TheirHealthBar")
+	TheirHealthBar.visible = true
+	
 	if (val >= 15):
 		var upgradeAvaliable = get_node("../UpgradeAvaliable2")
 		upgradeAvaliable.visible = true

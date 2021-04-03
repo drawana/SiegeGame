@@ -25,3 +25,12 @@ func _on_Button_Pressed():
 	
 	var nextRound = get_node("../NextRoundButton")
 	nextRound.visible = true
+	
+	var InfantryImage = get_node("../InfantryImage")
+	InfantryImage.visible = true
+	
+	var MyHealthBar = get_node("../MyHealthBar")
+	MyHealthBar.visible = true
+	
+	var TheirHealthBar = get_node("../TheirHealthBar")
+	TheirHealthBar.visible = true
