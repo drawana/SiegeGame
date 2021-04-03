@@ -16,13 +16,13 @@ func _on_Button_Pressed():
 		points2.set_text(str(val2 + 1))
 		greenAnimation.play("Test")
 		
-		if (val >= 15):
+		if (val2 >= 15):
 			var upgradeAvaliable = get_node("../UpgradeAvaliable2")
 			upgradeAvaliable.visible = true
 			
 			var upgradeAvaliable2 = get_node("../UpgradeAvaliable")
 			upgradeAvaliable2.visible = false
-		elif(val >= 10):
+		elif(val2 >= 10):
 			var upgradeAvaliable = get_node("../UpgradeAvaliable2")
 			upgradeAvaliable.visible = false
 			

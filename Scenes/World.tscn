@@ -577,7 +577,6 @@ __meta__ = {
 
 [node name="Infantry" type="TextureButton" parent="GUI"]
 visible = false
-modulate = Color( 0.996078, 0.996078, 0.996078, 1 )
 margin_left = 206.373
 margin_top = 312.965
 margin_right = 396.373
@@ -593,6 +592,7 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="GUI/Infantry"]
+modulate = Color( 0.972549, 0.972549, 0.972549, 1 )
 anchor_left = 0.00584602
 anchor_right = 0.00584602
 margin_left = 31.5147
