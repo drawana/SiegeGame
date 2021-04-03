@@ -439,10 +439,10 @@ __meta__ = {
 }
 
 [node name="ResumeButton2" type="TextureButton" parent="GUI"]
-margin_left = 424.811
-margin_top = 434.731
-margin_right = 614.811
-margin_bottom = 479.731
+margin_left = 427.86
+margin_top = 432.657
+margin_right = 617.86
+margin_bottom = 477.657
 rect_pivot_offset = Vector2( 173.976, 22.5 )
 focus_neighbour_top = NodePath("../UpgradeButton")
 focus_neighbour_bottom = NodePath("../MenuButton")
