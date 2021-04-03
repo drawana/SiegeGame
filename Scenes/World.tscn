@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
@@ -6,7 +6,7 @@
 [ext_resource path="res://Sprites/Structure/medievalStructure_06.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Structure/medievalStructure_05.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=6]
-[ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Textures/panelInset_blue.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/GUI.gd" type="Script" id=8]
 [ext_resource path="res://Scenes/World.gd" type="Script" id=9]
 [ext_resource path="res://Fonts/smallCardinal.tres" type="DynamicFont" id=10]
@@ -25,6 +25,81 @@
 [ext_resource path="res://scripts/Naval.gd" type="Script" id=23]
 [ext_resource path="res://scripts/Artillery.gd" type="Script" id=24]
 [ext_resource path="res://Textures/greenarrow-removebg-preview.png" type="Texture" id=25]
+[ext_resource path="res://Textures/heart2.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Unit/medievalUnit_03.png" type="Texture" id=27]
+[ext_resource path="res://Textures/buttonRound_brown.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Unit/medievalUnit_09.png" type="Texture" id=29]
+[ext_resource path="res://Textures/panel_brown.png" type="Texture" id=30]
+[ext_resource path="res://scripts/InfantryImage.gd" type="Script" id=31]
+[ext_resource path="res://scripts/CancelInfantry.gd" type="Script" id=32]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
 
 [sub_resource type="Animation" id=5]
 resource_name = "Test"
@@ -60,75 +135,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=7]
-resource_name = "Test"
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
-[sub_resource type="Animation" id=8]
-resource_name = "Test"
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
-[sub_resource type="Animation" id=9]
-resource_name = "Test"
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
-[sub_resource type="Animation" id=10]
-resource_name = "Test"
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
-[sub_resource type="GDScript" id=1]
+[sub_resource type="GDScript" id=7]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 9 )
@@ -230,103 +237,6 @@ script = ExtResource( 17 )
 
 [node name="GUI" type="CanvasLayer" parent="."]
 script = ExtResource( 8 )
-
-[node name="Menu" parent="GUI" instance=ExtResource( 7 )]
-visible = false
-anchor_left = 0.1
-anchor_top = 0.1
-anchor_right = 0.1
-anchor_bottom = 0.1
-margin_left = 200.0
-margin_top = 100.0
-margin_right = 1103.6
-margin_bottom = 560.0
-rect_scale = Vector2( 0.5, 0.5 )
-
-[node name="NavalContainer" parent="GUI/Menu" index="0"]
-margin_right = 250.0
-
-[node name="NavalLbl" parent="GUI/Menu/NavalContainer" index="0"]
-margin_top = 219.0
-margin_right = 250.0
-margin_bottom = 256.0
-
-[node name="Resupply" parent="GUI/Menu/NavalContainer" index="1"]
-margin_left = 30.0
-margin_top = 269.0
-margin_right = 220.0
-margin_bottom = 318.0
-
-[node name="Siege" parent="GUI/Menu/NavalContainer" index="2"]
-margin_left = 30.0
-margin_top = 331.0
-margin_right = 220.0
-margin_bottom = 380.0
-
-[node name="InfContainer" parent="GUI/Menu" index="1"]
-margin_left = 254.0
-margin_right = 504.0
-
-[node name="Inf" parent="GUI/Menu/InfContainer" index="0"]
-margin_top = 188.0
-margin_right = 250.0
-margin_bottom = 225.0
-
-[node name="InfSiege" parent="GUI/Menu/InfContainer" index="1"]
-margin_left = 30.0
-margin_top = 238.0
-margin_right = 220.0
-margin_bottom = 287.0
-
-[node name="InfRest" parent="GUI/Menu/InfContainer" index="2"]
-margin_left = 30.0
-margin_top = 300.0
-margin_right = 220.0
-margin_bottom = 349.0
-
-[node name="Storm" parent="GUI/Menu/InfContainer" index="3"]
-margin_left = 30.0
-margin_top = 362.0
-margin_right = 220.0
-margin_bottom = 411.0
-
-[node name="ArtilleryContainer" parent="GUI/Menu" index="2"]
-margin_left = 508.0
-margin_right = 758.0
-
-[node name="Artillery" parent="GUI/Menu/ArtilleryContainer" index="0"]
-margin_top = 219.0
-margin_right = 250.0
-margin_bottom = 256.0
-
-[node name="ArtillerySiege" parent="GUI/Menu/ArtilleryContainer" index="1"]
-margin_left = 30.0
-margin_top = 269.0
-margin_right = 220.0
-margin_bottom = 318.0
-
-[node name="ArtilleryRest" parent="GUI/Menu/ArtilleryContainer" index="2"]
-margin_left = 30.0
-margin_top = 331.0
-margin_right = 220.0
-margin_bottom = 380.0
-
-[node name="StartContainer" parent="GUI/Menu" index="3"]
-margin_left = 762.0
-margin_right = 903.0
-
-[node name="MarginContainer" parent="GUI/Menu/StartContainer" index="0"]
-margin_right = 141.0
-
-[node name="StartButton" parent="GUI/Menu/StartContainer" index="1"]
-margin_left = 20.0
-margin_right = 120.0
-
-[node name="Start!" parent="GUI/Menu/StartContainer/StartButton" index="0"]
-margin_left = 9.55957
-margin_top = -357.159
-margin_right = 9.55957
-margin_bottom = -318.159
 
 [node name="Recap" type="VBoxContainer" parent="GUI"]
 visible = false
@@ -607,10 +517,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
-anims/Test = SubResource( 5 )
+anims/Test = SubResource( 1 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
-anims/Test = SubResource( 6 )
+anims/Test = SubResource( 2 )
 
 [node name="Artillery" type="TextureButton" parent="GUI"]
 visible = false
@@ -643,10 +553,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
-anims/Test = SubResource( 7 )
+anims/Test = SubResource( 3 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
-anims/Test = SubResource( 8 )
+anims/Test = SubResource( 4 )
 
 [node name="Naval" type="TextureButton" parent="GUI"]
 visible = false
@@ -679,10 +589,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Naval"]
-anims/Test = SubResource( 9 )
+anims/Test = SubResource( 5 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Naval"]
-anims/Test = SubResource( 10 )
+anims/Test = SubResource( 6 )
 
 [node name="ExitButton" type="TextureButton" parent="GUI"]
 visible = false
@@ -763,7 +673,7 @@ margin_bottom = 52.119
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
-script = SubResource( 1 )
+script = SubResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -889,8 +799,179 @@ text = "1"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="GUI/Menu/StartContainer/StartButton" to="." method="_on_StartButton_pressed"]
+
+[node name="MyHealthBar" type="TextureProgress" parent="GUI"]
+margin_left = 140.0
+margin_top = 443.0
+margin_right = 203.0
+margin_bottom = 458.0
+value = 63.0
+texture_under = ExtResource( 7 )
+texture_progress = ExtResource( 30 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="heart2" type="Sprite" parent="GUI/MyHealthBar"]
+position = Vector2( -10.6086, 8.44238 )
+scale = Vector2( 0.0403474, 0.0384611 )
+texture = ExtResource( 26 )
+
+[node name="buttonRound_brown" type="Sprite" parent="GUI/MyHealthBar"]
+position = Vector2( -10.2169, 8.42029 )
+scale = Vector2( 0.839648, 0.763693 )
+texture = ExtResource( 28 )
+
+[node name="TheirHealthBar" type="TextureProgress" parent="GUI"]
+margin_left = 842.0
+margin_top = 223.0
+margin_right = 905.0
+margin_bottom = 238.0
+value = 63.0
+texture_under = ExtResource( 7 )
+texture_progress = ExtResource( 30 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="heart2" type="Sprite" parent="GUI/TheirHealthBar"]
+position = Vector2( -10.6086, 8.44238 )
+scale = Vector2( 0.0403474, 0.0384611 )
+texture = ExtResource( 26 )
+
+[node name="buttonRound_brown" type="Sprite" parent="GUI/TheirHealthBar"]
+position = Vector2( -10.2169, 8.42029 )
+scale = Vector2( 0.839648, 0.763693 )
+texture = ExtResource( 28 )
+
+[node name="InfantryImage" type="TextureButton" parent="GUI"]
+margin_left = 255.0
+margin_top = 382.0
+margin_right = 320.0
+margin_bottom = 448.0
+texture_hover = ExtResource( 7 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="medievalUnit_09" type="Sprite" parent="GUI/InfantryImage"]
+position = Vector2( 11.7104, 16.5137 )
+scale = Vector2( 0.899781, 0.767495 )
+texture = ExtResource( 29 )
+
+[node name="medievalUnit_10" type="Sprite" parent="GUI/InfantryImage"]
+position = Vector2( 18.931, 39.8745 )
+scale = Vector2( 0.899781, 0.767495 )
+texture = ExtResource( 29 )
+
+[node name="medievalUnit_11" type="Sprite" parent="GUI/InfantryImage"]
+position = Vector2( 51.7957, 17.6082 )
+scale = Vector2( 0.899781, 0.767495 )
+texture = ExtResource( 29 )
+
+[node name="medievalUnit_04" type="Sprite" parent="GUI/InfantryImage"]
+position = Vector2( 32.5755, 11.4523 )
+scale = Vector2( 0.9, 0.767 )
+texture = ExtResource( 27 )
+
+[node name="medievalUnit_03" type="Sprite" parent="GUI/InfantryImage"]
+position = Vector2( 40.3239, 35.1924 )
+scale = Vector2( 0.9, 0.767 )
+texture = ExtResource( 27 )
+
+[node name="QuickAttackInfantry" type="TextureButton" parent="GUI"]
+visible = false
+margin_left = 257.128
+margin_top = 266.673
+margin_right = 447.128
+margin_bottom = 311.673
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 14 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GUI/QuickAttackInfantry"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 28.0194
+margin_top = 4.37753
+margin_right = 161.019
+margin_bottom = 43.3775
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Quick Attack"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DefendInfantry" type="TextureButton" parent="GUI"]
+visible = false
+margin_left = 588.128
+margin_top = 264.673
+margin_right = 778.128
+margin_bottom = 309.673
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 14 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GUI/DefendInfantry"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 21.0194
+margin_top = 5.37753
+margin_right = 154.019
+margin_bottom = 44.3775
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Defend Base"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CancelInfantry" type="TextureButton" parent="GUI"]
+visible = false
+margin_left = 427.115
+margin_top = 414.616
+margin_right = 617.115
+margin_bottom = 459.616
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 14 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 32 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GUI/CancelInfantry"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 50.8893
+margin_top = 4.0
+margin_right = 129.889
+margin_bottom = 43.0
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Cancel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="button_up" from="GUI/ExitButton" to="GUI/ExitButton" method="_on_ExitButton_button_up"]
-
-[editable path="GUI/Menu"]
