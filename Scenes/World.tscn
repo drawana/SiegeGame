@@ -924,11 +924,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="heart2" type="Sprite" parent="GUI/MyHealthBar"]
-position = Vector2( -10.6086, 8.44238 )
-scale = Vector2( 0.0403474, 0.0384611 )
-texture = ExtResource( 26 )
-
 [node name="buttonRound_brown" type="Sprite" parent="GUI/MyHealthBar"]
 position = Vector2( -10.2169, 8.42029 )
 scale = Vector2( 0.839648, 0.763693 )
@@ -1098,5 +1093,10 @@ text = "Cancel"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="heart2" type="Sprite" parent="."]
+position = Vector2( 129.391, 451.442 )
+scale = Vector2( 0.0403474, 0.0384611 )
+texture = ExtResource( 26 )
 [connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="button_up" from="GUI/ExitButton" to="GUI/ExitButton" method="_on_ExitButton_button_up"]
