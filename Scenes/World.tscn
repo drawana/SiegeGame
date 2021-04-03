@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
@@ -25,6 +25,108 @@
 [ext_resource path="res://scripts/Naval.gd" type="Script" id=23]
 [ext_resource path="res://scripts/Artillery.gd" type="Script" id=24]
 [ext_resource path="res://Textures/greenarrow-removebg-preview.png" type="Texture" id=25]
+
+[sub_resource type="Animation" id=5]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
 
 [sub_resource type="GDScript" id=1]
 
@@ -475,9 +577,10 @@ __meta__ = {
 
 [node name="Infantry" type="TextureButton" parent="GUI"]
 visible = false
-margin_left = 207.373
+modulate = Color( 0.996078, 0.996078, 0.996078, 1 )
+margin_left = 206.373
 margin_top = 312.965
-margin_right = 397.373
+margin_right = 396.373
 margin_bottom = 357.965
 rect_pivot_offset = Vector2( 173.976, 22.5 )
 focus_neighbour_top = NodePath("../UpgradeButton")
@@ -502,6 +605,12 @@ text = "Infantry 10 "
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
+anims/Test = SubResource( 5 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
+anims/Test = SubResource( 6 )
 
 [node name="Artillery" type="TextureButton" parent="GUI"]
 visible = false
@@ -533,6 +642,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
+anims/Test = SubResource( 7 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
+anims/Test = SubResource( 8 )
+
 [node name="Naval" type="TextureButton" parent="GUI"]
 visible = false
 margin_left = 639.526
@@ -562,6 +677,12 @@ text = "Naval 15"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Naval"]
+anims/Test = SubResource( 9 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="GUI/Naval"]
+anims/Test = SubResource( 10 )
 
 [node name="ExitButton" type="TextureButton" parent="GUI"]
 visible = false
