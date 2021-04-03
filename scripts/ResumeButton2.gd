@@ -32,6 +32,24 @@ func _on_Button_Pressed():
 	var points = get_node("../PointsCounter")
 	var val = int(points.get_text()) 
 	
+	var navalLevel = get_node("../NavalLevel")
+	navalLevel.visible = false
+	
+	var infantryLevel = get_node("../InfantryLevel")
+	infantryLevel.visible = false
+	
+	var artilleryLevel = get_node("../ArtilleryLevel")
+	artilleryLevel.visible = false
+	
+	var labelNaval = get_node("../LabelNaval")
+	labelNaval.visible = false
+	
+	var labelInfantry = get_node("../LabelInfantry")
+	labelInfantry.visible = false
+	
+	var labelArtillery = get_node("../LabelArtillery")
+	labelArtillery.visible = false
+	
 	if (val >= 15):
 		var upgradeAvaliable = get_node("../UpgradeAvaliable2")
 		upgradeAvaliable.visible = true

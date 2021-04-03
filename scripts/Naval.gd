@@ -8,4 +8,7 @@ func _on_Button_Pressed():
 	var val = int(points.get_text()) 
 	if (val >= 15):
 		points.set_text(str(val - 15))
+		var points2 = get_node("../NavalLevel")
+		var val2 = int(points2.get_text()) 
+		points2.set_text(str(val2 + 1))
 	

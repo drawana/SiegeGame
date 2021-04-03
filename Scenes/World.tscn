@@ -444,6 +444,7 @@ __meta__ = {
 }
 
 [node name="ResumeButton2" type="TextureButton" parent="GUI"]
+visible = false
 margin_left = 427.86
 margin_top = 432.657
 margin_right = 617.86
@@ -689,6 +690,84 @@ texture = ExtResource( 25 )
 position = Vector2( 3.927, 19.4056 )
 scale = Vector2( 0.0430862, 0.0256415 )
 texture = ExtResource( 25 )
+
+[node name="LabelInfantry" type="Label" parent="GUI"]
+visible = false
+margin_left = 251.984
+margin_top = 181.429
+margin_right = 310.984
+margin_bottom = 218.429
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelArtillery" type="Label" parent="GUI"]
+visible = false
+margin_left = 478.77
+margin_top = 182.689
+margin_right = 537.77
+margin_bottom = 219.689
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelNaval" type="Label" parent="GUI"]
+visible = false
+margin_left = 696.736
+margin_top = 178.909
+margin_right = 755.736
+margin_bottom = 215.909
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfantryLevel" type="Label" parent="GUI"]
+visible = false
+margin_left = 330.099
+margin_top = 183.948
+margin_right = 360.099
+margin_bottom = 220.948
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArtilleryLevel" type="Label" parent="GUI"]
+visible = false
+margin_left = 559.405
+margin_top = 185.208
+margin_right = 589.405
+margin_bottom = 222.208
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalLevel" type="Label" parent="GUI"]
+visible = false
+margin_left = 773.592
+margin_top = 180.169
+margin_right = 803.592
+margin_bottom = 217.169
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="GUI/Menu/StartContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="button_up" from="GUI/ExitButton" to="GUI/ExitButton" method="_on_ExitButton_button_up"]

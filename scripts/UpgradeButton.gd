@@ -19,6 +19,24 @@ func _on_Button_Pressed():
 	var naval = get_node("../Naval")
 	naval.visible = true
 	
+	var navalLevel = get_node("../NavalLevel")
+	navalLevel.visible = true
+	
+	var infantryLevel = get_node("../InfantryLevel")
+	infantryLevel.visible = true
+	
+	var artilleryLevel = get_node("../ArtilleryLevel")
+	artilleryLevel.visible = true
+	
+	var labelNaval = get_node("../LabelNaval")
+	labelNaval.visible = true
+	
+	var labelInfantry = get_node("../LabelInfantry")
+	labelInfantry.visible = true
+	
+	var labelArtillery = get_node("../LabelArtillery")
+	labelArtillery.visible = true
+	
 	var menu = get_node("../MenuButton")
 	menu.visible = false
 	
