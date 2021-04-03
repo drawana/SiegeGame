@@ -10,6 +10,15 @@ func _on_Button_Pressed():
 	var resume = get_node("../ResumeButton2")
 	resume.visible = true
 	
+	var infantry = get_node("../Infantry")
+	infantry.visible = true
+	
+	var artillery = get_node("../Artillery")
+	artillery.visible = true
+	
+	var naval = get_node("../Naval")
+	naval.visible = true
+	
 	var menu = get_node("../MenuButton")
 	menu.visible = false
 	

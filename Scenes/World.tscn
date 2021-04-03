@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
@@ -19,7 +19,12 @@
 [ext_resource path="res://scripts/Grey.gd" type="Script" id=17]
 [ext_resource path="res://scripts/ResumeButton.gd" type="Script" id=18]
 [ext_resource path="res://scripts/ExitButton.gd" type="Script" id=19]
+[ext_resource path="res://scripts/ResumeButton2.gd" type="Script" id=20]
 [ext_resource path="res://scripts/NextRoundButton.gd" type="Script" id=21]
+[ext_resource path="res://scripts/Infantry.gd" type="Script" id=22]
+[ext_resource path="res://scripts/Naval.gd" type="Script" id=23]
+[ext_resource path="res://scripts/Artillery.gd" type="Script" id=24]
+[ext_resource path="res://Textures/greenarrow-removebg-preview.png" type="Texture" id=25]
 
 [sub_resource type="GDScript" id=1]
 
@@ -448,7 +453,7 @@ focus_neighbour_top = NodePath("../UpgradeButton")
 focus_neighbour_bottom = NodePath("../MenuButton")
 texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 18 )
+script = ExtResource( 20 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -463,6 +468,96 @@ margin_bottom = 42.0
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Infantry" type="TextureButton" parent="GUI"]
+visible = false
+margin_left = 207.373
+margin_top = 312.965
+margin_right = 397.373
+margin_bottom = 357.965
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 14 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GUI/Infantry"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 31.5147
+margin_top = 5.51984
+margin_right = 162.515
+margin_bottom = 44.5198
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Infantry 10 "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Artillery" type="TextureButton" parent="GUI"]
+visible = false
+margin_left = 425.34
+margin_top = 311.705
+margin_right = 615.34
+margin_bottom = 356.705
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 14 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GUI/Artillery"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 31.5147
+margin_top = 5.51984
+margin_right = 162.515
+margin_bottom = 44.5198
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Artillery 15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Naval" type="TextureButton" parent="GUI"]
+visible = false
+margin_left = 639.526
+margin_top = 311.705
+margin_right = 829.526
+margin_bottom = 356.705
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 14 )
+texture_hover = ExtResource( 11 )
+script = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GUI/Naval"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 31.5147
+margin_top = 5.51984
+margin_right = 162.515
+margin_bottom = 44.5198
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Naval 15"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -550,6 +645,50 @@ script = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="UpgradeAvaliable" type="Label" parent="GUI"]
+visible = false
+margin_left = 148.339
+margin_top = 9.37004
+margin_right = 163.339
+margin_bottom = 51.37
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="greenarrow-removebg-preview" type="Sprite" parent="GUI/UpgradeAvaliable"]
+position = Vector2( 3.927, 19.406 )
+scale = Vector2( 0.0430862, 0.0256415 )
+texture = ExtResource( 25 )
+
+[node name="UpgradeAvaliable2" type="Label" parent="GUI"]
+visible = false
+margin_left = 148.339
+margin_top = 8.74008
+margin_right = 163.339
+margin_bottom = 50.7401
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="greenarrow-removebg-preview" type="Sprite" parent="GUI/UpgradeAvaliable2"]
+position = Vector2( 3.6463, 5.65549 )
+scale = Vector2( 0.0430862, 0.0256415 )
+texture = ExtResource( 25 )
+
+[node name="greenarrow-removebg-preview2" type="Sprite" parent="GUI/UpgradeAvaliable2"]
+position = Vector2( 3.927, 33.717 )
+scale = Vector2( 0.0430862, 0.0256415 )
+texture = ExtResource( 25 )
+
+[node name="greenarrow-removebg-preview3" type="Sprite" parent="GUI/UpgradeAvaliable2"]
+position = Vector2( 3.927, 19.4056 )
+scale = Vector2( 0.0430862, 0.0256415 )
+texture = ExtResource( 25 )
 [connection signal="pressed" from="GUI/Menu/StartContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="button_up" from="GUI/ExitButton" to="GUI/ExitButton" method="_on_ExitButton_button_up"]
