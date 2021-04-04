@@ -7,6 +7,8 @@ func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
 	if int(get_node("../InfantryLevelDisplay").get_text()) == 0:
 		get_node("../InfantryImage").visible = false
+	if int(get_node("../InfantryLevelDisplayEnemy").get_text()) == 0:
+		get_node("../InfantryImageEnemy").visible = false
 	
 func _on_Button_Pressed():
 	if get_node("../NextRoundButton").infantryGet() == false:

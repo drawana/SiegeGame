@@ -20,6 +20,9 @@ func _on_Button_Pressed():
 		
 		if int(get_node("../NavalLevelDisplay").get_text()) != 0:
 			get_node("../NavalImage").visible = true
+			
+		if int(get_node("../NavalLevelDisplayEnemy").get_text()) != 0:
+			get_node("../NavalImageEnemy").visible = true
 		
 		if (val2 >= 15):
 			var upgradeAvaliable = get_node("../UpgradeAvaliable2")

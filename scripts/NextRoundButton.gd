@@ -137,10 +137,13 @@ func _on_Button_Pressed():
 			
 			var multiplier = 1
 			var pointsToAdd2 = randi()%15 + 5
+			var curr = 0
+			var together = 0
 			if difficulty == "Easy":
 				pointsToAdd2 = randi()%10 + 5
-				print(int(PointsCounterEnemy.get_text()) + pointsToAdd2)
-				PointsCounterEnemy.set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))	
+				curr = int(PointsCounterEnemy.get_text())
+				together = pointsToAdd2 + curr
+				PointsCounterEnemy.set_text(str(together))	
 				multiplier = 1
 			elif difficulty == "Medium":
 				pointsToAdd2 = randi()%15 + 10
@@ -157,31 +160,39 @@ func _on_Button_Pressed():
 				var random = randi()%3 + 1
 				
 				if random == 1:
-					get_node("../InfantryLevelDisplayEnemy").set_text(str(int(get_node("../InfantryLevelDisplayEnemy").get_text()) + 1))
-					get_node("../PointsCounterEnemy").set_text(str(int(get_node("../PointsCounterEnemy").get_text()) - 10))
+					var infantryLevel2 = get_node("../InfantryLevelDisplayEnemy")
+					infantryLevel2.set_text(str(int(get_node("../InfantryLevelDisplayEnemy").get_text()) + 1))
+					PointsCounterEnemyUpdated.set_text(str(int(get_node("../PointsCounterEnemy").get_text()) - 10))
 				elif random == 2:
-					get_node("../NavalLevelDisplayEnemy").set_text(str(int(get_node("../NavalLevelDisplayEnemy").get_text()) + 1))
-					get_node("../PointsCounterEnemy").set_text(str(int(get_node("../PointsCounterEnemy").get_text()) - 10))
+					var navalLevel2 = get_node("../NavalLevelDisplayEnemy")
+					navalLevel2.set_text(str(int(get_node("../NavalLevelDisplayEnemy").get_text()) + 1))
+					PointsCounterEnemyUpdated.set_text(str(int(get_node("../PointsCounterEnemy").get_text()) - 10))
 				elif random == 3:
-					get_node("../ArtilleryLevelDisplayEnemy").set_text(str(int(get_node("../ArtilleryLevelDisplayEnemy").get_text()) + 1))
-					get_node("../PointsCounterEnemy").set_text(str(int(get_node("../PointsCounterEnemy").get_text()) - 10))
+					var artilleryLevel2 = get_node("../ArtilleryLevelDisplayEnemy")
+					artilleryLevel2.set_text(str(int(get_node("../ArtilleryLevelDisplayEnemy").get_text()) + 1))
+					PointsCounterEnemyUpdated.set_text(str(int(get_node("../PointsCounterEnemy").get_text()) - 10))
 			
 			var PointsCounterEnemyUpdated2 = get_node("../PointsCounterEnemy")
 			if int(PointsCounterEnemyUpdated2.get_text()) >= 10:
-				get_node("../InfantryLevelDisplayEnemy").set_text(str(int(get_node("../InfantryLevelDisplayEnemy").get_text()) + 1))
-				get_node("../PointsCounterEnemy").set_text(str(int(get_node("../PointsCounterEnemy").get_text()) - 10))
-				
-			var level1 = int(get_node("../InfantryLevelDisplayEnemy").get_text())
-			var pointsToDecreaseBy = (level1 * 2) + randi()%(level1 * 10) + 0
-			get_node("../MyHealthBar").set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
+				var infrantryLevel3 = get_node("../InfantryLevelDisplayEnemy")
+				infrantryLevel3.set_text(str(int(get_node("../InfantryLevelDisplayEnemy").get_text()) + 1))
+				PointsCounterEnemyUpdated2.set_text(str(int(get_node("../PointsCounterEnemy").get_text()) - 10))
 			
+			var myHealth = get_node("../MyHealthBar")
+			var level1 = int(get_node("../InfantryLevelDisplayEnemy").get_text())
+			if level1 > 0:
+				var pointsToDecreaseBy = (level1 * 2) + randi()%(level1 * 10) + 0
+				myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
+	
 			var level2 = int(get_node("../NavalLevelDisplayEnemy").get_text())
-			var pointsToDecreaseBy2 = (level2 * 3) + randi()%(level2 * 2) + 0
-			get_node("../MyHealthBar").set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy2)
+			if level2 > 0:
+				var pointsToDecreaseBy2 = (level2 * 3) + randi()%(level2 * 2) + 0
+				myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy2)
 			
 			var level3 = int(get_node("../ArtilleryLevelDisplayEnemy").get_text())
-			var pointsToDecreaseBy3 = (level3 * 5) + randi()%(level3 * 1) + 0
-			get_node("../MyHealthBar").set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
+			if level3 > 0:
+				var pointsToDecreaseBy3 = (level3 * 5) + randi()%(level3 * 1) + 0
+				myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
 			
 			if get_node("../MyHealthBar").value <= 0:
 				get_tree().quit()

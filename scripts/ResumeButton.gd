@@ -34,3 +34,18 @@ func _on_Button_Pressed():
 	
 	var TheirHealthBar = get_node("../TheirHealthBar")
 	TheirHealthBar.visible = true
+	
+	var InfantryImageEnemy = get_node("../InfantryImageEnemy")
+	InfantryImageEnemy.visible = true
+		
+	var ArtilleryImageEnemy = get_node("../ArtilleryImageEnemy")
+	ArtilleryImageEnemy.visible = true
+
+	var NavalImageEnemy = get_node("../NavalImageEnemy")
+	NavalImageEnemy.visible = true
+	
+	var NavalImage = get_node("../NavalImage")
+	NavalImage.visible = true
+	
+	var ArtilleryImage = get_node("../ArtilleryImage")
+	ArtilleryImage.visible = true
