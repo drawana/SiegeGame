@@ -57,5 +57,20 @@ func _on_Button_Pressed():
 			var upgradeAvaliable2 = get_node("../UpgradeAvaliable")
 			upgradeAvaliable2.visible = false
 		greenAnimation.play("Test")
+		
+		var PointsCounterEnemy = get_node("../PointsCounterEnemy")
+		get_node("../PointsCounterEnemy").set_text(str(int(PointsCounterEnemy.get_text()) + 5))
+		
+		
+		
+		#var points3 = get_node("../MyHealthBar")
+		
+		#var level = get_node("../InfantryLevelDisplay").getVal()
+		#var pointsToDecreaseBy = (level * 2) + randi()%(level * 10) + 1
+		
+		#get_node("../MyHealthBar").set_value(points3.value - pointsToDecreaseBy)
+		
+		
+		
 	else:
 		redAnimation.play("Test")

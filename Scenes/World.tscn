@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=86 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
@@ -47,6 +47,9 @@
 [ext_resource path="res://scripts/NavalLevelDisplay.gd" type="Script" id=45]
 [ext_resource path="res://scripts/ArtilleryLevelDisplay.gd" type="Script" id=46]
 [ext_resource path="res://scripts/InfantryLevelDisplay.gd" type="Script" id=47]
+[ext_resource path="res://scripts/InfantryLevelDisplayEnemy.gd" type="Script" id=48]
+[ext_resource path="res://scripts/ArtilleryLevelDisplayEnemy.gd" type="Script" id=49]
+[ext_resource path="res://scripts/NavalLevelDisplayEnemy.gd" type="Script" id=50]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Test"
@@ -1132,11 +1135,38 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="PointsEnemy" type="Label" parent="GUI"]
+anchor_top = -0.00222473
+anchor_bottom = -0.00222473
+margin_left = 888.047
+margin_top = 414.289
+margin_right = 970.047
+margin_bottom = 453.289
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Points "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="PointsCounter" type="Label" parent="GUI"]
 margin_left = 107.093
 margin_top = 15.119
 margin_right = 147.093
 margin_bottom = 52.119
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+script = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PointsCounterEnemy" type="Label" parent="GUI"]
+margin_left = 976.668
+margin_top = 411.986
+margin_right = 1016.67
+margin_bottom = 448.986
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
@@ -1774,6 +1804,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="InfantryTagEnemy" type="Label" parent="GUI"]
+margin_left = 810.312
+margin_top = 453.875
+margin_right = 962.312
+margin_bottom = 490.875
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Infantry Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="ArtilleryTag" type="Label" parent="GUI"]
 margin_left = 26.4866
 margin_top = 139.849
@@ -1786,11 +1828,35 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="ArtilleryTagEnemy" type="Label" parent="GUI"]
+margin_left = 805.602
+margin_top = 494.325
+margin_right = 962.602
+margin_bottom = 531.325
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Artillery Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="NavalTag" type="Label" parent="GUI"]
 margin_left = 21.1893
 margin_top = 97.4706
 margin_right = 152.189
 margin_bottom = 134.471
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Naval Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalTagEnemy" type="Label" parent="GUI"]
+margin_left = 829.481
+margin_top = 536.175
+margin_right = 960.481
+margin_bottom = 573.175
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Naval Level"
@@ -1811,6 +1877,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="InfantryLevelDisplayEnemy" type="Label" parent="GUI"]
+margin_left = 978.843
+margin_top = 453.82
+margin_right = 1018.84
+margin_bottom = 490.82
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+script = ExtResource( 48 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="ArtilleryLevelDisplay" type="Label" parent="GUI"]
 margin_left = 197.263
 margin_top = 138.73
@@ -1824,6 +1903,19 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="ArtilleryLevelDisplayEnemy" type="Label" parent="GUI"]
+margin_left = 980.238
+margin_top = 495.747
+margin_right = 1020.24
+margin_bottom = 532.747
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+script = ExtResource( 49 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="NavalLevelDisplay" type="Label" parent="GUI"]
 margin_left = 166.584
 margin_top = 97.7327
@@ -1833,6 +1925,19 @@ custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
 script = ExtResource( 45 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalLevelDisplayEnemy" type="Label" parent="GUI"]
+margin_left = 978.228
+margin_top = 538.047
+margin_right = 1018.23
+margin_bottom = 575.047
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+script = ExtResource( 50 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1864,10 +1969,10 @@ region_rect = Rect2( 106.983, 113.333, 175.609, 127.697 )
 
 [node name="ArtilleryImageEnemy" type="TextureButton" parent="GUI"]
 modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
-margin_left = 844.266
-margin_top = 466.95
-margin_right = 932.266
-margin_bottom = 544.95
+margin_left = 695.596
+margin_top = 387.575
+margin_right = 783.596
+margin_bottom = 465.575
 expand = true
 stretch_mode = 1
 __meta__ = {
