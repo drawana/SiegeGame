@@ -75,21 +75,21 @@ func _on_Button_Pressed():
 			
 		var PointsCounterEnemyUpdated = get_node("../PointsCounterEnemy")
 		
-		while PointsCounterEnemyUpdated > 15:
-			var random = randi()%3 + 1
+		#while PointsCounterEnemyUpdated > 15:
+		#	var random = randi()%3 + 1
 			
-			if random == 1:
+		#	if random == 1:
 				
 				
-			elif random == 2:
+		#	elif random == 2:
 				
 				
-			elif random == 3:
+			#elif random == 3:
 			
 			
 			
 			
-		if PointsCounterEnemyUpdated > 10:
+		#if PointsCounterEnemyUpdated > 10:
 			
 		
 			
