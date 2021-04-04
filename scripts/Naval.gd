@@ -16,6 +16,7 @@ func _on_Button_Pressed():
 		points2.set_text(str(val2 + 1))
 		greenAnimation.play("Test")
 		get_node("../NavalLevelDisplay").updateVal()
+		val2 = int(get_node("../PointsCounter").get_text()) 
 		
 		if (val2 >= 15):
 			var upgradeAvaliable = get_node("../UpgradeAvaliable2")
@@ -35,5 +36,9 @@ func _on_Button_Pressed():
 			
 			var upgradeAvaliable2 = get_node("../UpgradeAvaliable")
 			upgradeAvaliable2.visible = false
+			
+		var points3 = int(get_node("../NavalLevel").get_text())
+		if points3 >= 5:
+			get_node("../Naval").disabled = true
 	else:
 		redAnimation.play("Test")
