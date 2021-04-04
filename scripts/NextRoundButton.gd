@@ -73,6 +73,26 @@ func _on_Button_Pressed():
 		elif difficulty == "Hard":
 			multiplier = 3
 			
+		var PointsCounterEnemyUpdated = get_node("../PointsCounterEnemy")
+		
+		while PointsCounterEnemyUpdated > 15:
+			var random = randi()%3 + 1
+			
+			if random == 1:
+				
+				
+			elif random == 2:
+				
+				
+			elif random == 3:
+			
+			
+			
+			
+		if PointsCounterEnemyUpdated > 10:
+			
+		
+			
 		
 		#var points3 = get_node("../MyHealthBar")
 		
