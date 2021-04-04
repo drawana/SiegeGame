@@ -1,0 +1,839 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
+[ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
+[ext_resource path="res://Sprites/Structure/medievalStructure_02.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Structure/medievalStructure_06.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Structure/medievalStructure_05.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=6]
+[ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/GUI.gd" type="Script" id=8]
+[ext_resource path="res://Scenes/World.gd" type="Script" id=9]
+[ext_resource path="res://Fonts/smallCardinal.tres" type="DynamicFont" id=10]
+[ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=11]
+[ext_resource path="res://Textures/buttonLong_brown_pressed.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/roguelikeChar_transparent.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Ships/Preview_KenneyNL.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/ships.png" type="Texture" id=15]
+
+[sub_resource type="Animation" id=1]
+resource_name = "group1_walking"
+length = 3.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimationPlayer - Group1 - 1/Sprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 735.089, 146.676 ), Vector2( 218.973, 460 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 778.31, 149.767 ), Vector2( 230.234, 515.806 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 821.804, 149.767 ), Vector2( 206, 555.765 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 768.72, 195.487 ), Vector2( 265.285, 539.157 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1, 3.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 812.113, 194.837 ), Vector2( 265.285, 473 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "swords - group1"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimationPlayer - Group1 - 3/Sprite/shield:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 6.36359, -2.90063 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimationPlayer - Group1 - 3/Sprite/shield:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 3.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1, 3.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 272.56, 514.578 ), Vector2( 762.589, 294.5 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 275.924, 513.067 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 329.794, 514.691 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 278.51, 515.806 ), Vector2( 778.758, 326 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 329.794, 514.691 ), Vector2( 772.821, 379 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimationPlayer - Group2 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 379.694, 518.958 ), Vector2( 743.4, 294.5 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 296.101, 563.331 ), Vector2( 723.344, 337.42 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 362.549, 564 ), Vector2( 813.289, 428 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 355.071, 560.869 ), Vector2( 778.758, 392 ) ]
+}
+
+[node name="game" type="Node2D"]
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="env" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 0, -1073741822, 0, 1, -1073741822, 0, 2, -1073741822, 0, 3, -1073741822, 0, 4, -1073741822, 0, 5, -1073741822, 0, 6, -1073741822, 0, 7, -1073741822, 0, 8, -1073741822, 0, 9, -1073741822, 0, 10, -1073741822, 0, 11, -1073741822, 0, 12, -1073741822, 0, 13, -1073741822, 0, 14, -1073741822, 0, 15, -1073741824, 0, 65536, -1073741822, 0, 65537, -1073741822, 0, 65538, -1073741822, 0, 65539, -1073741822, 0, 65540, -1073741822, 0, 65541, -1073741822, 0, 65542, -1073741822, 0, 65543, -1073741822, 0, 65544, -1073741822, 0, 65545, -1073741822, 0, 65546, -1073741822, 0, 65547, -1073741822, 0, 65548, -1073741822, 0, 65549, -1073741822, 0, 65550, -1073741824, 0, 65551, -1073741820, 0, 131072, -1073741822, 0, 131073, -1073741822, 0, 131074, -1073741822, 0, 131075, -1073741822, 0, 131076, -1073741822, 0, 131077, -1073741822, 0, 131078, -1073741822, 0, 131079, -1073741822, 0, 131080, -1073741822, 0, 131081, -1073741822, 0, 131082, -1073741822, 0, 131083, -1073741824, 0, 131084, -1073741824, 0, 131085, -1073741824, 0, 131086, -1073741820, 0, 131087, 4, 0, 196608, -1073741822, 0, 196609, -1073741822, 0, 196610, -1073741822, 0, 196611, -1073741822, 0, 196612, -1073741822, 0, 196613, -1073741822, 0, 196614, -1073741822, 0, 196615, -1073741822, 0, 196616, -1073741824, 0, 196617, -1073741824, 0, 196618, -1073741824, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 4, 0, 196623, 4, 0, 262144, -1073741822, 0, 262145, -1073741822, 0, 262146, -1073741822, 0, 262147, -1073741822, 0, 262148, -1073741824, 0, 262149, -1073741824, 0, 262150, -1073741824, 0, 262151, -1073741824, 0, 262152, -1073741824, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 4, 0, 262159, 4, 0, 327680, -1073741822, 0, 327681, -1073741822, 0, 327682, -1073741824, 0, 327683, -1073741824, 0, 327684, -1073741824, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 4, 0, 327695, 4, 0, 393216, -1073741822, 0, 393217, -1073741822, 0, 393218, -1073741824, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 4, 0, 393230, 4, 0, 393231, 4, 0, 458752, -1073741824, 0, 458753, -1073741824, 0, 458754, -1073741820, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 4, 0, 458766, 4, 0, 458767, 4, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, -1073741820, 0, 524293, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 524297, 4, 0, 524298, 4, 0, 524299, 4, 0, 524300, 4, 0, 524301, 4, 0, 524302, 4, 0, 524303, 4, 0, 589824, 4, 0, 589825, 4, 0, 589826, 4, 0, 589827, 4, 0, 589828, 4, 0, 589829, 4, 0, 589830, 4, 0, 589831, 4, 0, 589832, 4, 0, 589833, 4, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 4, 0, 589839, 4, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="path" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+format = 1
+tile_data = PoolIntArray( 327690, -1073741823, 0, 327691, 0, 0, 327692, 0, 0, 393226, -1610612736, 0, 458755, -1073741823, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, -1610612735, 0, 524291, -1610612732, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="OurCastle" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="medievalStructure_02" type="Sprite" parent="OurCastle"]
+position = Vector2( 174, 468 )
+texture = ExtResource( 3 )
+
+[node name="medievalStructure_06" type="Sprite" parent="OurCastle"]
+position = Vector2( 174, 532 )
+texture = ExtResource( 4 )
+
+[node name="TheirCastle" type="Node2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="medievalStructure_10" type="Sprite" parent="TheirCastle"]
+position = Vector2( 834, 320 )
+texture = ExtResource( 5 )
+
+[node name="medievalStructure_05" type="Sprite" parent="TheirCastle"]
+position = Vector2( 906, 319 )
+texture = ExtResource( 5 )
+
+[node name="medievalStructure_07" type="Sprite" parent="TheirCastle"]
+position = Vector2( 872, 360 )
+texture = ExtResource( 4 )
+
+[node name="medievalStructure_03" type="Sprite" parent="TheirCastle"]
+position = Vector2( 872, 298 )
+texture = ExtResource( 3 )
+
+[node name="medievalStructure_08" type="Sprite" parent="TheirCastle"]
+position = Vector2( 909, 384 )
+texture = ExtResource( 5 )
+
+[node name="medievalStructure_09" type="Sprite" parent="TheirCastle"]
+position = Vector2( 833, 384 )
+texture = ExtResource( 5 )
+
+[node name="medievalStructure_01" type="Sprite" parent="TheirCastle"]
+position = Vector2( 909, 320 )
+texture = ExtResource( 6 )
+
+[node name="medievalStructure_04" type="Sprite" parent="TheirCastle"]
+position = Vector2( 833, 320 )
+texture = ExtResource( 6 )
+
+[node name="medievalStructure_11" type="Sprite" parent="TheirCastle"]
+position = Vector2( 906, 255 )
+texture = ExtResource( 6 )
+
+[node name="medievalStructure_12" type="Sprite" parent="TheirCastle"]
+position = Vector2( 833, 256 )
+texture = ExtResource( 6 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+current = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GUI" type="CanvasLayer" parent="."]
+script = ExtResource( 8 )
+
+[node name="Menu" parent="GUI" instance=ExtResource( 7 )]
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.1
+anchor_bottom = 0.1
+margin_left = 200.0
+margin_top = 100.0
+margin_right = 1103.6
+margin_bottom = 560.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="NavalContainer" parent="GUI/Menu" index="0"]
+margin_right = 250.0
+
+[node name="NavalLbl" parent="GUI/Menu/NavalContainer" index="0"]
+margin_top = 219.0
+margin_right = 250.0
+margin_bottom = 256.0
+
+[node name="Resupply" parent="GUI/Menu/NavalContainer" index="1"]
+margin_left = 30.0
+margin_top = 269.0
+margin_right = 220.0
+margin_bottom = 318.0
+
+[node name="Siege" parent="GUI/Menu/NavalContainer" index="2"]
+margin_left = 30.0
+margin_top = 331.0
+margin_right = 220.0
+margin_bottom = 380.0
+
+[node name="InfContainer" parent="GUI/Menu" index="1"]
+margin_left = 254.0
+margin_right = 504.0
+
+[node name="Inf" parent="GUI/Menu/InfContainer" index="0"]
+margin_top = 188.0
+margin_right = 250.0
+margin_bottom = 225.0
+
+[node name="InfSiege" parent="GUI/Menu/InfContainer" index="1"]
+margin_left = 30.0
+margin_top = 238.0
+margin_right = 220.0
+margin_bottom = 287.0
+
+[node name="InfRest" parent="GUI/Menu/InfContainer" index="2"]
+margin_left = 30.0
+margin_top = 300.0
+margin_right = 220.0
+margin_bottom = 349.0
+
+[node name="Storm" parent="GUI/Menu/InfContainer" index="3"]
+margin_left = 30.0
+margin_top = 362.0
+margin_right = 220.0
+margin_bottom = 411.0
+
+[node name="ArtilleryContainer" parent="GUI/Menu" index="2"]
+margin_left = 508.0
+margin_right = 758.0
+
+[node name="Artillery" parent="GUI/Menu/ArtilleryContainer" index="0"]
+margin_top = 219.0
+margin_right = 250.0
+margin_bottom = 256.0
+
+[node name="ArtillerySiege" parent="GUI/Menu/ArtilleryContainer" index="1"]
+margin_left = 30.0
+margin_top = 269.0
+margin_right = 220.0
+margin_bottom = 318.0
+
+[node name="ArtilleryRest" parent="GUI/Menu/ArtilleryContainer" index="2"]
+margin_left = 30.0
+margin_top = 331.0
+margin_right = 220.0
+margin_bottom = 380.0
+
+[node name="StartContainer" parent="GUI/Menu" index="3"]
+margin_left = 762.0
+margin_right = 903.0
+
+[node name="MarginContainer" parent="GUI/Menu/StartContainer" index="0"]
+margin_right = 141.0
+
+[node name="StartButton" parent="GUI/Menu/StartContainer" index="1"]
+margin_left = 20.0
+margin_right = 120.0
+
+[node name="Recap" type="VBoxContainer" parent="GUI"]
+margin_left = 394.0
+margin_top = 134.0
+margin_right = 660.0
+margin_bottom = 526.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Week" type="Label" parent="GUI/Recap"]
+margin_right = 266.0
+margin_bottom = 45.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="InfDmg" type="Label" parent="GUI/Recap"]
+margin_top = 49.0
+margin_right = 266.0
+margin_bottom = 94.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="NavyDmg" type="Label" parent="GUI/Recap"]
+margin_top = 98.0
+margin_right = 266.0
+margin_bottom = 143.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="CannonDmg" type="Label" parent="GUI/Recap"]
+margin_top = 147.0
+margin_right = 266.0
+margin_bottom = 192.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="morale" type="Label" parent="GUI/Recap"]
+margin_top = 196.0
+margin_right = 266.0
+margin_bottom = 241.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="cannonballs" type="Label" parent="GUI/Recap"]
+margin_top = 245.0
+margin_right = 266.0
+margin_bottom = 290.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="manpower" type="Label" parent="GUI/Recap"]
+margin_top = 294.0
+margin_right = 266.0
+margin_bottom = 339.0
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 10 )
+text = "Week"
+align = 1
+valign = 1
+
+[node name="TextureButton" type="TextureButton" parent="GUI/Recap"]
+margin_left = 38.0
+margin_top = 343.0
+margin_right = 228.0
+margin_bottom = 392.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 12 )
+
+[node name="Label" type="Label" parent="GUI/Recap/TextureButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "OK"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ships - NOT USING RN " type="Node2D" parent="."]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="ships - NOT USING RN "]
+position = Vector2( 162.635, 108.894 )
+texture = ExtResource( 14 )
+region_enabled = true
+region_rect = Rect2( 142.183, 105.09, 148.457, 140.494 )
+
+[node name="ships" type="Node" parent="."]
+
+[node name="Sprite" type="Sprite" parent="ships"]
+position = Vector2( 101.017, 67.6711 )
+scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 33.5557, 15.5489, 17.2737, 12.7675 )
+
+[node name="ships2" type="Node" parent="."]
+
+[node name="Sprite" type="Sprite" parent="ships2"]
+position = Vector2( 206, 67.6711 )
+scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 93.388, 15.7992, 20.2779, 15.0206 )
+
+[node name="ships3" type="Node" parent="."]
+
+[node name="Sprite" type="Sprite" parent="ships3"]
+position = Vector2( 142, 137.748 )
+rotation = -0.523599
+scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 15 )
+region_enabled = true
+region_rect = Rect2( 82.6232, -3.22694, 14.0193, 20.0275 )
+
+[node name="AnimationPlayer - Group1 - 1" type="AnimationPlayer" parent="."]
+anims/group1_walking = SubResource( 1 )
+"anims/swords - group1" = SubResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="AnimationPlayer - Group1 - 1"]
+position = Vector2( 732.708, 148.121 )
+scale = Vector2( 2.30063, 2.70535 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
+
+[node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 1/Sprite2"]
+position = Vector2( -0.0936279, 1.84186 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 153.283, 88.8639, 17.3223, 11.9681 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 1/Sprite2"]
+position = Vector2( -0.105103, -3.04825 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 445.622, 67.0724, 10.7131, 12.7867 )
+
+[node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 1/Sprite2"]
+position = Vector2( 3.36359, 4.09937 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 651.914, 138.304, 13.5917, 15.0611 )
+
+[node name="AnimationPlayer - Group1 - 2" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="AnimationPlayer - Group1 - 2"]
+position = Vector2( 775.782, 151.455 )
+scale = Vector2( 1.96508, 2.61567 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
+
+[node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 2/Sprite"]
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 119.167, 70.1561, 17.4776, 12.3372 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 2/Sprite"]
+position = Vector2( -0.105103, -4.04825 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 359.335, 31.149, 12.8657, 13.7633 )
+
+[node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 2/Sprite"]
+position = Vector2( 8.00001, 0.0152054 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 799.54, 154.537, 10.8012, 11.9382 )
+
+[node name="AnimationPlayer - Group1 - 3" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="AnimationPlayer - Group1 - 3"]
+position = Vector2( 821.804, 149.767 )
+scale = Vector2( 1.89502, 2.61567 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
+
+[node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 3/Sprite"]
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 119.167, 70.1561, 17.4776, 12.3372 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 3/Sprite"]
+position = Vector2( -0.688194, 0.334061 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 445.188, 53.0237, 13.3594, 11.9382 )
+
+[node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 3/Sprite"]
+position = Vector2( 6.36359, -2.90063 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 781.812, 101.371, 7.73096, 15.044 )
+
+[node name="AnimationPlayer - Group1 - 4" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="AnimationPlayer - Group1 - 4"]
+position = Vector2( 768.72, 195.487 )
+scale = Vector2( 2.05083, 2.74256 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
+
+[node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 4/Sprite"]
+position = Vector2( 0, 1 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 118.638, 20.2047, 17.9522, 12.2831 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 4/Sprite"]
+position = Vector2( -0.105103, -3.04825 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 445.622, 67.0724, 10.7131, 12.7867 )
+
+[node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 4/Sprite"]
+position = Vector2( 8, 0.526062 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 864.632, 151.978, 12.791, 19.6128 )
+
+[node name="AnimationPlayer - Group1 - 5" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="AnimationPlayer - Group1 - 5"]
+position = Vector2( 809.663, 196.083 )
+scale = Vector2( 1.83519, 2.81902 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 0.748077, 34.4402, 16.3271, 17.3538 )
+
+[node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 5/Sprite"]
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 119.167, 70.1561, 17.4776, 12.3372 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 5/Sprite"]
+position = Vector2( -0.5, -3.40063 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 394.204, 102.41, 11.8813, 10.5312 )
+
+[node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 5/Sprite"]
+position = Vector2( 8.38855, 3.714 )
+scale = Vector2( 1.29133, 1 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 651.892, 123.638, 12.1748, 13.6629 )
+
+[node name="AnimationPlayer - Group2 - 1" type="AnimationPlayer" parent="."]
+anims/group2_walking = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 1"]
+position = Vector2( 778.758, 326 )
+scale = Vector2( 2.34389, 2.74724 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 16.695, 0.297779, 16.4933, 17.48 )
+
+[node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 1/Sprite"]
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 237.686, 36.9068, 18.3077, 13.5921 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 1/Sprite"]
+position = Vector2( -0.142426, -1.57977 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 445.392, 84.8228, 11.011, 14.4774 )
+
+[node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 1/Sprite"]
+position = Vector2( 9, -1.84311 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 799.255, 119.431, 9.34363, 12.8475 )
+
+[node name="AnimationPlayer - Group2 - 2" type="AnimationPlayer" parent="."]
+anims/group2_walking = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 2"]
+position = Vector2( 772.821, 379 )
+scale = Vector2( 2.1064, 2.72289 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 16.695, 0.297779, 16.4933, 17.48 )
+
+[node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 2/Sprite"]
+position = Vector2( 0.777252, 1.83282 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 154.131, 2.63564, 16.6434, 13.7235 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 2/Sprite"]
+position = Vector2( -0.142426, -5.75937 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 377.503, 33.0025, 10.8036, 8.17569 )
+
+[node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 2/Sprite"]
+position = Vector2( 8, -0.26059 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 689.389, 54.0257, 8.17566, 14.0155 )
+
+[node name="AnimationPlayer - Group2 - 3" type="AnimationPlayer" parent="."]
+anims/group2_walking = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 3"]
+position = Vector2( 743.4, 294.5 )
+scale = Vector2( 2.0171, 2.70799 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( -0.947884, 16.7399, 17.0448, 17.9917 )
+
+[node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 0.619843, 1.83282 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 272.936, 89.3564, 16.3514, 11.3876 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 0.465118, -5.66406 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 359.26, 99.6346, 13.5561, 9.89185 )
+
+[node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 8, -3.66718 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 746.725, 151.016, 10.2634, 17.7529 )
+
+[node name="pants" type="Sprite" parent="AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 0.0299072, 4.15689 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 53.0277, 44.1381, 13.1206, 7.30767 )
+
+[node name="AnimationPlayer - Group2 - 4" type="AnimationPlayer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 4"]
+position = Vector2( 723.344, 337.42 )
+scale = Vector2( 1.99923, 2.7061 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 17.3697, 33.4709, 15.2886, 18.2189 )
+
+[node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 4/Sprite"]
+position = Vector2( -0.798859, 1.39792 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 203.981, 105.708, 16.6434, 10.8036 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 4/Sprite"]
+position = Vector2( -0.310822, -4.90997 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 429.164, 67.8742, 9.4693, 8.79295 )
+
+[node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 4/Sprite"]
+position = Vector2( 8.4187, -0.910065 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 782.019, 84.3605, 9.01721, 17.6665 )
+
+[node name="pants" type="Sprite" parent="AnimationPlayer - Group2 - 4/Sprite"]
+position = Vector2( 0.161835, 4.59622 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 53.4169, 8.30119, 13.3469, 10.2668 )
+
+[node name="AnimationPlayer - Group2 - 5" type="AnimationPlayer" parent="."]
+anims/group2_walking = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 5"]
+position = Vector2( 813.289, 428 )
+scale = Vector2( 2.03693, 2.65476 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( -0.145439, 33.9121, 16.8237, 17.7943 )
+
+[node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 5/Sprite"]
+position = Vector2( -0.798859, 1.39792 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 289.106, 106.06, 17.2206, 9.76693 )
+
+[node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 5/Sprite"]
+position = Vector2( -0.310822, -4.90997 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 429.164, 67.8742, 9.4693, 8.79295 )
+
+[node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 5/Sprite"]
+position = Vector2( 6.92487, 2.0488 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 653.972, 89.0926, 10.4162, 12.8512 )
+
+[node name="pants" type="Sprite" parent="AnimationPlayer - Group2 - 5/Sprite"]
+position = Vector2( -0.503418, 4.15689 )
+texture = ExtResource( 13 )
+region_enabled = true
+region_rect = Rect2( 53.7681, 146.72, 12.0396, 7.03436 )
+[connection signal="pressed" from="GUI/Menu/StartContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
+
+[editable path="GUI/Menu"]
