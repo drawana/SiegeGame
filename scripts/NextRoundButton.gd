@@ -158,11 +158,11 @@ func _on_Button_Pressed():
 				PointsCounterEnemy.set_text(str(together))	
 				multiplier = 1
 			elif difficulty == "Medium":
-				pointsToAdd2 = randi()%15 + 10
+				pointsToAdd2 = randi()%15 + 5
 				PointsCounterEnemy.set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))
 				multiplier = 2
 			elif difficulty == "Hard":
-				pointsToAdd2 = randi()%20 + 10
+				pointsToAdd2 = randi()%15 + 10
 				PointsCounterEnemy.set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))
 				multiplier = 3
 				
@@ -170,7 +170,6 @@ func _on_Button_Pressed():
 			
 			while int(PointsCounterEnemyUpdated.get_text()) >= 15:
 				var random = randi()%3 + 1
-				
 				if random == 1:
 					var infantryLevel2 = get_node("../InfantryLevelDisplayEnemy")
 					infantryLevel2.set_text(str(int(get_node("../InfantryLevelDisplayEnemy").get_text()) + 1))
@@ -193,17 +192,17 @@ func _on_Button_Pressed():
 			var myHealth = get_node("../MyHealthBar")
 			var level1 = int(get_node("../InfantryLevelDisplayEnemy").get_text())
 			if level1 > 0:
-				var pointsToDecreaseBy = (level1 * 2) + randi()%(level1 * 10) + 0
+				var pointsToDecreaseBy = (level1 * 2) + randi()%5 + (1 * level1)
 				myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
 	
 			var level2 = int(get_node("../NavalLevelDisplayEnemy").get_text())
 			if level2 > 0:
-				var pointsToDecreaseBy2 = (level2 * 3) + randi()%(level2 * 2) + 0
+				var pointsToDecreaseBy2 = (level2 * 4) + randi()%10 + (1 * level2)
 				myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy2)
 			
 			var level3 = int(get_node("../ArtilleryLevelDisplayEnemy").get_text())
 			if level3 > 0:
-				var pointsToDecreaseBy3 = (level3 * 5) + randi()%(level3 * 1) + 0
+				var pointsToDecreaseBy3 = (level3 * 3) + randi()%20 + (1 * level3)
 				myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
 			
 			if get_node("../MyHealthBar").value <= 0:

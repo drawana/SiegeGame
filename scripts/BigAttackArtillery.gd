@@ -10,7 +10,7 @@ func _on_Button_Pressed():
 	var points = get_node("../TheirHealthBar")
 	
 	var level = get_node("../ArtilleryLevelDisplay").getVal()
-	var pointsToDecreaseBy = (level * 5) + randi()%(level * 1) + 1
+	var pointsToDecreaseBy = (level * 3) + randi()%20 + (1 * level)
 	
 	get_node("../TheirHealthBar").set_value(points.value - pointsToDecreaseBy)
 	greenAnimation.play("Test")
