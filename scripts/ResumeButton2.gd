@@ -53,6 +53,12 @@ func _on_Button_Pressed():
 	var InfantryImage = get_node("../InfantryImage")
 	InfantryImage.visible = true
 	
+	var NavalImage = get_node("../NavalImage")
+	NavalImage.visible = true
+	
+	var ArtilleryImage = get_node("../ArtilleryImage")
+	ArtilleryImage.visible = true
+	
 	var MyHealthBar = get_node("../MyHealthBar")
 	MyHealthBar.visible = true
 	

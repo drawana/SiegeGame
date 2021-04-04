@@ -15,6 +15,7 @@ func _on_Button_Pressed():
 		var val2 = int(points2.get_text()) 
 		points2.set_text(str(val2 + 1))
 		greenAnimation.play("Test")
+		get_node("../ArtilleryLevelDisplay").updateVal()
 		
 		if (val2 >= 15):
 			var upgradeAvaliable = get_node("../UpgradeAvaliable2")

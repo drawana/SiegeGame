@@ -8,7 +8,11 @@ func _ready():
 	
 func _on_Button_Pressed():
 	var points = get_node("../TheirHealthBar")
-	get_node("../TheirHealthBar").set_value(points.value - 50)
+	
+	var level = get_node("../NavalLevelDisplay").getVal()
+	var pointsToDecreaseBy = (level * 3) + randi()%(level * 2) + 1
+	
+	get_node("../TheirHealthBar").set_value(points.value - pointsToDecreaseBy)
 	greenAnimation.play("Test")
 	
 	var AttackNaval = get_node("../AttackNaval")
