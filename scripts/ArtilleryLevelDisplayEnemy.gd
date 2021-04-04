@@ -3,7 +3,8 @@ extends Label
 var level = 0
 
 func _ready():
-	setVal(1)
+	var level = get_node("../NextRoundButton").getArtilleryLevel()
+	setVal(level)
 
 func getVal():
 	return level

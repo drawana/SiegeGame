@@ -1949,7 +1949,7 @@ margin_right = 229.798
 margin_bottom = 90.6515
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "0"
+text = "1"
 script = ExtResource( 47 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1975,7 +1975,7 @@ margin_right = 237.263
 margin_bottom = 175.73
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "0"
+text = "1"
 script = ExtResource( 46 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -2001,7 +2001,7 @@ margin_right = 206.584
 margin_bottom = 134.733
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "0"
+text = "1"
 script = ExtResource( 45 )
 __meta__ = {
 "_edit_use_anchors_": false

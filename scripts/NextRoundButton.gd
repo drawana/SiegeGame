@@ -6,11 +6,76 @@ var artilleryDone = false
 onready var redAnimation = $RedAnimation
 onready var greenAnimation = $GreenAnimation
 var difficulty = "Easy"
-
+var navalLevel = 0
+var artilleryLevel = 0
+var infantryLevel = 0
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
+	setLevels()
+
+func setLevels():
+	randomize()
+	var numOfLevels = 3
+	var num1 = randi()%3 + 1
+	var num2 = randi()%3 + 1
+	var num3 = randi()%2 + 1
 	
+	if num1 == 1:
+		if num2 == 1:
+			infantryLevel = 3
+			navalLevel = 0
+			artilleryLevel = 0
+		elif num2 == 2:
+			infantryLevel = 0
+			navalLevel = 3
+			artilleryLevel = 0
+		elif num2 == 3:
+			infantryLevel = 0
+			navalLevel = 0
+			artilleryLevel = 3
+	elif num1 == 2:
+			infantryLevel = 1
+			navalLevel = 1
+			artilleryLevel = 1
+	elif num1 == 3:
+		if num2 == 1:
+			infantryLevel = 2
+			if num3 == 1:
+				navalLevel = 1
+				artilleryLevel = 0
+			elif num3 == 2:
+				navalLevel = 0
+				artilleryLevel = 1
+		elif num2 == 2:
+			navalLevel = 2
+			if num3 == 1:
+				infantryLevel = 1
+				artilleryLevel = 0
+			elif num3 == 2:
+				infantryLevel = 0
+				artilleryLevel = 1
+		elif num2 == 3:
+			artilleryLevel = 2
+			if num3 == 1:
+				infantryLevel = 1
+				navalLevel = 0
+			elif num3 == 2:
+				infantryLevel = 0
+				navalLevel = 1
+		
+func getNavalLevel():
+	return navalLevel
+	
+func getArtilleryLevel():
+	return artilleryLevel
+	
+func getInfantryLevel():
+	return infantryLevel
+
+func getDifficulty():
+	return difficulty
+
 func setDifficulty(param):
 	difficulty = param
 	
@@ -44,8 +109,7 @@ func _on_Button_Pressed():
 			
 			var points = get_node("../PointsCounter")
 			var val = int(points.get_text()) 
-			#var pointsToAdd = randi()%15 + 5
-			var pointsToAdd = 500
+			var pointsToAdd = randi()%15 + 5
 			points.set_text(str(val + pointsToAdd))
 			val = int(get_node("../PointsCounter").get_text()) 
 			
@@ -75,15 +139,16 @@ func _on_Button_Pressed():
 			var pointsToAdd2 = randi()%15 + 5
 			if difficulty == "Easy":
 				pointsToAdd2 = randi()%10 + 5
-				get_node("../PointsCounterEnemy").set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))	
+				print(int(PointsCounterEnemy.get_text()) + pointsToAdd2)
+				PointsCounterEnemy.set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))	
 				multiplier = 1
 			elif difficulty == "Medium":
 				pointsToAdd2 = randi()%15 + 10
-				get_node("../PointsCounterEnemy").set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))
+				PointsCounterEnemy.set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))
 				multiplier = 2
 			elif difficulty == "Hard":
 				pointsToAdd2 = randi()%20 + 10
-				get_node("../PointsCounterEnemy").set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))
+				PointsCounterEnemy.set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))
 				multiplier = 3
 				
 			var PointsCounterEnemyUpdated = get_node("../PointsCounterEnemy")
