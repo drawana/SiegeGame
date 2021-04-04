@@ -34,40 +34,6 @@
 [ext_resource path="res://scripts/CancelInfantry.gd" type="Script" id=32]
 [ext_resource path="res://scripts/QuickAttackInfantry.gd" type="Script" id=33]
 
-[sub_resource type="Animation" id=12]
-resource_name = "Test"
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
-[sub_resource type="Animation" id=13]
-resource_name = "Test"
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
 [sub_resource type="Animation" id=1]
 resource_name = "Test"
 length = 0.3
@@ -103,7 +69,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=3]
-resource_name = "Test"
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -120,7 +85,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=4]
-resource_name = "Test"
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -137,7 +101,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=5]
-resource_name = "Test"
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -154,7 +117,6 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=6]
-resource_name = "Test"
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -170,10 +132,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="GDScript" id=7]
-
-[sub_resource type="Animation" id=8]
-resource_name = "Test"
+[sub_resource type="Animation" id=7]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -189,8 +148,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=9]
-resource_name = "Test"
+[sub_resource type="Animation" id=8]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -206,8 +164,9 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
+[sub_resource type="GDScript" id=9]
+
 [sub_resource type="Animation" id=10]
-resource_name = "Test"
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -224,7 +183,38 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=11]
-resource_name = "Test"
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=13]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -530,10 +520,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/NextRoundButton"]
-anims/Test = SubResource( 12 )
+anims/Test = SubResource( 1 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/NextRoundButton"]
-anims/Test = SubResource( 13 )
+anims/Test = SubResource( 2 )
 
 [node name="ResumeButton" type="TextureButton" parent="GUI"]
 visible = false
@@ -627,10 +617,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
-anims/Test = SubResource( 1 )
+anims/Test = SubResource( 3 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
-anims/Test = SubResource( 2 )
+anims/Test = SubResource( 4 )
 
 [node name="Artillery" type="TextureButton" parent="GUI"]
 visible = false
@@ -664,10 +654,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
-anims/Test = SubResource( 3 )
+anims/Test = SubResource( 5 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
-anims/Test = SubResource( 4 )
+anims/Test = SubResource( 6 )
 
 [node name="Naval" type="TextureButton" parent="GUI"]
 visible = false
@@ -700,10 +690,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Naval"]
-anims/Test = SubResource( 5 )
+anims/Test = SubResource( 7 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Naval"]
-anims/Test = SubResource( 6 )
+anims/Test = SubResource( 8 )
 
 [node name="ExitButton" type="TextureButton" parent="GUI"]
 visible = false
@@ -784,7 +774,7 @@ margin_bottom = 52.119
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
-script = SubResource( 7 )
+script = SubResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1022,10 +1012,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/QuickAttackInfantry"]
-anims/Test = SubResource( 8 )
+anims/Test = SubResource( 10 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/QuickAttackInfantry"]
-anims/Test = SubResource( 9 )
+anims/Test = SubResource( 11 )
 
 [node name="DefendInfantry" type="TextureButton" parent="GUI"]
 visible = false
@@ -1059,10 +1049,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/DefendInfantry"]
-anims/Test = SubResource( 10 )
+anims/Test = SubResource( 12 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/DefendInfantry"]
-anims/Test = SubResource( 11 )
+anims/Test = SubResource( 13 )
 
 [node name="CancelInfantry" type="TextureButton" parent="GUI"]
 visible = false
