@@ -7,10 +7,8 @@ func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
 	
 func _on_Button_Pressed():
-	var points = get_node("../TheirHealthBar")
-	get_node("../TheirHealthBar").set_value(points.value - 50)
 	greenAnimation.play("Test")
-	
+		
 	var QuickAttackInfantry = get_node("../QuickAttackInfantry")
 	QuickAttackInfantry.visible = false
 	
@@ -24,4 +22,6 @@ func _on_Button_Pressed():
 	InvadeInfantry.visible = false
 	
 	get_node("../NextRoundButton").infantrySet()
+	
+	get_tree().quit()
 		

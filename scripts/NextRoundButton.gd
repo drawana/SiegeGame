@@ -1,13 +1,23 @@
 extends TextureButton
 
 var infantryDone = false
-var navalDone = true
-var artilleryDone = true
+var navalDone = false
+var artilleryDone = false
 onready var redAnimation = $RedAnimation
+onready var greenAnimation = $GreenAnimation
 
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
+	
+func infantryGet():
+	return infantryDone
+	
+func navalGet():
+	return navalDone
+	
+func artilleryGet():
+	return artilleryDone
 	
 func infantrySet():
 	infantryDone = true
@@ -21,8 +31,8 @@ func artillerySet():
 func _on_Button_Pressed(): 
 	if infantryDone == true and navalDone == true and artilleryDone == true:
 		infantryDone = false
-		#navalDone = false
-		#artilleryDone = false
+		navalDone = false
+		artilleryDone = false
 		
 		var points = get_node("../PointsCounter")
 		var val = int(points.get_text()) 
@@ -46,5 +56,6 @@ func _on_Button_Pressed():
 			
 			var upgradeAvaliable2 = get_node("../UpgradeAvaliable")
 			upgradeAvaliable2.visible = false
+		greenAnimation.play("Test")
 	else:
 		redAnimation.play("Test")

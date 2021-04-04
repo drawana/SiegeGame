@@ -13,3 +13,6 @@ func _on_Button_Pressed():
 	
 	var CancelInfantry = get_node("../CancelInfantry")
 	CancelInfantry.visible = false
+	
+	var InvadeInfantry = get_node("../InvadeInfantry")
+	InvadeInfantry.visible = false
