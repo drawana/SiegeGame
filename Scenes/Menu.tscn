@@ -27,9 +27,9 @@ custom_constants/separation = 13
 alignment = 1
 
 [node name="NavalLbl" type="Label" parent="NavalContainer"]
-margin_top = 208.0
+margin_top = 210.0
 margin_right = 253.0
-margin_bottom = 267.0
+margin_bottom = 266.0
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Naval"
@@ -37,9 +37,9 @@ align = 1
 
 [node name="Resupply" type="TextureButton" parent="NavalContainer"]
 margin_left = 31.0
-margin_top = 280.0
+margin_top = 279.0
 margin_right = 221.0
-margin_bottom = 329.0
+margin_bottom = 328.0
 size_flags_horizontal = 4
 toggle_mode = true
 pressed = true
@@ -61,9 +61,9 @@ __meta__ = {
 
 [node name="Siege" type="TextureButton" parent="NavalContainer"]
 margin_left = 31.0
-margin_top = 342.0
+margin_top = 341.0
 margin_right = 221.0
-margin_bottom = 391.0
+margin_bottom = 390.0
 size_flags_horizontal = 4
 toggle_mode = true
 texture_normal = ExtResource( 5 )
@@ -92,9 +92,9 @@ custom_constants/separation = 13
 alignment = 1
 
 [node name="Inf" type="Label" parent="InfContainer"]
-margin_top = 177.0
+margin_top = 179.0
 margin_right = 253.0
-margin_bottom = 236.0
+margin_bottom = 235.0
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Infantry"
@@ -102,9 +102,9 @@ align = 1
 
 [node name="InfSiege" type="TextureButton" parent="InfContainer"]
 margin_left = 31.0
-margin_top = 249.0
+margin_top = 248.0
 margin_right = 221.0
-margin_bottom = 298.0
+margin_bottom = 297.0
 size_flags_horizontal = 4
 toggle_mode = true
 pressed = true
@@ -126,9 +126,9 @@ __meta__ = {
 
 [node name="InfRest" type="TextureButton" parent="InfContainer"]
 margin_left = 31.0
-margin_top = 311.0
+margin_top = 310.0
 margin_right = 221.0
-margin_bottom = 360.0
+margin_bottom = 359.0
 size_flags_horizontal = 4
 toggle_mode = true
 texture_normal = ExtResource( 5 )
@@ -149,9 +149,9 @@ __meta__ = {
 
 [node name="Storm" type="TextureButton" parent="InfContainer"]
 margin_left = 31.0
-margin_top = 373.0
+margin_top = 372.0
 margin_right = 221.0
-margin_bottom = 422.0
+margin_bottom = 421.0
 size_flags_horizontal = 4
 toggle_mode = true
 texture_normal = ExtResource( 5 )
@@ -180,9 +180,9 @@ custom_constants/separation = 13
 alignment = 1
 
 [node name="Artillery" type="Label" parent="ArtilleryContainer"]
-margin_top = 208.0
+margin_top = 210.0
 margin_right = 253.0
-margin_bottom = 267.0
+margin_bottom = 266.0
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Artillery"
@@ -190,9 +190,9 @@ align = 1
 
 [node name="ArtillerySiege" type="TextureButton" parent="ArtilleryContainer"]
 margin_left = 31.0
-margin_top = 280.0
+margin_top = 279.0
 margin_right = 221.0
-margin_bottom = 329.0
+margin_bottom = 328.0
 size_flags_horizontal = 4
 toggle_mode = true
 pressed = true
@@ -215,9 +215,9 @@ __meta__ = {
 
 [node name="ArtilleryRest" type="TextureButton" parent="ArtilleryContainer"]
 margin_left = 31.0
-margin_top = 342.0
+margin_top = 341.0
 margin_right = 221.0
-margin_bottom = 391.0
+margin_bottom = 390.0
 size_flags_horizontal = 4
 toggle_mode = true
 texture_normal = ExtResource( 5 )

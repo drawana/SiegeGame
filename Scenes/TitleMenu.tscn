@@ -1,11 +1,22 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Fonts/Cardinal.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Fonts/cardinal12.tres" type="DynamicFont" id=2]
-[ext_resource path="res://Scripts/TitleMenu.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/TitleMenu.gd" type="Script" id=3]
+[ext_resource path="res://Sprites/ByzFlag.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Flags/OttoFlag.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Unit/medievalUnit_02.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Structure/medievalStructure_06.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Structure/medievalStructure_02.png" type="Texture" id=8]
+[ext_resource path="res://Tilesets/tileset_env.res" type="TileSet" id=9]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_07.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_20.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_02.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_04.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Unit/medievalUnit_03.png" type="Texture" id=14]
 
 [sub_resource type="DynamicFont" id=1]
-size = 49
+size = 59
 font_data = ExtResource( 1 )
 
 [node name="MarginContainer" type="MarginContainer"]
@@ -16,107 +27,109 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1024.0
-margin_bottom = 600.0
-color = Color( 0.270588, 0.737255, 0.968627, 1 )
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 9 )
+format = 1
+tile_data = PoolIntArray( 0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 6, 2, 0, 7, 2, 0, 8, 2, 0, 9, 2, 0, 10, 2, 0, 11, 2, 0, 12, 2, 0, 13, 2, 0, 14, 2, 0, 15, 2, 0, 65536, 2, 0, 65537, 2, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 65548, 0, 0, 65549, 0, 0, 65550, 2, 0, 65551, 2, 0, 131072, 2, 0, 131073, 2, 0, 131074, 0, 0, 131075, 4, 0, 131076, 4, 0, 131077, 4, 0, 131078, 4, 0, 131079, 4, 0, 131080, 4, 0, 131081, 4, 0, 131082, 4, 0, 131083, 4, 0, 131084, 4, 0, 131085, 0, 0, 131086, 2, 0, 131087, 2, 0, 196608, 2, 0, 196609, 2, 0, 196610, 0, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 4, 0, 196620, 4, 0, 196621, 0, 0, 196622, 2, 0, 196623, 2, 0, 262144, 2, 0, 262145, 2, 0, 262146, 0, 0, 262147, 4, 0, 262148, 4, 0, 262149, 4, 0, 262150, 4, 0, 262151, 4, 0, 262152, 4, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 0, 0, 262158, 2, 0, 262159, 2, 0, 327680, 2, 0, 327681, 2, 0, 327682, 0, 0, 327683, 4, 0, 327684, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 0, 0, 327694, 2, 0, 327695, 2, 0, 393216, 2, 0, 393217, 2, 0, 393218, 0, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 0, 0, 393230, 2, 0, 393231, 2, 0, 458752, 2, 0, 458753, 2, 0, 458754, 2, 0, 458755, 2, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 2, 0, 458767, 2, 0, 524288, 2, 0, 524289, 2, 0, 524290, 2, 0, 524291, 2, 0, 524292, 2, 0, 524293, 2, 0, 524294, 2, 0, 524295, 2, 0, 524296, 2, 0, 524297, 2, 0, 524298, 2, 0, 524299, 2, 0, 524300, 2, 0, 524301, 2, 0, 524302, 2, 0, 524303, 2, 0, 589824, 2, 0, 589825, 2, 0, 589826, 2, 0, 589827, 2, 0, 589828, 2, 0, 589829, 2, 0, 589830, 2, 0, 589831, 2, 0, 589832, 2, 0, 589833, 2, 0, 589834, 2, 0, 589835, 2, 0, 589836, 2, 0, 589837, 2, 0, 589838, 2, 0, 589839, 2, 0 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 margin_right = 1024.0
 margin_bottom = 600.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_left = 278.0
-margin_top = 222.0
-margin_right = 745.0
-margin_bottom = 378.0
+margin_left = 233.0
+margin_top = 176.0
+margin_right = 791.0
+margin_bottom = 423.0
 custom_constants/separation = 25
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_right = 467.0
-margin_bottom = 59.0
+margin_right = 558.0
+margin_bottom = 72.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer"]
-margin_right = 467.0
-margin_bottom = 59.0
+margin_right = 558.0
+margin_bottom = 72.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "The Siege of Constaninople"
 
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 84.0
-margin_right = 467.0
-margin_bottom = 156.0
+margin_top = 97.0
+margin_right = 558.0
+margin_bottom = 247.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2"]
-margin_left = 159.0
-margin_right = 308.0
-margin_bottom = 72.0
+margin_left = 190.0
+margin_right = 368.0
+margin_bottom = 150.0
 custom_constants/separation = 6
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
-margin_right = 149.0
-margin_bottom = 20.0
+margin_right = 178.0
+margin_bottom = 46.0
 rect_min_size = Vector2( 49, 0 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer"]
-margin_right = 149.0
-margin_bottom = 20.0
+margin_left = 12.0
+margin_right = 165.0
+margin_bottom = 46.0
 
 [node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
-margin_right = 20.0
-margin_bottom = 20.0
+margin_right = 24.0
+margin_bottom = 46.0
 rect_min_size = Vector2( 20, 0 )
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = ">"
 
 [node name="Option" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
-margin_left = 24.0
-margin_right = 149.0
-margin_bottom = 20.0
+margin_left = 28.0
+margin_right = 153.0
+margin_bottom = 46.0
 rect_min_size = Vector2( 125, 0 )
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Play!"
 
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
-margin_top = 26.0
-margin_right = 149.0
-margin_bottom = 46.0
+margin_top = 52.0
+margin_right = 178.0
+margin_bottom = 98.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2"]
-margin_right = 149.0
-margin_bottom = 20.0
+margin_right = 178.0
+margin_bottom = 46.0
 
 [node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
 margin_right = 20.0
-margin_bottom = 20.0
+margin_bottom = 46.0
 rect_min_size = Vector2( 20, 0 )
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 
 [node name="Option" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer"]
 margin_left = 24.0
-margin_right = 149.0
-margin_bottom = 20.0
+margin_right = 178.0
+margin_bottom = 46.0
 rect_min_size = Vector2( 125, 0 )
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Instructions"
 
 [node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer"]
-margin_top = 52.0
-margin_right = 149.0
-margin_bottom = 72.0
+margin_top = 104.0
+margin_right = 178.0
+margin_bottom = 150.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3"]
-margin_right = 149.0
-margin_bottom = 20.0
+margin_left = 14.0
+margin_right = 163.0
+margin_bottom = 46.0
 
 [node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3/HBoxContainer"]
 margin_right = 20.0
-margin_bottom = 20.0
+margin_bottom = 46.0
 rect_min_size = Vector2( 20, 0 )
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -124,8 +137,90 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 [node name="Option" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer3/HBoxContainer"]
 margin_left = 24.0
 margin_right = 149.0
-margin_bottom = 20.0
+margin_bottom = 46.0
 rect_min_size = Vector2( 125, 0 )
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Exit"
+
+[node name="medievalEnvironment_07" type="Sprite" parent="CenterContainer"]
+position = Vector2( 347.952, 155.326 )
+texture = ExtResource( 10 )
+
+[node name="medievalEnvironment_20" type="Sprite" parent="CenterContainer"]
+position = Vector2( 379.45, 422.43 )
+texture = ExtResource( 11 )
+
+[node name="ByzFlag" type="Sprite" parent="."]
+position = Vector2( 884.47, 98.8677 )
+scale = Vector2( 0.329686, 0.223973 )
+texture = ExtResource( 4 )
+
+[node name="OttoFlag" type="Sprite" parent="."]
+position = Vector2( 171.116, 479.459 )
+scale = Vector2( 0.876619, 0.825677 )
+texture = ExtResource( 5 )
+
+[node name="medievalStructure_02" type="Sprite" parent="."]
+position = Vector2( 745.765, 293.637 )
+texture = ExtResource( 8 )
+
+[node name="medievalStructure_06" type="Sprite" parent="."]
+position = Vector2( 745.624, 351.67 )
+texture = ExtResource( 7 )
+
+[node name="medievalUnit_02" type="Sprite" parent="."]
+position = Vector2( 332.414, 277.618 )
+texture = ExtResource( 6 )
+
+[node name="medievalUnit_03" type="Sprite" parent="."]
+position = Vector2( 362.653, 290.438 )
+texture = ExtResource( 6 )
+
+[node name="medievalUnit_04" type="Sprite" parent="."]
+position = Vector2( 321.674, 309.596 )
+texture = ExtResource( 6 )
+
+[node name="medievalUnit_05" type="Sprite" parent="."]
+position = Vector2( 353.093, 327.936 )
+texture = ExtResource( 6 )
+
+[node name="medievalUnit_06" type="Sprite" parent="."]
+position = Vector2( 321.154, 346.834 )
+texture = ExtResource( 6 )
+
+[node name="medievalUnit_07" type="Sprite" parent="."]
+position = Vector2( 359.353, 363.953 )
+texture = ExtResource( 6 )
+
+[node name="medievalUnit_08" type="Sprite" parent="."]
+position = Vector2( 329.414, 381.592 )
+texture = ExtResource( 6 )
+
+[node name="medievalEnvironment_04" type="Sprite" parent="."]
+position = Vector2( 229.52, 223.362 )
+texture = ExtResource( 13 )
+
+[node name="medievalEnvironment_05" type="Sprite" parent="."]
+position = Vector2( 646.553, 399.751 )
+texture = ExtResource( 13 )
+
+[node name="medievalEnvironment_02" type="Sprite" parent="."]
+position = Vector2( 722.149, 161.626 )
+texture = ExtResource( 12 )
+
+[node name="medievalEnvironment_07" type="Sprite" parent="."]
+position = Vector2( 243.379, 246.041 )
+texture = ExtResource( 10 )
+
+[node name="medievalUnit_09" type="Sprite" parent="."]
+position = Vector2( 288.736, 291.398 )
+texture = ExtResource( 14 )
+
+[node name="medievalUnit_10" type="Sprite" parent="."]
+position = Vector2( 288.736, 329.196 )
+texture = ExtResource( 14 )
+
+[node name="medievalUnit_11" type="Sprite" parent="."]
+position = Vector2( 289.996, 368.253 )
+texture = ExtResource( 14 )

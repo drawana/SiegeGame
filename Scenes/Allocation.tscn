@@ -6,14 +6,10 @@
 [node name="AllocationScreen" type="MarginContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -15.6548, -54.1203 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1024.0
-margin_bottom = 600.0
-color = Color( 0.270588, 0.737255, 0.968627, 1 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 margin_right = 1024.0
@@ -21,9 +17,9 @@ margin_bottom = 600.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 margin_left = 343.0
-margin_top = 210.0
+margin_top = 206.0
 margin_right = 681.0
-margin_bottom = 390.0
+margin_bottom = 394.0
 custom_constants/separation = 11
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
@@ -40,138 +36,126 @@ text = "Allocate Your Points"
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
 margin_top = 67.0
 margin_right = 338.0
-margin_bottom = 87.0
+margin_bottom = 113.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2"]
-margin_left = 89.0
-margin_right = 249.0
-margin_bottom = 20.0
+margin_left = 40.0
+margin_right = 297.0
+margin_bottom = 46.0
 rect_min_size = Vector2( 160, 0 )
 custom_fonts/font = ExtResource( 2 )
 text = "Points Available: 5"
 
 [node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 98.0
+margin_top = 124.0
 margin_right = 338.0
-margin_bottom = 118.0
+margin_bottom = 138.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer3"]
-margin_left = 69.0
-margin_right = 269.0
-margin_bottom = 20.0
+margin_left = 70.0
+margin_right = 268.0
+margin_bottom = 14.0
 custom_constants/separation = 3
 
 [node name="Navy" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
 margin_right = 60.0
-margin_bottom = 20.0
+margin_bottom = 14.0
 rect_min_size = Vector2( 60, 0 )
-custom_fonts/font = ExtResource( 2 )
 text = "Navy"
 
 [node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
 margin_left = 63.0
 margin_right = 113.0
-margin_bottom = 20.0
+margin_bottom = 14.0
 rect_min_size = Vector2( 50, 0 )
-custom_fonts/font = ExtResource( 2 )
 text = "<"
 align = 2
 
 [node name="Label3" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
 margin_left = 116.0
-margin_right = 147.0
-margin_bottom = 20.0
-custom_fonts/font = ExtResource( 2 )
+margin_right = 145.0
+margin_bottom = 14.0
 text = "0/10"
 
 [node name="Label4" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
-margin_left = 150.0
-margin_right = 200.0
-margin_bottom = 20.0
+margin_left = 148.0
+margin_right = 198.0
+margin_bottom = 14.0
 rect_min_size = Vector2( 50, 0 )
-custom_fonts/font = ExtResource( 2 )
 text = ">"
 
 [node name="CenterContainer4" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 129.0
+margin_top = 149.0
 margin_right = 338.0
-margin_bottom = 149.0
+margin_bottom = 163.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer4"]
-margin_left = 69.0
-margin_right = 269.0
-margin_bottom = 20.0
+margin_left = 70.0
+margin_right = 268.0
+margin_bottom = 14.0
 custom_constants/separation = 3
 
 [node name="Artillery" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
 margin_right = 60.0
-margin_bottom = 20.0
+margin_bottom = 14.0
 rect_min_size = Vector2( 60, 0 )
-custom_fonts/font = ExtResource( 2 )
 text = "Artillery"
 
 [node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
 margin_left = 63.0
 margin_right = 113.0
-margin_bottom = 20.0
+margin_bottom = 14.0
 rect_min_size = Vector2( 50, 0 )
-custom_fonts/font = ExtResource( 2 )
 text = "<"
 align = 2
 
 [node name="Label3" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
 margin_left = 116.0
-margin_right = 147.0
-margin_bottom = 20.0
-custom_fonts/font = ExtResource( 2 )
+margin_right = 145.0
+margin_bottom = 14.0
 text = "0/10"
 
 [node name="Label4" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
-margin_left = 150.0
-margin_right = 200.0
-margin_bottom = 20.0
+margin_left = 148.0
+margin_right = 198.0
+margin_bottom = 14.0
 rect_min_size = Vector2( 50, 0 )
-custom_fonts/font = ExtResource( 2 )
 text = ">"
 
 [node name="CenterContainer5" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 160.0
+margin_top = 174.0
 margin_right = 338.0
-margin_bottom = 180.0
+margin_bottom = 188.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer5"]
-margin_left = 69.0
-margin_right = 269.0
-margin_bottom = 20.0
+margin_left = 70.0
+margin_right = 268.0
+margin_bottom = 14.0
 custom_constants/separation = 3
 
 [node name="Infantry" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
 margin_right = 60.0
-margin_bottom = 20.0
+margin_bottom = 14.0
 rect_min_size = Vector2( 60, 0 )
-custom_fonts/font = ExtResource( 2 )
 text = "Infantry"
 
 [node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
 margin_left = 63.0
 margin_right = 113.0
-margin_bottom = 20.0
+margin_bottom = 14.0
 rect_min_size = Vector2( 50, 0 )
-custom_fonts/font = ExtResource( 2 )
 text = "<"
 align = 2
 
 [node name="Label3" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
 margin_left = 116.0
-margin_right = 147.0
-margin_bottom = 20.0
-custom_fonts/font = ExtResource( 2 )
+margin_right = 145.0
+margin_bottom = 14.0
 text = "0/10"
 
 [node name="Label4" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
-margin_left = 150.0
-margin_right = 200.0
-margin_bottom = 20.0
+margin_left = 148.0
+margin_right = 198.0
+margin_bottom = 14.0
 rect_min_size = Vector2( 50, 0 )
-custom_fonts/font = ExtResource( 2 )
 text = ">"
