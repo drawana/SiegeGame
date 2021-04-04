@@ -1,33 +1,60 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Fonts/cardinal.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Fonts/cardinal12.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Textures/buttonLong_blue.png" type="Texture" id=3]
+[ext_resource path="res://Tilesets/tileset_env.res" type="TileSet" id=4]
+[ext_resource path="res://Textures/buttonLong_beige.png" type="Texture" id=5]
+[ext_resource path="res://Fonts/Helvetica.tres" type="DynamicFont" id=6]
+[ext_resource path="res://Fonts/smallCardinal.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Textures/buttonLong_brown_pressed.png" type="Texture" id=8]
+[ext_resource path="res://Textures/buttonLong_blue_pressed.png" type="Texture" id=9]
+[ext_resource path="res://Fonts/AIDifficulty.tres" type="DynamicFont" id=10]
+[ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=11]
+[ext_resource path="res://Textures/buttonLong_grey.png" type="Texture" id=12]
+[ext_resource path="res://Scenes/Allocation.gd" type="Script" id=13]
+[ext_resource path="res://Sprites/Structure/medievalStructure_10.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Tile/medievalTile_04.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_07.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_02.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Structure/medievalStructure_11.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_01.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_08.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Tile/medievalTile_46.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Tile/medievalTile_51.png" type="Texture" id=22]
 
 [node name="AllocationScreen" type="MarginContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( -15.6548, -54.1203 )
+script = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 4 )
+format = 1
+tile_data = PoolIntArray( 0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 6, 2, 0, 7, 2, 0, 8, 2, 0, 9, 2, 0, 10, 2, 0, 11, 2, 0, 12, 2, 0, 13, 2, 0, 14, 2, 0, 15, 2, 0, 65536, 2, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 65548, 0, 0, 65549, 0, 0, 65550, 0, 0, 65551, 2, 0, 131072, 2, 0, 131073, 0, 0, 131074, 4, 0, 131075, 4, 0, 131076, 4, 0, 131077, 4, 0, 131078, 4, 0, 131079, 4, 0, 131080, 4, 0, 131081, 4, 0, 131082, 4, 0, 131083, 4, 0, 131084, 4, 0, 131085, 4, 0, 131086, 0, 0, 131087, 2, 0, 196608, 2, 0, 196609, 0, 0, 196610, 4, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 0, 0, 196623, 2, 0, 262144, 2, 0, 262145, 0, 0, 262146, 4, 0, 262147, 4, 0, 262148, 4, 0, 262149, 4, 0, 262150, 4, 0, 262151, 4, 0, 262152, 4, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 0, 0, 262159, 2, 0, 327680, 2, 0, 327681, 0, 0, 327682, 4, 0, 327683, 4, 0, 327684, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 0, 0, 327695, 2, 0, 393216, 2, 0, 393217, 0, 0, 393218, 4, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 4, 0, 393230, 0, 0, 393231, 2, 0, 458752, 2, 0, 458753, 0, 0, 458754, 4, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 4, 0, 458766, 0, 0, 458767, 2, 0, 524288, 2, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 2, 0, 589824, 2, 0, 589825, 2, 0, 589826, 2, 0, 589827, 2, 0, 589828, 2, 0, 589829, 2, 0, 589830, 2, 0, 589831, 2, 0, 589832, 2, 0, 589833, 2, 0, 589834, 2, 0, 589835, 2, 0, 589836, 2, 0, 589837, 2, 0, 589838, 2, 0, 589839, 2, 0 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 margin_right = 1024.0
 margin_bottom = 600.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_left = 343.0
-margin_top = 206.0
-margin_right = 681.0
-margin_bottom = 394.0
+margin_left = 186.0
+margin_top = 123.0
+margin_right = 838.0
+margin_bottom = 477.0
 custom_constants/separation = 11
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_right = 338.0
+margin_right = 652.0
 margin_bottom = 56.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer"]
-margin_right = 338.0
+margin_left = 157.0
+margin_right = 495.0
 margin_bottom = 56.0
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -35,127 +62,278 @@ text = "Allocate Your Points"
 
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
 margin_top = 67.0
-margin_right = 338.0
+margin_right = 652.0
 margin_bottom = 113.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2"]
-margin_left = 40.0
-margin_right = 297.0
+margin_left = 187.0
+margin_right = 464.0
 margin_bottom = 46.0
 rect_min_size = Vector2( 160, 0 )
 custom_fonts/font = ExtResource( 2 )
-text = "Points Available: 5"
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Points Available: 30"
 
 [node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
 margin_top = 124.0
-margin_right = 338.0
-margin_bottom = 138.0
+margin_right = 652.0
+margin_bottom = 173.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer3"]
-margin_left = 70.0
-margin_right = 268.0
-margin_bottom = 14.0
-custom_constants/separation = 3
+margin_right = 652.0
+margin_bottom = 49.0
+custom_constants/separation = 41
 
-[node name="Navy" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
-margin_right = 60.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 60, 0 )
-text = "Navy"
+[node name="UpgradeInf" type="TextureButton" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
+margin_right = 190.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 120, 30 )
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 8 )
 
-[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
-margin_left = 63.0
-margin_right = 113.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 50, 0 )
-text = "<"
-align = 2
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer/UpgradeInf"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.840881
+margin_right = 0.840897
+margin_bottom = 1.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Upgrade Infantry
+(10 Points)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Label3" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
-margin_left = 116.0
-margin_right = 145.0
-margin_bottom = 14.0
-text = "0/10"
+[node name="UpgradeNav" type="TextureButton" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
+margin_left = 231.0
+margin_right = 421.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 120, 30 )
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 8 )
 
-[node name="Label4" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
-margin_left = 148.0
-margin_right = 198.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 50, 0 )
-text = ">"
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer/UpgradeNav"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.840881
+margin_top = -0.943848
+margin_right = 0.840897
+margin_bottom = 0.0561562
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Upgrade Navy
+(15 Points)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpgradeArt" type="TextureButton" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
+margin_left = 462.0
+margin_right = 652.0
+margin_bottom = 49.0
+rect_min_size = Vector2( 120, 30 )
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer/UpgradeArt"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.840881
+margin_right = 0.840897
+margin_bottom = 1.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Upgrade Artillery
+(15 Points)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CenterContainer4" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 149.0
-margin_right = 338.0
-margin_bottom = 163.0
+margin_top = 184.0
+margin_right = 652.0
+margin_bottom = 234.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer4"]
-margin_left = 70.0
-margin_right = 268.0
-margin_bottom = 14.0
-custom_constants/separation = 3
+margin_right = 652.0
+margin_bottom = 50.0
+custom_constants/separation = 41
 
-[node name="Artillery" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
-margin_right = 60.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 60, 0 )
-text = "Artillery"
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
+margin_right = 190.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 190, 50 )
 
-[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
-margin_left = 63.0
-margin_right = 113.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 50, 0 )
-text = "<"
-align = 2
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer/CenterContainer"]
+margin_top = 5.0
+margin_right = 190.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 190, 40 )
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level: 0"
+align = 1
+valign = 1
 
-[node name="Label3" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
-margin_left = 116.0
-margin_right = 145.0
-margin_bottom = 14.0
-text = "0/10"
+[node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
+margin_left = 231.0
+margin_right = 421.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 190, 50 )
 
-[node name="Label4" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
-margin_left = 148.0
-margin_right = 198.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 50, 0 )
-text = ">"
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer/CenterContainer2"]
+margin_top = 5.0
+margin_right = 190.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 190, 40 )
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level: 0"
+align = 1
+valign = 1
+
+[node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer"]
+margin_left = 462.0
+margin_right = 652.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 190, 50 )
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer/CenterContainer3"]
+margin_top = 5.0
+margin_right = 190.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 190, 40 )
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level: 0"
+align = 1
+valign = 1
 
 [node name="CenterContainer5" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 174.0
-margin_right = 338.0
-margin_bottom = 188.0
+margin_top = 245.0
+margin_right = 652.0
+margin_bottom = 294.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer5"]
-margin_left = 70.0
-margin_right = 268.0
-margin_bottom = 14.0
+margin_left = 166.0
+margin_right = 485.0
+margin_bottom = 49.0
 custom_constants/separation = 3
 
-[node name="Infantry" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
-margin_right = 60.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 60, 0 )
-text = "Infantry"
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
+margin_top = 9.0
+margin_right = 126.0
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "AI Difficulty: "
 
-[node name="Label2" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
-margin_left = 63.0
-margin_right = 113.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 50, 0 )
-text = "<"
-align = 2
+[node name="DifficultyButton" type="TextureButton" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
+margin_left = 129.0
+margin_right = 319.0
+margin_bottom = 49.0
+texture_normal = ExtResource( 12 )
+texture_pressed = ExtResource( 9 )
 
-[node name="Label3" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
-margin_left = 116.0
-margin_right = 145.0
-margin_bottom = 14.0
-text = "0/10"
+[node name="DifficultyLabel" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer/DifficultyButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -0.943878
+margin_bottom = -0.943878
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Easy"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Label4" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer"]
-margin_left = 148.0
-margin_right = 198.0
-margin_bottom = 14.0
-rect_min_size = Vector2( 50, 0 )
-text = ">"
+[node name="CenterContainer6" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 305.0
+margin_right = 652.0
+margin_bottom = 354.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer6"]
+margin_left = 231.0
+margin_right = 421.0
+margin_bottom = 49.0
+custom_constants/separation = 3
+
+[node name="PlayButton" type="TextureButton" parent="CenterContainer/VBoxContainer/CenterContainer6/HBoxContainer"]
+margin_right = 190.0
+margin_bottom = 49.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer6/HBoxContainer/PlayButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 10 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Play!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="medievalEnvironment_03" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 800, 162 )
+texture = ExtResource( 17 )
+
+[node name="medievalEnvironment_04" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 816, 173 )
+texture = ExtResource( 17 )
+
+[node name="medievalEnvironment_08" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 779, 196 )
+texture = ExtResource( 20 )
+
+[node name="medievalEnvironment_01" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 215, 418 )
+texture = ExtResource( 19 )
+
+[node name="medievalEnvironment_02" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 232, 405 )
+texture = ExtResource( 19 )
+
+[node name="medievalEnvironment_07" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 232, 443 )
+texture = ExtResource( 16 )
+
+[node name="medievalStructure_11" type="Sprite" parent="."]
+position = Vector2( 801, 475 )
+texture = ExtResource( 18 )
+
+[node name="medievalStructure_10" type="Sprite" parent="."]
+position = Vector2( 801, 411 )
+texture = ExtResource( 14 )
+
+[node name="medievalTile_04" type="Sprite" parent="."]
+position = Vector2( 855, 459 )
+texture = ExtResource( 15 )
+
+[node name="medievalTile_46" type="Sprite" parent="."]
+position = Vector2( 207.003, 194.054 )
+texture = ExtResource( 21 )
+
+[node name="medievalTile_51" type="Sprite" parent="."]
+position = Vector2( 290.248, 443.787 )
+texture = ExtResource( 22 )
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer/UpgradeInf" to="." method="_on_UpgradeInf_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer/UpgradeNav" to="." method="_on_UpgradeNav_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer/UpgradeArt" to="." method="_on_UpgradeArt_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer5/HBoxContainer/DifficultyButton" to="." method="_on_DifficultyButton_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer6/HBoxContainer/PlayButton" to="." method="_on_PlayButton_pressed"]
