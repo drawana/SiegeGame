@@ -5,10 +5,14 @@ var navalDone = false
 var artilleryDone = false
 onready var redAnimation = $RedAnimation
 onready var greenAnimation = $GreenAnimation
+var difficulty = "Easy"
 
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
+	
+func setDifficulty(param):
+	difficulty = param
 	
 func infantryGet():
 	return infantryDone
@@ -61,7 +65,14 @@ func _on_Button_Pressed():
 		var PointsCounterEnemy = get_node("../PointsCounterEnemy")
 		get_node("../PointsCounterEnemy").set_text(str(int(PointsCounterEnemy.get_text()) + 5))
 		
-		
+		var multiplier = 1
+		if difficulty == "Easy":
+			multiplier = 1
+		elif difficulty == "Medium":
+			multiplier = 2
+		elif difficulty == "Hard":
+			multiplier = 3
+			
 		
 		#var points3 = get_node("../MyHealthBar")
 		
