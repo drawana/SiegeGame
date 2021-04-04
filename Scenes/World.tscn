@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=2]
+[gd_scene load_steps=94 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
@@ -50,6 +50,10 @@
 [ext_resource path="res://scripts/InfantryLevelDisplayEnemy.gd" type="Script" id=48]
 [ext_resource path="res://scripts/ArtilleryLevelDisplayEnemy.gd" type="Script" id=49]
 [ext_resource path="res://scripts/NavalLevelDisplayEnemy.gd" type="Script" id=50]
+[ext_resource path="res://scripts/Restart.gd" type="Script" id=51]
+[ext_resource path="res://scripts/DefendNaval.gd" type="Script" id=52]
+[ext_resource path="res://scripts/DefendArtillery.gd" type="Script" id=53]
+[ext_resource path="res://scripts/DefendInfantry.gd" type="Script" id=54]
 
 [sub_resource type="Animation" id=36]
 length = 0.3
@@ -1072,10 +1076,10 @@ anims/Test = SubResource( 4 )
 [node name="Artillery" type="TextureButton" parent="GUI"]
 visible = false
 modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
-margin_left = 425.34
-margin_top = 311.705
-margin_right = 615.34
-margin_bottom = 356.705
+margin_left = 651.289
+margin_top = 308.137
+margin_right = 841.289
+margin_bottom = 353.137
 rect_pivot_offset = Vector2( 173.976, 22.5 )
 focus_neighbour_top = NodePath("../UpgradeButton")
 focus_neighbour_bottom = NodePath("../MenuButton")
@@ -1108,10 +1112,10 @@ anims/Test = SubResource( 6 )
 
 [node name="Naval" type="TextureButton" parent="GUI"]
 visible = false
-margin_left = 639.526
-margin_top = 311.705
-margin_right = 829.526
-margin_bottom = 356.705
+margin_left = 432.604
+margin_top = 310.516
+margin_right = 622.604
+margin_bottom = 355.516
 rect_pivot_offset = Vector2( 173.976, 22.5 )
 focus_neighbour_top = NodePath("../UpgradeButton")
 focus_neighbour_bottom = NodePath("../MenuButton")
@@ -1125,10 +1129,10 @@ __meta__ = {
 [node name="Label" type="Label" parent="GUI/Naval"]
 anchor_left = 0.00584602
 anchor_right = 0.00584602
-margin_left = 31.5147
-margin_top = 5.51984
-margin_right = 162.515
-margin_bottom = 44.5198
+margin_left = 44.8893
+margin_top = 6.0
+margin_right = 151.889
+margin_bottom = 45.0
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Naval 15"
@@ -1183,6 +1187,7 @@ focus_neighbour_top = NodePath("../UpgradeButton")
 focus_neighbour_bottom = NodePath("../MenuButton")
 texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 11 )
+script = ExtResource( 51 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1312,10 +1317,10 @@ __meta__ = {
 
 [node name="LabelArtillery" type="Label" parent="GUI"]
 visible = false
-margin_left = 478.77
-margin_top = 182.689
-margin_right = 537.77
-margin_bottom = 219.689
+margin_left = 695.206
+margin_top = 185.067
+margin_right = 754.206
+margin_bottom = 222.067
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Level"
@@ -1325,10 +1330,10 @@ __meta__ = {
 
 [node name="LabelNaval" type="Label" parent="GUI"]
 visible = false
-margin_left = 696.736
-margin_top = 178.909
-margin_right = 755.736
-margin_bottom = 215.909
+margin_left = 471.976
+margin_top = 186.044
+margin_right = 530.976
+margin_bottom = 223.044
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Level"
@@ -1351,10 +1356,10 @@ __meta__ = {
 
 [node name="ArtilleryLevel" type="Label" parent="GUI"]
 visible = false
-margin_left = 559.405
-margin_top = 185.208
-margin_right = 589.405
-margin_bottom = 222.208
+margin_left = 771.084
+margin_top = 184.019
+margin_right = 801.084
+margin_bottom = 221.019
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "1"
@@ -1364,10 +1369,10 @@ __meta__ = {
 
 [node name="NavalLevel" type="Label" parent="GUI"]
 visible = false
-margin_left = 773.592
-margin_top = 180.169
-margin_right = 803.592
-margin_bottom = 217.169
+margin_left = 553.589
+margin_top = 184.926
+margin_right = 583.589
+margin_bottom = 221.926
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "1"
@@ -1553,7 +1558,7 @@ focus_neighbour_top = NodePath("../NextRoundButton")
 focus_neighbour_bottom = NodePath("../UpgradeButton")
 texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 15 )
+script = ExtResource( 54 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1685,7 +1690,7 @@ focus_neighbour_top = NodePath("../NextRoundButton")
 focus_neighbour_bottom = NodePath("../UpgradeButton")
 texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 15 )
+script = ExtResource( 52 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1845,7 +1850,7 @@ focus_neighbour_top = NodePath("../NextRoundButton")
 focus_neighbour_bottom = NodePath("../UpgradeButton")
 texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 11 )
-script = ExtResource( 15 )
+script = ExtResource( 53 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -2070,10 +2075,10 @@ texture = ExtResource( 41 )
 
 [node name="InfantryImageEnemy" type="TextureButton" parent="GUI"]
 modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
-margin_left = 716.855
-margin_top = 219.15
-margin_right = 781.855
-margin_bottom = 285.15
+margin_left = 732.315
+margin_top = 235.799
+margin_right = 797.315
+margin_bottom = 301.799
 expand = true
 stretch_mode = 1
 __meta__ = {

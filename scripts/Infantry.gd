@@ -18,12 +18,6 @@ func _on_Button_Pressed():
 		get_node("../InfantryLevelDisplay").updateVal()
 		val2 = int(get_node("../PointsCounter").get_text()) 
 		
-		if int(get_node("../InfantryLevelDisplay").get_text()) != 0:
-			get_node("../InfantryImage").visible = true
-		
-		if int(get_node("../InfantryLevelDisplayEnemy").get_text()) != 0:
-			get_node("../InfantryImageEnemy").visible = true
-		
 		if (val2 >= 15):
 			var upgradeAvaliable = get_node("../UpgradeAvaliable2")
 			upgradeAvaliable.visible = true

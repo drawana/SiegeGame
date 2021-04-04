@@ -9,10 +9,22 @@ var difficulty = "Easy"
 var navalLevel = 0
 var artilleryLevel = 0
 var infantryLevel = 0
+var infantryDefend = false
+var artilleryDefend = false
+var navalDefend = false
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
 	setLevels()
+	
+func setInfantryDefend(param):
+	infantryDefend = param
+	
+func setArtilleryDefend(param):
+	artilleryDefend = param
+	
+func setNavalDefend(param):
+	navalDefend = param
 
 func setLevels():
 	randomize()
@@ -209,5 +221,9 @@ func _on_Button_Pressed():
 				upgrade.disabled = true
 				var nextRound = get_node("../NextRoundButton")
 				nextRound.disabled = true
+				
+			setInfantryDefend(false)
+			setNavalDefend(false)
+			setArtilleryDefend(false)
 		else:
 			redAnimation.play("Test")
