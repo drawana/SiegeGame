@@ -8,22 +8,16 @@ func _ready():
 
 	var artillery = get_node("../ArtilleryLevelDisplayEnemy")
 	artillery.set_text(str(NextRoundButton.artilleryLevel))
-	
-	print("artillery ", get_node("../ArtilleryLevelDisplayEnemy").get_text(), NextRoundButton.artilleryLevel)
-	
+
 	if NextRoundButton.artilleryLevel >= 1:
 		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").visible = true
-	if NextRoundButton.artilleryLevel >= 2:
-		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").visible = true
 	if NextRoundButton.artilleryLevel >= 3:
-		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").visible = true
+		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").visible = true
 
 	if NextRoundButton.usArtLevel >= 1:
-		get_node("../CANNON GROUP 2 AnimatedSprite1").visible = true
-	if NextRoundButton.usArtLevel >= 2:
-		get_node("../CANNON GROUP 2 AnimatedSprite2").visible = true
+		get_parent().get_parent().get_node("game2").get_node("CANNON GROUP 2 AnimatedSprite1").visible = true
 	if NextRoundButton.usArtLevel == 3:
-		get_parent().get_parent().get_node("game2").get_node("CANNON GROUP 2 AnimatedSprite3").visible = true
+		get_parent().get_parent().get_node("game2").get_node("CANNON GROUP 2 AnimatedSprite2").visible = true
 
 func _on_Button_Pressed():
 	if get_node("../NextRoundButton").artilleryGet() == false:

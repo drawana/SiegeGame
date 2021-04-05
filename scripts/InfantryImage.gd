@@ -9,8 +9,6 @@ func _ready():
 	var infantry = get_node("../InfantryLevelDisplayEnemy")
 	infantry.set_text(str(NextRoundButton.infantryLevel))
 	
-	print("Infantry ", get_node("../InfantryLevelDisplayEnemy").get_text(), NextRoundButton.infantryLevel)
-	
 	if NextRoundButton.infantryLevel >= 1:
 		get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").get_node("Sprite").visible = true
 	if NextRoundButton.infantryLevel >= 2:

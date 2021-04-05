@@ -135,6 +135,13 @@ func _on_Button_Pressed():
 	if NextRoundButton.disabled == true:
 		redAnimation.play("Test")
 	else:
+		if int(get_node("../InfantryLevelDisplay").get_text()) == 0:
+			infantryDone = true
+		if int(get_node("../NavalLevelDisplay").get_text()) == 0:
+			navalDone = true
+		if int(get_node("../ArtilleryLevelDisplay").get_text()) == 0:
+			artilleryDone = true
+			
 		if infantryDone == true and navalDone == true and artilleryDone == true:
 			setInfantryDefendEnemy(false)
 			setNavalDefendEnemy(false)

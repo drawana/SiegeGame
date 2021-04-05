@@ -15,7 +15,8 @@ func _on_Button_Pressed():
 		var val2 = int(points2.get_text()) 
 		points2.set_text(str(val2 + 1))
 		greenAnimation.play("Test")
-		get_node("../NavalLevelDisplay").updateVal()
+		var NavalLevelDisplay = get_node("../NavalLevelDisplay")
+		NavalLevelDisplay.set_text(str(val2 + 1))
 		val2 = int(get_node("../PointsCounter").get_text()) 
 		
 		if (val2 >= 15):
@@ -40,5 +41,13 @@ func _on_Button_Pressed():
 		var points3 = int(get_node("../NavalLevel").get_text())
 		if points3 >= 5:
 			get_node("../Naval").disabled = true
+			
+		if points3 >= 1:
+			get_parent().get_parent().get_node("game2").get_node("group 2 - ships").get_node("Sprite").visible = true
+		if points3 >= 3:
+			get_parent().get_parent().get_node("game2").get_node("group 2 - ships2").get_node("Sprite").visible = true
+		if points3 == 5:
+			get_parent().get_parent().get_node("game2").get_node("group 2 - ships3").get_node("Sprite").visible = true
+			
 	else:
 		redAnimation.play("Test")
