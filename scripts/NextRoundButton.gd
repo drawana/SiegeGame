@@ -9,6 +9,9 @@ var difficulty = "Easy"
 var navalLevel = 0
 var artilleryLevel = 0
 var infantryLevel = 0
+var usInfLevel = 0
+var usArtLevel = 0
+var usNavLevel = 0
 var infantryDefend = false
 var artilleryDefend = false
 var navalDefend = false
@@ -19,6 +22,7 @@ var navalDefendEnemy = false
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
 	setLevels()
+	#setLevelsPlayer(difficulty, usInfLevel, usNavLevel, usArtLevel)
 	
 func setInfantryDefend(param):
 	infantryDefend = param
@@ -108,9 +112,6 @@ func getInfantryLevel():
 
 func getDifficulty():
 	return difficulty
-
-func setDifficulty(param):
-	difficulty = param
 	
 func infantryGet():
 	return infantryDone

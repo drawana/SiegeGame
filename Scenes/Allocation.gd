@@ -5,7 +5,22 @@ onready var infLevel = 0
 onready var navLevel = 0
 onready var artLevel = 0
 onready var difficulty = "Easy"
-const next_scene = preload("res://Scenes/World.tscn")
+#var next_scene = preload("res://Scenes/World.tscn").instance()
+
+#func _ready():
+	#print('ready')
+
+func getDiff():
+	return difficulty
+
+func getInf():
+	return infLevel
+
+func getNav():
+	return navLevel
+	
+func getArt():
+	return artLevel
 
 func _on_UpgradeNav_pressed():
 	if points >= 1:
@@ -44,5 +59,15 @@ func _on_DifficultyButton_pressed():
 
 func _on_PlayButton_pressed():
 	if points < 1:
-		get_parent().add_child(next_scene.instance())
-		queue_free()
+		#get_tree().get_root().add_child(next_scene)
+		#get_parent().add_child(next_scene)
+		#next_scene.startDifficulty(difficulty, infLevel, navLevel, artLevel)
+		#get_tree().change_scene("res://Scenes/World.tscn")
+		NextRoundButton.difficulty = difficulty
+		NextRoundButton.usInfLevel = infLevel
+		print(navLevel)
+		NextRoundButton.usNavLevel = navLevel
+		print(NextRoundButton.usNavLevel)
+		NextRoundButton.usArtLevel = artLevel
+		get_tree().change_scene("res://Scenes/World.tscn")
+		#queue_free()

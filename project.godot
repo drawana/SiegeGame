@@ -19,6 +19,10 @@ config/name="SiegeOfConstantinople"
 run/main_scene="res://Scenes/TitleMenu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+NextRoundButton="*res://scripts/NextRoundButton.gd"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

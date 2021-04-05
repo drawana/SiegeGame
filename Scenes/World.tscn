@@ -700,224 +700,6 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=40]
-resource_name = "DEFEND GO LEVEL 5"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.2, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 733.807, 147.454 ), Vector2( 792.669, 407.411 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 776.948, 150.676 ), Vector2( 764.951, 279 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.2, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 821.804, 149.767 ), Vector2( 797.432, 296.5 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0.1, 1.6, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 768.72, 195.487 ), Vector2( 787.688, 326 ), Vector2( 785.453, 345.198 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0.3, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 810.67, 195.571 ), Vector2( 752.954, 368 ) ]
-}
-
-[sub_resource type="Animation" id=41]
-resource_name = "DEFEND RETURN LEVEL 5"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1.6 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 792.669, 407.411 ), Vector2( 748.248, 160 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.1, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 752.954, 368 ), Vector2( 812.592, 200.939 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.2, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 785.453, 345.198 ), Vector2( 790.497, 160 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0.1, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 797.432, 296.5 ), Vector2( 770.846, 200.447 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0.4, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 764.951, 279 ), Vector2( 828.191, 160 ) ]
-}
-
-[sub_resource type="Animation" id=42]
-length = 7.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.1, 3.5, 4.1, 6.7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 735.089, 146.676 ), Vector2( 218.973, 460 ), Vector2( 218.973, 460 ), Vector2( 741.4, 151 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.1, 3.5, 4.1, 6.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 778.31, 149.767 ), Vector2( 230.234, 515.806 ), Vector2( 230.234, 515.806 ), Vector2( 779.76, 150.968 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0, 3.5, 4.1, 7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 821.804, 149.767 ), Vector2( 206, 555.765 ), Vector2( 206, 555.765 ), Vector2( 813.146, 150.381 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 3.6, 4.1, 6.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 768.72, 195.487 ), Vector2( 265.285, 539.157 ), Vector2( 265.285, 539.157 ), Vector2( 757.4, 191.146 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0.1, 3.3, 4.1, 7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 812.113, 194.837 ), Vector2( 265.285, 473 ), Vector2( 265.285, 473 ), Vector2( 805.157, 190 ) ]
-}
-
-[sub_resource type="Animation" id=43]
-length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 6.36359, -2.90063 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0.0 ]
-}
-
 [sub_resource type="Animation" id=44]
 resource_name = "DEFEND GO LEVEL 1"
 length = 2.0
@@ -1410,6 +1192,224 @@ tracks/3/keys = {
 "values": [ Vector2( 768.72, 195.487 ), Vector2( 251.804, 537.215 ), Vector2( 250.131, 537.215 ), Vector2( 245.837, 539.693 ), Vector2( 243.722, 539.693 ), Vector2( 244.097, 537.215 ), Vector2( 251.17, 536.545 ), Vector2( 243.611, 539.209 ), Vector2( 244.801, 538.373 ), Vector2( 245.992, 542.203 ), Vector2( 247.183, 538.034 ), Vector2( 244.374, 538.865 ), Vector2( 764.711, 196.872 ) ]
 }
 
+[sub_resource type="Animation" id=40]
+resource_name = "DEFEND GO LEVEL 5"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 733.807, 147.454 ), Vector2( 792.669, 407.411 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 776.948, 150.676 ), Vector2( 764.951, 279 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 821.804, 149.767 ), Vector2( 797.432, 296.5 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 1.6, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 768.72, 195.487 ), Vector2( 787.688, 326 ), Vector2( 785.453, 345.198 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.3, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 810.67, 195.571 ), Vector2( 752.954, 368 ) ]
+}
+
+[sub_resource type="Animation" id=41]
+resource_name = "DEFEND RETURN LEVEL 5"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 792.669, 407.411 ), Vector2( 748.248, 160 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 752.954, 368 ), Vector2( 812.592, 200.939 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 785.453, 345.198 ), Vector2( 790.497, 160 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 797.432, 296.5 ), Vector2( 770.846, 200.447 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.4, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 764.951, 279 ), Vector2( 828.191, 160 ) ]
+}
+
+[sub_resource type="Animation" id=42]
+length = 7.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 3.5, 4.1, 6.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 735.089, 146.676 ), Vector2( 218.973, 460 ), Vector2( 218.973, 460 ), Vector2( 741.4, 151 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 3.5, 4.1, 6.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 778.31, 149.767 ), Vector2( 230.234, 515.806 ), Vector2( 230.234, 515.806 ), Vector2( 779.76, 150.968 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3.5, 4.1, 7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 821.804, 149.767 ), Vector2( 206, 555.765 ), Vector2( 206, 555.765 ), Vector2( 813.146, 150.381 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3.6, 4.1, 6.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 768.72, 195.487 ), Vector2( 265.285, 539.157 ), Vector2( 265.285, 539.157 ), Vector2( 757.4, 191.146 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1, 3.3, 4.1, 7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 812.113, 194.837 ), Vector2( 265.285, 473 ), Vector2( 265.285, 473 ), Vector2( 805.157, 190 ) ]
+}
+
+[sub_resource type="Animation" id=43]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 6.36359, -2.90063 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
 [sub_resource type="AtlasTexture" id=59]
 region = Rect2( 0, 0, 256, 256 )
 
@@ -1578,197 +1578,6 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 281.107, 515.806 ), Vector2( 768.44, 298.5 ), Vector2( 770.404, 300.998 ), Vector2( 767.91, 299.582 ), Vector2( 771.064, 297.372 ), Vector2( 770.672, 300.404 ), Vector2( 771.812, 303.53 ), Vector2( 770.403, 302.752 ), Vector2( 263.133, 496.432 ) ]
-}
-
-[sub_resource type="Animation" id=75]
-resource_name = "DEFEND LEVEL 5"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.1, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 278.51, 515.806 ), Vector2( 223.41, 460 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 362.549, 564 ), Vector2( 154.284, 436.429 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.1, 1.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 296.101, 563.331 ), Vector2( 244.505, 541.976 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 379.694, 518.958 ), Vector2( 259.499, 491.434 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0.3, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 329.794, 514.691 ), Vector2( 191.95, 425.94 ) ]
-}
-
-[sub_resource type="Animation" id=76]
-resource_name = "DEFEND RETURN LEVEL 5"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.1, 1.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 223.41, 460 ), Vector2( 285.721, 512.169 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 191.95, 425.94 ), Vector2( 332.042, 511.291 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.2, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 154.284, 436.429 ), Vector2( 376.783, 512.169 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0.1, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 244.505, 541.976 ), Vector2( 360.594, 559.289 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0, 1.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 259.499, 491.434 ), Vector2( 309.045, 555.808 ) ]
-}
-
-[sub_resource type="Animation" id=77]
-length = 6.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 2.9, 3.4, 5.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 278.51, 515.806 ), Vector2( 778.758, 326 ), Vector2( 778.758, 326 ), Vector2( 258.845, 503 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 2.9, 3.4, 6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 329.794, 514.691 ), Vector2( 772.821, 379 ), Vector2( 772.821, 379 ), Vector2( 279.94, 536.322 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0, 2.9, 3.4, 6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 379.694, 518.958 ), Vector2( 743.4, 294.5 ), Vector2( 743.4, 294.5 ), Vector2( 344.85, 499.584 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 2.9, 3.4, 5.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 296.101, 563.331 ), Vector2( 723.344, 337.42 ), Vector2( 723.344, 337.42 ), Vector2( 319.695, 542.571 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0, 2.9, 3.4, 5.7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 362.549, 564 ), Vector2( 813.289, 428 ), Vector2( 813.289, 428 ), Vector2( 303.4, 502 ) ]
 }
 
 [sub_resource type="Animation" id=78]
@@ -2319,6 +2128,197 @@ tracks/2/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 196.046, 319.543 ), Vector2( 855.975, 294 ) ]
+}
+
+[sub_resource type="Animation" id=75]
+resource_name = "DEFEND LEVEL 5"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 278.51, 515.806 ), Vector2( 223.41, 460 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 362.549, 564 ), Vector2( 154.284, 436.429 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 296.101, 563.331 ), Vector2( 244.505, 541.976 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 379.694, 518.958 ), Vector2( 259.499, 491.434 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.3, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 329.794, 514.691 ), Vector2( 191.95, 425.94 ) ]
+}
+
+[sub_resource type="Animation" id=76]
+resource_name = "DEFEND RETURN LEVEL 5"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 223.41, 460 ), Vector2( 285.721, 512.169 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 191.95, 425.94 ), Vector2( 332.042, 511.291 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 154.284, 436.429 ), Vector2( 376.783, 512.169 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 244.505, 541.976 ), Vector2( 360.594, 559.289 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 259.499, 491.434 ), Vector2( 309.045, 555.808 ) ]
+}
+
+[sub_resource type="Animation" id=77]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 5.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 278.51, 515.806 ), Vector2( 778.758, 326 ), Vector2( 778.758, 326 ), Vector2( 258.845, 503 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 329.794, 514.691 ), Vector2( 772.821, 379 ), Vector2( 772.821, 379 ), Vector2( 279.94, 536.322 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 379.694, 518.958 ), Vector2( 743.4, 294.5 ), Vector2( 743.4, 294.5 ), Vector2( 344.85, 499.584 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 5.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 296.101, 563.331 ), Vector2( 723.344, 337.42 ), Vector2( 723.344, 337.42 ), Vector2( 319.695, 542.571 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 5.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 362.549, 564 ), Vector2( 813.289, 428 ), Vector2( 813.289, 428 ), Vector2( 303.4, 502 ) ]
 }
 
 [sub_resource type="AtlasTexture" id=94]
@@ -3691,37 +3691,6 @@ texture = ExtResource( 70 )
 region_enabled = true
 region_rect = Rect2( 142.183, 105.09, 148.457, 140.494 )
 
-[node name="LEVEL 5 - AnimationPlayer - Group1 - 1" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 5" = SubResource( 40 )
-"anims/DEFEND RETURN LEVEL 5" = SubResource( 41 )
-anims/group1_walking = SubResource( 42 )
-"anims/swords - group1" = SubResource( 43 )
-
-[node name="Sprite2" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1"]
-position = Vector2( 733.807, 147.454 )
-scale = Vector2( 2.30063, 2.70535 )
-texture = ExtResource( 69 )
-region_enabled = true
-region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
-
-[node name="shiirt" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2"]
-position = Vector2( -0.0936279, 1.84186 )
-texture = ExtResource( 69 )
-region_enabled = true
-region_rect = Rect2( 153.283, 88.8639, 17.3223, 11.9681 )
-
-[node name="hair" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2"]
-position = Vector2( -0.105103, -3.04825 )
-texture = ExtResource( 69 )
-region_enabled = true
-region_rect = Rect2( 445.622, 67.0724, 10.7131, 12.7867 )
-
-[node name="shield" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2"]
-position = Vector2( 3.36359, 4.09937 )
-texture = ExtResource( 69 )
-region_enabled = true
-region_rect = Rect2( 651.914, 138.304, 13.5917, 15.0611 )
-
 [node name="LEVEL 1 - AnimationPlayer - Group1 - 2" type="AnimationPlayer" parent="game2"]
 "anims/DEFEND GO LEVEL 1" = SubResource( 44 )
 "anims/DEFEND RETURN LEVEL 1" = SubResource( 45 )
@@ -3731,6 +3700,7 @@ region_rect = Rect2( 651.914, 138.304, 13.5917, 15.0611 )
 "anims/group 1 attack " = SubResource( 49 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 1 - AnimationPlayer - Group1 - 2"]
+visible = false
 position = Vector2( 776.948, 150.676 )
 scale = Vector2( 1.96508, 2.61567 )
 texture = ExtResource( 69 )
@@ -3760,7 +3730,8 @@ region_rect = Rect2( 799.54, 154.537, 10.8012, 11.9382 )
 "anims/group 1 attack" = SubResource( 52 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 2 - AnimationPlayer - Group1 - 3"]
-position = Vector2( 821.804, 149.767 )
+visible = false
+position = Vector2( 820.466, 150.575 )
 scale = Vector2( 1.89502, 2.61567 )
 texture = ExtResource( 69 )
 region_enabled = true
@@ -3789,6 +3760,7 @@ region_rect = Rect2( 781.812, 101.371, 7.73096, 15.044 )
 "anims/group 1 attack" = SubResource( 55 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 3 - AnimationPlayer - Group1 - 4"]
+visible = false
 position = Vector2( 768.72, 195.487 )
 scale = Vector2( 2.05083, 2.74256 )
 texture = ExtResource( 69 )
@@ -3819,6 +3791,7 @@ region_rect = Rect2( 864.632, 151.978, 12.791, 19.6128 )
 "anims/group 1 attack" = SubResource( 58 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 4 - AnimationPlayer - Group1 - 5"]
+visible = false
 position = Vector2( 810.016, 195.935 )
 scale = Vector2( 1.83519, 2.81902 )
 texture = ExtResource( 69 )
@@ -3843,9 +3816,42 @@ texture = ExtResource( 69 )
 region_enabled = true
 region_rect = Rect2( 651.892, 123.638, 12.1748, 13.6629 )
 
+[node name="LEVEL 5 - AnimationPlayer - Group1 - 1" type="AnimationPlayer" parent="game2"]
+"anims/DEFEND GO LEVEL 5" = SubResource( 40 )
+"anims/DEFEND RETURN LEVEL 5" = SubResource( 41 )
+anims/group1_walking = SubResource( 42 )
+"anims/swords - group1" = SubResource( 43 )
+
+[node name="Sprite2" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1"]
+visible = false
+position = Vector2( 733.807, 147.454 )
+scale = Vector2( 2.30063, 2.70535 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
+
+[node name="shiirt" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2"]
+position = Vector2( -0.0936279, 1.84186 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 153.283, 88.8639, 17.3223, 11.9681 )
+
+[node name="hair" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2"]
+position = Vector2( -0.105103, -3.04825 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 445.622, 67.0724, 10.7131, 12.7867 )
+
+[node name="shield" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2"]
+position = Vector2( 3.36359, 4.09937 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 651.914, 138.304, 13.5917, 15.0611 )
+
 [node name="group 1 - ships4" type="Node" parent="game2"]
 
 [node name="Sprite" type="Sprite" parent="game2/group 1 - ships4"]
+visible = false
 position = Vector2( 660, 41.894 )
 rotation = -0.523598
 scale = Vector2( 4.15999, 4.46278 )
@@ -3856,6 +3862,7 @@ region_rect = Rect2( 63.1245, 16.2779, 19.0261, 14.0193 )
 [node name="group 1 - ships5" type="Node" parent="game2"]
 
 [node name="Sprite" type="Sprite" parent="game2/group 1 - ships5"]
+visible = false
 position = Vector2( 744.4, 51.0662 )
 scale = Vector2( 4.15999, 4.46278 )
 texture = ExtResource( 73 )
@@ -3865,6 +3872,7 @@ region_rect = Rect2( 61.5095, 31.3713, 17.1144, 19.8748 )
 [node name="group 1 - ships6" type="Node" parent="game2"]
 
 [node name="Sprite" type="Sprite" parent="game2/group 1 - ships6"]
+visible = false
 position = Vector2( 820.544, 60.0747 )
 rotation = -0.523598
 scale = Vector2( 4.15999, 4.46278 )
@@ -3879,7 +3887,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 16
+frame = 29
 speed_scale = 0.9
 playing = true
 
@@ -3890,7 +3898,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 16
+frame = 29
 speed_scale = 0.9
 playing = true
 
@@ -3901,7 +3909,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 15
+frame = 28
 speed_scale = 0.9
 playing = true
 
@@ -3911,7 +3919,8 @@ playing = true
 anims/group2_walking = SubResource( 71 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1"]
-position = Vector2( 263.133, 496.432 )
+visible = false
+position = Vector2( 281.336, 515.282 )
 scale = Vector2( 2.34389, 2.74724 )
 texture = ExtResource( 69 )
 region_enabled = true
@@ -3940,6 +3949,7 @@ region_rect = Rect2( 799.255, 119.431, 9.34363, 12.8475 )
 anims/group2_walking = SubResource( 74 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 2 - AnimationPlayer - Group2 - 2"]
+visible = false
 position = Vector2( 334.319, 515.67 )
 scale = Vector2( 2.1064, 2.72289 )
 texture = ExtResource( 69 )
@@ -3964,48 +3974,13 @@ texture = ExtResource( 69 )
 region_enabled = true
 region_rect = Rect2( 689.389, 54.0257, 8.17566, 14.0155 )
 
-[node name="PPL LEVEL 5 - AnimationPlayer - Group2 - 3" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND LEVEL 5" = SubResource( 75 )
-"anims/DEFEND RETURN LEVEL 5" = SubResource( 76 )
-anims/group2_walking = SubResource( 77 )
-
-[node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3"]
-position = Vector2( 379.694, 518.958 )
-scale = Vector2( 2.0171, 2.70799 )
-texture = ExtResource( 69 )
-region_enabled = true
-region_rect = Rect2( -0.947884, 16.7399, 17.0448, 17.9917 )
-
-[node name="shirt" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
-position = Vector2( 0.619843, 1.83282 )
-texture = ExtResource( 69 )
-region_enabled = true
-region_rect = Rect2( 272.936, 89.3564, 16.3514, 11.3876 )
-
-[node name="hair" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
-position = Vector2( 0.465118, -5.66406 )
-texture = ExtResource( 69 )
-region_enabled = true
-region_rect = Rect2( 359.26, 99.6346, 13.5561, 9.89185 )
-
-[node name="weapon" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
-position = Vector2( 8, -3.66718 )
-texture = ExtResource( 69 )
-region_enabled = true
-region_rect = Rect2( 746.725, 151.016, 10.2634, 17.7529 )
-
-[node name="pants" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
-position = Vector2( 0.0299072, 4.15689 )
-texture = ExtResource( 69 )
-region_enabled = true
-region_rect = Rect2( 53.0277, 44.1381, 13.1206, 7.30767 )
-
 [node name="PPL LEVEL 3 - AnimationPlayer - Group2 - 4" type="AnimationPlayer" parent="game2"]
 "anims/DEFEND GO LEVEL 3" = SubResource( 78 )
 "anims/DEFEND RETURN LEVEL 3" = SubResource( 79 )
 "anims/group 2 attach" = SubResource( 80 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 3 - AnimationPlayer - Group2 - 4"]
+visible = false
 position = Vector2( 296.101, 563.331 )
 scale = Vector2( 1.99923, 2.7061 )
 texture = ExtResource( 69 )
@@ -4052,7 +4027,8 @@ anims/group2_walking = SubResource( 92 )
 "anims/ship LEVEL 5 - group 2" = SubResource( 93 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 4 - AnimationPlayer - Group2 - 5"]
-position = Vector2( 355.071, 560.869 )
+visible = false
+position = Vector2( 362.549, 564 )
 scale = Vector2( 2.03693, 2.65476 )
 texture = ExtResource( 69 )
 region_enabled = true
@@ -4082,9 +4058,47 @@ texture = ExtResource( 69 )
 region_enabled = true
 region_rect = Rect2( 53.7681, 146.72, 12.0396, 7.03436 )
 
+[node name="PPL LEVEL 5 - AnimationPlayer - Group2 - 3" type="AnimationPlayer" parent="game2"]
+"anims/DEFEND LEVEL 5" = SubResource( 75 )
+"anims/DEFEND RETURN LEVEL 5" = SubResource( 76 )
+anims/group2_walking = SubResource( 77 )
+
+[node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3"]
+visible = false
+position = Vector2( 379.694, 518.958 )
+scale = Vector2( 2.0171, 2.70799 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( -0.947884, 16.7399, 17.0448, 17.9917 )
+
+[node name="shirt" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 0.619843, 1.83282 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 272.936, 89.3564, 16.3514, 11.3876 )
+
+[node name="hair" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 0.465118, -5.66406 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 359.26, 99.6346, 13.5561, 9.89185 )
+
+[node name="weapon" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 8, -3.66718 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 746.725, 151.016, 10.2634, 17.7529 )
+
+[node name="pants" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 0.0299072, 4.15689 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 53.0277, 44.1381, 13.1206, 7.30767 )
+
 [node name="group 2 - ships" type="Node" parent="game2"]
 
 [node name="Sprite" type="Sprite" parent="game2/group 2 - ships"]
+visible = false
 position = Vector2( 48.1084, 264.956 )
 rotation = 0.523598
 scale = Vector2( 4.15999, 4.46278 )
@@ -4095,6 +4109,7 @@ region_rect = Rect2( 33.5557, 15.5489, 17.2737, 12.7675 )
 [node name="group 2 - ships2" type="Node" parent="game2"]
 
 [node name="Sprite" type="Sprite" parent="game2/group 2 - ships2"]
+visible = false
 position = Vector2( 165.029, 234.485 )
 rotation = 0.261799
 scale = Vector2( 4.15999, 4.46278 )
@@ -4105,6 +4120,7 @@ region_rect = Rect2( 93.388, 15.7992, 20.2779, 15.0206 )
 [node name="group 2 - ships3" type="Node" parent="game2"]
 
 [node name="Sprite" type="Sprite" parent="game2/group 2 - ships3"]
+visible = false
 position = Vector2( 138.861, 299.865 )
 rotation = -1.0472
 scale = Vector2( 4.15999, 4.46278 )
@@ -4119,7 +4135,7 @@ rotation = 0.0493656
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 16
+frame = 29
 speed_scale = 0.9
 playing = true
 
@@ -4130,7 +4146,7 @@ rotation = 0.0995313
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 16
+frame = 29
 speed_scale = 0.9
 playing = true
 
@@ -4141,11 +4157,12 @@ rotation = 0.153884
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 15
+frame = 28
 speed_scale = 0.9
 playing = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="game2"]
+visible = false
 position = Vector2( 772.822, 529.144 )
 frames = SubResource( 100 )
 
@@ -4160,6 +4177,7 @@ frame = 8
 speed_scale = 0.9
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="game2"]
+visible = false
 position = Vector2( 782.778, 467.819 )
 frames = SubResource( 100 )
 
@@ -4174,6 +4192,7 @@ frame = 6
 speed_scale = 0.9
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="game2"]
+visible = false
 position = Vector2( 807.134, 442.605 )
 frames = SubResource( 100 )
 
@@ -4188,6 +4207,7 @@ frame = 17
 speed_scale = 0.9
 
 [node name="CANNON GROUP 2 AnimatedSprite1" type="AnimatedSprite" parent="game2"]
+visible = false
 position = Vector2( 223.997, 404 )
 frames = SubResource( 107 )
 frame = 4
@@ -4203,6 +4223,7 @@ frame = 24
 speed_scale = 0.9
 
 [node name="CANNON GROUP 2 AnimatedSprite2" type="AnimatedSprite" parent="game2"]
+visible = false
 position = Vector2( 273.68, 436 )
 frames = SubResource( 107 )
 frame = 1
@@ -4218,6 +4239,7 @@ frame = 16
 speed_scale = 0.9
 
 [node name="CANNON GROUP 2 AnimatedSprite3" type="AnimatedSprite" parent="game2"]
+visible = false
 position = Vector2( 302.658, 384.952 )
 frames = SubResource( 107 )
 

@@ -5,6 +5,7 @@ onready var greenAnimation = $GreenAnimation
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
+	
 	if int(get_node("../NavalLevelDisplay").get_text()) == 0:
 		get_node("../NavalImage").visible = false
 	if int(get_node("../NavalLevelDisplayEnemy").get_text()) == 0:
