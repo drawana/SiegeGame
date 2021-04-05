@@ -18,13 +18,10 @@ var navalDefend = false
 var infantryDefendEnemy = false
 var artilleryDefendEnemy = false
 var navalDefendEnemy = false
-var test = false
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
-	if test == false:
-		setLevels()
-		test = true
+	setLevels()
 	
 	#setLevelsPlayer(difficulty, usInfLevel, usNavLevel, usArtLevel)
 	
