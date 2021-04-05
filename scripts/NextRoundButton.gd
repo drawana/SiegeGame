@@ -160,6 +160,21 @@ func _on_Button_Pressed():
 		elif enemyInfLevel == 5:
 			get_parent().get_parent().get_node("game2").get_node("LEVEL 5 - AnimationPlayer - Group1 - 1").play("DEFEND RETURN LEVEL 5")
 		
+		var enemyArtLevel = int(get_node("../ArtilleryLevelDisplayEnemy").get_text())
+		if enemyArtLevel == 1 or enemyArtLevel == 2:
+			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND RETURN level 1+2")
+		if enemyArtLevel == 3 or enemyArtLevel == 4:
+			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND RETURN Level 3+4")
+		if enemyArtLevel >= 5:
+			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND RETURN Level 5")
+		
+		var enemyNavalLevel = int(get_node("../NavalLevelDisplayEnemy").get_text())
+		if enemyNavalLevel == 1 or enemyNavalLevel == 2:
+			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND RETURN level 1+2")
+		if enemyNavalLevel == 3 or enemyNavalLevel == 4:
+			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND RETURN level 3+4")
+		if enemyNavalLevel >= 5:
+			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND RETURN level 5")
 		
 		
 		if int(get_node("../InfantryLevelDisplay").get_text()) == 0:
@@ -349,7 +364,13 @@ func _on_Button_Pressed():
 					if pointsToDecreaseBy2 > 0:
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy2)
 				else:
-					print("Naval Defend")
+					if level2 == 1 or level2 == 2:
+						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND GO level 1+2")
+					if level2 == 3 or level2 == 4:
+						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND GO level 3+4")
+					if level2 >= 5:
+						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND GO level 5")
+					
 					setNavalDefendEnemy(true)
 			
 			if level3 > 0:
@@ -391,7 +412,13 @@ func _on_Button_Pressed():
 					if pointsToDecreaseBy3 > 0:
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
 				else:
-					print("Artillery Defend")
+					if level3 == 1 or level3 == 2:
+						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND GO level 1+2")
+					if level3 == 3 or level3 == 4:
+						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND GO Level 3+4")
+					if level3 >= 5:
+						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND GO Level 5")
+					
 					setArtilleryDefendEnemy(true)
 				
 			if get_node("../TheirHealthBar").value <= 0:
@@ -409,20 +436,42 @@ func _on_Button_Pressed():
 				
 				
 			if infantryDefend == true:
-				var levelsInfantry = get_node("../InfantryLevelDisplay").getVal()
-				if levelsInfantry == 1:
+				var levelsInfantryNew = get_node("../InfantryLevelDisplay").getVal()
+				if levelsInfantryNew == 1:
 					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1").play("DEFEND RETURN LEVEL 1")
-				elif levelsInfantry == 2:
+				elif levelsInfantryNew == 2:
 					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 2 - AnimationPlayer - Group2 - 2").play("DEFEND RETURN LEVEL 2")
-				elif levelsInfantry == 3:
+				elif levelsInfantryNew == 3:
 					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 3 - AnimationPlayer - Group2 - 4").play("DEFEND RETURN LEVEL 3")
-				elif levelsInfantry == 4:
+				elif levelsInfantryNew == 4:
 					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 4 - AnimationPlayer - Group2 - 5").play("DEFEND RETURN LEVEL 4")
-				elif levelsInfantry == 5:
+				elif levelsInfantryNew == 5:
 					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 5 - AnimationPlayer - Group2 - 3").play("DEFEND RETURN LEVEL 5")
 				
 				yield(get_tree().create_timer(2), "timeout")
 				
+			if navalDefend == true:
+				var navalLevelNew = int(get_node("../NavalLevelDisplay").get_text())
+				if navalLevelNew == 1 or navalLevelNew == 2:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("GR2 Ships DEFEND RETURN Level 1+2")
+				if navalLevelNew == 3 or navalLevelNew == 4:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("GR2 Ships RETURN GO Level 3+4")
+				if navalLevelNew >= 5:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("GR2 Ships DEFEND RETURN Level 5")
+				yield(get_tree().create_timer(1), "timeout")
+				
+			if artilleryDefend == true:
+				var artilleryLevelNew = int(get_node("../ArtilleryLevelDisplay").get_text())
+				if artilleryLevelNew == 1 or artilleryLevelNew == 2:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("GR2 Cannonss DEFEND RETURN Level 1+2")
+				if artilleryLevelNew == 3 or artilleryLevelNew == 4:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("GR2 Cannonss DEFEND RETURN Level 5")
+				if artilleryLevelNew >= 5:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("GR2 Cannonss DEFEND RETURN Level 5")
+				
+				yield(get_tree().create_timer(1), "timeout")
+				
+			
 			setInfantryDefend(false)
 			setNavalDefend(false)
 			setArtilleryDefend(false)
