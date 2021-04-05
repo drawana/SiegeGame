@@ -16,3 +16,6 @@ func _on_Button_Pressed():
 	CancelArtillery.visible = false
 	
 	get_node("../NextRoundButton").artillerySet()
+	
+	var level = get_node("../ArtilleryLevelDisplay").getVal()
+	

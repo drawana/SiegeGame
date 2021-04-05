@@ -3883,7 +3883,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 9
+frame = 16
 speed_scale = 0.9
 playing = true
 
@@ -3894,7 +3894,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 9
+frame = 16
 speed_scale = 0.9
 playing = true
 
@@ -3905,7 +3905,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 8
+frame = 15
 speed_scale = 0.9
 playing = true
 
@@ -3916,7 +3916,7 @@ anims/group2_walking = SubResource( 71 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1"]
 visible = false
-position = Vector2( 315.171, 495.441 )
+position = Vector2( 263.133, 496.432 )
 scale = Vector2( 2.34389, 2.74724 )
 texture = ExtResource( 69 )
 region_enabled = true
@@ -3946,7 +3946,7 @@ anims/group2_walking = SubResource( 74 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 2 - AnimationPlayer - Group2 - 2"]
 visible = false
-position = Vector2( 369.413, 506.142 )
+position = Vector2( 334.319, 515.67 )
 scale = Vector2( 2.1064, 2.72289 )
 texture = ExtResource( 69 )
 region_enabled = true
@@ -4131,7 +4131,7 @@ rotation = 0.0493656
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 9
+frame = 16
 speed_scale = 0.9
 playing = true
 
@@ -4142,7 +4142,7 @@ rotation = 0.0995313
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 9
+frame = 16
 speed_scale = 0.9
 playing = true
 
@@ -4153,7 +4153,7 @@ rotation = 0.153884
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 8
+frame = 15
 speed_scale = 0.9
 playing = true
 
