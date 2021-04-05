@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@sniperdallas122 
+drawana
+/
+SiegeGame
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+SiegeGame/Scenes/Game.tscn
+@smarevci
+smarevci change world filename
+Latest commit f753974 33 minutes ago
+ History
+ 1 contributor
+840 lines (724 sloc)  28.8 KB
+  
 [gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
@@ -8,7 +38,6 @@
 [ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/GUI.gd" type="Script" id=8]
-[ext_resource path="res://Scenes/World.gd" type="Script" id=9]
 [ext_resource path="res://Scenes/MyGame.gd" type="Script" id=9]
 [ext_resource path="res://Fonts/smallCardinal.tres" type="DynamicFont" id=10]
 [ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=11]
@@ -839,3 +868,15 @@ region_rect = Rect2( 53.7681, 146.72, 12.0396, 7.03436 )
 [connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
 
 [editable path="GUI/Menu"]
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
