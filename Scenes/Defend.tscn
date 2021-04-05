@@ -1,0 +1,4924 @@
+[gd_scene load_steps=221 format=2]
+
+[ext_resource path="res://Sprites/Tile/medievalTile_27.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Tile/medievalTile_57.png" type="Texture" id=2]
+[ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=3]
+[ext_resource path="res://scripts/NextRoundButton.gd" type="Script" id=4]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00003.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00010.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00013.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00027.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00026.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00016.png" type="Texture" id=10]
+[ext_resource path="res://scripts/Artillery.gd" type="Script" id=11]
+[ext_resource path="res://Scenes/GAME2.gd" type="Script" id=12]
+[ext_resource path="res://Scenes/GUI.gd" type="Script" id=13]
+[ext_resource path="res://scripts/InfantryImage.gd" type="Script" id=14]
+[ext_resource path="res://scripts/ArtilleryImage.gd" type="Script" id=15]
+[ext_resource path="res://scripts/Infantry.gd" type="Script" id=16]
+[ext_resource path="res://Fonts/cardinal.tres" type="DynamicFont" id=17]
+[ext_resource path="res://scripts/CancelInfantry.gd" type="Script" id=18]
+[ext_resource path="res://scripts/InvadeInfantry.gd" type="Script" id=19]
+[ext_resource path="res://scripts/Naval.gd" type="Script" id=20]
+[ext_resource path="res://scripts/NavalImage.gd" type="Script" id=21]
+[ext_resource path="res://scripts/CancelNaval.gd" type="Script" id=22]
+[ext_resource path="res://scripts/AttackNaval.gd" type="Script" id=23]
+[ext_resource path="res://Scenes/MyGame.gd" type="Script" id=24]
+[ext_resource path="res://scripts/ExitButton.gd" type="Script" id=25]
+[ext_resource path="res://scripts/UpgradeButton.gd" type="Script" id=26]
+[ext_resource path="res://scripts/QuickAttackInfantry.gd" type="Script" id=27]
+[ext_resource path="res://scripts/Grey.gd" type="Script" id=28]
+[ext_resource path="res://scripts/ResumeButton.gd" type="Script" id=29]
+[ext_resource path="res://scripts/MenuButton.gd" type="Script" id=30]
+[ext_resource path="res://scripts/ResumeButton2.gd" type="Script" id=31]
+[ext_resource path="res://Sprites/Structure/medievalStructure_02.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Structure/medievalStructure_06.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00019.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00011.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00031.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00004.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00021.png" type="Texture" id=38]
+[ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=39]
+[ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=40]
+[ext_resource path="res://Textures/heart2.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00025.png" type="Texture" id=42]
+[ext_resource path="res://Textures/buttonLong_beige_pressed.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00006.png" type="Texture" id=44]
+[ext_resource path="res://Textures/buttonRound_brown.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00015.png" type="Texture" id=47]
+[ext_resource path="res://Textures/panelInset_blue.png" type="Texture" id=48]
+[ext_resource path="res://Textures/greenarrow-removebg-preview.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00000.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Structure/medievalStructure_05.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00001.png" type="Texture" id=52]
+[ext_resource path="res://Textures/panel_brown.png" type="Texture" id=53]
+[ext_resource path="res://scripts/InfantryLevelDisplayEnemy.gd" type="Script" id=54]
+[ext_resource path="res://scripts/DefendNaval.gd" type="Script" id=55]
+[ext_resource path="res://scripts/ArtilleryLevelDisplayEnemy.gd" type="Script" id=56]
+[ext_resource path="res://scripts/NavalLevelDisplayEnemy.gd" type="Script" id=57]
+[ext_resource path="res://scripts/Restart.gd" type="Script" id=58]
+[ext_resource path="res://scripts/InfantryLevelDisplay.gd" type="Script" id=59]
+[ext_resource path="res://scripts/DefendArtillery.gd" type="Script" id=60]
+[ext_resource path="res://scripts/DefendInfantry.gd" type="Script" id=61]
+[ext_resource path="res://scripts/ArtilleryLevelDisplay.gd" type="Script" id=62]
+[ext_resource path="res://scripts/BigAttackArtillery.gd" type="Script" id=63]
+[ext_resource path="res://scripts/CancelArtillery.gd" type="Script" id=64]
+[ext_resource path="res://scripts/NavalLevelDisplay.gd" type="Script" id=65]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00034.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00009.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00032.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00007.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/roguelikeChar_transparent.png" type="Texture" id=70]
+[ext_resource path="res://Sprites/cannonRIGHT-removebg-preview - Copy.png" type="Texture" id=71]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00023.png" type="Texture" id=72]
+[ext_resource path="res://Sprites/ships.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00022.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00029.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00024.png" type="Texture" id=76]
+[ext_resource path="res://Sprites/cannonLEFT-removebg-preview.png" type="Texture" id=77]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00012.png" type="Texture" id=78]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00008.png" type="Texture" id=79]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00033.png" type="Texture" id=80]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00017.png" type="Texture" id=81]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00002.png" type="Texture" id=82]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00014.png" type="Texture" id=83]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00030.png" type="Texture" id=84]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00018.png" type="Texture" id=85]
+[ext_resource path="res://Sprites/Ships/Preview_KenneyNL.png" type="Texture" id=86]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00020.png" type="Texture" id=87]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00005.png" type="Texture" id=88]
+[ext_resource path="res://Sprites/fireball/efecto_fuego_00028.png" type="Texture" id=89]
+
+[sub_resource type="Animation" id=1]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="GDScript" id=13]
+
+[sub_resource type="Animation" id=14]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=18]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=21]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=22]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=23]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=24]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=25]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=26]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=27]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=28]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=29]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=30]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=31]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=32]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=33]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=34]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=35]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=36]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=38]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=39]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+resource_name = "DEFEND GO LEVEL 1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 777.066, 149.057 ), Vector2( 767.439, 343.5 ) ]
+}
+
+[sub_resource type="Animation" id=41]
+resource_name = "DEFEND RETURN LEVEL 1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 767.439, 343.5 ), Vector2( 779.76, 149.469 ) ]
+}
+
+[sub_resource type="Animation" id=42]
+resource_name = "SHIP LEVEL 1 - group 1 fireball"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("group1 - fireball2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 803.088, 76.4395 ), Vector2( 179.792, 488.434 ) ]
+}
+
+[sub_resource type="Animation" id=43]
+resource_name = "SHIP LEVEL 3+4 - group 1 fireball"
+length = 2.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("group1 - fireball2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 803.088, 76.4395 ), Vector2( 186.534, 492.94 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group1 - fireball1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 2.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 622, 58.5392 ), Vector2( 184.494, 483.009 ) ]
+}
+
+[sub_resource type="Animation" id=44]
+resource_name = "SHIP LEVEL 5 - group 1 fireball"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("group1 - fireball2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.3, 2.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 803.088, 76.4395 ), Vector2( 197.772, 488.434 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group1 - fireball1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 622, 58.5392 ), Vector2( 182.996, 474 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group1 - fireball3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 727.15, 59.8704 ), Vector2( 183.265, 491.259 ) ]
+}
+
+[sub_resource type="Animation" id=45]
+resource_name = "group 1 attack "
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 779.76, 147.579 ), Vector2( 225.386, 451.736 ), Vector2( 227.185, 451.846 ), Vector2( 222.651, 453.549 ), Vector2( 223.078, 455.752 ), Vector2( 222.346, 459.395 ), Vector2( 223.571, 454.372 ), Vector2( 779.76, 146.83 ) ]
+}
+
+[sub_resource type="Animation" id=46]
+resource_name = "DEFEND GO LEVEL 2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 772.948, 152.988 ), Vector2( 778.843, 296.5 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 797.422, 165.695 ), Vector2( 781.314, 368 ) ]
+}
+
+[sub_resource type="Animation" id=47]
+resource_name = "DEFEND RETURN LEVEL 2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 778.843, 296.5 ), Vector2( 784.738, 151.164 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 781.314, 368 ), Vector2( 820.756, 150.892 ) ]
+}
+
+[sub_resource type="Animation" id=48]
+resource_name = "group 1 attack"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2.7, 2.8, 2.9, 3, 5.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 776.205, 151.044 ), Vector2( 236.635, 473 ), Vector2( 232.739, 471.102 ), Vector2( 234.602, 475.893 ), Vector2( 236.072, 472.112 ), Vector2( 779.76, 146.044 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 5.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 821.804, 149.767 ), Vector2( 236.635, 532.045 ), Vector2( 237.283, 535.022 ), Vector2( 234.402, 535.587 ), Vector2( 232.127, 537.788 ), Vector2( 232.477, 536.552 ), Vector2( 235.407, 543.961 ), Vector2( 237.871, 540.704 ), Vector2( 819.321, 146.231 ) ]
+}
+
+[sub_resource type="Animation" id=49]
+resource_name = "DEFEND GO LEVEL 3"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 774.998, 151.764 ), Vector2( 790.475, 404.228 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 820.466, 150.575 ), Vector2( 773.035, 331 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 767.378, 196.367 ), Vector2( 744.4, 365.5 ) ]
+}
+
+[sub_resource type="Animation" id=50]
+resource_name = "DEFEND RETUN LEVEL 3"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 790.475, 404.228 ), Vector2( 784.049, 150.265 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 1.8, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 773.035, 331 ), Vector2( 810.309, 150.893 ), Vector2( 819.309, 150.893 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 744.4, 365.5 ), Vector2( 764.093, 194.509 ) ]
+}
+
+[sub_resource type="Animation" id=51]
+resource_name = "group 1 attack"
+length = 6.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 6.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 768.72, 195.487 ), Vector2( 222.587, 553.583 ), Vector2( 220.486, 552.055 ), Vector2( 217.2, 551.046 ), Vector2( 221.837, 546.497 ), Vector2( 221.154, 545.509 ), Vector2( 222.429, 546.896 ), Vector2( 221.661, 546.5 ), Vector2( 779.76, 146.793 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 6.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 774.998, 151.764 ), Vector2( 223.621, 448.429 ), Vector2( 224.254, 446.476 ), Vector2( 225.529, 448.274 ), Vector2( 225.471, 449.665 ), Vector2( 225.182, 447.632 ), Vector2( 227.734, 448.28 ), Vector2( 225.076, 448.469 ), Vector2( 224.506, 449.18 ), Vector2( 227.027, 446.345 ), Vector2( 763.962, 188.818 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.4, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4, 6.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 821.804, 149.767 ), Vector2( 256.06, 491.434 ), Vector2( 254.177, 491.154 ), Vector2( 256.108, 493.43 ), Vector2( 254.77, 493.13 ), Vector2( 253.352, 494.309 ), Vector2( 248.934, 496.863 ), Vector2( 250.734, 496.678 ), Vector2( 252.579, 495.811 ), Vector2( 819.321, 147.608 ) ]
+}
+
+[sub_resource type="Animation" id=52]
+resource_name = "DEFEND GO LEVEL 4"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 774.998, 151.764 ), Vector2( 791.702, 404.229 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 817.862, 152.346 ), Vector2( 774.999, 365.5 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 810.016, 195.935 ), Vector2( 790.159, 314 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 768.72, 195.487 ), Vector2( 751.288, 321 ) ]
+}
+
+[sub_resource type="Animation" id=53]
+resource_name = "DEFEND RETURN LEVEL 4"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 791.702, 404.229 ), Vector2( 786.012, 150.265 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 774.999, 365.5 ), Vector2( 820.765, 150.678 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 791.152, 308.097 ), Vector2( 804.605, 195.724 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.3, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 751.288, 321 ), Vector2( 764.093, 192.87 ) ]
+}
+
+[sub_resource type="Animation" id=54]
+resource_name = "group 1 attack"
+length = 7.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 810.841, 195.484 ), Vector2( 236.635, 509.027 ), Vector2( 239.205, 511.584 ), Vector2( 237.942, 515.308 ), Vector2( 242.479, 513.231 ), Vector2( 242.266, 514.405 ), Vector2( 241.719, 517.911 ), Vector2( 243.673, 518.918 ), Vector2( 243.475, 514.049 ), Vector2( 812.734, 196.63 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 774.998, 151.764 ), Vector2( 225.624, 460 ), Vector2( 229.476, 458.098 ), Vector2( 225.327, 460.446 ), Vector2( 224.876, 461.622 ), Vector2( 225.923, 462.877 ), Vector2( 223.973, 464.464 ), Vector2( 780.432, 148.426 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 821.804, 149.767 ), Vector2( 206, 552.634 ), Vector2( 208.793, 550.28 ), Vector2( 216.752, 546.593 ), Vector2( 213.755, 545.336 ), Vector2( 209.607, 546.468 ), Vector2( 209.155, 541.976 ), Vector2( 215.852, 549.067 ), Vector2( 211.548, 551.158 ), Vector2( 821.91, 148.839 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 768.72, 195.487 ), Vector2( 251.804, 537.215 ), Vector2( 250.131, 537.215 ), Vector2( 245.837, 539.693 ), Vector2( 243.722, 539.693 ), Vector2( 244.097, 537.215 ), Vector2( 251.17, 536.545 ), Vector2( 243.611, 539.209 ), Vector2( 244.801, 538.373 ), Vector2( 245.992, 542.203 ), Vector2( 247.183, 538.034 ), Vector2( 244.374, 538.865 ), Vector2( 764.711, 196.872 ) ]
+}
+
+[sub_resource type="Animation" id=55]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 733.807, 147.454 ), Vector2( 792.669, 407.411 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 776.948, 150.676 ), Vector2( 764.951, 279 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 821.804, 149.767 ), Vector2( 797.432, 296.5 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 1.6, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 768.72, 195.487 ), Vector2( 787.688, 326 ), Vector2( 785.453, 345.198 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.3, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 810.67, 195.571 ), Vector2( 752.954, 368 ) ]
+}
+
+[sub_resource type="Animation" id=56]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 792.669, 407.411 ), Vector2( 748.248, 160 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 752.954, 368 ), Vector2( 812.592, 200.939 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 785.453, 345.198 ), Vector2( 790.497, 160 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 797.432, 296.5 ), Vector2( 770.846, 200.447 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.4, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 764.951, 279 ), Vector2( 828.191, 160 ) ]
+}
+
+[sub_resource type="Animation" id=57]
+length = 7.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 3.5, 4.1, 6.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 735.089, 146.676 ), Vector2( 218.973, 460 ), Vector2( 218.973, 460 ), Vector2( 741.4, 151 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 3.5, 4.1, 6.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 778.31, 149.767 ), Vector2( 230.234, 515.806 ), Vector2( 230.234, 515.806 ), Vector2( 779.76, 150.968 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3.5, 4.1, 7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 821.804, 149.767 ), Vector2( 206, 555.765 ), Vector2( 206, 555.765 ), Vector2( 813.146, 150.381 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3.6, 4.1, 6.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 768.72, 195.487 ), Vector2( 265.285, 539.157 ), Vector2( 265.285, 539.157 ), Vector2( 757.4, 191.146 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.1, 3.3, 4.1, 7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 812.113, 194.837 ), Vector2( 265.285, 473 ), Vector2( 265.285, 473 ), Vector2( 805.157, 190 ) ]
+}
+
+[sub_resource type="Animation" id=58]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 6.36359, -2.90063 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="AtlasTexture" id=59]
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=60]
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=61]
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=62]
+region = Rect2( 0, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=63]
+region = Rect2( 256, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=64]
+region = Rect2( 512, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=65]
+region = Rect2( 0, 512, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=66]
+region = Rect2( 256, 512, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=67]
+region = Rect2( 512, 512, 256, 256 )
+
+[sub_resource type="SpriteFrames" id=68]
+animations = [ {
+"frames": [ ExtResource( 50 ), ExtResource( 52 ), ExtResource( 82 ), ExtResource( 5 ), ExtResource( 37 ), ExtResource( 88 ), ExtResource( 44 ), ExtResource( 69 ), ExtResource( 79 ), ExtResource( 67 ), ExtResource( 6 ), ExtResource( 35 ), ExtResource( 78 ), ExtResource( 7 ), ExtResource( 83 ), ExtResource( 47 ), ExtResource( 10 ), ExtResource( 81 ), ExtResource( 85 ), ExtResource( 34 ), ExtResource( 87 ), ExtResource( 38 ), ExtResource( 74 ), ExtResource( 72 ), ExtResource( 76 ), ExtResource( 42 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 89 ), ExtResource( 75 ), ExtResource( 84 ), ExtResource( 36 ), ExtResource( 68 ), ExtResource( 80 ), ExtResource( 66 ) ],
+"loop": true,
+"name": "shootball",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ) ],
+"loop": true,
+"name": "fire explosion",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=69]
+resource_name = "Cannonss DEFEND GO Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 778.822, 499.144 ), Vector2( 870.822, 407.144 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 786.134, 464.605 ), Vector2( 876.134, 460.605 ) ]
+}
+
+[sub_resource type="Animation" id=70]
+resource_name = "Cannonss DEFEND GO Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 775.822, 497.144 ), Vector2( 874.822, 409.144 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 786.134, 463.605 ), Vector2( 878.134, 456.605 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 773.778, 420.819 ), Vector2( 830.778, 427.819 ) ]
+}
+
+[sub_resource type="Animation" id=71]
+resource_name = "Cannonss DEFEND GO level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 781.822, 501.144 ), Vector2( 869.822, 404.144 ) ]
+}
+
+[sub_resource type="Animation" id=72]
+resource_name = "Cannonss DEFEND RETURN Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 876.134, 460.605 ), Vector2( 786.134, 463.605 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 870.822, 407.144 ), Vector2( 775.822, 497.144 ) ]
+}
+
+[sub_resource type="Animation" id=73]
+resource_name = "Cannonss DEFEND RETURN Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 830.778, 427.819 ), Vector2( 783.778, 424.819 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 878.134, 456.605 ), Vector2( 799.134, 457.605 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 874.822, 409.144 ), Vector2( 785.822, 488.144 ) ]
+}
+
+[sub_resource type="Animation" id=74]
+resource_name = "Cannonss DEFEND RETURN level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 869.822, 404.144 ), Vector2( 778.822, 499.144 ) ]
+}
+
+[sub_resource type="Animation" id=75]
+resource_name = "DEFEND GO LEV 1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 272.56, 514.578 ), Vector2( 217.123, 439 ) ]
+}
+
+[sub_resource type="Animation" id=76]
+resource_name = "DEFEND RETURN LEVEL 1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 217.123, 439 ), Vector2( 283.43, 515.806 ) ]
+}
+
+[sub_resource type="Animation" id=77]
+resource_name = "GR2 Cannonss DEFEND GO Level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 270.997, 385 ), Vector2( 163.997, 404 ) ]
+}
+
+[sub_resource type="Animation" id=78]
+resource_name = "GR2 Cannonss DEFEND GO Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236.997, 404 ), Vector2( 158.997, 404 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 273.68, 436 ), Vector2( 235.68, 442 ) ]
+}
+
+[sub_resource type="Animation" id=79]
+resource_name = "GR2 Cannonss DEFEND GO Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 234.997, 404 ), Vector2( 159.997, 404 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 273.68, 442 ), Vector2( 235.68, 442 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CANNON GROUP 2 AnimatedSprite3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 302.658, 384.952 ), Vector2( 220.658, 399.952 ) ]
+}
+
+[sub_resource type="Animation" id=80]
+resource_name = "GR2 Cannonss DEFEND RETURN Level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 163.997, 404 ), Vector2( 267.997, 396 ) ]
+}
+
+[sub_resource type="Animation" id=81]
+resource_name = "GR2 Cannonss DEFEND RETURN Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 235.68, 442 ), Vector2( 273.68, 442 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 158.997, 404 ), Vector2( 234.997, 404 ) ]
+}
+
+[sub_resource type="Animation" id=82]
+resource_name = "GR2 Cannonss DEFEND RETURN Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 159.997, 404 ), Vector2( 235.997, 404 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 235.68, 442 ), Vector2( 285.68, 433 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CANNON GROUP 2 AnimatedSprite3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 220.658, 399.952 ), Vector2( 296.658, 393.952 ) ]
+}
+
+[sub_resource type="Animation" id=83]
+resource_name = "GR2 Ships DEFEND GO Level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 138.861, 299.865 ), Vector2( 78.861, 341.865 ) ]
+}
+
+[sub_resource type="Animation" id=84]
+resource_name = "GR2 Ships DEFEND GO Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 138.861, 299.865 ), Vector2( 60.861, 390.865 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 2 - ships/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 264.956 ), Vector2( 48.1084, 334.956 ) ]
+}
+
+[sub_resource type="Animation" id=85]
+resource_name = "GR2 Ships DEFEND GO Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 138.861, 299.865 ), Vector2( 68.861, 395.865 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 2 - ships/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 264.956 ), Vector2( 48.1084, 325.956 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group 2 - ships2/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 165.029, 234.485 ), Vector2( 75.029, 234.485 ) ]
+}
+
+[sub_resource type="Animation" id=86]
+resource_name = "GR2 Ships DEFEND RETURN Level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 84.861, 341.865 ), Vector2( 128.861, 303.865 ) ]
+}
+
+[sub_resource type="Animation" id=87]
+resource_name = "GR2 Ships DEFEND RETURN Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 75.029, 234.485 ), Vector2( 133.029, 234.485 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 2 - ships/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 325.956 ), Vector2( 48.1084, 285.956 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group 2 - ships3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 68.861, 395.865 ), Vector2( 129.861, 310.865 ) ]
+}
+
+[sub_resource type="Animation" id=88]
+resource_name = "GR2 Ships RETURN GO Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 334.956 ), Vector2( 48.1084, 280.956 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 2 - ships3/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 60.861, 390.865 ), Vector2( 114.861, 314.865 ) ]
+}
+
+[sub_resource type="Animation" id=89]
+resource_name = "Ships DEFEND GO level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 820.544, 60.0747 ), Vector2( 844.544, 33.0747 ) ]
+}
+
+[sub_resource type="Animation" id=90]
+resource_name = "Ships DEFEND GO level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 814.544, 60.0747 ), Vector2( 841.544, 35.0747 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 1 - ships5/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 744.4, 51.0662 ), Vector2( 842.4, 100.066 ) ]
+}
+
+[sub_resource type="Animation" id=91]
+resource_name = "Ships DEFEND GO level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 817.544, 74.0747 ), Vector2( 843.544, 26.0747 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 1 - ships5/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 752.4, 58.0662 ), Vector2( 836.4, 92.0662 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group 1 - ships4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 660, 41.894 ), Vector2( 771, 54.894 ) ]
+}
+
+[sub_resource type="Animation" id=92]
+resource_name = "Ships DEFEND RETURN level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 844.544, 33.0747 ), Vector2( 814.544, 60.0747 ) ]
+}
+
+[sub_resource type="Animation" id=93]
+resource_name = "Ships DEFEND RETURN level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships5/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 842.4, 100.066 ), Vector2( 752.4, 58.0662 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 841.544, 35.0747 ), Vector2( 817.544, 74.0747 ) ]
+}
+
+[sub_resource type="Animation" id=94]
+resource_name = "Ships DEFEND RETURN level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships4/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 771, 54.894 ), Vector2( 653, 51.894 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 1 - ships5/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 836.4, 92.0662 ), Vector2( 746.4, 57.0662 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 843.544, 26.0747 ), Vector2( 812.544, 67.0747 ) ]
+}
+
+[sub_resource type="Animation" id=95]
+length = 6.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 6.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 272.56, 514.578 ), Vector2( 762.589, 294.5 ), Vector2( 764.894, 294.536 ), Vector2( 766.599, 294.806 ), Vector2( 764.684, 295.317 ), Vector2( 764.233, 296.078 ), Vector2( 765.152, 295.098 ), Vector2( 765.34, 293.465 ), Vector2( 276.051, 512.625 ) ]
+}
+
+[sub_resource type="Animation" id=96]
+resource_name = "DEFEND GO LEVEL 2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 263.133, 496.432 ), Vector2( 180.726, 424 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 273.965, 541.479 ), Vector2( 236.635, 503 ) ]
+}
+
+[sub_resource type="Animation" id=97]
+resource_name = "DEFEND RETURN LEVEL 2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 180.726, 424 ), Vector2( 283.43, 515.806 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236.635, 503 ), Vector2( 333.276, 515.806 ) ]
+}
+
+[sub_resource type="Animation" id=98]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 2.6, 2.7, 2.8, 2.9, 3, 5.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 333.818, 515.806 ), Vector2( 778.759, 395 ), Vector2( 780.475, 395.725 ), Vector2( 783.591, 392.584 ), Vector2( 784.018, 393.718 ), Vector2( 785.802, 394.995 ), Vector2( 273.965, 541.479 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 281.107, 515.806 ), Vector2( 768.44, 298.5 ), Vector2( 770.404, 300.998 ), Vector2( 767.91, 299.582 ), Vector2( 771.064, 297.372 ), Vector2( 770.672, 300.404 ), Vector2( 771.812, 303.53 ), Vector2( 770.403, 302.752 ), Vector2( 263.133, 496.432 ) ]
+}
+
+[sub_resource type="Animation" id=99]
+resource_name = "DEFEND GO LEVEL 3"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 281.336, 515.282 ), Vector2( 219.156, 553.511 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 337.124, 514.288 ), Vector2( 170.812, 439 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 296.101, 563.331 ), Vector2( 240.251, 491.434 ) ]
+}
+
+[sub_resource type="Animation" id=100]
+resource_name = "DEFEND RETURN LEVEL 3"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 219.156, 553.511 ), Vector2( 284.333, 518.402 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 170.812, 439 ), Vector2( 315.975, 561.584 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 240.251, 491.434 ), Vector2( 334.464, 520.737 ) ]
+}
+
+[sub_resource type="Animation" id=101]
+length = 7.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 296.101, 563.331 ), Vector2( 761.389, 343.5 ), Vector2( 759.268, 341.457 ), Vector2( 760.911, 344.598 ), Vector2( 761.202, 342.793 ), Vector2( 763.16, 342.183 ), Vector2( 762.718, 342.744 ), Vector2( 327.69, 536.82 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 334.319, 515.67 ), Vector2( 765.113, 303.5 ), Vector2( 765.464, 304.766 ), Vector2( 765.464, 301.167 ), Vector2( 764.102, 300.846 ), Vector2( 766.398, 303.725 ), Vector2( 766.224, 302.722 ), Vector2( 766.625, 301.961 ), Vector2( 284.459, 541.61 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.4, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 6.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 278.51, 515.806 ), Vector2( 801, 419 ), Vector2( 799.669, 417.442 ), Vector2( 799.869, 418.009 ), Vector2( 800.521, 417.64 ), Vector2( 799.573, 417.372 ), Vector2( 802.039, 418.207 ), Vector2( 262.077, 499.584 ) ]
+}
+
+[sub_resource type="Animation" id=102]
+resource_name = "DEFEND GO LEVEL 4"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 278.51, 515.806 ), Vector2( 154.9, 439 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 296.101, 563.331 ), Vector2( 227.179, 458.158 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 355.071, 560.869 ), Vector2( 217.561, 558.453 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.3, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 334.319, 515.67 ), Vector2( 253.006, 510.879 ) ]
+}
+
+[sub_resource type="Animation" id=103]
+resource_name = "DEFEND RETURN LEVEL 4"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 154.9, 439 ), Vector2( 290.496, 515.806 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 227.179, 458.158 ), Vector2( 345.545, 556.218 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 217.561, 558.453 ), Vector2( 339.351, 515.806 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 253.006, 510.879 ), Vector2( 311.591, 555.125 ) ]
+}
+
+[sub_resource type="Animation" id=104]
+resource_name = "LEVEL 1 + 2 - Cannon GROUP 1"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite/group1 - fireball6:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 6.8103, -88.5278 ), Vector2( -566.192, -22.425 ) ]
+}
+
+[sub_resource type="Animation" id=105]
+resource_name = "LEVEL 1 - Cannon Group2"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1/group2 - fireball4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 18.0411, -3.99997 ), Vector2( 632.503, -93.25 ) ]
+}
+
+[sub_resource type="Animation" id=106]
+resource_name = "LEVEL 3 + 4 - Cannon GROUP 1"
+length = 2.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite3/group1 - fireball9:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -23.0742, -11.7964 ), Vector2( -687.075, 35.9401 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite/group1 - fireball6:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 2.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -50.4888, -2.17896 ), Vector2( -592.388, -12.6519 ) ]
+}
+
+[sub_resource type="Animation" id=107]
+resource_name = "LEVEL 3 + 4 - Cannon Group 2"
+length = 2.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1/group2 - fireball4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 2.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 20.3366, -4.33339 ), Vector2( 627.073, -88 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite2/group2 - fireball5:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 21.095, -1.00006 ), Vector2( 600.32, -100.5 ) ]
+}
+
+[sub_resource type="Animation" id=108]
+resource_name = "LEVEL 5 - Cannon GROUP 1"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite/group1 - fireball6:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -43.8877, -11.5574 ), Vector2( -580.356, -19.0015 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite2/group1 - fireball8:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 2.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -32.3486, -4.96069 ), Vector2( -591.838, 44.0471 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite3/group1 - fireball9:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -39.7417, -3.85938 ), Vector2( -615.149, 42.1062 ) ]
+}
+
+[sub_resource type="Animation" id=109]
+resource_name = "LEVEL 5 - Cannon Group 2"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite2/group2 - fireball5:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 23.2433, -1.36909 ), Vector2( 603.32, -125.25 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite1/group2 - fireball4:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 22.1661, -4.58567 ), Vector2( 653.003, -59.5 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CANNON GROUP 2 AnimatedSprite3/group2 - fireball7:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.4, 2.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 25.9023, -4.38715 ), Vector2( 546.289, -92 ) ]
+}
+
+[sub_resource type="Animation" id=110]
+length = 2.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("group2 - fireball3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 219.802, 258.713 ), Vector2( 853.644, 307 ) ]
+}
+
+[sub_resource type="Animation" id=111]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("group2 - fireball3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 195.509, 323.812 ), Vector2( 865, 316 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group2 - fireball2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 2.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 233.632, 261.518 ), Vector2( 856.857, 302.5 ) ]
+}
+
+[sub_resource type="Animation" id=112]
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("group2 - fireball3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 2.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.6889, 93.3767 ), Vector2( 877, 343.642 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group2 - fireball2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 2.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 168.824, 155.101 ), Vector2( 874, 318 ) ]
+}
+
+[sub_resource type="Animation" id=113]
+length = 6.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 355.071, 560.869 ), Vector2( 778.758, 392 ), Vector2( 780.392, 390.528 ), Vector2( 781.459, 392.222 ), Vector2( 783.939, 392.986 ), Vector2( 782.741, 390.856 ), Vector2( 780.951, 391.949 ), Vector2( 781.545, 390.158 ), Vector2( 302.4, 501.363 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 296.101, 563.331 ), Vector2( 745.22, 355 ), Vector2( 744.757, 355.727 ), Vector2( 746.795, 356.533 ), Vector2( 749.349, 355.5 ), Vector2( 747.37, 355.701 ), Vector2( 748.976, 351.109 ), Vector2( 329.964, 541.52 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 278.51, 515.806 ), Vector2( 772.822, 291 ), Vector2( 772.618, 289.121 ), Vector2( 772.003, 290.506 ), Vector2( 771.964, 291.073 ), Vector2( 774.456, 293.859 ), Vector2( 776.367, 292.806 ), Vector2( 774.679, 291.053 ), Vector2( 777.473, 292.645 ), Vector2( 776.553, 290.487 ), Vector2( 275.708, 540.222 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 5.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 334.319, 515.67 ), Vector2( 750.901, 330 ), Vector2( 752.445, 334.535 ), Vector2( 756.368, 329.105 ), Vector2( 755.542, 329.067 ), Vector2( 755.085, 330.252 ), Vector2( 757.937, 329.628 ), Vector2( 756.908, 330.285 ), Vector2( 759.088, 332.192 ), Vector2( 257.219, 496.051 ) ]
+}
+
+[sub_resource type="Animation" id=114]
+length = 2.9
+tracks/0/type = "value"
+tracks/0/path = NodePath("group2 - fireball3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 2.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 81.1557, 286.318 ), Vector2( 854.282, 307 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group2 - fireball2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3, 2.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 223.489, 261.232 ), Vector2( 866, 318 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group2 - fireball:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.8, 2.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 196.046, 319.543 ), Vector2( 855.975, 294 ) ]
+}
+
+[sub_resource type="Animation" id=115]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 278.51, 515.806 ), Vector2( 223.41, 460 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 362.549, 564 ), Vector2( 154.284, 436.429 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.1, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 296.101, 563.331 ), Vector2( 244.505, 541.976 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 379.694, 518.958 ), Vector2( 259.499, 491.434 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.3, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 329.794, 514.691 ), Vector2( 191.95, 425.94 ) ]
+}
+
+[sub_resource type="Animation" id=116]
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 223.41, 460 ), Vector2( 285.721, 512.169 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 191.95, 425.94 ), Vector2( 332.042, 511.291 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 154.284, 436.429 ), Vector2( 376.783, 512.169 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1, 1.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 244.505, 541.976 ), Vector2( 360.594, 559.289 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 259.499, 491.434 ), Vector2( 309.045, 555.808 ) ]
+}
+
+[sub_resource type="Animation" id=117]
+length = 6.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 5.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 278.51, 515.806 ), Vector2( 778.758, 326 ), Vector2( 778.758, 326 ), Vector2( 258.845, 503 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 329.794, 514.691 ), Vector2( 772.821, 379 ), Vector2( 772.821, 379 ), Vector2( 279.94, 536.322 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 379.694, 518.958 ), Vector2( 743.4, 294.5 ), Vector2( 743.4, 294.5 ), Vector2( 344.85, 499.584 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 5.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 296.101, 563.331 ), Vector2( 723.344, 337.42 ), Vector2( 723.344, 337.42 ), Vector2( 319.695, 542.571 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2.9, 3.4, 5.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 362.549, 564 ), Vector2( 813.289, 428 ), Vector2( 813.289, 428 ), Vector2( 303.4, 502 ) ]
+}
+
+[sub_resource type="AtlasTexture" id=118]
+flags = 4
+atlas = ExtResource( 77 )
+region = Rect2( 0, 0, 103, 106 )
+
+[sub_resource type="AtlasTexture" id=119]
+flags = 4
+atlas = ExtResource( 77 )
+region = Rect2( 103, 0, 103, 106 )
+
+[sub_resource type="AtlasTexture" id=120]
+flags = 4
+atlas = ExtResource( 77 )
+region = Rect2( 206, 0, 103, 106 )
+
+[sub_resource type="AtlasTexture" id=121]
+flags = 4
+atlas = ExtResource( 77 )
+region = Rect2( 206, 106, 103, 106 )
+
+[sub_resource type="AtlasTexture" id=122]
+flags = 4
+atlas = ExtResource( 77 )
+region = Rect2( 103, 106, 103, 106 )
+
+[sub_resource type="AtlasTexture" id=123]
+flags = 4
+atlas = ExtResource( 77 )
+region = Rect2( 0, 106, 103, 106 )
+
+[sub_resource type="SpriteFrames" id=124]
+animations = [ {
+"frames": [ SubResource( 118 ), SubResource( 119 ), SubResource( 120 ), SubResource( 121 ), SubResource( 122 ), SubResource( 123 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=125]
+flags = 4
+atlas = ExtResource( 71 )
+region = Rect2( 0, 0, 103, 108 )
+
+[sub_resource type="AtlasTexture" id=126]
+flags = 4
+atlas = ExtResource( 71 )
+region = Rect2( 103, 0, 103, 108 )
+
+[sub_resource type="AtlasTexture" id=127]
+flags = 4
+atlas = ExtResource( 71 )
+region = Rect2( 206, 0, 103, 108 )
+
+[sub_resource type="AtlasTexture" id=128]
+flags = 4
+atlas = ExtResource( 71 )
+region = Rect2( 0, 108, 103, 108 )
+
+[sub_resource type="AtlasTexture" id=129]
+flags = 4
+atlas = ExtResource( 71 )
+region = Rect2( 103, 108, 103, 108 )
+
+[sub_resource type="AtlasTexture" id=130]
+flags = 4
+atlas = ExtResource( 71 )
+region = Rect2( 206, 108, 103, 108 )
+
+[sub_resource type="SpriteFrames" id=131]
+animations = [ {
+"frames": [ SubResource( 125 ), SubResource( 126 ), SubResource( 127 ), SubResource( 128 ), SubResource( 129 ), SubResource( 130 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="World" type="Node2D" parent="."]
+script = ExtResource( 24 )
+
+[node name="env" type="TileMap" parent="World"]
+tile_set = ExtResource( 40 )
+format = 1
+tile_data = PoolIntArray( 0, -1073741822, 0, 1, -1073741822, 0, 2, -1073741822, 0, 3, -1073741822, 0, 4, -1073741822, 0, 5, -1073741822, 0, 6, -1073741822, 0, 7, -1073741822, 0, 8, -1073741822, 0, 9, -1073741822, 0, 10, -1073741822, 0, 11, -1073741822, 0, 12, -1073741822, 0, 13, -1073741822, 0, 14, -1073741822, 0, 15, -1073741824, 0, 65536, -1073741822, 0, 65537, -1073741822, 0, 65538, -1073741822, 0, 65539, -1073741822, 0, 65540, -1073741822, 0, 65541, -1073741822, 0, 65542, -1073741822, 0, 65543, -1073741822, 0, 65544, -1073741822, 0, 65545, -1073741822, 0, 65546, -1073741822, 0, 65547, -1073741822, 0, 65548, -1073741822, 0, 65549, -1073741822, 0, 65550, -1073741824, 0, 65551, -1073741820, 0, 131072, -1073741822, 0, 131073, -1073741822, 0, 131074, -1073741822, 0, 131075, -1073741822, 0, 131076, -1073741822, 0, 131077, -1073741822, 0, 131078, -1073741822, 0, 131079, -1073741822, 0, 131080, -1073741822, 0, 131081, -1073741822, 0, 131082, -1073741822, 0, 131083, -1073741824, 0, 131084, -1073741824, 0, 131085, -1073741824, 0, 131086, -1073741820, 0, 131087, 4, 0, 196608, -1073741822, 0, 196609, -1073741822, 0, 196610, -1073741822, 0, 196611, -1073741822, 0, 196612, -1073741822, 0, 196613, -1073741822, 0, 196614, -1073741822, 0, 196615, -1073741822, 0, 196616, -1073741824, 0, 196617, -1073741824, 0, 196618, -1073741824, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 4, 0, 196623, 4, 0, 262144, -1073741822, 0, 262145, -1073741822, 0, 262146, -1073741822, 0, 262147, -1073741822, 0, 262148, -1073741824, 0, 262149, -1073741824, 0, 262150, -1073741824, 0, 262151, -1073741824, 0, 262152, -1073741824, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 4, 0, 262159, 4, 0, 327680, -1073741822, 0, 327681, -1073741822, 0, 327682, -1073741824, 0, 327683, -1073741824, 0, 327684, -1073741824, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 4, 0, 327695, 4, 0, 393216, -1073741822, 0, 393217, -1073741822, 0, 393218, -1073741824, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 4, 0, 393230, 4, 0, 393231, 4, 0, 458752, -1073741824, 0, 458753, -1073741824, 0, 458754, -1073741820, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 4, 0, 458766, 4, 0, 458767, 4, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, -1073741820, 0, 524293, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 524297, 4, 0, 524298, 4, 0, 524299, 4, 0, 524300, 4, 0, 524301, 4, 0, 524302, 4, 0, 524303, 4, 0, 589824, 4, 0, 589825, 4, 0, 589826, 4, 0, 589827, 4, 0, 589828, 4, 0, 589829, 4, 0, 589830, 4, 0, 589831, 4, 0, 589832, 4, 0, 589833, 4, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 4, 0, 589839, 4, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="env2" type="TileMap" parent="World"]
+tile_set = ExtResource( 40 )
+format = 1
+tile_data = PoolIntArray( 0, -1073741822, 0, 1, -1073741822, 0, 2, -1073741822, 0, 3, -1073741822, 0, 4, -1073741822, 0, 5, -1073741822, 0, 6, -1073741822, 0, 7, -1073741822, 0, 8, -1073741822, 0, 9, -1073741822, 0, 10, -1073741822, 0, 11, -1073741822, 0, 12, -1073741822, 0, 13, -1073741822, 0, 14, -1073741822, 0, 15, -1073741824, 0, 65536, -1073741822, 0, 65537, -1073741822, 0, 65538, -1073741822, 0, 65539, -1073741822, 0, 65540, -1073741822, 0, 65541, -1073741822, 0, 65542, -1073741822, 0, 65543, -1073741822, 0, 65544, -1073741822, 0, 65545, -1073741822, 0, 65546, -1073741822, 0, 65547, -1073741822, 0, 65548, -1073741822, 0, 65549, -1073741822, 0, 65550, -1073741824, 0, 65551, -1073741820, 0, 131072, -1073741822, 0, 131073, -1073741822, 0, 131074, -1073741822, 0, 131075, -1073741822, 0, 131076, -1073741822, 0, 131077, -1073741822, 0, 131078, -1073741822, 0, 131079, -1073741822, 0, 131080, -1073741822, 0, 131081, -1073741822, 0, 131082, -1073741822, 0, 131083, -1073741824, 0, 131084, -1073741824, 0, 131085, -1073741824, 0, 131086, -1073741820, 0, 131087, 4, 0, 196608, -1073741822, 0, 196609, -1073741822, 0, 196610, -1073741822, 0, 196611, -1073741822, 0, 196612, -1073741822, 0, 196613, -1073741822, 0, 196614, -1073741822, 0, 196615, -1073741822, 0, 196616, -1073741824, 0, 196617, -1073741824, 0, 196618, -1073741824, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 4, 0, 196623, 4, 0, 262144, -1073741822, 0, 262145, -1073741822, 0, 262146, -1073741822, 0, 262147, -1073741822, 0, 262148, 2, 0, 262149, 2, 0, 262150, 2, 0, 262151, -1073741824, 0, 262152, -1073741824, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 4, 0, 262159, 4, 0, 327680, -1073741822, 0, 327681, -1073741822, 0, 327682, 2, 0, 327683, -1073741824, 0, 327684, -1073741824, 0, 327685, 0, 0, 327686, 0, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 4, 0, 327695, 4, 0, 393216, -1073741822, 0, 393217, -1073741822, 0, 393218, -1073741824, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 4, 0, 393230, 4, 0, 393231, 4, 0, 458752, -1073741824, 0, 458753, -1073741824, 0, 458754, -1073741820, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 4, 0, 458766, 4, 0, 458767, 4, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, -1073741820, 0, 524293, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 524297, 4, 0, 524298, 4, 0, 524299, 4, 0, 524300, 4, 0, 524301, 4, 0, 524302, 4, 0, 524303, 4, 0, 589824, 4, 0, 589825, 4, 0, 589826, 4, 0, 589827, 4, 0, 589828, 4, 0, 589829, 4, 0, 589830, 4, 0, 589831, 4, 0, 589832, 4, 0, 589833, 4, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 4, 0, 589839, 4, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="path" type="TileMap" parent="World"]
+tile_set = ExtResource( 39 )
+format = 1
+tile_data = PoolIntArray( 327690, -1073741823, 0, 327691, 0, 0, 327692, 0, 0, 393226, -1610612736, 0, 458755, -1073741823, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, -1610612735, 0, 524291, -1610612732, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GreyBackground" type="CanvasModulate" parent="World"]
+visible = false
+modulate = Color( 0.125, 0.0634766, 0.0634766, 1 )
+color = Color( 0.466667, 0.466667, 0.466667, 1 )
+script = ExtResource( 28 )
+
+[node name="OurCastle" type="Node2D" parent="World"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="medievalStructure_02" type="Sprite" parent="World/OurCastle"]
+position = Vector2( 174, 468 )
+texture = ExtResource( 32 )
+
+[node name="medievalStructure_06" type="Sprite" parent="World/OurCastle"]
+position = Vector2( 174, 532 )
+texture = ExtResource( 33 )
+
+[node name="TheirCastle" type="Node2D" parent="World"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="medievalStructure_10" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 834, 320 )
+texture = ExtResource( 51 )
+
+[node name="medievalStructure_05" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 906, 319 )
+texture = ExtResource( 51 )
+
+[node name="medievalStructure_07" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 872, 360 )
+texture = ExtResource( 33 )
+
+[node name="medievalStructure_03" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 872, 298 )
+texture = ExtResource( 32 )
+
+[node name="medievalStructure_08" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 909, 384 )
+texture = ExtResource( 51 )
+
+[node name="medievalStructure_09" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 833, 384 )
+texture = ExtResource( 51 )
+
+[node name="medievalStructure_01" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 909, 320 )
+texture = ExtResource( 46 )
+
+[node name="medievalStructure_04" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 833, 320 )
+texture = ExtResource( 46 )
+
+[node name="medievalStructure_11" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 906, 255 )
+texture = ExtResource( 46 )
+
+[node name="medievalStructure_12" type="Sprite" parent="World/TheirCastle"]
+position = Vector2( 833, 256 )
+texture = ExtResource( 46 )
+
+[node name="Camera2D" type="Camera2D" parent="World"]
+anchor_mode = 0
+current = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GUI" type="CanvasLayer" parent="World"]
+script = ExtResource( 13 )
+
+[node name="MenuButton" type="TextureButton" parent="World/GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 882.0
+margin_top = 21.0
+margin_right = 1015.0
+margin_bottom = 66.0
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+expand = true
+script = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/MenuButton"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 34.2033
+margin_top = 3.0773
+margin_right = 104.203
+margin_bottom = 42.0773
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/MenuButton"]
+anims/Test = SubResource( 1 )
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/MenuButton"]
+anims/Test = SubResource( 2 )
+
+[node name="UpgradeButton" type="TextureButton" parent="World/GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 883.0
+margin_top = 75.0
+margin_right = 1017.0
+margin_bottom = 120.0
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../MenuButton")
+focus_neighbour_bottom = NodePath("../NextRoundButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+expand = true
+script = ExtResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/UpgradeButton"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 24.7645
+margin_top = 4.4931
+margin_right = 113.764
+margin_bottom = 43.4931
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Upgrade"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/UpgradeButton"]
+anims/Test = SubResource( 3 )
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/UpgradeButton"]
+anims/Test = SubResource( 4 )
+
+[node name="NextRoundButton" type="TextureButton" parent="World/GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 882.0
+margin_top = 131.0
+margin_right = 1018.0
+margin_bottom = 176.0
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+expand = true
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/NextRoundButton"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 2.11147
+margin_top = 4.02116
+margin_right = 131.112
+margin_bottom = 43.0212
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Next Round"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/NextRoundButton"]
+anims/Test = SubResource( 5 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/NextRoundButton"]
+anims/Test = SubResource( 6 )
+
+[node name="ResumeButton" type="TextureButton" parent="World/GUI"]
+visible = false
+margin_left = 429.049
+margin_top = 276.871
+margin_right = 619.049
+margin_bottom = 321.871
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 29 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/ResumeButton"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 50.4135
+margin_top = 3.0
+margin_right = 136.413
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResumeButton2" type="TextureButton" parent="World/GUI"]
+visible = false
+margin_left = 427.86
+margin_top = 432.657
+margin_right = 617.86
+margin_bottom = 477.657
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/ResumeButton2"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 50.4135
+margin_top = 3.0
+margin_right = 136.413
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Infantry" type="TextureButton" parent="World/GUI"]
+visible = false
+margin_left = 206.373
+margin_top = 312.965
+margin_right = 396.373
+margin_bottom = 357.965
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/Infantry"]
+modulate = Color( 0.972549, 0.972549, 0.972549, 1 )
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 31.5147
+margin_top = 5.51984
+margin_right = 162.515
+margin_bottom = 44.5198
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Infantry 10 "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/Infantry"]
+anims/Test = SubResource( 7 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/Infantry"]
+anims/Test = SubResource( 8 )
+
+[node name="Artillery" type="TextureButton" parent="World/GUI"]
+visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 651.289
+margin_top = 308.137
+margin_right = 841.289
+margin_bottom = 353.137
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/Artillery"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 31.5147
+margin_top = 5.51984
+margin_right = 162.515
+margin_bottom = 44.5198
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Artillery 15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/Artillery"]
+anims/Test = SubResource( 9 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/Artillery"]
+anims/Test = SubResource( 10 )
+
+[node name="Naval" type="TextureButton" parent="World/GUI"]
+visible = false
+margin_left = 432.604
+margin_top = 310.516
+margin_right = 622.604
+margin_bottom = 355.516
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/Naval"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 44.8893
+margin_top = 6.0
+margin_right = 151.889
+margin_bottom = 45.0
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Naval 15"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/Naval"]
+anims/Test = SubResource( 11 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/Naval"]
+anims/Test = SubResource( 12 )
+
+[node name="ExitButton" type="TextureButton" parent="World/GUI"]
+visible = false
+margin_left = 627.168
+margin_top = 352.093
+margin_right = 817.168
+margin_bottom = 397.093
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 25 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/ExitButton"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 72.0081
+margin_top = 5.11893
+margin_right = 133.008
+margin_bottom = 44.1189
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Restart" type="TextureButton" parent="World/GUI"]
+visible = false
+margin_left = 238.345
+margin_top = 352.093
+margin_right = 428.345
+margin_bottom = 397.093
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../UpgradeButton")
+focus_neighbour_bottom = NodePath("../MenuButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 58 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/Restart"]
+anchor_left = 0.00584602
+anchor_right = 0.00584602
+margin_left = 55.0567
+margin_top = 4.05945
+margin_right = 133.057
+margin_bottom = 43.0594
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Restart"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Points" type="Label" parent="World/GUI"]
+margin_left = 18.422
+margin_top = 10.6447
+margin_right = 100.422
+margin_bottom = 49.6447
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Points "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PointsEnemy" type="Label" parent="World/GUI"]
+anchor_top = -0.00222473
+anchor_bottom = -0.00222473
+margin_left = 905.141
+margin_top = 439.385
+margin_right = 987.141
+margin_bottom = 478.385
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Points "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PointsCounter" type="Label" parent="World/GUI"]
+margin_left = 104.265
+margin_top = 11.5231
+margin_right = 144.265
+margin_bottom = 48.5231
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+script = SubResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PointsCounterEnemy" type="Label" parent="World/GUI"]
+margin_left = 984.776
+margin_top = 439.338
+margin_right = 1024.78
+margin_bottom = 476.338
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+script = SubResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpgradeAvaliable" type="Label" parent="World/GUI"]
+visible = false
+margin_left = 148.339
+margin_top = 9.37004
+margin_right = 163.339
+margin_bottom = 51.37
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="greenarrow-removebg-preview" type="Sprite" parent="World/GUI/UpgradeAvaliable"]
+position = Vector2( 3.927, 19.406 )
+scale = Vector2( 0.0430862, 0.0256415 )
+texture = ExtResource( 49 )
+
+[node name="UpgradeAvaliable2" type="Label" parent="World/GUI"]
+visible = false
+margin_left = 148.339
+margin_top = 8.74008
+margin_right = 163.339
+margin_bottom = 50.7401
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="greenarrow-removebg-preview" type="Sprite" parent="World/GUI/UpgradeAvaliable2"]
+position = Vector2( 3.6463, 5.65549 )
+scale = Vector2( 0.0430862, 0.0256415 )
+texture = ExtResource( 49 )
+
+[node name="greenarrow-removebg-preview2" type="Sprite" parent="World/GUI/UpgradeAvaliable2"]
+position = Vector2( 3.927, 33.717 )
+scale = Vector2( 0.0430862, 0.0256415 )
+texture = ExtResource( 49 )
+
+[node name="greenarrow-removebg-preview3" type="Sprite" parent="World/GUI/UpgradeAvaliable2"]
+position = Vector2( 3.927, 19.4056 )
+scale = Vector2( 0.0430862, 0.0256415 )
+texture = ExtResource( 49 )
+
+[node name="LabelInfantry" type="Label" parent="World/GUI"]
+visible = false
+margin_left = 251.984
+margin_top = 181.429
+margin_right = 310.984
+margin_bottom = 218.429
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelArtillery" type="Label" parent="World/GUI"]
+visible = false
+margin_left = 695.206
+margin_top = 185.067
+margin_right = 754.206
+margin_bottom = 222.067
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelNaval" type="Label" parent="World/GUI"]
+visible = false
+margin_left = 471.976
+margin_top = 186.044
+margin_right = 530.976
+margin_bottom = 223.044
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfantryLevel" type="Label" parent="World/GUI"]
+visible = false
+margin_left = 330.099
+margin_top = 183.948
+margin_right = 360.099
+margin_bottom = 220.948
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArtilleryLevel" type="Label" parent="World/GUI"]
+visible = false
+margin_left = 771.084
+margin_top = 184.019
+margin_right = 801.084
+margin_bottom = 221.019
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalLevel" type="Label" parent="World/GUI"]
+visible = false
+margin_left = 553.589
+margin_top = 184.926
+margin_right = 583.589
+margin_bottom = 221.926
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MyHealthBar" type="TextureProgress" parent="World/GUI"]
+margin_left = 146.838
+margin_top = 440.919
+margin_right = 209.838
+margin_bottom = 455.919
+value = 100.0
+texture_under = ExtResource( 48 )
+texture_progress = ExtResource( 53 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonRound_brown" type="Sprite" parent="World/GUI/MyHealthBar"]
+position = Vector2( -10.2169, 8.42029 )
+scale = Vector2( 0.839648, 0.763693 )
+texture = ExtResource( 45 )
+
+[node name="heart2" type="Sprite" parent="World/GUI/MyHealthBar"]
+position = Vector2( -11.3074, 8.05664 )
+scale = Vector2( 0.0374438, 0.0393027 )
+texture = ExtResource( 41 )
+
+[node name="TheirHealthBar" type="TextureProgress" parent="World/GUI"]
+margin_left = 842.0
+margin_top = 223.0
+margin_right = 905.0
+margin_bottom = 238.0
+value = 100.0
+texture_under = ExtResource( 48 )
+texture_progress = ExtResource( 53 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonRound_brown" type="Sprite" parent="World/GUI/TheirHealthBar"]
+position = Vector2( -10.2169, 8.42029 )
+scale = Vector2( 0.839648, 0.763693 )
+texture = ExtResource( 45 )
+
+[node name="heart3" type="Sprite" parent="World/GUI/TheirHealthBar"]
+position = Vector2( -9.91797, 8.78516 )
+scale = Vector2( 0.0374438, 0.0393027 )
+texture = ExtResource( 41 )
+
+[node name="InfantryImage" type="TextureButton" parent="World/GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 245.0
+margin_top = 472.0
+margin_right = 409.0
+margin_bottom = 586.0
+texture_hover = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/InfantryImage"]
+anims/Test = SubResource( 14 )
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/InfantryImage"]
+anims/Test = SubResource( 15 )
+
+[node name="QuickAttackInfantry" type="TextureButton" parent="World/GUI"]
+visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 257.128
+margin_top = 266.673
+margin_right = 447.128
+margin_bottom = 311.673
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 27 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/QuickAttackInfantry"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 28.0194
+margin_top = 4.37753
+margin_right = 161.019
+margin_bottom = 43.3775
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Quick Attack"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/QuickAttackInfantry"]
+anims/Test = SubResource( 16 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/QuickAttackInfantry"]
+anims/Test = SubResource( 17 )
+
+[node name="InvadeInfantry" type="TextureButton" parent="World/GUI"]
+visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 364.0
+margin_top = 324.0
+margin_right = 702.0
+margin_bottom = 369.0
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+expand = true
+script = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/InvadeInfantry"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 13.5329
+margin_top = 5.62245
+margin_right = 317.533
+margin_bottom = 44.6224
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Invade The Castle To Win!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/InvadeInfantry"]
+anims/Test = SubResource( 18 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/InvadeInfantry"]
+anims/Test = SubResource( 19 )
+
+[node name="DefendInfantry" type="TextureButton" parent="World/GUI"]
+visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 588.128
+margin_top = 264.673
+margin_right = 778.128
+margin_bottom = 309.673
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 61 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/DefendInfantry"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 21.0194
+margin_top = 5.37753
+margin_right = 154.019
+margin_bottom = 44.3775
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Defend Base"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/DefendInfantry"]
+anims/Test = SubResource( 20 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/DefendInfantry"]
+anims/Test = SubResource( 21 )
+
+[node name="CancelInfantry" type="TextureButton" parent="World/GUI"]
+visible = false
+margin_left = 424.115
+margin_top = 377.616
+margin_right = 614.115
+margin_bottom = 422.616
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/CancelInfantry"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 50.8893
+margin_top = 4.0
+margin_right = 129.889
+margin_bottom = 43.0
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Cancel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalImage" type="TextureButton" parent="World/GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 10.0
+margin_top = 201.0
+margin_right = 193.0
+margin_bottom = 330.0
+texture_hover = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/NavalImage"]
+anims/Test = SubResource( 22 )
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/NavalImage"]
+anims/Test = SubResource( 23 )
+
+[node name="AttackNaval" type="TextureButton" parent="World/GUI"]
+visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 298.012
+margin_top = 267.0
+margin_right = 420.012
+margin_bottom = 312.0
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+expand = true
+script = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/AttackNaval"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 27.8893
+margin_top = 4.0
+margin_right = 103.889
+margin_bottom = 43.0
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Attack"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/AttackNaval"]
+anims/Test = SubResource( 24 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/AttackNaval"]
+anims/Test = SubResource( 25 )
+
+[node name="DefendNaval" type="TextureButton" parent="World/GUI"]
+visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 583.409
+margin_top = 264.673
+margin_right = 773.409
+margin_bottom = 309.673
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 55 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/DefendNaval"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 21.0194
+margin_top = 5.37753
+margin_right = 157.019
+margin_bottom = 44.3775
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Defend Base"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/DefendNaval"]
+anims/Test = SubResource( 26 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/DefendNaval"]
+anims/Test = SubResource( 27 )
+
+[node name="CancelNaval" type="TextureButton" parent="World/GUI"]
+visible = false
+margin_left = 424.115
+margin_top = 377.616
+margin_right = 614.115
+margin_bottom = 422.616
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 22 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/CancelNaval"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 50.8893
+margin_top = 4.0
+margin_right = 129.889
+margin_bottom = 43.0
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Cancel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArtilleryImage" type="TextureButton" parent="World/GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 211.0
+margin_top = 385.0
+margin_right = 326.0
+margin_bottom = 461.0
+texture_hover = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+script = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/ArtilleryImage"]
+anims/Test = SubResource( 28 )
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/ArtilleryImage"]
+anims/Test = SubResource( 29 )
+
+[node name="CancelArtillery" type="TextureButton" parent="World/GUI"]
+visible = false
+margin_left = 424.115
+margin_top = 377.616
+margin_right = 614.115
+margin_bottom = 422.616
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 64 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/CancelArtillery"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 50.8893
+margin_top = 4.0
+margin_right = 129.889
+margin_bottom = 43.0
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Cancel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BigAttackArtillery" type="TextureButton" parent="World/GUI"]
+visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 267.299
+margin_top = 265.665
+margin_right = 457.299
+margin_bottom = 310.665
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+expand = true
+script = ExtResource( 63 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/BigAttackArtillery"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 27.8893
+margin_top = 4.0
+margin_right = 103.889
+margin_bottom = 43.0
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Heavy Attack"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/BigAttackArtillery"]
+anims/Test = SubResource( 30 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/BigAttackArtillery"]
+anims/Test = SubResource( 31 )
+
+[node name="DefendArtillery" type="TextureButton" parent="World/GUI"]
+visible = false
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 583.409
+margin_top = 264.673
+margin_right = 773.409
+margin_bottom = 309.673
+rect_pivot_offset = Vector2( 173.976, 22.5 )
+focus_neighbour_top = NodePath("../NextRoundButton")
+focus_neighbour_bottom = NodePath("../UpgradeButton")
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 3 )
+script = ExtResource( 60 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="World/GUI/DefendArtillery"]
+anchor_left = 0.00584602
+anchor_right = 0.00584604
+margin_left = 21.0194
+margin_top = 5.37753
+margin_right = 157.019
+margin_bottom = 44.3775
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Defend Base"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/DefendArtillery"]
+anims/Test = SubResource( 32 )
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/DefendArtillery"]
+anims/Test = SubResource( 33 )
+
+[node name="InfantryTag" type="Label" parent="World/GUI"]
+margin_left = 16.6944
+margin_top = 48.8092
+margin_right = 168.694
+margin_bottom = 85.8092
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Infantry Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfantryTagEnemy" type="Label" parent="World/GUI"]
+margin_left = 827.148
+margin_top = 481.279
+margin_right = 979.148
+margin_bottom = 518.279
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Infantry Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArtilleryTag" type="Label" parent="World/GUI"]
+margin_left = 14.4866
+margin_top = 134.849
+margin_right = 171.487
+margin_bottom = 171.849
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Artillery Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArtilleryTagEnemy" type="Label" parent="World/GUI"]
+margin_left = 821.717
+margin_top = 559.347
+margin_right = 978.717
+margin_bottom = 596.347
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Artillery Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalTag" type="Label" parent="World/GUI"]
+margin_left = 14.4469
+margin_top = 90.7489
+margin_right = 145.447
+margin_bottom = 127.749
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Naval Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalTagEnemy" type="Label" parent="World/GUI"]
+margin_left = 844.743
+margin_top = 521.851
+margin_right = 975.743
+margin_bottom = 558.851
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Naval Level"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfantryLevelDisplay" type="Label" parent="World/GUI"]
+margin_left = 183.175
+margin_top = 49.108
+margin_right = 223.175
+margin_bottom = 86.108
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+script = ExtResource( 59 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfantryLevelDisplayEnemy" type="Label" parent="World/GUI"]
+margin_left = 987.774
+margin_top = 481.224
+margin_right = 1027.77
+margin_bottom = 518.224
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+script = ExtResource( 54 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArtilleryLevelDisplay" type="Label" parent="World/GUI"]
+margin_left = 183.029
+margin_top = 135.754
+margin_right = 223.029
+margin_bottom = 172.754
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+script = ExtResource( 62 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ArtilleryLevelDisplayEnemy" type="Label" parent="World/GUI"]
+margin_left = 988.69
+margin_top = 561.493
+margin_right = 1028.7
+margin_bottom = 598.493
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+script = ExtResource( 56 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalLevelDisplay" type="Label" parent="World/GUI"]
+margin_left = 155.347
+margin_top = 91.7601
+margin_right = 195.347
+margin_bottom = 128.76
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+script = ExtResource( 65 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalLevelDisplayEnemy" type="Label" parent="World/GUI"]
+margin_left = 989.259
+margin_top = 521.359
+margin_right = 1029.26
+margin_bottom = 558.359
+custom_fonts/font = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1"
+script = ExtResource( 57 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavalImageEnemy" type="TextureButton" parent="World/GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 580.313
+margin_top = 87.2396
+margin_right = 677.313
+margin_bottom = 171.24
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/NavalImageEnemy"]
+anims/Test = SubResource( 34 )
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/NavalImageEnemy"]
+anims/Test = SubResource( 35 )
+
+[node name="ArtilleryImageEnemy" type="TextureButton" parent="World/GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 736.0
+margin_top = 432.0
+margin_right = 824.0
+margin_bottom = 551.0
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/ArtilleryImageEnemy"]
+anims/Test = SubResource( 36 )
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/ArtilleryImageEnemy"]
+anims/Test = SubResource( 37 )
+
+[node name="InfantryImageEnemy" type="TextureButton" parent="World/GUI"]
+modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+margin_left = 704.0
+margin_top = 128.0
+margin_right = 844.0
+margin_bottom = 218.0
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedAnimation" type="AnimationPlayer" parent="World/GUI/InfantryImageEnemy"]
+anims/Test = SubResource( 38 )
+
+[node name="GreenAnimation" type="AnimationPlayer" parent="World/GUI/InfantryImageEnemy"]
+anims/Test = SubResource( 39 )
+
+[node name="game2" type="Node2D" parent="World"]
+position = Vector2( 0, 3 )
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="ships - NOT USING RN " type="Node2D" parent="World/game2"]
+visible = false
+
+[node name="Sprite" type="Sprite" parent="World/game2/ships - NOT USING RN "]
+position = Vector2( 162.635, 108.894 )
+texture = ExtResource( 86 )
+region_enabled = true
+region_rect = Rect2( 142.183, 105.09, 148.457, 140.494 )
+
+[node name="LEVEL 1 - AnimationPlayer - Group1 - 2" type="AnimationPlayer" parent="World/game2"]
+"anims/DEFEND GO LEVEL 1" = SubResource( 40 )
+"anims/DEFEND RETURN LEVEL 1" = SubResource( 41 )
+"anims/SHIP LEVEL 1 - group 1 fireball" = SubResource( 42 )
+"anims/SHIP LEVEL 3+4 - group 1 fireball" = SubResource( 43 )
+"anims/SHIP LEVEL 5 - group 1 fireball" = SubResource( 44 )
+"anims/group 1 attack " = SubResource( 45 )
+
+[node name="Sprite" type="Sprite" parent="World/game2/LEVEL 1 - AnimationPlayer - Group1 - 2"]
+visible = false
+position = Vector2( 776.948, 150.676 )
+scale = Vector2( 1.96508, 2.61567 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
+
+[node name="shiirt" type="Sprite" parent="World/game2/LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite"]
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 119.167, 70.1561, 17.4776, 12.3372 )
+
+[node name="hair" type="Sprite" parent="World/game2/LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite"]
+position = Vector2( -0.105103, -4.04825 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 359.335, 31.149, 12.8657, 13.7633 )
+
+[node name="shield" type="Sprite" parent="World/game2/LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite"]
+position = Vector2( 8.00001, 0.0152054 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 799.54, 154.537, 10.8012, 11.9382 )
+
+[node name="LEVEL 2 - AnimationPlayer - Group1 - 3" type="AnimationPlayer" parent="World/game2"]
+"anims/DEFEND GO LEVEL 2" = SubResource( 46 )
+"anims/DEFEND RETURN LEVEL 2" = SubResource( 47 )
+"anims/group 1 attack" = SubResource( 48 )
+
+[node name="Sprite" type="Sprite" parent="World/game2/LEVEL 2 - AnimationPlayer - Group1 - 3"]
+visible = false
+position = Vector2( 820.466, 150.575 )
+scale = Vector2( 1.89502, 2.61567 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
+
+[node name="shiirt" type="Sprite" parent="World/game2/LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite"]
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 119.167, 70.1561, 17.4776, 12.3372 )
+
+[node name="hair" type="Sprite" parent="World/game2/LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite"]
+position = Vector2( -0.688194, 0.334061 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 445.188, 53.0237, 13.3594, 11.9382 )
+
+[node name="shield" type="Sprite" parent="World/game2/LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite"]
+position = Vector2( 6.36359, -2.90063 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 781.812, 101.371, 7.73096, 15.044 )
+
+[node name="LEVEL 3 - AnimationPlayer - Group1 - 4" type="AnimationPlayer" parent="World/game2"]
+"anims/DEFEND GO LEVEL 3" = SubResource( 49 )
+"anims/DEFEND RETUN LEVEL 3" = SubResource( 50 )
+"anims/group 1 attack" = SubResource( 51 )
+
+[node name="Sprite" type="Sprite" parent="World/game2/LEVEL 3 - AnimationPlayer - Group1 - 4"]
+visible = false
+position = Vector2( 768.72, 195.487 )
+scale = Vector2( 2.05083, 2.74256 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
+
+[node name="shiirt" type="Sprite" parent="World/game2/LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite"]
+position = Vector2( 0, 1 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 118.638, 20.2047, 17.9522, 12.2831 )
+
+[node name="hair" type="Sprite" parent="World/game2/LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite"]
+position = Vector2( -0.105103, -3.04825 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 445.622, 67.0724, 10.7131, 12.7867 )
+
+[node name="shield" type="Sprite" parent="World/game2/LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite"]
+position = Vector2( 8, 0.526062 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 864.632, 151.978, 12.791, 19.6128 )
+
+[node name="LEVEL 4 - AnimationPlayer - Group1 - 5" type="AnimationPlayer" parent="World/game2"]
+"anims/DEFEND GO LEVEL 4" = SubResource( 52 )
+"anims/DEFEND RETURN LEVEL 4" = SubResource( 53 )
+"anims/group 1 attack" = SubResource( 54 )
+
+[node name="Sprite" type="Sprite" parent="World/game2/LEVEL 4 - AnimationPlayer - Group1 - 5"]
+visible = false
+position = Vector2( 810.016, 195.935 )
+scale = Vector2( 1.83519, 2.81902 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 0.748077, 34.4402, 16.3271, 17.3538 )
+
+[node name="shiirt" type="Sprite" parent="World/game2/LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite"]
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 119.167, 70.1561, 17.4776, 12.3372 )
+
+[node name="hair" type="Sprite" parent="World/game2/LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite"]
+position = Vector2( -0.5, -3.40063 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 394.204, 102.41, 11.8813, 10.5312 )
+
+[node name="shield" type="Sprite" parent="World/game2/LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite"]
+position = Vector2( 8.38855, 3.714 )
+scale = Vector2( 1.29133, 1 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 651.892, 123.638, 12.1748, 13.6629 )
+
+[node name="LEVEL 5 - AnimationPlayer - Group1 - 1" type="AnimationPlayer" parent="World/game2"]
+"anims/DEFEND GO LEVEL 5" = SubResource( 55 )
+"anims/DEFEND RETURN LEVEL 5" = SubResource( 56 )
+anims/group1_walking = SubResource( 57 )
+"anims/swords - group1" = SubResource( 58 )
+
+[node name="Sprite2" type="Sprite" parent="World/game2/LEVEL 5 - AnimationPlayer - Group1 - 1"]
+visible = false
+position = Vector2( 733.807, 147.454 )
+scale = Vector2( 2.30063, 2.70535 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
+
+[node name="shiirt" type="Sprite" parent="World/game2/LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2"]
+position = Vector2( -0.0936279, 1.84186 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 153.283, 88.8639, 17.3223, 11.9681 )
+
+[node name="hair" type="Sprite" parent="World/game2/LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2"]
+position = Vector2( -0.105103, -3.04825 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 445.622, 67.0724, 10.7131, 12.7867 )
+
+[node name="shield" type="Sprite" parent="World/game2/LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2"]
+position = Vector2( 3.36359, 4.09937 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 651.914, 138.304, 13.5917, 15.0611 )
+
+[node name="group 1 - ships4" type="Node" parent="World/game2"]
+
+[node name="Sprite" type="Sprite" parent="World/game2/group 1 - ships4"]
+visible = false
+position = Vector2( 660, 41.894 )
+rotation = -0.523598
+scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 73 )
+region_enabled = true
+region_rect = Rect2( 63.1245, 16.2779, 19.0261, 14.0193 )
+
+[node name="group 1 - ships5" type="Node" parent="World/game2"]
+
+[node name="Sprite" type="Sprite" parent="World/game2/group 1 - ships5"]
+visible = false
+position = Vector2( 752.4, 58.0662 )
+scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 73 )
+region_enabled = true
+region_rect = Rect2( 61.5095, 31.3713, 17.1144, 19.8748 )
+
+[node name="group 1 - ships6" type="Node" parent="World/game2"]
+
+[node name="Sprite" type="Sprite" parent="World/game2/group 1 - ships6"]
+visible = false
+position = Vector2( 817.544, 74.0747 )
+rotation = -0.523598
+scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 73 )
+region_enabled = true
+region_rect = Rect2( 0.619064, 14.2751, 15.5213, 14.7703 )
+
+[node name="group1 - fireball1" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 622, 58.5392 )
+rotation = 2.35619
+scale = Vector2( 0.192536, 0.235167 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 34
+speed_scale = 0.9
+playing = true
+
+[node name="group1 - fireball2" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 803.088, 76.4395 )
+rotation = 2.35619
+scale = Vector2( 0.176594, 0.224132 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 34
+speed_scale = 0.9
+playing = true
+
+[node name="group1 - fireball3" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 699.956, 81.4398 )
+rotation = 2.35619
+scale = Vector2( 0.231775, 0.294027 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 33
+speed_scale = 0.9
+playing = true
+
+[node name="PPL LEVEL 1 - AnimationPlayer - Group2 - 1" type="AnimationPlayer" parent="World/game2"]
+"anims/Cannonss DEFEND GO Level 3+4" = SubResource( 69 )
+"anims/Cannonss DEFEND GO Level 5" = SubResource( 70 )
+"anims/Cannonss DEFEND GO level 1+2" = SubResource( 71 )
+"anims/Cannonss DEFEND RETURN Level 3+4" = SubResource( 72 )
+"anims/Cannonss DEFEND RETURN Level 5" = SubResource( 73 )
+"anims/Cannonss DEFEND RETURN level 1+2" = SubResource( 74 )
+"anims/DEFEND GO LEV 1" = SubResource( 75 )
+"anims/DEFEND RETURN LEVEL 1" = SubResource( 76 )
+"anims/GR2 Cannonss DEFEND GO Level 1+2" = SubResource( 77 )
+"anims/GR2 Cannonss DEFEND GO Level 3+4" = SubResource( 78 )
+"anims/GR2 Cannonss DEFEND GO Level 5" = SubResource( 79 )
+"anims/GR2 Cannonss DEFEND RETURN Level 1+2" = SubResource( 80 )
+"anims/GR2 Cannonss DEFEND RETURN Level 3+4" = SubResource( 81 )
+"anims/GR2 Cannonss DEFEND RETURN Level 5" = SubResource( 82 )
+"anims/GR2 Ships DEFEND GO Level 1+2" = SubResource( 83 )
+"anims/GR2 Ships DEFEND GO Level 3+4" = SubResource( 84 )
+"anims/GR2 Ships DEFEND GO Level 5" = SubResource( 85 )
+"anims/GR2 Ships DEFEND RETURN Level 1+2" = SubResource( 86 )
+"anims/GR2 Ships DEFEND RETURN Level 5" = SubResource( 87 )
+"anims/GR2 Ships RETURN GO Level 3+4" = SubResource( 88 )
+"anims/Ships DEFEND GO level 1+2" = SubResource( 89 )
+"anims/Ships DEFEND GO level 3+4" = SubResource( 90 )
+"anims/Ships DEFEND GO level 5" = SubResource( 91 )
+"anims/Ships DEFEND RETURN level 1+2" = SubResource( 92 )
+"anims/Ships DEFEND RETURN level 3+4" = SubResource( 93 )
+"anims/Ships DEFEND RETURN level 5" = SubResource( 94 )
+anims/group2_walking = SubResource( 95 )
+
+[node name="Sprite" type="Sprite" parent="World/game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1"]
+visible = false
+position = Vector2( 272.56, 514.578 )
+scale = Vector2( 2.34389, 2.74724 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 16.695, 0.297779, 16.4933, 17.48 )
+
+[node name="shirt" type="Sprite" parent="World/game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite"]
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 237.686, 36.9068, 18.3077, 13.5921 )
+
+[node name="hair" type="Sprite" parent="World/game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite"]
+position = Vector2( -0.142426, -1.57977 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 445.392, 84.8228, 11.011, 14.4774 )
+
+[node name="weapon" type="Sprite" parent="World/game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite"]
+position = Vector2( 9, -1.84311 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 799.255, 119.431, 9.34363, 12.8475 )
+
+[node name="PPL LEVEL 2 - AnimationPlayer - Group2 - 2" type="AnimationPlayer" parent="World/game2"]
+"anims/DEFEND GO LEVEL 2" = SubResource( 96 )
+"anims/DEFEND RETURN LEVEL 2" = SubResource( 97 )
+anims/group2_walking = SubResource( 98 )
+
+[node name="Sprite" type="Sprite" parent="World/game2/PPL LEVEL 2 - AnimationPlayer - Group2 - 2"]
+visible = false
+position = Vector2( 334.319, 515.67 )
+scale = Vector2( 2.1064, 2.72289 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 16.695, 0.297779, 16.4933, 17.48 )
+
+[node name="shirt" type="Sprite" parent="World/game2/PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite"]
+position = Vector2( 0.777252, 1.83282 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 154.131, 2.63564, 16.6434, 13.7235 )
+
+[node name="hair" type="Sprite" parent="World/game2/PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite"]
+position = Vector2( -0.142426, -5.75937 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 377.503, 33.0025, 10.8036, 8.17569 )
+
+[node name="weapon" type="Sprite" parent="World/game2/PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite"]
+position = Vector2( 8, -0.26059 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 689.389, 54.0257, 8.17566, 14.0155 )
+
+[node name="PPL LEVEL 3 - AnimationPlayer - Group2 - 4" type="AnimationPlayer" parent="World/game2"]
+"anims/DEFEND GO LEVEL 3" = SubResource( 99 )
+"anims/DEFEND RETURN LEVEL 3" = SubResource( 100 )
+"anims/group 2 attach" = SubResource( 101 )
+
+[node name="Sprite" type="Sprite" parent="World/game2/PPL LEVEL 3 - AnimationPlayer - Group2 - 4"]
+visible = false
+position = Vector2( 296.101, 563.331 )
+scale = Vector2( 1.99923, 2.7061 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 17.3697, 33.4709, 15.2886, 18.2189 )
+
+[node name="shirt" type="Sprite" parent="World/game2/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite"]
+position = Vector2( -0.798859, 1.39792 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 203.981, 105.708, 16.6434, 10.8036 )
+
+[node name="hair" type="Sprite" parent="World/game2/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite"]
+position = Vector2( -0.310822, -4.90997 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 429.164, 67.8742, 9.4693, 8.79295 )
+
+[node name="weapon" type="Sprite" parent="World/game2/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite"]
+position = Vector2( 8.4187, -0.910065 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 782.019, 84.3605, 9.01721, 17.6665 )
+
+[node name="pants" type="Sprite" parent="World/game2/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite"]
+position = Vector2( 0.161835, 4.59622 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 53.4169, 8.30119, 13.3469, 10.2668 )
+
+[node name="PPL LEVEL 4 - AnimationPlayer - Group2 - 5" type="AnimationPlayer" parent="World/game2"]
+"anims/DEFEND GO LEVEL 4" = SubResource( 102 )
+"anims/DEFEND RETURN LEVEL 4" = SubResource( 103 )
+"anims/LEVEL 1 + 2 - Cannon GROUP 1" = SubResource( 104 )
+"anims/LEVEL 1 - Cannon Group2" = SubResource( 105 )
+"anims/LEVEL 3 + 4 - Cannon GROUP 1" = SubResource( 106 )
+"anims/LEVEL 3 + 4 - Cannon Group 2" = SubResource( 107 )
+"anims/LEVEL 5 - Cannon GROUP 1" = SubResource( 108 )
+"anims/LEVEL 5 - Cannon Group 2" = SubResource( 109 )
+"anims/SHIP LEVEL 1 + 2 - group 2 fireball" = SubResource( 110 )
+"anims/SHIP LEVEL 3 - group 2 fireball" = SubResource( 111 )
+"anims/fireball attack g2" = SubResource( 112 )
+anims/group2_walking = SubResource( 113 )
+"anims/ship LEVEL 5 - group 2" = SubResource( 114 )
+
+[node name="Sprite" type="Sprite" parent="World/game2/PPL LEVEL 4 - AnimationPlayer - Group2 - 5"]
+visible = false
+position = Vector2( 362.549, 564 )
+scale = Vector2( 2.03693, 2.65476 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( -0.145439, 33.9121, 16.8237, 17.7943 )
+
+[node name="shirt" type="Sprite" parent="World/game2/PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite"]
+position = Vector2( -0.798859, 1.39792 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 289.106, 106.06, 17.2206, 9.76693 )
+
+[node name="hair" type="Sprite" parent="World/game2/PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite"]
+position = Vector2( -0.310822, -4.90997 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 429.164, 67.8742, 9.4693, 8.79295 )
+
+[node name="weapon" type="Sprite" parent="World/game2/PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite"]
+position = Vector2( 6.92487, 2.0488 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 653.972, 89.0926, 10.4162, 12.8512 )
+
+[node name="pants" type="Sprite" parent="World/game2/PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite"]
+position = Vector2( -0.503418, 4.15689 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 53.7681, 146.72, 12.0396, 7.03436 )
+
+[node name="PPL LEVEL 5 - AnimationPlayer - Group2 - 3" type="AnimationPlayer" parent="World/game2"]
+"anims/DEFEND LEVEL 5" = SubResource( 115 )
+"anims/DEFEND RETURN LEVEL 5" = SubResource( 116 )
+anims/group2_walking = SubResource( 117 )
+
+[node name="Sprite" type="Sprite" parent="World/game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3"]
+visible = false
+position = Vector2( 379.694, 518.958 )
+scale = Vector2( 2.0171, 2.70799 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( -0.947884, 16.7399, 17.0448, 17.9917 )
+
+[node name="shirt" type="Sprite" parent="World/game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 0.619843, 1.83282 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 272.936, 89.3564, 16.3514, 11.3876 )
+
+[node name="hair" type="Sprite" parent="World/game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 0.465118, -5.66406 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 359.26, 99.6346, 13.5561, 9.89185 )
+
+[node name="weapon" type="Sprite" parent="World/game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 8, -3.66718 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 746.725, 151.016, 10.2634, 17.7529 )
+
+[node name="pants" type="Sprite" parent="World/game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite"]
+position = Vector2( 0.0299072, 4.15689 )
+texture = ExtResource( 70 )
+region_enabled = true
+region_rect = Rect2( 53.0277, 44.1381, 13.1206, 7.30767 )
+
+[node name="group 2 - ships" type="Node" parent="World/game2"]
+
+[node name="Sprite" type="Sprite" parent="World/game2/group 2 - ships"]
+visible = false
+position = Vector2( 48.1084, 325.956 )
+rotation = 0.523598
+scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 73 )
+region_enabled = true
+region_rect = Rect2( 33.5557, 15.5489, 17.2737, 12.7675 )
+
+[node name="group 2 - ships2" type="Node" parent="World/game2"]
+
+[node name="Sprite" type="Sprite" parent="World/game2/group 2 - ships2"]
+visible = false
+position = Vector2( 75.029, 234.485 )
+rotation = 0.261799
+scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 73 )
+region_enabled = true
+region_rect = Rect2( 93.388, 15.7992, 20.2779, 15.0206 )
+
+[node name="group 2 - ships3" type="Node" parent="World/game2"]
+
+[node name="Sprite" type="Sprite" parent="World/game2/group 2 - ships3"]
+visible = false
+position = Vector2( 78.861, 341.865 )
+rotation = -1.0472
+scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 73 )
+region_enabled = true
+region_rect = Rect2( 82.6232, -3.22694, 14.0193, 20.0275 )
+
+[node name="group2 - fireball" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 855.975, 294 )
+rotation = 0.0493656
+scale = Vector2( 0.14501, 0.203818 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 34
+speed_scale = 0.9
+playing = true
+
+[node name="group2 - fireball2" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 856.857, 302.5 )
+rotation = 0.0995313
+scale = Vector2( 0.182617, 0.278595 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 34
+speed_scale = 0.9
+playing = true
+
+[node name="group2 - fireball3" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 865, 316 )
+rotation = 0.153884
+scale = Vector2( 0.124495, 0.189294 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 33
+speed_scale = 0.9
+playing = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 775.822, 497.144 )
+frames = SubResource( 124 )
+
+[node name="group1 - fireball6" type="AnimatedSprite" parent="World/game2/AnimatedSprite"]
+visible = false
+position = Vector2( -43.8877, -11.5574 )
+rotation = 3.20236
+scale = Vector2( 0.14501, 0.203818 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 8
+speed_scale = 0.9
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 773.778, 420.819 )
+frames = SubResource( 124 )
+
+[node name="group1 - fireball8" type="AnimatedSprite" parent="World/game2/AnimatedSprite2"]
+visible = false
+position = Vector2( -32.3486, -4.96069 )
+rotation = -3.14159
+scale = Vector2( 0.136057, 0.203818 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 6
+speed_scale = 0.9
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 786.134, 463.605 )
+frames = SubResource( 124 )
+
+[node name="group1 - fireball9" type="AnimatedSprite" parent="World/game2/AnimatedSprite3"]
+visible = false
+position = Vector2( -75.7047, -0.986531 )
+rotation = -3.16161
+scale = Vector2( 0.136057, 0.203818 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 17
+speed_scale = 0.9
+
+[node name="CANNON GROUP 2 AnimatedSprite1" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 267.997, 396 )
+frames = SubResource( 131 )
+
+[node name="group2 - fireball4" type="AnimatedSprite" parent="World/game2/CANNON GROUP 2 AnimatedSprite1"]
+visible = false
+position = Vector2( 653.003, -59.5 )
+rotation = -0.261799
+scale = Vector2( 0.14501, 0.203818 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 24
+speed_scale = 0.9
+
+[node name="CANNON GROUP 2 AnimatedSprite2" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 235.68, 442 )
+frames = SubResource( 131 )
+frame = 1
+
+[node name="group2 - fireball5" type="AnimatedSprite" parent="World/game2/CANNON GROUP 2 AnimatedSprite2"]
+visible = false
+position = Vector2( 603.32, -125.25 )
+rotation = -0.261799
+scale = Vector2( 0.14501, 0.203818 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 16
+speed_scale = 0.9
+
+[node name="CANNON GROUP 2 AnimatedSprite3" type="AnimatedSprite" parent="World/game2"]
+visible = false
+position = Vector2( 220.658, 399.952 )
+frames = SubResource( 131 )
+
+[node name="group2 - fireball7" type="AnimatedSprite" parent="World/game2/CANNON GROUP 2 AnimatedSprite3"]
+visible = false
+position = Vector2( 546.289, -92 )
+rotation = -0.0132301
+scale = Vector2( 0.14501, 0.203818 )
+frames = SubResource( 68 )
+animation = "shootball"
+frame = 4
+speed_scale = 0.9
+[connection signal="button_up" from="World/GUI/ExitButton" to="World/GUI/ExitButton" method="_on_ExitButton_button_up"]
