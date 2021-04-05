@@ -15,6 +15,7 @@ var navalDefend = false
 var infantryDefendEnemy = false
 var artilleryDefendEnemy = false
 var navalDefendEnemy = false
+var floating_text = preload("res://floatingText.tscn")
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
@@ -190,6 +191,10 @@ func _on_Button_Pressed():
 				PointsCounterEnemy.set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))
 				multiplier = 3
 				
+			var text = floating_text.instance()
+			text.amount = pointsToAdd
+			add_child(text)
+			
 			var PointsCounterEnemyUpdated = get_node("../PointsCounterEnemy")
 			
 			while int(PointsCounterEnemyUpdated.get_text()) >= 15:
