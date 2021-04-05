@@ -131,3 +131,4 @@ texture = ExtResource( 9 )
 [node name="medievalEnvironment_10" type="Sprite" parent="CanvasLayer"]
 position = Vector2( 720.612, 569.492 )
 texture = ExtResource( 7 )
+[connection signal="pressed" from="VBoxContainer/CenterContainer/Next" to="." method="_on_Next_pressed"]
