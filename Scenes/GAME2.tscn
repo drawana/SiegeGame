@@ -1,4 +1,4 @@
-[gd_scene load_steps=123 format=2]
+[gd_scene load_steps=121 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
@@ -15,8 +15,6 @@
 [ext_resource path="res://Sprites/roguelikeChar_transparent.png" type="Texture" id=13]
 [ext_resource path="res://Sprites/Ships/Preview_KenneyNL.png" type="Texture" id=14]
 [ext_resource path="res://Sprites/ships.png" type="Texture" id=15]
-[ext_resource path="res://Scenes/fireball.gd" type="Script" id=16]
-[ext_resource path="res://Sprites/fireball/kisspng-sprite-spaceshiptwo-spaceshipone-spacecraft-fire-effect-5abfdb2640f305.9266932215225229182661.png" type="Texture" id=17]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00019.png" type="Texture" id=18]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00022.png" type="Texture" id=19]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00017.png" type="Texture" id=20]
@@ -766,60 +764,42 @@ tracks/3/keys = {
 }
 
 [sub_resource type="AtlasTexture" id=20]
-flags = 4
-atlas = ExtResource( 17 )
 region = Rect2( 0, 0, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=21]
-flags = 4
-atlas = ExtResource( 17 )
 region = Rect2( 256, 0, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=22]
-flags = 4
-atlas = ExtResource( 17 )
 region = Rect2( 512, 0, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=23]
-flags = 4
-atlas = ExtResource( 17 )
 region = Rect2( 0, 256, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=24]
-flags = 4
-atlas = ExtResource( 17 )
 region = Rect2( 256, 256, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=25]
-flags = 4
-atlas = ExtResource( 17 )
 region = Rect2( 512, 256, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=26]
-flags = 4
-atlas = ExtResource( 17 )
 region = Rect2( 0, 512, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=27]
-flags = 4
-atlas = ExtResource( 17 )
 region = Rect2( 256, 512, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=28]
-flags = 4
-atlas = ExtResource( 17 )
 region = Rect2( 512, 512, 256, 256 )
 
 [sub_resource type="SpriteFrames" id=29]
 animations = [ {
-"frames": [ ExtResource( 24 ), ExtResource( 34 ), ExtResource( 45 ), ExtResource( 23 ), ExtResource( 26 ), ExtResource( 47 ), ExtResource( 33 ), ExtResource( 27 ), ExtResource( 46 ), ExtResource( 48 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 28 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 29 ), ExtResource( 39 ), ExtResource( 20 ), ExtResource( 49 ), ExtResource( 18 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 19 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 32 ), ExtResource( 36 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 44 ), ExtResource( 25 ), ExtResource( 38 ), ExtResource( 51 ), ExtResource( 50 ), ExtResource( 52 ) ],
-"loop": true,
-"name": "shootball",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
 "loop": true,
 "name": "fire explosion",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 34 ), ExtResource( 45 ), ExtResource( 23 ), ExtResource( 26 ), ExtResource( 47 ), ExtResource( 33 ), ExtResource( 27 ), ExtResource( 46 ), ExtResource( 48 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 28 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 29 ), ExtResource( 39 ), ExtResource( 20 ), ExtResource( 49 ), ExtResource( 18 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 19 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 32 ), ExtResource( 36 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 44 ), ExtResource( 25 ), ExtResource( 38 ), ExtResource( 51 ), ExtResource( 50 ), ExtResource( 52 ) ],
+"loop": true,
+"name": "shootball",
 "speed": 5.0
 } ]
 
@@ -1468,7 +1448,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 2.7 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( -17.1911, -149.046 ), Vector2( -584.324, 59.5747 ) ]
+"values": [ Vector2( -17.1911, -149.046 ), Vector2( -584.324, -39.3135 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("AnimatedSprite2/group1 - fireball8:position")
@@ -1480,7 +1460,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0.2, 2.3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( -15.6807, 126 ), Vector2( -600.324, 208.096 ) ]
+"values": [ Vector2( -15.6807, 126 ), Vector2( -594.33, 101.716 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("AnimatedSprite3/group1 - fireball9:position")
@@ -1529,10 +1509,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.4, 2.5 ),
+"times": PoolRealArray( 0.4, 2.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 25.9023, -4.38715 ), Vector2( 616.289, -257 ) ]
+"values": [ Vector2( 25.9023, -4.38715 ), Vector2( 615.145, -63.6757 ) ]
 }
 
 [sub_resource type="Animation" id=50]
@@ -2099,7 +2079,7 @@ region_rect = Rect2( 651.914, 138.304, 13.5917, 15.0611 )
 "anims/group 1 attack " = SubResource( 10 )
 
 [node name="Sprite" type="Sprite" parent="LEVEL 1 - AnimationPlayer - Group1 - 2"]
-position = Vector2( 777.63, 150.221 )
+position = Vector2( 776.948, 150.676 )
 scale = Vector2( 1.96508, 2.61567 )
 texture = ExtResource( 13 )
 region_enabled = true
@@ -2246,10 +2226,9 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 14
+frame = 32
 speed_scale = 0.9
 playing = true
-script = ExtResource( 16 )
 
 [node name="group1 - fireball2" type="AnimatedSprite" parent="."]
 position = Vector2( 803.088, 76.4395 )
@@ -2257,10 +2236,9 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 14
+frame = 32
 speed_scale = 0.9
 playing = true
-script = ExtResource( 16 )
 
 [node name="group1 - fireball3" type="AnimatedSprite" parent="."]
 position = Vector2( 699.956, 81.4398 )
@@ -2268,10 +2246,9 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 13
+frame = 31
 speed_scale = 0.9
 playing = true
-script = ExtResource( 16 )
 
 [node name="PPL LEVEL 1 - AnimationPlayer - Group2 - 1" type="AnimationPlayer" parent="."]
 "anims/DEFEND GO LEV 1" = SubResource( 30 )
@@ -2279,7 +2256,7 @@ script = ExtResource( 16 )
 anims/group2_walking = SubResource( 32 )
 
 [node name="Sprite" type="Sprite" parent="PPL LEVEL 1 - AnimationPlayer - Group2 - 1"]
-position = Vector2( 263.133, 496.432 )
+position = Vector2( 278.51, 515.806 )
 scale = Vector2( 2.34389, 2.74724 )
 texture = ExtResource( 13 )
 region_enabled = true
@@ -2486,10 +2463,9 @@ rotation = 0.523598
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 14
+frame = 32
 speed_scale = 0.9
 playing = true
-script = ExtResource( 16 )
 
 [node name="group2 - fireball2" type="AnimatedSprite" parent="."]
 position = Vector2( 164.681, 134.865 )
@@ -2497,10 +2473,9 @@ rotation = 0.523598
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 14
+frame = 32
 speed_scale = 0.9
 playing = true
-script = ExtResource( 16 )
 
 [node name="group2 - fireball3" type="AnimatedSprite" parent="."]
 position = Vector2( 56.2154, 103.059 )
@@ -2508,94 +2483,87 @@ rotation = 0.523598
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 13
+frame = 31
 speed_scale = 0.9
 playing = true
-script = ExtResource( 16 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 772.822, 416 )
+position = Vector2( 802.788, 562.834 )
 frames = SubResource( 61 )
 
 [node name="group1 - fireball6" type="AnimatedSprite" parent="AnimatedSprite"]
-position = Vector2( -17.1911, -149.046 )
+position = Vector2( -584.324, -39.3135 )
 rotation = 2.61799
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 29 )
 animation = "shootball"
 frame = 8
 speed_scale = 0.9
-script = ExtResource( 16 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
-position = Vector2( 772.822, 278 )
+position = Vector2( 813.276, 423.336 )
 frames = SubResource( 61 )
 
 [node name="group1 - fireball8" type="AnimatedSprite" parent="AnimatedSprite2"]
-position = Vector2( -19.2544, 126.502 )
+position = Vector2( -594.33, 101.716 )
 rotation = -3.14159
 scale = Vector2( 0.136057, 0.203818 )
 frames = SubResource( 29 )
 animation = "shootball"
 frame = 6
 speed_scale = 0.9
-script = ExtResource( 16 )
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
 position = Vector2( 893.074, 457 )
 frames = SubResource( 61 )
 
 [node name="group1 - fireball9" type="AnimatedSprite" parent="AnimatedSprite3"]
-position = Vector2( -27.7199, -11.3791 )
+position = Vector2( -687.075, 47.8519 )
 rotation = -2.87979
 scale = Vector2( 0.136057, 0.203818 )
 frames = SubResource( 29 )
 animation = "shootball"
 frame = 17
 speed_scale = 0.9
-script = ExtResource( 16 )
 
 [node name="CANNON GROUP 2 AnimatedSprite1" type="AnimatedSprite" parent="."]
 position = Vector2( 223.997, 404 )
 frames = SubResource( 68 )
 
 [node name="group2 - fireball4" type="AnimatedSprite" parent="CANNON GROUP 2 AnimatedSprite1"]
-position = Vector2( 24.1087, -4.75478 )
+position = Vector2( 653.003, -59.5 )
 rotation = -0.261799
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 29 )
 animation = "shootball"
 frame = 24
 speed_scale = 0.9
-script = ExtResource( 16 )
 
 [node name="CANNON GROUP 2 AnimatedSprite2" type="AnimatedSprite" parent="."]
-position = Vector2( 273.68, 436 )
+position = Vector2( 263.192, 422.515 )
 frames = SubResource( 68 )
 
 [node name="group2 - fireball5" type="AnimatedSprite" parent="CANNON GROUP 2 AnimatedSprite2"]
-position = Vector2( 27.8265, -2.34789 )
+position = Vector2( 603.32, -125.25 )
 rotation = -0.261799
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 29 )
 animation = "shootball"
 frame = 16
 speed_scale = 0.9
-script = ExtResource( 16 )
 
 [node name="CANNON GROUP 2 AnimatedSprite3" type="AnimatedSprite" parent="."]
-position = Vector2( 196.278, 564 )
+position = Vector2( 194.78, 372.217 )
 frames = SubResource( 68 )
 
 [node name="group2 - fireball7" type="AnimatedSprite" parent="CANNON GROUP 2 AnimatedSprite3"]
-position = Vector2( 31.3057, -6.69917 )
+position = Vector2( 615.145, -63.6757 )
 rotation = -0.261799
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 29 )
 animation = "shootball"
 frame = 4
 speed_scale = 0.9
-script = ExtResource( 16 )
 [connection signal="pressed" from="GUI/Menu/StartContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
 
