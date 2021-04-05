@@ -8,7 +8,7 @@
 [ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/GUI.gd" type="Script" id=8]
-[ext_resource path="res://Scenes/World.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/MyGame.gd" type="Script" id=9]
 [ext_resource path="res://Fonts/smallCardinal.tres" type="DynamicFont" id=10]
 [ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=11]
 [ext_resource path="res://Textures/buttonLong_brown_pressed.png" type="Texture" id=12]
@@ -54,6 +54,7 @@
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00034.png" type="Texture" id=52]
 [ext_resource path="res://Sprites/cannonLEFT-removebg-preview.png" type="Texture" id=53]
 [ext_resource path="res://Sprites/cannonRIGHT-removebg-preview - Copy.png" type="Texture" id=54]
+
 
 [sub_resource type="Animation" id=1]
 resource_name = "DEFEND GO LEVEL 5"
