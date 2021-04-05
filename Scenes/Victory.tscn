@@ -1,0 +1,258 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Fonts/statsfont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Fonts/AIDifficulty.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Fonts/statTextFont.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Fonts/VictoryFont.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Textures/buttonLong_brown_pressed.png" type="Texture" id=5]
+[ext_resource path="res://Scenes/Defeat.gd" type="Script" id=6]
+[ext_resource path="res://Tilesets/tileset_env.res" type="TileSet" id=7]
+[ext_resource path="res://Sprites/Flags/OttoFlag.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_01.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Tile/medievalTile_46.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_07.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Structure/medievalStructure_06.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Structure/medievalStructure_02.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_02.png" type="Texture" id=16]
+[ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Structure/medievalStructure_05.png" type="Texture" id=18]
+
+[node name="Victory" type="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="CanvasLayer" parent="."]
+
+[node name="medievalEnvironment_03" type="Sprite" parent="Background"]
+position = Vector2( 816, 158 )
+texture = ExtResource( 16 )
+
+[node name="medievalEnvironment_04" type="Sprite" parent="Background"]
+position = Vector2( 846, 171 )
+texture = ExtResource( 16 )
+
+[node name="medievalEnvironment_01" type="Sprite" parent="Background"]
+position = Vector2( 214, 450 )
+texture = ExtResource( 9 )
+
+[node name="medievalEnvironment_02" type="Sprite" parent="Background"]
+position = Vector2( 232, 460 )
+scale = Vector2( 0.789945, 0.884499 )
+texture = ExtResource( 9 )
+
+[node name="medievalEnvironment_07" type="Sprite" parent="Background"]
+position = Vector2( 216, 490 )
+texture = ExtResource( 12 )
+
+[node name="medievalTile_46" type="Sprite" parent="Background"]
+position = Vector2( 168, 168 )
+texture = ExtResource( 11 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 7 )
+format = 1
+tile_data = PoolIntArray( 0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 6, 2, 0, 7, 2, 0, 8, 2, 0, 9, 2, 0, 10, 2, 0, 11, 2, 0, 12, 2, 0, 13, 2, 0, 14, 2, 0, 15, 2, 0, 65536, 2, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 65548, 0, 0, 65549, 0, 0, 65550, 0, 0, 65551, 2, 0, 131072, 2, 0, 131073, 0, 0, 131074, 4, 0, 131075, 4, 0, 131076, 4, 0, 131077, 4, 0, 131078, 4, 0, 131079, 4, 0, 131080, 4, 0, 131081, 4, 0, 131082, 4, 0, 131083, 4, 0, 131084, 4, 0, 131085, 4, 0, 131086, 0, 0, 131087, 2, 0, 196608, 2, 0, 196609, 0, 0, 196610, 4, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 0, 0, 196623, 2, 0, 262144, 2, 0, 262145, 0, 0, 262146, 4, 0, 262147, 4, 0, 262148, 4, 0, 262149, 4, 0, 262150, 4, 0, 262151, 4, 0, 262152, 4, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 0, 0, 262159, 2, 0, 327680, 2, 0, 327681, 0, 0, 327682, 4, 0, 327683, 4, 0, 327684, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 0, 0, 327695, 2, 0, 393216, 2, 0, 393217, 0, 0, 393218, 4, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 4, 0, 393230, 0, 0, 393231, 2, 0, 458752, 2, 0, 458753, 0, 0, 458754, 4, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 4, 0, 458766, 0, 0, 458767, 2, 0, 524288, 2, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 2, 0, 589824, 2, 0, 589825, 2, 0, 589826, 2, 0, 589827, 2, 0, 589828, 2, 0, 589829, 2, 0, 589830, 2, 0, 589831, 2, 0, 589832, 2, 0, 589833, 2, 0, 589834, 2, 0, 589835, 2, 0, 589836, 2, 0, 589837, 2, 0, 589838, 2, 0, 589839, 2, 0 )
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_constants/separation = 0
+
+[node name="SpacerLabel" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 140.0
+rect_min_size = Vector2( 0, 140 )
+
+[node name="VictoryLbl" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 140.0
+margin_right = 1024.0
+margin_bottom = 189.0
+size_flags_horizontal = 5
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.0901961, 0.894118, 0.443137, 1 )
+text = "Victory!"
+align = 1
+valign = 1
+
+[node name="Text" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 189.0
+margin_right = 1024.0
+margin_bottom = 322.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Commander, we have sucessfully captured the castle of Constantinople! 
+Finally, the Great City belongs to the Ottoman Empire!
+This will mark a new age of prosperity and glory for our great Empire. 
+The Sultan will be elated and the chief commanders will surely be well rewarded."
+align = 1
+valign = 1
+
+[node name="Spacer" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 322.0
+margin_right = 1024.0
+margin_bottom = 337.0
+rect_min_size = Vector2( 0, 15 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+margin_top = 337.0
+margin_right = 1024.0
+margin_bottom = 528.0
+custom_constants/separation = 5
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 31.0
+custom_fonts/mono_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "[center][u]Stats[/u][/center]"
+text = "Stats"
+fit_content_height = true
+
+[node name="Difficulty" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 36.0
+margin_right = 1024.0
+margin_bottom = 55.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Difficulty: Easy"
+align = 1
+valign = 1
+
+[node name="Length" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 60.0
+margin_right = 1024.0
+margin_bottom = 79.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Length of Siege: 20 Weeks"
+align = 1
+valign = 1
+
+[node name="InfLevel" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 84.0
+margin_right = 1024.0
+margin_bottom = 103.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Infantry Level: 6"
+align = 1
+valign = 1
+
+[node name="NavLevel" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 108.0
+margin_right = 1024.0
+margin_bottom = 127.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Navy Level: 6"
+align = 1
+valign = 1
+
+[node name="ArtLevel" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 132.0
+margin_right = 1024.0
+margin_bottom = 151.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Artillery Level: 6"
+align = 1
+valign = 1
+
+[node name="EnemyHP" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+margin_top = 156.0
+margin_right = 1024.0
+margin_bottom = 191.0
+rect_min_size = Vector2( 0, 35 )
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Enemy Castle Health: 50"
+align = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer/VBoxContainer"]
+margin_top = 528.0
+margin_right = 1024.0
+margin_bottom = 577.0
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/VBoxContainer/CenterContainer"]
+margin_left = 417.0
+margin_right = 607.0
+margin_bottom = 49.0
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/CenterContainer/TextureButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Back to Menu"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TheirCastle" type="Node2D" parent="."]
+position = Vector2( -120, 90 )
+scale = Vector2( 0.7, 0.7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="medievalStructure_10" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1121.57, 465.571 )
+texture = ExtResource( 18 )
+
+[node name="medievalStructure_05" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1193.57, 464.571 )
+texture = ExtResource( 18 )
+
+[node name="medievalStructure_07" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1159.57, 505.571 )
+texture = ExtResource( 13 )
+
+[node name="medievalStructure_03" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1159.57, 443.571 )
+texture = ExtResource( 15 )
+
+[node name="medievalStructure_08" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1196.57, 529.571 )
+texture = ExtResource( 18 )
+
+[node name="medievalStructure_09" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1120.57, 529.571 )
+texture = ExtResource( 18 )
+
+[node name="medievalStructure_01" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1196.57, 465.571 )
+texture = ExtResource( 10 )
+
+[node name="medievalStructure_04" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1120.57, 465.571 )
+texture = ExtResource( 10 )
+
+[node name="medievalStructure_11" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1193.57, 400.571 )
+texture = ExtResource( 10 )
+
+[node name="medievalStructure_12" type="Sprite" parent="TheirCastle"]
+position = Vector2( 1120.57, 401.571 )
+texture = ExtResource( 10 )
+
+[node name="OttoFlag" type="Sprite" parent="."]
+position = Vector2( 812, 420 )
+scale = Vector2( 0.521858, 0.521858 )
+texture = ExtResource( 8 )
+[connection signal="pressed" from="MarginContainer/VBoxContainer/CenterContainer/TextureButton" to="." method="_on_TextureButton_pressed"]
