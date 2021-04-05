@@ -1,4 +1,4 @@
-[gd_scene load_steps=224 format=2]
+[gd_scene load_steps=251 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
@@ -90,7 +90,7 @@
 [ext_resource path="res://Sprites/cannonLEFT-removebg-preview.png" type="Texture" id=88]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00034.png" type="Texture" id=89]
 
-[sub_resource type="Animation" id=96]
+[sub_resource type="Animation" id=1]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -106,7 +106,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=97]
+[sub_resource type="Animation" id=2]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -122,7 +122,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=98]
+[sub_resource type="Animation" id=3]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -138,7 +138,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=99]
+[sub_resource type="Animation" id=4]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -154,7 +154,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=100]
+[sub_resource type="Animation" id=5]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -170,7 +170,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=101]
+[sub_resource type="Animation" id=6]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -186,7 +186,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=102]
+[sub_resource type="Animation" id=7]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -202,7 +202,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=103]
+[sub_resource type="Animation" id=8]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -218,7 +218,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=104]
+[sub_resource type="Animation" id=9]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -234,7 +234,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=105]
+[sub_resource type="Animation" id=10]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -250,7 +250,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=106]
+[sub_resource type="Animation" id=11]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -266,7 +266,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=107]
+[sub_resource type="Animation" id=12]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -282,9 +282,9 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="GDScript" id=108]
+[sub_resource type="GDScript" id=13]
 
-[sub_resource type="Animation" id=109]
+[sub_resource type="Animation" id=14]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -300,7 +300,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=110]
+[sub_resource type="Animation" id=15]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -316,7 +316,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=111]
+[sub_resource type="Animation" id=16]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -332,7 +332,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=112]
+[sub_resource type="Animation" id=17]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -348,7 +348,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=113]
+[sub_resource type="Animation" id=18]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -364,7 +364,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=114]
+[sub_resource type="Animation" id=19]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -380,7 +380,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=115]
+[sub_resource type="Animation" id=20]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -396,7 +396,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=116]
+[sub_resource type="Animation" id=21]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -412,7 +412,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=117]
+[sub_resource type="Animation" id=22]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -428,7 +428,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=118]
+[sub_resource type="Animation" id=23]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -444,7 +444,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=119]
+[sub_resource type="Animation" id=24]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -460,7 +460,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=120]
+[sub_resource type="Animation" id=25]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -476,7 +476,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=121]
+[sub_resource type="Animation" id=26]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -492,7 +492,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=122]
+[sub_resource type="Animation" id=27]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -508,7 +508,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=123]
+[sub_resource type="Animation" id=28]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -524,7 +524,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=124]
+[sub_resource type="Animation" id=29]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -540,7 +540,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=125]
+[sub_resource type="Animation" id=30]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -556,7 +556,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=126]
+[sub_resource type="Animation" id=31]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -572,7 +572,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=127]
+[sub_resource type="Animation" id=32]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -588,7 +588,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=128]
+[sub_resource type="Animation" id=33]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -604,7 +604,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=129]
+[sub_resource type="Animation" id=34]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -620,7 +620,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=130]
+[sub_resource type="Animation" id=35]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -636,7 +636,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=131]
+[sub_resource type="Animation" id=36]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -652,7 +652,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=132]
+[sub_resource type="Animation" id=37]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -668,7 +668,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=133]
+[sub_resource type="Animation" id=38]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -684,7 +684,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=134]
+[sub_resource type="Animation" id=39]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -700,7 +700,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=135]
+[sub_resource type="Animation" id=40]
 resource_name = "DEFEND GO LEVEL 1"
 length = 2.0
 tracks/0/type = "value"
@@ -716,7 +716,7 @@ tracks/0/keys = {
 "values": [ Vector2( 777.066, 149.057 ), Vector2( 767.439, 343.5 ) ]
 }
 
-[sub_resource type="Animation" id=136]
+[sub_resource type="Animation" id=41]
 resource_name = "DEFEND RETURN LEVEL 1"
 length = 2.0
 tracks/0/type = "value"
@@ -732,7 +732,7 @@ tracks/0/keys = {
 "values": [ Vector2( 767.439, 343.5 ), Vector2( 779.76, 149.469 ) ]
 }
 
-[sub_resource type="Animation" id=137]
+[sub_resource type="Animation" id=42]
 resource_name = "SHIP LEVEL 1 - group 1 fireball"
 length = 3.0
 tracks/0/type = "value"
@@ -748,7 +748,7 @@ tracks/0/keys = {
 "values": [ Vector2( 803.088, 76.4395 ), Vector2( 179.792, 488.434 ) ]
 }
 
-[sub_resource type="Animation" id=138]
+[sub_resource type="Animation" id=43]
 resource_name = "SHIP LEVEL 3+4 - group 1 fireball"
 length = 2.7
 tracks/0/type = "value"
@@ -776,7 +776,7 @@ tracks/1/keys = {
 "values": [ Vector2( 622, 58.5392 ), Vector2( 184.494, 483.009 ) ]
 }
 
-[sub_resource type="Animation" id=139]
+[sub_resource type="Animation" id=44]
 resource_name = "SHIP LEVEL 5 - group 1 fireball"
 length = 3.0
 tracks/0/type = "value"
@@ -816,7 +816,7 @@ tracks/2/keys = {
 "values": [ Vector2( 727.15, 59.8704 ), Vector2( 183.265, 491.259 ) ]
 }
 
-[sub_resource type="Animation" id=140]
+[sub_resource type="Animation" id=45]
 resource_name = "group 1 attack "
 length = 6.0
 tracks/0/type = "value"
@@ -832,7 +832,7 @@ tracks/0/keys = {
 "values": [ Vector2( 779.76, 147.579 ), Vector2( 225.386, 451.736 ), Vector2( 227.185, 451.846 ), Vector2( 222.651, 453.549 ), Vector2( 223.078, 455.752 ), Vector2( 222.346, 459.395 ), Vector2( 223.571, 454.372 ), Vector2( 779.76, 146.83 ) ]
 }
 
-[sub_resource type="Animation" id=141]
+[sub_resource type="Animation" id=46]
 resource_name = "DEFEND GO LEVEL 2"
 length = 2.0
 tracks/0/type = "value"
@@ -860,7 +860,7 @@ tracks/1/keys = {
 "values": [ Vector2( 797.422, 165.695 ), Vector2( 781.314, 368 ) ]
 }
 
-[sub_resource type="Animation" id=142]
+[sub_resource type="Animation" id=47]
 resource_name = "DEFEND RETURN LEVEL 2"
 length = 2.0
 tracks/0/type = "value"
@@ -888,7 +888,7 @@ tracks/1/keys = {
 "values": [ Vector2( 781.314, 368 ), Vector2( 820.756, 150.892 ) ]
 }
 
-[sub_resource type="Animation" id=143]
+[sub_resource type="Animation" id=48]
 resource_name = "group 1 attack"
 length = 6.0
 tracks/0/type = "value"
@@ -916,7 +916,7 @@ tracks/1/keys = {
 "values": [ Vector2( 821.804, 149.767 ), Vector2( 236.635, 532.045 ), Vector2( 237.283, 535.022 ), Vector2( 234.402, 535.587 ), Vector2( 232.127, 537.788 ), Vector2( 232.477, 536.552 ), Vector2( 235.407, 543.961 ), Vector2( 237.871, 540.704 ), Vector2( 819.321, 146.231 ) ]
 }
 
-[sub_resource type="Animation" id=144]
+[sub_resource type="Animation" id=49]
 resource_name = "DEFEND GO LEVEL 3"
 length = 2.0
 tracks/0/type = "value"
@@ -956,7 +956,7 @@ tracks/2/keys = {
 "values": [ Vector2( 767.378, 196.367 ), Vector2( 744.4, 365.5 ) ]
 }
 
-[sub_resource type="Animation" id=145]
+[sub_resource type="Animation" id=50]
 resource_name = "DEFEND RETUN LEVEL 3"
 length = 2.0
 tracks/0/type = "value"
@@ -996,7 +996,7 @@ tracks/2/keys = {
 "values": [ Vector2( 744.4, 365.5 ), Vector2( 764.093, 194.509 ) ]
 }
 
-[sub_resource type="Animation" id=146]
+[sub_resource type="Animation" id=51]
 resource_name = "group 1 attack"
 length = 6.4
 tracks/0/type = "value"
@@ -1036,7 +1036,7 @@ tracks/2/keys = {
 "values": [ Vector2( 821.804, 149.767 ), Vector2( 256.06, 491.434 ), Vector2( 254.177, 491.154 ), Vector2( 256.108, 493.43 ), Vector2( 254.77, 493.13 ), Vector2( 253.352, 494.309 ), Vector2( 248.934, 496.863 ), Vector2( 250.734, 496.678 ), Vector2( 252.579, 495.811 ), Vector2( 819.321, 147.608 ) ]
 }
 
-[sub_resource type="Animation" id=147]
+[sub_resource type="Animation" id=52]
 resource_name = "DEFEND GO LEVEL 4"
 length = 2.0
 tracks/0/type = "value"
@@ -1088,7 +1088,7 @@ tracks/3/keys = {
 "values": [ Vector2( 768.72, 195.487 ), Vector2( 751.288, 321 ) ]
 }
 
-[sub_resource type="Animation" id=148]
+[sub_resource type="Animation" id=53]
 resource_name = "DEFEND RETURN LEVEL 4"
 length = 2.0
 tracks/0/type = "value"
@@ -1140,7 +1140,7 @@ tracks/3/keys = {
 "values": [ Vector2( 751.288, 321 ), Vector2( 764.093, 192.87 ) ]
 }
 
-[sub_resource type="Animation" id=149]
+[sub_resource type="Animation" id=54]
 resource_name = "group 1 attack"
 length = 7.0
 tracks/0/type = "value"
@@ -1192,7 +1192,7 @@ tracks/3/keys = {
 "values": [ Vector2( 768.72, 195.487 ), Vector2( 251.804, 537.215 ), Vector2( 250.131, 537.215 ), Vector2( 245.837, 539.693 ), Vector2( 243.722, 539.693 ), Vector2( 244.097, 537.215 ), Vector2( 251.17, 536.545 ), Vector2( 243.611, 539.209 ), Vector2( 244.801, 538.373 ), Vector2( 245.992, 542.203 ), Vector2( 247.183, 538.034 ), Vector2( 244.374, 538.865 ), Vector2( 764.711, 196.872 ) ]
 }
 
-[sub_resource type="Animation" id=150]
+[sub_resource type="Animation" id=55]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
@@ -1255,7 +1255,7 @@ tracks/4/keys = {
 "values": [ Vector2( 810.67, 195.571 ), Vector2( 752.954, 368 ) ]
 }
 
-[sub_resource type="Animation" id=151]
+[sub_resource type="Animation" id=56]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
@@ -1318,7 +1318,7 @@ tracks/4/keys = {
 "values": [ Vector2( 764.951, 279 ), Vector2( 828.191, 160 ) ]
 }
 
-[sub_resource type="Animation" id=152]
+[sub_resource type="Animation" id=57]
 length = 7.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
@@ -1381,7 +1381,7 @@ tracks/4/keys = {
 "values": [ Vector2( 812.113, 194.837 ), Vector2( 265.285, 473 ), Vector2( 265.285, 473 ), Vector2( 805.157, 190 ) ]
 }
 
-[sub_resource type="Animation" id=153]
+[sub_resource type="Animation" id=58]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:position")
@@ -1408,47 +1408,47 @@ tracks/1/keys = {
 "values": [ 0.0 ]
 }
 
-[sub_resource type="AtlasTexture" id=154]
+[sub_resource type="AtlasTexture" id=59]
 region = Rect2( 0, 0, 256, 256 )
 
-[sub_resource type="AtlasTexture" id=155]
+[sub_resource type="AtlasTexture" id=60]
 region = Rect2( 256, 0, 256, 256 )
 
-[sub_resource type="AtlasTexture" id=156]
+[sub_resource type="AtlasTexture" id=61]
 region = Rect2( 512, 0, 256, 256 )
 
-[sub_resource type="AtlasTexture" id=157]
+[sub_resource type="AtlasTexture" id=62]
 region = Rect2( 0, 256, 256, 256 )
 
-[sub_resource type="AtlasTexture" id=158]
+[sub_resource type="AtlasTexture" id=63]
 region = Rect2( 256, 256, 256, 256 )
 
-[sub_resource type="AtlasTexture" id=159]
+[sub_resource type="AtlasTexture" id=64]
 region = Rect2( 512, 256, 256, 256 )
 
-[sub_resource type="AtlasTexture" id=160]
+[sub_resource type="AtlasTexture" id=65]
 region = Rect2( 0, 512, 256, 256 )
 
-[sub_resource type="AtlasTexture" id=161]
+[sub_resource type="AtlasTexture" id=66]
 region = Rect2( 256, 512, 256, 256 )
 
-[sub_resource type="AtlasTexture" id=162]
+[sub_resource type="AtlasTexture" id=67]
 region = Rect2( 512, 512, 256, 256 )
 
-[sub_resource type="SpriteFrames" id=163]
+[sub_resource type="SpriteFrames" id=68]
 animations = [ {
 "frames": [ ExtResource( 34 ), ExtResource( 29 ), ExtResource( 77 ), ExtResource( 65 ), ExtResource( 58 ), ExtResource( 85 ), ExtResource( 27 ), ExtResource( 72 ), ExtResource( 81 ), ExtResource( 87 ), ExtResource( 62 ), ExtResource( 56 ), ExtResource( 74 ), ExtResource( 64 ), ExtResource( 80 ), ExtResource( 41 ), ExtResource( 63 ), ExtResource( 71 ), ExtResource( 86 ), ExtResource( 59 ), ExtResource( 75 ), ExtResource( 55 ), ExtResource( 66 ), ExtResource( 78 ), ExtResource( 76 ), ExtResource( 12 ), ExtResource( 61 ), ExtResource( 60 ), ExtResource( 67 ), ExtResource( 79 ), ExtResource( 68 ), ExtResource( 57 ), ExtResource( 84 ), ExtResource( 83 ), ExtResource( 89 ) ],
 "loop": true,
 "name": "shootball",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 154 ), SubResource( 155 ), SubResource( 156 ), SubResource( 157 ), SubResource( 158 ), SubResource( 159 ), SubResource( 160 ), SubResource( 161 ), SubResource( 162 ) ],
+"frames": [ SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ) ],
 "loop": true,
 "name": "fire explosion",
 "speed": 5.0
 } ]
 
-[sub_resource type="Animation" id=164]
+[sub_resource type="Animation" id=69]
 resource_name = "DEFEND GO LEV 1"
 length = 2.0
 tracks/0/type = "value"
@@ -1464,7 +1464,7 @@ tracks/0/keys = {
 "values": [ Vector2( 272.56, 514.578 ), Vector2( 217.123, 439 ) ]
 }
 
-[sub_resource type="Animation" id=165]
+[sub_resource type="Animation" id=70]
 resource_name = "DEFEND RETURN LEVEL 1"
 length = 2.0
 tracks/0/type = "value"
@@ -1480,7 +1480,7 @@ tracks/0/keys = {
 "values": [ Vector2( 217.123, 439 ), Vector2( 283.43, 515.806 ) ]
 }
 
-[sub_resource type="Animation" id=166]
+[sub_resource type="Animation" id=71]
 length = 6.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -1495,8 +1495,7 @@ tracks/0/keys = {
 "values": [ Vector2( 272.56, 514.578 ), Vector2( 762.589, 294.5 ), Vector2( 764.894, 294.536 ), Vector2( 766.599, 294.806 ), Vector2( 764.684, 295.317 ), Vector2( 764.233, 296.078 ), Vector2( 765.152, 295.098 ), Vector2( 765.34, 293.465 ), Vector2( 276.051, 512.625 ) ]
 }
 
-[sub_resource type="Animation" id=69]
-resource_name = "Cannonss DEFEND GO Level 3+4"
+[sub_resource type="Animation" id=72]
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:position")
 tracks/0/interp = 1
@@ -1522,8 +1521,7 @@ tracks/1/keys = {
 "values": [ Vector2( 786.134, 464.605 ), Vector2( 876.134, 460.605 ) ]
 }
 
-[sub_resource type="Animation" id=70]
-resource_name = "Cannonss DEFEND GO Level 5"
+[sub_resource type="Animation" id=73]
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:position")
 tracks/0/interp = 1
@@ -1561,8 +1559,7 @@ tracks/2/keys = {
 "values": [ Vector2( 773.778, 420.819 ), Vector2( 830.778, 427.819 ) ]
 }
 
-[sub_resource type="Animation" id=71]
-resource_name = "Cannonss DEFEND GO level 1+2"
+[sub_resource type="Animation" id=74]
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:position")
 tracks/0/interp = 1
@@ -1576,8 +1573,7 @@ tracks/0/keys = {
 "values": [ Vector2( 781.822, 501.144 ), Vector2( 869.822, 404.144 ) ]
 }
 
-[sub_resource type="Animation" id=72]
-resource_name = "Cannonss DEFEND RETURN Level 3+4"
+[sub_resource type="Animation" id=75]
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite3:position")
 tracks/0/interp = 1
@@ -1603,8 +1599,7 @@ tracks/1/keys = {
 "values": [ Vector2( 870.822, 407.144 ), Vector2( 775.822, 497.144 ) ]
 }
 
-[sub_resource type="Animation" id=73]
-resource_name = "Cannonss DEFEND RETURN Level 5"
+[sub_resource type="Animation" id=76]
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite2:position")
 tracks/0/interp = 1
@@ -1642,8 +1637,7 @@ tracks/2/keys = {
 "values": [ Vector2( 874.822, 409.144 ), Vector2( 785.822, 488.144 ) ]
 }
 
-[sub_resource type="Animation" id=74]
-resource_name = "Cannonss DEFEND RETURN level 1+2"
+[sub_resource type="Animation" id=77]
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:position")
 tracks/0/interp = 1
@@ -1657,8 +1651,7 @@ tracks/0/keys = {
 "values": [ Vector2( 869.822, 404.144 ), Vector2( 778.822, 499.144 ) ]
 }
 
-[sub_resource type="Animation" id=75]
-resource_name = "DEFEND GO LEV 1"
+[sub_resource type="Animation" id=78]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2/Sprite:position")
@@ -1673,8 +1666,7 @@ tracks/0/keys = {
 "values": [ Vector2( 272.56, 514.578 ), Vector2( 217.123, 439 ) ]
 }
 
-[sub_resource type="Animation" id=76]
-resource_name = "DEFEND RETURN LEVEL 1"
+[sub_resource type="Animation" id=79]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2/Sprite:position")
@@ -1689,8 +1681,7 @@ tracks/0/keys = {
 "values": [ Vector2( 217.123, 439 ), Vector2( 283.43, 515.806 ) ]
 }
 
-[sub_resource type="Animation" id=77]
-resource_name = "GR2 Cannonss DEFEND GO Level 1+2"
+[sub_resource type="Animation" id=80]
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
 tracks/0/interp = 1
@@ -1704,8 +1695,7 @@ tracks/0/keys = {
 "values": [ Vector2( 270.997, 385 ), Vector2( 163.997, 404 ) ]
 }
 
-[sub_resource type="Animation" id=78]
-resource_name = "GR2 Cannonss DEFEND GO Level 3+4"
+[sub_resource type="Animation" id=81]
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
 tracks/0/interp = 1
@@ -1731,8 +1721,7 @@ tracks/1/keys = {
 "values": [ Vector2( 273.68, 436 ), Vector2( 235.68, 442 ) ]
 }
 
-[sub_resource type="Animation" id=79]
-resource_name = "GR2 Cannonss DEFEND GO Level 5"
+[sub_resource type="Animation" id=82]
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
 tracks/0/interp = 1
@@ -1770,8 +1759,7 @@ tracks/2/keys = {
 "values": [ Vector2( 302.658, 384.952 ), Vector2( 220.658, 399.952 ) ]
 }
 
-[sub_resource type="Animation" id=80]
-resource_name = "GR2 Cannonss DEFEND RETURN Level 1+2"
+[sub_resource type="Animation" id=83]
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
 tracks/0/interp = 1
@@ -1785,8 +1773,7 @@ tracks/0/keys = {
 "values": [ Vector2( 163.997, 404 ), Vector2( 267.997, 396 ) ]
 }
 
-[sub_resource type="Animation" id=81]
-resource_name = "GR2 Cannonss DEFEND RETURN Level 3+4"
+[sub_resource type="Animation" id=84]
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
 tracks/0/interp = 1
@@ -1812,8 +1799,7 @@ tracks/1/keys = {
 "values": [ Vector2( 158.997, 404 ), Vector2( 234.997, 404 ) ]
 }
 
-[sub_resource type="Animation" id=82]
-resource_name = "GR2 Cannonss DEFEND RETURN Level 5"
+[sub_resource type="Animation" id=85]
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
 tracks/0/interp = 1
@@ -1851,8 +1837,7 @@ tracks/2/keys = {
 "values": [ Vector2( 220.658, 399.952 ), Vector2( 296.658, 393.952 ) ]
 }
 
-[sub_resource type="Animation" id=83]
-resource_name = "GR2 Ships DEFEND GO Level 1+2"
+[sub_resource type="Animation" id=86]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
 tracks/0/interp = 1
@@ -1866,8 +1851,7 @@ tracks/0/keys = {
 "values": [ Vector2( 138.861, 299.865 ), Vector2( 78.861, 341.865 ) ]
 }
 
-[sub_resource type="Animation" id=84]
-resource_name = "GR2 Ships DEFEND GO Level 3+4"
+[sub_resource type="Animation" id=87]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
 tracks/0/interp = 1
@@ -1893,8 +1877,7 @@ tracks/1/keys = {
 "values": [ Vector2( 48.1084, 264.956 ), Vector2( 48.1084, 334.956 ) ]
 }
 
-[sub_resource type="Animation" id=85]
-resource_name = "GR2 Ships DEFEND GO Level 5"
+[sub_resource type="Animation" id=88]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
 tracks/0/interp = 1
@@ -1932,8 +1915,7 @@ tracks/2/keys = {
 "values": [ Vector2( 165.029, 234.485 ), Vector2( 75.029, 234.485 ) ]
 }
 
-[sub_resource type="Animation" id=86]
-resource_name = "GR2 Ships DEFEND RETURN Level 1+2"
+[sub_resource type="Animation" id=89]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
 tracks/0/interp = 1
@@ -1947,8 +1929,7 @@ tracks/0/keys = {
 "values": [ Vector2( 84.861, 341.865 ), Vector2( 128.861, 303.865 ) ]
 }
 
-[sub_resource type="Animation" id=87]
-resource_name = "GR2 Ships DEFEND RETURN Level 5"
+[sub_resource type="Animation" id=90]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships2/Sprite:position")
 tracks/0/interp = 1
@@ -1986,8 +1967,7 @@ tracks/2/keys = {
 "values": [ Vector2( 68.861, 395.865 ), Vector2( 129.861, 310.865 ) ]
 }
 
-[sub_resource type="Animation" id=88]
-resource_name = "GR2 Ships RETURN GO Level 3+4"
+[sub_resource type="Animation" id=91]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships/Sprite:position")
 tracks/0/interp = 1
@@ -2013,8 +1993,7 @@ tracks/1/keys = {
 "values": [ Vector2( 60.861, 390.865 ), Vector2( 114.861, 314.865 ) ]
 }
 
-[sub_resource type="Animation" id=89]
-resource_name = "Ships DEFEND GO level 1+2"
+[sub_resource type="Animation" id=92]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
 tracks/0/interp = 1
@@ -2028,8 +2007,7 @@ tracks/0/keys = {
 "values": [ Vector2( 820.544, 60.0747 ), Vector2( 844.544, 33.0747 ) ]
 }
 
-[sub_resource type="Animation" id=90]
-resource_name = "Ships DEFEND GO level 3+4"
+[sub_resource type="Animation" id=93]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
 tracks/0/interp = 1
@@ -2055,8 +2033,7 @@ tracks/1/keys = {
 "values": [ Vector2( 744.4, 51.0662 ), Vector2( 842.4, 100.066 ) ]
 }
 
-[sub_resource type="Animation" id=91]
-resource_name = "Ships DEFEND GO level 5"
+[sub_resource type="Animation" id=94]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
 tracks/0/interp = 1
@@ -2094,8 +2071,7 @@ tracks/2/keys = {
 "values": [ Vector2( 660, 41.894 ), Vector2( 771, 54.894 ) ]
 }
 
-[sub_resource type="Animation" id=92]
-resource_name = "Ships DEFEND RETURN level 1+2"
+[sub_resource type="Animation" id=95]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
 tracks/0/interp = 1
@@ -2109,8 +2085,7 @@ tracks/0/keys = {
 "values": [ Vector2( 844.544, 33.0747 ), Vector2( 814.544, 60.0747 ) ]
 }
 
-[sub_resource type="Animation" id=93]
-resource_name = "Ships DEFEND RETURN level 3+4"
+[sub_resource type="Animation" id=96]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships5/Sprite:position")
 tracks/0/interp = 1
@@ -2136,8 +2111,7 @@ tracks/1/keys = {
 "values": [ Vector2( 841.544, 35.0747 ), Vector2( 817.544, 74.0747 ) ]
 }
 
-[sub_resource type="Animation" id=94]
-resource_name = "Ships DEFEND RETURN level 5"
+[sub_resource type="Animation" id=97]
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships4/Sprite:position")
 tracks/0/interp = 1
@@ -2175,7 +2149,7 @@ tracks/2/keys = {
 "values": [ Vector2( 843.544, 26.0747 ), Vector2( 812.544, 67.0747 ) ]
 }
 
-[sub_resource type="Animation" id=95]
+[sub_resource type="Animation" id=98]
 length = 6.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2/Sprite:position")
@@ -2190,7 +2164,7 @@ tracks/0/keys = {
 "values": [ Vector2( 272.56, 514.578 ), Vector2( 762.589, 294.5 ), Vector2( 764.894, 294.536 ), Vector2( 766.599, 294.806 ), Vector2( 764.684, 295.317 ), Vector2( 764.233, 296.078 ), Vector2( 765.152, 295.098 ), Vector2( 765.34, 293.465 ), Vector2( 276.051, 512.625 ) ]
 }
 
-[sub_resource type="Animation" id=167]
+[sub_resource type="Animation" id=99]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2217,7 +2191,7 @@ tracks/1/keys = {
 "values": [ Vector2( 273.965, 541.479 ), Vector2( 236.635, 503 ) ]
 }
 
-[sub_resource type="Animation" id=168]
+[sub_resource type="Animation" id=100]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2244,7 +2218,7 @@ tracks/1/keys = {
 "values": [ Vector2( 236.635, 503 ), Vector2( 333.276, 515.806 ) ]
 }
 
-[sub_resource type="Animation" id=169]
+[sub_resource type="Animation" id=101]
 length = 6.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
@@ -2271,7 +2245,7 @@ tracks/1/keys = {
 "values": [ Vector2( 281.107, 515.806 ), Vector2( 768.44, 298.5 ), Vector2( 770.404, 300.998 ), Vector2( 767.91, 299.582 ), Vector2( 771.064, 297.372 ), Vector2( 770.672, 300.404 ), Vector2( 771.812, 303.53 ), Vector2( 770.403, 302.752 ), Vector2( 263.133, 496.432 ) ]
 }
 
-[sub_resource type="Animation" id=170]
+[sub_resource type="Animation" id=102]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2310,7 +2284,7 @@ tracks/2/keys = {
 "values": [ Vector2( 296.101, 563.331 ), Vector2( 240.251, 491.434 ) ]
 }
 
-[sub_resource type="Animation" id=171]
+[sub_resource type="Animation" id=103]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2349,7 +2323,7 @@ tracks/2/keys = {
 "values": [ Vector2( 240.251, 491.434 ), Vector2( 334.464, 520.737 ) ]
 }
 
-[sub_resource type="Animation" id=172]
+[sub_resource type="Animation" id=104]
 length = 7.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
@@ -2388,7 +2362,7 @@ tracks/2/keys = {
 "values": [ Vector2( 278.51, 515.806 ), Vector2( 801, 419 ), Vector2( 799.669, 417.442 ), Vector2( 799.869, 418.009 ), Vector2( 800.521, 417.64 ), Vector2( 799.573, 417.372 ), Vector2( 802.039, 418.207 ), Vector2( 262.077, 499.584 ) ]
 }
 
-[sub_resource type="Animation" id=173]
+[sub_resource type="Animation" id=105]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2439,7 +2413,7 @@ tracks/3/keys = {
 "values": [ Vector2( 334.319, 515.67 ), Vector2( 253.006, 510.879 ) ]
 }
 
-[sub_resource type="Animation" id=174]
+[sub_resource type="Animation" id=106]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2490,7 +2464,7 @@ tracks/3/keys = {
 "values": [ Vector2( 253.006, 510.879 ), Vector2( 311.591, 555.125 ) ]
 }
 
-[sub_resource type="Animation" id=175]
+[sub_resource type="Animation" id=107]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite/group1 - fireball6:position")
@@ -2505,7 +2479,7 @@ tracks/0/keys = {
 "values": [ Vector2( 6.8103, -88.5278 ), Vector2( -566.192, -22.425 ) ]
 }
 
-[sub_resource type="Animation" id=176]
+[sub_resource type="Animation" id=108]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1/group2 - fireball4:position")
@@ -2520,7 +2494,7 @@ tracks/0/keys = {
 "values": [ Vector2( 18.0411, -3.99997 ), Vector2( 632.503, -93.25 ) ]
 }
 
-[sub_resource type="Animation" id=177]
+[sub_resource type="Animation" id=109]
 length = 2.7
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite3/group1 - fireball9:position")
@@ -2547,7 +2521,7 @@ tracks/1/keys = {
 "values": [ Vector2( -50.4888, -2.17896 ), Vector2( -592.388, -12.6519 ) ]
 }
 
-[sub_resource type="Animation" id=178]
+[sub_resource type="Animation" id=110]
 length = 2.6
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1/group2 - fireball4:position")
@@ -2574,7 +2548,7 @@ tracks/1/keys = {
 "values": [ Vector2( 21.095, -1.00006 ), Vector2( 600.32, -100.5 ) ]
 }
 
-[sub_resource type="Animation" id=179]
+[sub_resource type="Animation" id=111]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite/group1 - fireball6:position")
@@ -2613,7 +2587,7 @@ tracks/2/keys = {
 "values": [ Vector2( -39.7417, -3.85938 ), Vector2( -615.149, 42.1062 ) ]
 }
 
-[sub_resource type="Animation" id=180]
+[sub_resource type="Animation" id=112]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite2/group2 - fireball5:position")
@@ -2652,7 +2626,7 @@ tracks/2/keys = {
 "values": [ Vector2( 25.9023, -4.38715 ), Vector2( 546.289, -92 ) ]
 }
 
-[sub_resource type="Animation" id=181]
+[sub_resource type="Animation" id=113]
 length = 2.6
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -2667,7 +2641,7 @@ tracks/0/keys = {
 "values": [ Vector2( 219.802, 258.713 ), Vector2( 853.644, 307 ) ]
 }
 
-[sub_resource type="Animation" id=182]
+[sub_resource type="Animation" id=114]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -2694,7 +2668,7 @@ tracks/1/keys = {
 "values": [ Vector2( 233.632, 261.518 ), Vector2( 856.857, 302.5 ) ]
 }
 
-[sub_resource type="Animation" id=183]
+[sub_resource type="Animation" id=115]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -2721,7 +2695,7 @@ tracks/1/keys = {
 "values": [ Vector2( 168.824, 155.101 ), Vector2( 874, 318 ) ]
 }
 
-[sub_resource type="Animation" id=184]
+[sub_resource type="Animation" id=116]
 length = 6.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
@@ -2772,7 +2746,7 @@ tracks/3/keys = {
 "values": [ Vector2( 334.319, 515.67 ), Vector2( 750.901, 330 ), Vector2( 752.445, 334.535 ), Vector2( 756.368, 329.105 ), Vector2( 755.542, 329.067 ), Vector2( 755.085, 330.252 ), Vector2( 757.937, 329.628 ), Vector2( 756.908, 330.285 ), Vector2( 759.088, 332.192 ), Vector2( 257.219, 496.051 ) ]
 }
 
-[sub_resource type="Animation" id=185]
+[sub_resource type="Animation" id=117]
 length = 2.9
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -2811,7 +2785,7 @@ tracks/2/keys = {
 "values": [ Vector2( 196.046, 319.543 ), Vector2( 855.975, 294 ) ]
 }
 
-[sub_resource type="Animation" id=186]
+[sub_resource type="Animation" id=118]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2874,7 +2848,7 @@ tracks/4/keys = {
 "values": [ Vector2( 329.794, 514.691 ), Vector2( 191.95, 425.94 ) ]
 }
 
-[sub_resource type="Animation" id=187]
+[sub_resource type="Animation" id=119]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2937,7 +2911,7 @@ tracks/4/keys = {
 "values": [ Vector2( 259.499, 491.434 ), Vector2( 309.045, 555.808 ) ]
 }
 
-[sub_resource type="Animation" id=188]
+[sub_resource type="Animation" id=120]
 length = 6.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -3000,77 +2974,772 @@ tracks/4/keys = {
 "values": [ Vector2( 362.549, 564 ), Vector2( 813.289, 428 ), Vector2( 813.289, 428 ), Vector2( 303.4, 502 ) ]
 }
 
-[sub_resource type="AtlasTexture" id=189]
+[sub_resource type="Animation" id=135]
+resource_name = "Cannonss DEFEND GO Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 778.822, 499.144 ), Vector2( 870.822, 407.144 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 786.134, 464.605 ), Vector2( 876.134, 460.605 ) ]
+}
+
+[sub_resource type="Animation" id=136]
+resource_name = "Cannonss DEFEND GO Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 775.822, 497.144 ), Vector2( 874.822, 409.144 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 786.134, 463.605 ), Vector2( 878.134, 456.605 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 773.778, 420.819 ), Vector2( 830.778, 427.819 ) ]
+}
+
+[sub_resource type="Animation" id=137]
+resource_name = "Cannonss DEFEND GO level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 781.822, 501.144 ), Vector2( 869.822, 404.144 ) ]
+}
+
+[sub_resource type="Animation" id=138]
+resource_name = "Cannonss DEFEND RETURN Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 876.134, 460.605 ), Vector2( 786.134, 463.605 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 870.822, 407.144 ), Vector2( 775.822, 497.144 ) ]
+}
+
+[sub_resource type="Animation" id=139]
+resource_name = "Cannonss DEFEND RETURN Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 830.778, 427.819 ), Vector2( 783.778, 424.819 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 878.134, 456.605 ), Vector2( 799.134, 457.605 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 874.822, 409.144 ), Vector2( 785.822, 488.144 ) ]
+}
+
+[sub_resource type="Animation" id=140]
+resource_name = "Cannonss DEFEND RETURN level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 869.822, 404.144 ), Vector2( 778.822, 499.144 ) ]
+}
+
+[sub_resource type="Animation" id=141]
+resource_name = "DEFEND GO LEV 1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 1.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 272.56, 514.578 ), Vector2( 217.123, 439 ) ]
+}
+
+[sub_resource type="Animation" id=142]
+resource_name = "DEFEND RETURN LEVEL 1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 1.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 217.123, 439 ), Vector2( 283.43, 515.806 ) ]
+}
+
+[sub_resource type="Animation" id=143]
+resource_name = "GR2 Cannonss DEFEND GO Level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 270.997, 385 ), Vector2( 163.997, 404 ) ]
+}
+
+[sub_resource type="Animation" id=144]
+resource_name = "GR2 Cannonss DEFEND GO Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 236.997, 404 ), Vector2( 158.997, 404 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 273.68, 436 ), Vector2( 235.68, 442 ) ]
+}
+
+[sub_resource type="Animation" id=145]
+resource_name = "GR2 Cannonss DEFEND GO Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 234.997, 404 ), Vector2( 159.997, 404 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 273.68, 442 ), Vector2( 235.68, 442 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CANNON GROUP 2 AnimatedSprite3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 302.658, 384.952 ), Vector2( 220.658, 399.952 ) ]
+}
+
+[sub_resource type="Animation" id=146]
+resource_name = "GR2 Cannonss DEFEND RETURN Level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 163.997, 404 ), Vector2( 267.997, 396 ) ]
+}
+
+[sub_resource type="Animation" id=147]
+resource_name = "GR2 Cannonss DEFEND RETURN Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 235.68, 442 ), Vector2( 273.68, 442 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 158.997, 404 ), Vector2( 234.997, 404 ) ]
+}
+
+[sub_resource type="Animation" id=148]
+resource_name = "GR2 Cannonss DEFEND RETURN Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 159.997, 404 ), Vector2( 235.997, 404 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 235.68, 442 ), Vector2( 285.68, 433 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CANNON GROUP 2 AnimatedSprite3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 220.658, 399.952 ), Vector2( 296.658, 393.952 ) ]
+}
+
+[sub_resource type="Animation" id=149]
+resource_name = "GR2 Ships DEFEND GO Level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 325.956 ), Vector2( 48.1084, 381.956 ) ]
+}
+
+[sub_resource type="Animation" id=150]
+resource_name = "GR2 Ships DEFEND GO Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 264.956 ), Vector2( 48.1084, 334.956 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 2 - ships2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 75.029, 234.485 ), Vector2( 75.029, 385.485 ) ]
+}
+
+[sub_resource type="Animation" id=151]
+resource_name = "GR2 Ships DEFEND GO Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 138.861, 299.865 ), Vector2( 68.861, 395.865 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 2 - ships/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 264.956 ), Vector2( 48.1084, 325.956 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group 2 - ships2/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 165.029, 234.485 ), Vector2( 75.029, 234.485 ) ]
+}
+
+[sub_resource type="Animation" id=152]
+resource_name = "GR2 Ships DEFEND RETURN Level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 381.956 ), Vector2( 48.1084, 321.956 ) ]
+}
+
+[sub_resource type="Animation" id=153]
+resource_name = "GR2 Ships DEFEND RETURN Level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 75.029, 234.485 ), Vector2( 133.029, 234.485 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 2 - ships/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 325.956 ), Vector2( 48.1084, 285.956 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group 2 - ships3/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 68.861, 395.865 ), Vector2( 129.861, 310.865 ) ]
+}
+
+[sub_resource type="Animation" id=154]
+resource_name = "GR2 Ships RETURN GO Level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 2 - ships/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 48.1084, 334.956 ), Vector2( 48.1084, 310.956 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 2 - ships2/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 75.029, 385.485 ), Vector2( 75.029, 257.485 ) ]
+}
+
+[sub_resource type="Animation" id=155]
+resource_name = "Ships DEFEND GO level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 820.544, 60.0747 ), Vector2( 844.544, 33.0747 ) ]
+}
+
+[sub_resource type="Animation" id=156]
+resource_name = "Ships DEFEND GO level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 814.544, 60.0747 ), Vector2( 841.544, 35.0747 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 1 - ships4/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 660, 41.894 ), Vector2( 786, 91.894 ) ]
+}
+
+[sub_resource type="Animation" id=157]
+resource_name = "Ships DEFEND GO level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 817.544, 74.0747 ), Vector2( 843.544, 26.0747 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 1 - ships5/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 752.4, 58.0662 ), Vector2( 836.4, 92.0662 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group 1 - ships4/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 660, 41.894 ), Vector2( 771, 54.894 ) ]
+}
+
+[sub_resource type="Animation" id=158]
+resource_name = "Ships DEFEND RETURN level 1+2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 844.544, 33.0747 ), Vector2( 814.544, 60.0747 ) ]
+}
+
+[sub_resource type="Animation" id=159]
+resource_name = "Ships DEFEND RETURN level 3+4"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 841.544, 35.0747 ), Vector2( 817.544, 74.0747 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 1 - ships4/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 786, 91.894 ), Vector2( 602, 82.894 ) ]
+}
+
+[sub_resource type="Animation" id=160]
+resource_name = "Ships DEFEND RETURN level 5"
+tracks/0/type = "value"
+tracks/0/path = NodePath("group 1 - ships4/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 771, 54.894 ), Vector2( 653, 51.894 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("group 1 - ships5/Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 836.4, 92.0662 ), Vector2( 731.4, 57.0662 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("group 1 - ships6/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 843.544, 26.0747 ), Vector2( 812.544, 67.0747 ) ]
+}
+
+[sub_resource type="Animation" id=161]
+length = 6.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2/Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 1, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 6.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 272.56, 514.578 ), Vector2( 762.589, 294.5 ), Vector2( 764.894, 294.536 ), Vector2( 766.599, 294.806 ), Vector2( 764.684, 295.317 ), Vector2( 764.233, 296.078 ), Vector2( 765.152, 295.098 ), Vector2( 765.34, 293.465 ), Vector2( 276.051, 512.625 ) ]
+}
+
+[sub_resource type="AtlasTexture" id=121]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 0, 0, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=190]
+[sub_resource type="AtlasTexture" id=122]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 103, 0, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=191]
+[sub_resource type="AtlasTexture" id=123]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 206, 0, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=192]
+[sub_resource type="AtlasTexture" id=124]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 206, 106, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=193]
+[sub_resource type="AtlasTexture" id=125]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 103, 106, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=194]
+[sub_resource type="AtlasTexture" id=126]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 0, 106, 103, 106 )
 
-[sub_resource type="SpriteFrames" id=195]
+[sub_resource type="SpriteFrames" id=127]
 animations = [ {
-"frames": [ SubResource( 189 ), SubResource( 190 ), SubResource( 191 ), SubResource( 192 ), SubResource( 193 ), SubResource( 194 ) ],
+"frames": [ SubResource( 121 ), SubResource( 122 ), SubResource( 123 ), SubResource( 124 ), SubResource( 125 ), SubResource( 126 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
 } ]
 
-[sub_resource type="AtlasTexture" id=196]
+[sub_resource type="AtlasTexture" id=128]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 0, 0, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=197]
+[sub_resource type="AtlasTexture" id=129]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 103, 0, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=198]
+[sub_resource type="AtlasTexture" id=130]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 206, 0, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=199]
+[sub_resource type="AtlasTexture" id=131]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 0, 108, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=200]
+[sub_resource type="AtlasTexture" id=132]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 103, 108, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=201]
+[sub_resource type="AtlasTexture" id=133]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 206, 108, 103, 108 )
 
-[sub_resource type="SpriteFrames" id=202]
+[sub_resource type="SpriteFrames" id=134]
 animations = [ {
-"frames": [ SubResource( 196 ), SubResource( 197 ), SubResource( 198 ), SubResource( 199 ), SubResource( 200 ), SubResource( 201 ) ],
+"frames": [ SubResource( 128 ), SubResource( 129 ), SubResource( 130 ), SubResource( 131 ), SubResource( 132 ), SubResource( 133 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -3209,10 +3878,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/MenuButton"]
-anims/Test = SubResource( 96 )
+anims/Test = SubResource( 1 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/MenuButton"]
-anims/Test = SubResource( 97 )
+anims/Test = SubResource( 2 )
 
 [node name="UpgradeButton" type="TextureButton" parent="GUI"]
 modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
@@ -3246,10 +3915,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/UpgradeButton"]
-anims/Test = SubResource( 98 )
+anims/Test = SubResource( 3 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/UpgradeButton"]
-anims/Test = SubResource( 99 )
+anims/Test = SubResource( 4 )
 
 [node name="NextRoundButton" type="TextureButton" parent="GUI"]
 modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
@@ -3283,10 +3952,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/NextRoundButton"]
-anims/Test = SubResource( 100 )
+anims/Test = SubResource( 5 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/NextRoundButton"]
-anims/Test = SubResource( 101 )
+anims/Test = SubResource( 6 )
 
 [node name="ResumeButton" type="TextureButton" parent="GUI"]
 visible = false
@@ -3380,10 +4049,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
-anims/Test = SubResource( 102 )
+anims/Test = SubResource( 7 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
-anims/Test = SubResource( 103 )
+anims/Test = SubResource( 8 )
 
 [node name="Artillery" type="TextureButton" parent="GUI"]
 visible = false
@@ -3417,10 +4086,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
-anims/Test = SubResource( 104 )
+anims/Test = SubResource( 9 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
-anims/Test = SubResource( 105 )
+anims/Test = SubResource( 10 )
 
 [node name="Naval" type="TextureButton" parent="GUI"]
 visible = false
@@ -3453,10 +4122,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Naval"]
-anims/Test = SubResource( 106 )
+anims/Test = SubResource( 11 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Naval"]
-anims/Test = SubResource( 107 )
+anims/Test = SubResource( 12 )
 
 [node name="ExitButton" type="TextureButton" parent="GUI"]
 visible = false
@@ -3552,7 +4221,7 @@ margin_bottom = 48.5231
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
-script = SubResource( 108 )
+script = SubResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -3565,7 +4234,7 @@ margin_bottom = 476.393
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
-script = SubResource( 108 )
+script = SubResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -3753,10 +4422,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/InfantryImage"]
-anims/Test = SubResource( 109 )
+anims/Test = SubResource( 14 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/InfantryImage"]
-anims/Test = SubResource( 110 )
+anims/Test = SubResource( 15 )
 
 [node name="QuickAttackInfantry" type="TextureButton" parent="GUI"]
 visible = false
@@ -3790,10 +4459,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/QuickAttackInfantry"]
-anims/Test = SubResource( 111 )
+anims/Test = SubResource( 16 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/QuickAttackInfantry"]
-anims/Test = SubResource( 112 )
+anims/Test = SubResource( 17 )
 
 [node name="InvadeInfantry" type="TextureButton" parent="GUI"]
 visible = false
@@ -3828,10 +4497,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/InvadeInfantry"]
-anims/Test = SubResource( 113 )
+anims/Test = SubResource( 18 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/InvadeInfantry"]
-anims/Test = SubResource( 114 )
+anims/Test = SubResource( 19 )
 
 [node name="DefendInfantry" type="TextureButton" parent="GUI"]
 visible = false
@@ -3865,10 +4534,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/DefendInfantry"]
-anims/Test = SubResource( 115 )
+anims/Test = SubResource( 20 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/DefendInfantry"]
-anims/Test = SubResource( 116 )
+anims/Test = SubResource( 21 )
 
 [node name="CancelInfantry" type="TextureButton" parent="GUI"]
 visible = false
@@ -3917,10 +4586,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/NavalImage"]
-anims/Test = SubResource( 117 )
+anims/Test = SubResource( 22 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/NavalImage"]
-anims/Test = SubResource( 118 )
+anims/Test = SubResource( 23 )
 
 [node name="AttackNaval" type="TextureButton" parent="GUI"]
 visible = false
@@ -3955,10 +4624,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/AttackNaval"]
-anims/Test = SubResource( 119 )
+anims/Test = SubResource( 24 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/AttackNaval"]
-anims/Test = SubResource( 120 )
+anims/Test = SubResource( 25 )
 
 [node name="DefendNaval" type="TextureButton" parent="GUI"]
 visible = false
@@ -3992,10 +4661,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/DefendNaval"]
-anims/Test = SubResource( 121 )
+anims/Test = SubResource( 26 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/DefendNaval"]
-anims/Test = SubResource( 122 )
+anims/Test = SubResource( 27 )
 
 [node name="CancelNaval" type="TextureButton" parent="GUI"]
 visible = false
@@ -4042,10 +4711,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/ArtilleryImage"]
-anims/Test = SubResource( 123 )
+anims/Test = SubResource( 28 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/ArtilleryImage"]
-anims/Test = SubResource( 124 )
+anims/Test = SubResource( 29 )
 
 [node name="CancelArtillery" type="TextureButton" parent="GUI"]
 visible = false
@@ -4110,10 +4779,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/BigAttackArtillery"]
-anims/Test = SubResource( 125 )
+anims/Test = SubResource( 30 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/BigAttackArtillery"]
-anims/Test = SubResource( 126 )
+anims/Test = SubResource( 31 )
 
 [node name="DefendArtillery" type="TextureButton" parent="GUI"]
 visible = false
@@ -4147,10 +4816,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/DefendArtillery"]
-anims/Test = SubResource( 127 )
+anims/Test = SubResource( 32 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/DefendArtillery"]
-anims/Test = SubResource( 128 )
+anims/Test = SubResource( 33 )
 
 [node name="InfantryTag" type="Label" parent="GUI"]
 margin_left = 16.6944
@@ -4315,10 +4984,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/NavalImageEnemy"]
-anims/Test = SubResource( 129 )
+anims/Test = SubResource( 34 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/NavalImageEnemy"]
-anims/Test = SubResource( 130 )
+anims/Test = SubResource( 35 )
 
 [node name="ArtilleryImageEnemy" type="TextureButton" parent="GUI"]
 modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
@@ -4333,10 +5002,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/ArtilleryImageEnemy"]
-anims/Test = SubResource( 131 )
+anims/Test = SubResource( 36 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/ArtilleryImageEnemy"]
-anims/Test = SubResource( 132 )
+anims/Test = SubResource( 37 )
 
 [node name="InfantryImageEnemy" type="TextureButton" parent="GUI"]
 modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
@@ -4351,10 +5020,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/InfantryImageEnemy"]
-anims/Test = SubResource( 133 )
+anims/Test = SubResource( 38 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/InfantryImageEnemy"]
-anims/Test = SubResource( 134 )
+anims/Test = SubResource( 39 )
 
 [node name="plusPoints" type="Label" parent="GUI"]
 visible = false
@@ -4477,12 +5146,12 @@ region_enabled = true
 region_rect = Rect2( 142.183, 105.09, 148.457, 140.494 )
 
 [node name="LEVEL 1 - AnimationPlayer - Group1 - 2" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 1" = SubResource( 135 )
-"anims/DEFEND RETURN LEVEL 1" = SubResource( 136 )
-"anims/SHIP LEVEL 1 - group 1 fireball" = SubResource( 137 )
-"anims/SHIP LEVEL 3+4 - group 1 fireball" = SubResource( 138 )
-"anims/SHIP LEVEL 5 - group 1 fireball" = SubResource( 139 )
-"anims/group 1 attack " = SubResource( 140 )
+"anims/DEFEND GO LEVEL 1" = SubResource( 40 )
+"anims/DEFEND RETURN LEVEL 1" = SubResource( 41 )
+"anims/SHIP LEVEL 1 - group 1 fireball" = SubResource( 42 )
+"anims/SHIP LEVEL 3+4 - group 1 fireball" = SubResource( 43 )
+"anims/SHIP LEVEL 5 - group 1 fireball" = SubResource( 44 )
+"anims/group 1 attack " = SubResource( 45 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 1 - AnimationPlayer - Group1 - 2"]
 visible = false
@@ -4510,9 +5179,9 @@ region_enabled = true
 region_rect = Rect2( 799.54, 154.537, 10.8012, 11.9382 )
 
 [node name="LEVEL 2 - AnimationPlayer - Group1 - 3" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 2" = SubResource( 141 )
-"anims/DEFEND RETURN LEVEL 2" = SubResource( 142 )
-"anims/group 1 attack" = SubResource( 143 )
+"anims/DEFEND GO LEVEL 2" = SubResource( 46 )
+"anims/DEFEND RETURN LEVEL 2" = SubResource( 47 )
+"anims/group 1 attack" = SubResource( 48 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 2 - AnimationPlayer - Group1 - 3"]
 visible = false
@@ -4540,9 +5209,9 @@ region_enabled = true
 region_rect = Rect2( 781.812, 101.371, 7.73096, 15.044 )
 
 [node name="LEVEL 3 - AnimationPlayer - Group1 - 4" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 3" = SubResource( 144 )
-"anims/DEFEND RETUN LEVEL 3" = SubResource( 145 )
-"anims/group 1 attack" = SubResource( 146 )
+"anims/DEFEND GO LEVEL 3" = SubResource( 49 )
+"anims/DEFEND RETUN LEVEL 3" = SubResource( 50 )
+"anims/group 1 attack" = SubResource( 51 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 3 - AnimationPlayer - Group1 - 4"]
 visible = false
@@ -4571,9 +5240,9 @@ region_enabled = true
 region_rect = Rect2( 864.632, 151.978, 12.791, 19.6128 )
 
 [node name="LEVEL 4 - AnimationPlayer - Group1 - 5" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 4" = SubResource( 147 )
-"anims/DEFEND RETURN LEVEL 4" = SubResource( 148 )
-"anims/group 1 attack" = SubResource( 149 )
+"anims/DEFEND GO LEVEL 4" = SubResource( 52 )
+"anims/DEFEND RETURN LEVEL 4" = SubResource( 53 )
+"anims/group 1 attack" = SubResource( 54 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 4 - AnimationPlayer - Group1 - 5"]
 visible = false
@@ -4602,10 +5271,10 @@ region_enabled = true
 region_rect = Rect2( 651.892, 123.638, 12.1748, 13.6629 )
 
 [node name="LEVEL 5 - AnimationPlayer - Group1 - 1" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 5" = SubResource( 150 )
-"anims/DEFEND RETURN LEVEL 5" = SubResource( 151 )
-anims/group1_walking = SubResource( 152 )
-"anims/swords - group1" = SubResource( 153 )
+"anims/DEFEND GO LEVEL 5" = SubResource( 55 )
+"anims/DEFEND RETURN LEVEL 5" = SubResource( 56 )
+anims/group1_walking = SubResource( 57 )
+"anims/swords - group1" = SubResource( 58 )
 
 [node name="Sprite2" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1"]
 visible = false
@@ -4658,7 +5327,7 @@ region_rect = Rect2( 61.5095, 31.3713, 17.1144, 19.8748 )
 
 [node name="Sprite" type="Sprite" parent="game2/group 1 - ships6"]
 visible = false
-position = Vector2( 817.544, 74.0747 )
+position = Vector2( 814.544, 60.0747 )
 rotation = -0.523598
 scale = Vector2( 4.15999, 4.46278 )
 texture = ExtResource( 73 )
@@ -4670,9 +5339,9 @@ visible = false
 position = Vector2( 622, 58.5392 )
 rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
-frame = 6
+frame = 18
 speed_scale = 0.9
 playing = true
 
@@ -4681,9 +5350,9 @@ visible = false
 position = Vector2( 803.088, 76.4395 )
 rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
-frame = 6
+frame = 18
 speed_scale = 0.9
 playing = true
 
@@ -4692,16 +5361,16 @@ visible = false
 position = Vector2( 699.956, 81.4398 )
 rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
-frame = 5
+frame = 17
 speed_scale = 0.9
 playing = true
 
 [node name="PPL LEVEL 1 - AnimationPlayer - Group2 - 1" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEV 1" = SubResource( 164 )
-"anims/DEFEND RETURN LEVEL 1" = SubResource( 165 )
-anims/group2_walking = SubResource( 166 )
+"anims/DEFEND GO LEV 1" = SubResource( 69 )
+"anims/DEFEND RETURN LEVEL 1" = SubResource( 70 )
+anims/group2_walking = SubResource( 71 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1"]
 visible = false
@@ -4729,33 +5398,33 @@ region_enabled = true
 region_rect = Rect2( 799.255, 119.431, 9.34363, 12.8475 )
 
 [node name="PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2" type="AnimationPlayer" parent="game2"]
-"anims/Cannonss DEFEND GO Level 3+4" = SubResource( 69 )
-"anims/Cannonss DEFEND GO Level 5" = SubResource( 70 )
-"anims/Cannonss DEFEND GO level 1+2" = SubResource( 71 )
-"anims/Cannonss DEFEND RETURN Level 3+4" = SubResource( 72 )
-"anims/Cannonss DEFEND RETURN Level 5" = SubResource( 73 )
-"anims/Cannonss DEFEND RETURN level 1+2" = SubResource( 74 )
-"anims/DEFEND GO LEV 1" = SubResource( 75 )
-"anims/DEFEND RETURN LEVEL 1" = SubResource( 76 )
-"anims/GR2 Cannonss DEFEND GO Level 1+2" = SubResource( 77 )
-"anims/GR2 Cannonss DEFEND GO Level 3+4" = SubResource( 78 )
-"anims/GR2 Cannonss DEFEND GO Level 5" = SubResource( 79 )
-"anims/GR2 Cannonss DEFEND RETURN Level 1+2" = SubResource( 80 )
-"anims/GR2 Cannonss DEFEND RETURN Level 3+4" = SubResource( 81 )
-"anims/GR2 Cannonss DEFEND RETURN Level 5" = SubResource( 82 )
-"anims/GR2 Ships DEFEND GO Level 1+2" = SubResource( 83 )
-"anims/GR2 Ships DEFEND GO Level 3+4" = SubResource( 84 )
-"anims/GR2 Ships DEFEND GO Level 5" = SubResource( 85 )
-"anims/GR2 Ships DEFEND RETURN Level 1+2" = SubResource( 86 )
-"anims/GR2 Ships DEFEND RETURN Level 5" = SubResource( 87 )
-"anims/GR2 Ships RETURN GO Level 3+4" = SubResource( 88 )
-"anims/Ships DEFEND GO level 1+2" = SubResource( 89 )
-"anims/Ships DEFEND GO level 3+4" = SubResource( 90 )
-"anims/Ships DEFEND GO level 5" = SubResource( 91 )
-"anims/Ships DEFEND RETURN level 1+2" = SubResource( 92 )
-"anims/Ships DEFEND RETURN level 3+4" = SubResource( 93 )
-"anims/Ships DEFEND RETURN level 5" = SubResource( 94 )
-anims/group2_walking = SubResource( 95 )
+"anims/Cannonss DEFEND GO Level 3+4" = SubResource( 72 )
+"anims/Cannonss DEFEND GO Level 5" = SubResource( 73 )
+"anims/Cannonss DEFEND GO level 1+2" = SubResource( 74 )
+"anims/Cannonss DEFEND RETURN Level 3+4" = SubResource( 75 )
+"anims/Cannonss DEFEND RETURN Level 5" = SubResource( 76 )
+"anims/Cannonss DEFEND RETURN level 1+2" = SubResource( 77 )
+"anims/DEFEND GO LEV 1" = SubResource( 78 )
+"anims/DEFEND RETURN LEVEL 1" = SubResource( 79 )
+"anims/GR2 Cannonss DEFEND GO Level 1+2" = SubResource( 80 )
+"anims/GR2 Cannonss DEFEND GO Level 3+4" = SubResource( 81 )
+"anims/GR2 Cannonss DEFEND GO Level 5" = SubResource( 82 )
+"anims/GR2 Cannonss DEFEND RETURN Level 1+2" = SubResource( 83 )
+"anims/GR2 Cannonss DEFEND RETURN Level 3+4" = SubResource( 84 )
+"anims/GR2 Cannonss DEFEND RETURN Level 5" = SubResource( 85 )
+"anims/GR2 Ships DEFEND GO Level 1+2" = SubResource( 86 )
+"anims/GR2 Ships DEFEND GO Level 3+4" = SubResource( 87 )
+"anims/GR2 Ships DEFEND GO Level 5" = SubResource( 88 )
+"anims/GR2 Ships DEFEND RETURN Level 1+2" = SubResource( 89 )
+"anims/GR2 Ships DEFEND RETURN Level 5" = SubResource( 90 )
+"anims/GR2 Ships RETURN GO Level 3+4" = SubResource( 91 )
+"anims/Ships DEFEND GO level 1+2" = SubResource( 92 )
+"anims/Ships DEFEND GO level 3+4" = SubResource( 93 )
+"anims/Ships DEFEND GO level 5" = SubResource( 94 )
+"anims/Ships DEFEND RETURN level 1+2" = SubResource( 95 )
+"anims/Ships DEFEND RETURN level 3+4" = SubResource( 96 )
+"anims/Ships DEFEND RETURN level 5" = SubResource( 97 )
+anims/group2_walking = SubResource( 98 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2"]
 visible = false
@@ -4783,9 +5452,9 @@ region_enabled = true
 region_rect = Rect2( 799.255, 119.431, 9.34363, 12.8475 )
 
 [node name="PPL LEVEL 2 - AnimationPlayer - Group2 - 2" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 2" = SubResource( 167 )
-"anims/DEFEND RETURN LEVEL 2" = SubResource( 168 )
-anims/group2_walking = SubResource( 169 )
+"anims/DEFEND GO LEVEL 2" = SubResource( 99 )
+"anims/DEFEND RETURN LEVEL 2" = SubResource( 100 )
+anims/group2_walking = SubResource( 101 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 2 - AnimationPlayer - Group2 - 2"]
 visible = false
@@ -4814,9 +5483,9 @@ region_enabled = true
 region_rect = Rect2( 689.389, 54.0257, 8.17566, 14.0155 )
 
 [node name="PPL LEVEL 3 - AnimationPlayer - Group2 - 4" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 3" = SubResource( 170 )
-"anims/DEFEND RETURN LEVEL 3" = SubResource( 171 )
-"anims/group 2 attach" = SubResource( 172 )
+"anims/DEFEND GO LEVEL 3" = SubResource( 102 )
+"anims/DEFEND RETURN LEVEL 3" = SubResource( 103 )
+"anims/group 2 attach" = SubResource( 104 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 3 - AnimationPlayer - Group2 - 4"]
 visible = false
@@ -4851,19 +5520,19 @@ region_enabled = true
 region_rect = Rect2( 53.4169, 8.30119, 13.3469, 10.2668 )
 
 [node name="PPL LEVEL 4 - AnimationPlayer - Group2 - 5" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 4" = SubResource( 173 )
-"anims/DEFEND RETURN LEVEL 4" = SubResource( 174 )
-"anims/LEVEL 1 + 2 - Cannon GROUP 1" = SubResource( 175 )
-"anims/LEVEL 1 - Cannon Group2" = SubResource( 176 )
-"anims/LEVEL 3 + 4 - Cannon GROUP 1" = SubResource( 177 )
-"anims/LEVEL 3 + 4 - Cannon Group 2" = SubResource( 178 )
-"anims/LEVEL 5 - Cannon GROUP 1" = SubResource( 179 )
-"anims/LEVEL 5 - Cannon Group 2" = SubResource( 180 )
-"anims/SHIP LEVEL 1 + 2 - group 2 fireball" = SubResource( 181 )
-"anims/SHIP LEVEL 3 - group 2 fireball" = SubResource( 182 )
-"anims/fireball attack g2" = SubResource( 183 )
-anims/group2_walking = SubResource( 184 )
-"anims/ship LEVEL 5 - group 2" = SubResource( 185 )
+"anims/DEFEND GO LEVEL 4" = SubResource( 105 )
+"anims/DEFEND RETURN LEVEL 4" = SubResource( 106 )
+"anims/LEVEL 1 + 2 - Cannon GROUP 1" = SubResource( 107 )
+"anims/LEVEL 1 - Cannon Group2" = SubResource( 108 )
+"anims/LEVEL 3 + 4 - Cannon GROUP 1" = SubResource( 109 )
+"anims/LEVEL 3 + 4 - Cannon Group 2" = SubResource( 110 )
+"anims/LEVEL 5 - Cannon GROUP 1" = SubResource( 111 )
+"anims/LEVEL 5 - Cannon Group 2" = SubResource( 112 )
+"anims/SHIP LEVEL 1 + 2 - group 2 fireball" = SubResource( 113 )
+"anims/SHIP LEVEL 3 - group 2 fireball" = SubResource( 114 )
+"anims/fireball attack g2" = SubResource( 115 )
+anims/group2_walking = SubResource( 116 )
+"anims/ship LEVEL 5 - group 2" = SubResource( 117 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 4 - AnimationPlayer - Group2 - 5"]
 visible = false
@@ -4898,9 +5567,9 @@ region_enabled = true
 region_rect = Rect2( 53.7681, 146.72, 12.0396, 7.03436 )
 
 [node name="PPL LEVEL 5 - AnimationPlayer - Group2 - 3" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND LEVEL 5" = SubResource( 186 )
-"anims/DEFEND RETURN LEVEL 5" = SubResource( 187 )
-anims/group2_walking = SubResource( 188 )
+"anims/DEFEND LEVEL 5" = SubResource( 118 )
+"anims/DEFEND RETURN LEVEL 5" = SubResource( 119 )
+anims/group2_walking = SubResource( 120 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3"]
 visible = false
@@ -4933,6 +5602,60 @@ position = Vector2( 0.0299072, 4.15689 )
 texture = ExtResource( 69 )
 region_enabled = true
 region_rect = Rect2( 53.0277, 44.1381, 13.1206, 7.30767 )
+
+[node name="PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2 - 2" type="AnimationPlayer" parent="game2"]
+"anims/Cannonss DEFEND GO Level 3+4" = SubResource( 135 )
+"anims/Cannonss DEFEND GO Level 5" = SubResource( 136 )
+"anims/Cannonss DEFEND GO level 1+2" = SubResource( 137 )
+"anims/Cannonss DEFEND RETURN Level 3+4" = SubResource( 138 )
+"anims/Cannonss DEFEND RETURN Level 5" = SubResource( 139 )
+"anims/Cannonss DEFEND RETURN level 1+2" = SubResource( 140 )
+"anims/DEFEND GO LEV 1" = SubResource( 141 )
+"anims/DEFEND RETURN LEVEL 1" = SubResource( 142 )
+"anims/GR2 Cannonss DEFEND GO Level 1+2" = SubResource( 143 )
+"anims/GR2 Cannonss DEFEND GO Level 3+4" = SubResource( 144 )
+"anims/GR2 Cannonss DEFEND GO Level 5" = SubResource( 145 )
+"anims/GR2 Cannonss DEFEND RETURN Level 1+2" = SubResource( 146 )
+"anims/GR2 Cannonss DEFEND RETURN Level 3+4" = SubResource( 147 )
+"anims/GR2 Cannonss DEFEND RETURN Level 5" = SubResource( 148 )
+"anims/GR2 Ships DEFEND GO Level 1+2" = SubResource( 149 )
+"anims/GR2 Ships DEFEND GO Level 3+4" = SubResource( 150 )
+"anims/GR2 Ships DEFEND GO Level 5" = SubResource( 151 )
+"anims/GR2 Ships DEFEND RETURN Level 1+2" = SubResource( 152 )
+"anims/GR2 Ships DEFEND RETURN Level 5" = SubResource( 153 )
+"anims/GR2 Ships RETURN GO Level 3+4" = SubResource( 154 )
+"anims/Ships DEFEND GO level 1+2" = SubResource( 155 )
+"anims/Ships DEFEND GO level 3+4" = SubResource( 156 )
+"anims/Ships DEFEND GO level 5" = SubResource( 157 )
+"anims/Ships DEFEND RETURN level 1+2" = SubResource( 158 )
+"anims/Ships DEFEND RETURN level 3+4" = SubResource( 159 )
+"anims/Ships DEFEND RETURN level 5" = SubResource( 160 )
+anims/group2_walking = SubResource( 161 )
+
+[node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2 - 2"]
+visible = false
+position = Vector2( 272.56, 514.578 )
+scale = Vector2( 2.34389, 2.74724 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 16.695, 0.297779, 16.4933, 17.48 )
+
+[node name="shirt" type="Sprite" parent="game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2 - 2/Sprite"]
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 237.686, 36.9068, 18.3077, 13.5921 )
+
+[node name="hair" type="Sprite" parent="game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2 - 2/Sprite"]
+position = Vector2( -0.142426, -1.57977 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 445.392, 84.8228, 11.011, 14.4774 )
+
+[node name="weapon" type="Sprite" parent="game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2 - 2/Sprite"]
+position = Vector2( 9, -1.84311 )
+texture = ExtResource( 69 )
+region_enabled = true
+region_rect = Rect2( 799.255, 119.431, 9.34363, 12.8475 )
 
 [node name="group 2 - ships" type="Node" parent="game2"]
 
@@ -4972,9 +5695,9 @@ visible = false
 position = Vector2( 855.975, 294 )
 rotation = 0.0493656
 scale = Vector2( 0.14501, 0.203818 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
-frame = 6
+frame = 18
 speed_scale = 0.9
 playing = true
 
@@ -4983,34 +5706,34 @@ visible = false
 position = Vector2( 233.632, 261.518 )
 rotation = 0.0995313
 scale = Vector2( 0.182617, 0.278595 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
-frame = 6
+frame = 18
 speed_scale = 0.9
 playing = true
 
 [node name="group2 - fireball3" type="AnimatedSprite" parent="game2"]
 visible = false
-position = Vector2( 195.509, 323.812 )
+position = Vector2( 219.802, 258.713 )
 rotation = 0.153884
 scale = Vector2( 0.124495, 0.189294 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
-frame = 5
+frame = 17
 speed_scale = 0.9
 playing = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="game2"]
 visible = false
-position = Vector2( 772.822, 529.144 )
-frames = SubResource( 195 )
+position = Vector2( 778.822, 499.144 )
+frames = SubResource( 127 )
 
 [node name="group1 - fireball6" type="AnimatedSprite" parent="game2/AnimatedSprite"]
 visible = false
 position = Vector2( -43.8877, -11.5574 )
 rotation = 3.20236
 scale = Vector2( 0.14501, 0.203818 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
 frame = 8
 speed_scale = 0.9
@@ -5018,29 +5741,29 @@ speed_scale = 0.9
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 782.778, 467.819 )
-frames = SubResource( 195 )
+frames = SubResource( 127 )
 
 [node name="group1 - fireball8" type="AnimatedSprite" parent="game2/AnimatedSprite2"]
 visible = false
 position = Vector2( -591.838, 44.0471 )
 rotation = -3.14159
 scale = Vector2( 0.136057, 0.203818 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
 frame = 6
 speed_scale = 0.9
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="game2"]
 visible = false
-position = Vector2( 807.134, 442.605 )
-frames = SubResource( 195 )
+position = Vector2( 786.134, 464.605 )
+frames = SubResource( 127 )
 
 [node name="group1 - fireball9" type="AnimatedSprite" parent="game2/AnimatedSprite3"]
 visible = false
 position = Vector2( -615.149, 42.1062 )
 rotation = -3.16161
 scale = Vector2( 0.136057, 0.203818 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
 frame = 17
 speed_scale = 0.9
@@ -5048,7 +5771,7 @@ speed_scale = 0.9
 [node name="CANNON GROUP 2 AnimatedSprite1" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 223.997, 404 )
-frames = SubResource( 202 )
+frames = SubResource( 134 )
 frame = 4
 
 [node name="group2 - fireball4" type="AnimatedSprite" parent="game2/CANNON GROUP 2 AnimatedSprite1"]
@@ -5056,7 +5779,7 @@ visible = false
 position = Vector2( 18.0411, -3.99997 )
 rotation = -0.261799
 scale = Vector2( 0.14501, 0.203818 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
 frame = 24
 speed_scale = 0.9
@@ -5064,7 +5787,7 @@ speed_scale = 0.9
 [node name="CANNON GROUP 2 AnimatedSprite2" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 273.68, 436 )
-frames = SubResource( 202 )
+frames = SubResource( 134 )
 frame = 1
 
 [node name="group2 - fireball5" type="AnimatedSprite" parent="game2/CANNON GROUP 2 AnimatedSprite2"]
@@ -5072,7 +5795,7 @@ visible = false
 position = Vector2( 21.095, -1.00006 )
 rotation = -0.261799
 scale = Vector2( 0.14501, 0.203818 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
 frame = 16
 speed_scale = 0.9
@@ -5080,14 +5803,14 @@ speed_scale = 0.9
 [node name="CANNON GROUP 2 AnimatedSprite3" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 302.658, 384.952 )
-frames = SubResource( 202 )
+frames = SubResource( 134 )
 
 [node name="group2 - fireball7" type="AnimatedSprite" parent="game2/CANNON GROUP 2 AnimatedSprite3"]
 visible = false
 position = Vector2( 50.6826, -8.55919 )
 rotation = -0.0132301
 scale = Vector2( 0.14501, 0.203818 )
-frames = SubResource( 163 )
+frames = SubResource( 68 )
 animation = "shootball"
 frame = 4
 speed_scale = 0.9

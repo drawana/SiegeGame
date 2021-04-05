@@ -15,7 +15,7 @@ func _ready():
 		get_node("../NavalImageEnemy").visible = false
 
 	if NextRoundButton.navalLevel >= 1:
-		get_parent().get_parent().get_node("game2").get_node("group 1 - ships4").get_node("Sprite").visible = true
+		get_parent().get_parent().get_node("game2").get_node("group 1 - ships6").get_node("Sprite").visible = true
 	if NextRoundButton.navalLevel >= 3:
 		get_parent().get_parent().get_node("game2").get_node("group 1 - ships5").get_node("Sprite").visible = true
 
