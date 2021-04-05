@@ -384,7 +384,6 @@ func _on_Button_Pressed():
 					setNavalDefendEnemy(true)
 			
 			if level3 > 0:
-				num3 = 2
 				if num3 != 2:
 					if artilleryDefend == true:
 						var ourArtilleryLevel = int(get_node("../ArtilleryLevelDisplay").get_text())
@@ -424,7 +423,6 @@ func _on_Button_Pressed():
 						totalDamage += pointsToDecreaseBy3
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
 				else:
-					print('inside defned aritllery', level3)
 					if level3 == 1 or level3 == 2:
 						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND GO level 1+2")
 					if level3 == 3 or level3 == 4:
