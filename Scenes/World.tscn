@@ -8,7 +8,7 @@
 [ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=6]
 [ext_resource path="res://Textures/panelInset_blue.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/GUI.gd" type="Script" id=8]
-[ext_resource path="res://Scenes/World.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/MyGame.gd" type="Script" id=9]
 [ext_resource path="res://Fonts/smallCardinal.tres" type="DynamicFont" id=10]
 [ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=11]
 [ext_resource path="res://Textures/buttonLong_brown_pressed.png" type="Texture" id=12]
@@ -184,6 +184,7 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
+
 
 [sub_resource type="Animation" id=5]
 length = 0.3
