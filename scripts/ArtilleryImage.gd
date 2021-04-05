@@ -16,9 +16,9 @@ func _ready():
 		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").visible = true
 
 	if NextRoundButton.usArtLevel >= 1:
-		get_parent().get_parent().get_node("game2").get_node("CANNON GROUP 2 AnimatedSprite1").visible = true
+		get_node("../CANNON GROUP 2 AnimatedSprite1").visible = true
 	if NextRoundButton.usArtLevel >= 2:
-		get_parent().get_parent().get_node("game2").get_node("CANNON GROUP 2 AnimatedSprite2").visible = true
+		get_node("../CANNON GROUP 2 AnimatedSprite2").visible = true
 	if NextRoundButton.usArtLevel == 3:
 		get_parent().get_parent().get_node("game2").get_node("CANNON GROUP 2 AnimatedSprite3").visible = true
 
