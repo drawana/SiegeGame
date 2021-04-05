@@ -14,3 +14,5 @@ func _on_Button_Pressed():
 	
 	var CancelArtillery = get_node("../CancelArtillery")
 	CancelArtillery.visible = false
+	
+	get_node("../NextRoundButton").artillerySet()

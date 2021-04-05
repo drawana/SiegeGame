@@ -14,3 +14,5 @@ func _on_Button_Pressed():
 	
 	var CancelNaval = get_node("../CancelNaval")
 	CancelNaval.visible = false
+	
+	get_node("../NextRoundButton").navalSet()

@@ -12,6 +12,9 @@ var infantryLevel = 0
 var infantryDefend = false
 var artilleryDefend = false
 var navalDefend = false
+var infantryDefendEnemy = false
+var artilleryDefendEnemy = false
+var navalDefendEnemy = false
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
@@ -25,6 +28,24 @@ func setArtilleryDefend(param):
 	
 func setNavalDefend(param):
 	navalDefend = param
+	
+func getInfantryDefendEnemy():
+	return infantryDefendEnemy
+	
+func getArtilleryDefendEnemy():
+	return artilleryDefendEnemy
+	
+func getNavalDefendEnemy():
+	return navalDefendEnemy
+	
+func setInfantryDefendEnemy(param):
+	infantryDefendEnemy = param
+	
+func setArtilleryDefendEnemy(param):
+	artilleryDefendEnemy = param
+	
+func setNavalDefendEnemy(param):
+	navalDefendEnemy = param
 
 func setLevels():
 	randomize()
@@ -115,6 +136,9 @@ func _on_Button_Pressed():
 		redAnimation.play("Test")
 	else:
 		if infantryDone == true and navalDone == true and artilleryDone == true:
+			setInfantryDefendEnemy(false)
+			setNavalDefendEnemy(false)
+			setArtilleryDefendEnemy(false)
 			infantryDone = false
 			navalDone = false
 			artilleryDone = false
@@ -191,19 +215,48 @@ func _on_Button_Pressed():
 			
 			var myHealth = get_node("../MyHealthBar")
 			var level1 = int(get_node("../InfantryLevelDisplayEnemy").get_text())
+			var pointsToNotDecreaseBy = 0
+			var num1 = randi()%4 + 1
+			var num2 = randi()%4 + 1
+			var num3 = randi()%4 + 1
+			
 			if level1 > 0:
-				var pointsToDecreaseBy = (level1 * 2) + randi()%5 + (1 * level1)
-				myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
-	
+				if num1 != 2:
+					if infantryDefend == true:
+						var ourInfantryLevel = int(get_node("../InfantryLevelDisplay").get_text())
+						pointsToNotDecreaseBy = ((ourInfantryLevel * 2) + randi()%5 + (1 * ourInfantryLevel)) * 0.8
+						
+					var pointsToDecreaseBy = ((level1 * 2) + randi()%5 + (1 * level1)) - pointsToNotDecreaseBy
+					if pointsToDecreaseBy > 0:
+						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
+				else:
+					setInfantryDefendEnemy(true)
+				
 			var level2 = int(get_node("../NavalLevelDisplayEnemy").get_text())
 			if level2 > 0:
-				var pointsToDecreaseBy2 = (level2 * 4) + randi()%10 + (1 * level2)
-				myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy2)
+				if num2 != 2:
+					if navalDefend == true:
+						var ourNavalLevel = int(get_node("../NavalLevelDisplay").get_text())
+						pointsToNotDecreaseBy = ((ourNavalLevel * 2) + randi()%5 + (1 * ourNavalLevel)) * 0.8
+						
+					var pointsToDecreaseBy2 = ((level2 * 4) + randi()%10 + (1 * level2)) - pointsToNotDecreaseBy
+					if pointsToDecreaseBy2 > 0:
+						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy2)
+				else:
+					setNavalDefendEnemy(true)
 			
 			var level3 = int(get_node("../ArtilleryLevelDisplayEnemy").get_text())
 			if level3 > 0:
-				var pointsToDecreaseBy3 = (level3 * 3) + randi()%20 + (1 * level3)
-				myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
+				if num3 != 2:
+					if artilleryDefend == true:
+						var ourArtilleryLevel = int(get_node("../ArtilleryLevelDisplay").get_text())
+						pointsToNotDecreaseBy = ((ourArtilleryLevel * 2) + randi()%5 + (1 * ourArtilleryLevel)) * 0.8
+					
+					var pointsToDecreaseBy3 = ((level3 * 3) + randi()%20 + (1 * level3)) - pointsToNotDecreaseBy
+					if pointsToDecreaseBy3 > 0:
+						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
+				else:
+					setArtilleryDefendEnemy(true)
 			
 			if get_node("../MyHealthBar").value <= 0:
 				get_tree().quit()

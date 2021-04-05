@@ -17,3 +17,5 @@ func _on_Button_Pressed():
 	
 	var InvadeInfantry = get_node("../InvadeInfantry")
 	InvadeInfantry.visible = false
+	
+	get_node("../NextRoundButton").infantrySet()
