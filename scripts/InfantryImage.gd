@@ -9,6 +9,13 @@ func _ready():
 		get_node("../InfantryImage").visible = false
 	if int(get_node("../InfantryLevelDisplayEnemy").get_text()) == 0:
 		get_node("../InfantryImageEnemy").visible = false
+		
+	if NextRoundButton.usInfLevel >= 1:
+		get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1").get_node("Sprite").visible = true
+	if NextRoundButton.usInfLevel >= 2:
+		get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 2 - AnimationPlayer - Group2 - 2").get_node("Sprite").visible = true
+	if NextRoundButton.usInfLevel == 3:
+		get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 3 - AnimationPlayer - Group2 - 4").get_node("Sprite").visible = true
 	
 func _on_Button_Pressed():
 	if get_node("../NextRoundButton").infantryGet() == false:
