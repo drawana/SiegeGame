@@ -137,6 +137,20 @@ func _on_Button_Pressed():
 	else:
 		if get_node("../MyHealthBar").value <= 0:
 			get_tree().quit()
+			
+		var enemyInfLevel = int(get_node("../InfantryLevelDisplayEnemy").get_text())
+		if enemyInfLevel == 1:
+			get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND RETURN LEVEL 1")
+		elif enemyInfLevel == 2:
+			get_parent().get_parent().get_node("game2").get_node("LEVEL 2 - AnimationPlayer - Group1 - 3").play("DEFEND RETURN LEVEL 2")
+		elif enemyInfLevel == 3:
+			get_parent().get_parent().get_node("game2").get_node("LEVEL 3 - AnimationPlayer - Group1 - 4").play("DEFEND RETUN LEVEL 3")
+		elif enemyInfLevel == 4:
+			get_parent().get_parent().get_node("game2").get_node("LEVEL 4 - AnimationPlayer - Group1 - 5").play("DEFEND RETURN LEVEL 4")
+		elif enemyInfLevel == 5:
+			get_parent().get_parent().get_node("game2").get_node("LEVEL 5 - AnimationPlayer - Group1 - 1").play("DEFEND RETURN LEVEL 5")
+		
+		
 		
 		if int(get_node("../InfantryLevelDisplay").get_text()) == 0:
 			infantryDone = true
@@ -283,7 +297,16 @@ func _on_Button_Pressed():
 					if pointsToDecreaseBy > 0:
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
 				else:
-					print("Infantry Defend")
+					if level1 == 1:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND GO LEVEL 1")
+					elif level1 == 2:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 2 - AnimationPlayer - Group1 - 3").play("DEFEND GO LEVEL 2")
+					elif level1 == 3:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 3 - AnimationPlayer - Group1 - 4").play("DEFEND GO LEVEL 3")
+					elif level1 == 4:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 4 - AnimationPlayer - Group1 - 5").play("DEFEND GO LEVEL 4")
+					elif level1 == 5:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 5 - AnimationPlayer - Group1 - 1").play("DEFEND GO LEVEL 5")
 					setInfantryDefendEnemy(true)
 				
 			if level2 > 0:
@@ -373,6 +396,22 @@ func _on_Button_Pressed():
 				upgrade.disabled = true
 				var nextRound = get_node("../NextRoundButton")
 				nextRound.disabled = true
+				
+				
+			if infantryDefend == true:
+				var levelsInfantry = get_node("../InfantryLevelDisplay").getVal()
+				if levelsInfantry == 1:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1").play("DEFEND RETURN LEVEL 1")
+				elif levelsInfantry == 2:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 2 - AnimationPlayer - Group2 - 2").play("DEFEND RETURN LEVEL 2")
+				elif levelsInfantry == 3:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 3 - AnimationPlayer - Group2 - 4").play("DEFEND RETURN LEVEL 3")
+				elif levelsInfantry == 4:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 4 - AnimationPlayer - Group2 - 5").play("DEFEND RETURN LEVEL 4")
+				elif levelsInfantry == 5:
+					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 5 - AnimationPlayer - Group2 - 3").play("DEFEND RETURN LEVEL 5")
+				
+				yield(get_tree().create_timer(2), "timeout")
 				
 			setInfantryDefend(false)
 			setNavalDefend(false)
