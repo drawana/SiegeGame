@@ -46,6 +46,8 @@ func _on_Button_Pressed():
 	var pointsToDecreaseBy = (level * 2) + randi()%5 + (1 * level) - pointsToNotDecreaseBy
 	
 	if pointsToDecreaseBy > 0:
+		get_node("../NextRoundButton").addDamage(pointsToDecreaseBy)
+		#NextRoundButton.totalDamageEnemy += pointsToDecreaseBy
 		get_node("../TheirHealthBar").set_value(points.value - pointsToDecreaseBy)
 	
 		

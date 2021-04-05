@@ -1,5 +1,7 @@
 extends TextureButton
 
+var totalDamage = 0
+var totalDamageEnemy = 0
 var infantryDone = false
 var navalDone = false
 var artilleryDone = false
@@ -26,6 +28,9 @@ var endNav = 0
 var endDiff = "Easy"
 var endEnemyCastle = 0
 var endRound = 0
+
+func addDamage(param):
+	totalDamageEnemy += param
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
@@ -322,6 +327,7 @@ func _on_Button_Pressed():
 					
 					var pointsToDecreaseBy = ((level1 * 2) + randi()%5 + (1 * level1)) - pointsToNotDecreaseBy
 					if pointsToDecreaseBy > 0:
+						totalDamage += pointsToDecreaseBy
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
 				else:
 					if level1 == 1:
@@ -364,6 +370,7 @@ func _on_Button_Pressed():
 					
 					var pointsToDecreaseBy2 = ((level2 * 4) + randi()%10 + (1 * level2)) - pointsToNotDecreaseBy
 					if pointsToDecreaseBy2 > 0:
+						totalDamage += pointsToDecreaseBy2
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy2)
 				else:
 					if level2 == 1 or level2 == 2:
@@ -412,6 +419,7 @@ func _on_Button_Pressed():
 					
 					var pointsToDecreaseBy3 = ((level3 * 3) + randi()%20 + (1 * level3)) - pointsToNotDecreaseBy
 					if pointsToDecreaseBy3 > 0:
+						totalDamage += pointsToDecreaseBy3
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
 				else:
 					if level3 == 1 or level3 == 2:
@@ -472,6 +480,13 @@ func _on_Button_Pressed():
 					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("GR2 Cannonss DEFEND RETURN Level 5")
 				
 				yield(get_tree().create_timer(1), "timeout")
+				
+				
+			var ourDamageIndicator = get_node("../Damage")
+			ourDamageIndicator.set_text(str(totalDamage))
+			
+			var ourDamageIndicatorEnemy = get_node("../DamageEnemy")
+			ourDamageIndicatorEnemy.set_text(str(totalDamageEnemy))
 			
 			var ourNumPointUpdater = get_node("../plusPointsNum")
 			ourNumPointUpdater.set_text(str(pointsToAdd))
@@ -479,10 +494,18 @@ func _on_Button_Pressed():
 			var ourNumPointUpdaterEnemy = get_node("../plusPointsNumEnemy")
 			ourNumPointUpdaterEnemy.set_text(str(pointsToAdd2))
 			
+			print("Em", totalDamage)
+			print("damEm", totalDamageEnemy)
+			
 			get_node("../plusPoints").visible = true
 			get_node("../plusPointsEnemy").visible = true
 			get_node("../plusPointsNum").visible = true
 			get_node("../plusPointsNumEnemy").visible = true
+			
+			get_node("../minusDamage").visible = true
+			get_node("../minusDamageEnemy").visible = true
+			get_node("../Damage").visible = true
+			get_node("../DamageEnemy").visible = true
 			
 			yield(get_tree().create_timer(7), "timeout")
 			
@@ -491,9 +514,15 @@ func _on_Button_Pressed():
 			get_node("../plusPointsNum").visible = false
 			get_node("../plusPointsNumEnemy").visible = false
 			
+			get_node("../minusDamage").visible = false
+			get_node("../minusDamageEnemy").visible = false
+			get_node("../Damage").visible = false
+			get_node("../DamageEnemy").visible = false
 			
 			setInfantryDefend(false)
 			setNavalDefend(false)
 			setArtilleryDefend(false)
+			totalDamageEnemy = 0
+			totalDamage = 0
 		else:
 			redAnimation.play("Test")

@@ -4358,13 +4358,65 @@ anims/Test = SubResource( 134 )
 
 [node name="plusPoints" type="Label" parent="GUI"]
 visible = false
-margin_left = 166.0
-margin_top = 15.0
-margin_right = 185.0
-margin_bottom = 52.0
+margin_left = 168.381
+margin_top = 10.2378
+margin_right = 187.381
+margin_bottom = 47.2378
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="minusDamage" type="Label" parent="GUI"]
+visible = false
+margin_left = 143.566
+margin_top = 400.592
+margin_right = 162.566
+margin_bottom = 437.592
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="minusDamageEnemy" type="Label" parent="GUI"]
+visible = false
+margin_left = 841.737
+margin_top = 183.957
+margin_right = 860.737
+margin_bottom = 220.957
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DamageEnemy" type="Label" parent="GUI"]
+visible = false
+margin_left = 861.02
+margin_top = 183.878
+margin_right = 902.02
+margin_bottom = 220.878
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Damage" type="Label" parent="GUI"]
+visible = false
+margin_left = 165.094
+margin_top = 401.635
+margin_right = 206.094
+margin_bottom = 438.635
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -4384,10 +4436,10 @@ __meta__ = {
 
 [node name="plusPointsNum" type="Label" parent="GUI"]
 visible = false
-margin_left = 187.0
-margin_top = 15.0
-margin_right = 229.0
-margin_bottom = 52.0
+margin_left = 190.175
+margin_top = 13.4126
+margin_right = 232.175
+margin_bottom = 50.4126
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
