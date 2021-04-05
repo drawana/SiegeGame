@@ -1,15 +1,24 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Fonts/AIDifficulty.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Tilesets/tileset_env.res" type="TileSet" id=2]
 [ext_resource path="res://Fonts/cardinal.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=4]
 [ext_resource path="res://Textures/buttonLong_brown_pressed.png" type="Texture" id=5]
-[ext_resource path="res://Fonts/Instructions.tres" type="DynamicFont" id=6]
+[ext_resource path="res://Fonts/instructions2.tres" type="DynamicFont" id=6]
+[ext_resource path="res://Sprites/Environment/medievalEnvironment_10.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Structure/medievalStructure_05.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Tile/medievalTile_48.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Tile/medievalTile_46.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Tile/medievalTile_49.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Structure/medievalStructure_17.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/Instructions2.gd" type="Script" id=14]
 
 [node name="Instruction2" type="MarginContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -17,7 +26,7 @@ __meta__ = {
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
 format = 1
-tile_data = PoolIntArray( 0, 2, 0, 1, 2, 0, 2, 0, 0, 3, 4, 0, 4, 4, 0, 5, 4, 0, 6, 4, 0, 7, 4, 0, 8, 4, 0, 9, 4, 0, 10, 4, 0, 11, 4, 0, 12, 4, 0, 13, 0, 0, 14, 2, 0, 15, 2, 0, 65536, 2, 0, 65537, 2, 0, 65538, 0, 0, 65539, 4, 0, 65540, 4, 0, 65541, 4, 0, 65542, 4, 0, 65543, 4, 0, 65544, 4, 0, 65545, 4, 0, 65546, 4, 0, 65547, 4, 0, 65548, 4, 0, 65549, 0, 0, 65550, 2, 0, 65551, 2, 0, 131072, 2, 0, 131073, 2, 0, 131074, 0, 0, 131075, 4, 0, 131076, 4, 0, 131077, 4, 0, 131078, 4, 0, 131079, 4, 0, 131080, 4, 0, 131081, 4, 0, 131082, 4, 0, 131083, 4, 0, 131084, 4, 0, 131085, 0, 0, 131086, 2, 0, 131087, 2, 0, 196608, 2, 0, 196609, 2, 0, 196610, 0, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 4, 0, 196620, 4, 0, 196621, 0, 0, 196622, 2, 0, 196623, 2, 0, 262144, 2, 0, 262145, 2, 0, 262146, 0, 0, 262147, 4, 0, 262148, 4, 0, 262149, 4, 0, 262150, 4, 0, 262151, 4, 0, 262152, 4, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 0, 0, 262158, 2, 0, 262159, 2, 0, 327680, 2, 0, 327681, 2, 0, 327682, 0, 0, 327683, 4, 0, 327684, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 0, 0, 327694, 2, 0, 327695, 2, 0, 393216, 2, 0, 393217, 2, 0, 393218, 0, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 0, 0, 393230, 2, 0, 393231, 2, 0, 458752, 2, 0, 458753, 2, 0, 458754, 0, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 0, 0, 458766, 2, 0, 458767, 2, 0, 524288, 2, 0, 524289, 2, 0, 524290, 0, 0, 524291, 4, 0, 524292, 4, 0, 524293, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 524297, 4, 0, 524298, 4, 0, 524299, 4, 0, 524300, 4, 0, 524301, 0, 0, 524302, 2, 0, 524303, 2, 0, 589824, 2, 0, 589825, 2, 0, 589826, 0, 0, 589827, 4, 0, 589828, 4, 0, 589829, 4, 0, 589830, 4, 0, 589831, 4, 0, 589832, 4, 0, 589833, 4, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 0, 0, 589838, 2, 0, 589839, 2, 0 )
+tile_data = PoolIntArray( 0, 2, 0, 1, 0, 0, 2, 4, 0, 3, 4, 0, 4, 4, 0, 5, 4, 0, 6, 4, 0, 7, 4, 0, 8, 4, 0, 9, 4, 0, 10, 4, 0, 11, 4, 0, 12, 4, 0, 13, 4, 0, 14, 0, 0, 15, 2, 0, 65536, 2, 0, 65537, 0, 0, 65538, 4, 0, 65539, 4, 0, 65540, 4, 0, 65541, 4, 0, 65542, 4, 0, 65543, 4, 0, 65544, 4, 0, 65545, 4, 0, 65546, 4, 0, 65547, 4, 0, 65548, 4, 0, 65549, 4, 0, 65550, 0, 0, 65551, 2, 0, 131072, 2, 0, 131073, 0, 0, 131074, 4, 0, 131075, 4, 0, 131076, 4, 0, 131077, 4, 0, 131078, 4, 0, 131079, 4, 0, 131080, 4, 0, 131081, 4, 0, 131082, 4, 0, 131083, 4, 0, 131084, 4, 0, 131085, 4, 0, 131086, 0, 0, 131087, 2, 0, 196608, 2, 0, 196609, 0, 0, 196610, 4, 0, 196611, 4, 0, 196612, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 196619, 4, 0, 196620, 4, 0, 196621, 4, 0, 196622, 0, 0, 196623, 2, 0, 262144, 2, 0, 262145, 0, 0, 262146, 4, 0, 262147, 4, 0, 262148, 4, 0, 262149, 4, 0, 262150, 4, 0, 262151, 4, 0, 262152, 4, 0, 262153, 4, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 0, 0, 262159, 2, 0, 327680, 2, 0, 327681, 0, 0, 327682, 4, 0, 327683, 4, 0, 327684, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 327691, 4, 0, 327692, 4, 0, 327693, 4, 0, 327694, 0, 0, 327695, 2, 0, 393216, 2, 0, 393217, 0, 0, 393218, 4, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 393228, 4, 0, 393229, 4, 0, 393230, 0, 0, 393231, 2, 0, 458752, 2, 0, 458753, 0, 0, 458754, 4, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0, 458764, 4, 0, 458765, 4, 0, 458766, 0, 0, 458767, 2, 0, 524288, 2, 0, 524289, 0, 0, 524290, 4, 0, 524291, 4, 0, 524292, 4, 0, 524293, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 524297, 4, 0, 524298, 4, 0, 524299, 4, 0, 524300, 4, 0, 524301, 4, 0, 524302, 0, 0, 524303, 2, 0, 589824, 2, 0, 589825, 0, 0, 589826, 4, 0, 589827, 4, 0, 589828, 4, 0, 589829, 4, 0, 589830, 4, 0, 589831, 4, 0, 589832, 4, 0, 589833, 4, 0, 589834, 4, 0, 589835, 4, 0, 589836, 4, 0, 589837, 4, 0, 589838, 0, 0, 589839, 2, 0 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -25,7 +34,7 @@ __meta__ = {
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 margin_right = 1024.0
 margin_bottom = 600.0
-custom_constants/separation = 10
+custom_constants/separation = 20
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 1024.0
@@ -36,35 +45,37 @@ align = 1
 valign = 1
 
 [node name="Label2" type="Label" parent="VBoxContainer"]
-margin_top = 66.0
+margin_top = 76.0
 margin_right = 1024.0
-margin_bottom = 539.0
+margin_bottom = 491.0
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Your army is composed of three factions: infantry, navy, and artillery.
-At the start of the game, you will have 30 points to 
-use to level up your factions.
-Levelling up infantry costs 10 points, 
-while levelling up the navy or artillery costs 15 points. 
+text = "Your army is composed of three Factions: infantry, navy, and artillery.
+At the start of the game, you will have 3 levels  to allocate to the Faction(s) of your choice.
 You will receive more points during the game to continue upgrading.
 
-During each week, you must choose an action for each part of the army. 
+During each week, you must choose an action for each Faction. 
 Actions can be chosen by clicking on the units on the battlefield. 
 
-Infantry initially has two options:  Attack the enemy or defend base. 
-if infantry is ordered to attack, damage will be dealt to the enemy
-castle based on infantry level plus a random dice roll. 
+All Factions initially have two options:  Attack the enemy or defend base. 
+if a Faction is ordered to attack, damage will be dealt to the enemy
+castle based on Faction Level plus a random dice roll. 
+Each faction has different modifiers for the level multiplier and random dice roll.
+All combat will take place automatically, behind the scenes.
 Defending the base will attempt to repel enemy attacks.
 
+When the enemy castle reaches 0 health, friendly infantry may attempt a storm,
+which may succeed or fail. The first side to sucessfully storm
+the enemy castle will win the game.
 
-"
+Use your upgrades and tactics wisely to outwit and outgun your opponent. "
 align = 1
 valign = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
-margin_top = 549.0
+margin_top = 511.0
 margin_right = 1024.0
-margin_bottom = 598.0
+margin_bottom = 560.0
 
 [node name="Next" type="TextureButton" parent="VBoxContainer/CenterContainer"]
 margin_left = 417.0
@@ -76,11 +87,47 @@ texture_pressed = ExtResource( 5 )
 [node name="Label" type="Label" parent="VBoxContainer/CenterContainer/Next"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 1.12244
+margin_right = 1.12244
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Next"
+text = "Back to Menu"
 align = 1
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="medievalStructure_05" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 180.708, 344.999 )
+texture = ExtResource( 8 )
+
+[node name="medievalStructure_01" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 180.708, 281.019 )
+texture = ExtResource( 12 )
+
+[node name="medievalStructure_17" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 772.246, 560.512 )
+texture = ExtResource( 13 )
+
+[node name="medievalTile_48" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 195.3, 543.675 )
+texture = ExtResource( 9 )
+
+[node name="medievalTile_46" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 819.389, 181.12 )
+texture = ExtResource( 10 )
+
+[node name="medievalTile_49" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 850.818, 434.796 )
+texture = ExtResource( 11 )
+
+[node name="medievalTile_50" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 189.688, 49.7918 )
+texture = ExtResource( 9 )
+
+[node name="medievalEnvironment_10" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 720.612, 569.492 )
+texture = ExtResource( 7 )
