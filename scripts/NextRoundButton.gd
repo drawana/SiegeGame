@@ -5,6 +5,7 @@ var navalDone = false
 var artilleryDone = false
 onready var redAnimation = $RedAnimation
 onready var greenAnimation = $GreenAnimation
+onready var weeks = 1;
 var difficulty = "Easy"
 var navalLevel = 0
 var artilleryLevel = 0
@@ -18,6 +19,16 @@ var navalDefend = false
 var infantryDefendEnemy = false
 var artilleryDefendEnemy = false
 var navalDefendEnemy = false
+var endPoint = 0
+var endInf = 0
+var endArt = 0
+var endNav = 0
+var endDiff = "Easy"
+var endEnemyCastle = 0
+var endRound = 0
+
+
+
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
@@ -135,8 +146,17 @@ func _on_Button_Pressed():
 	if NextRoundButton.disabled == true:
 		redAnimation.play("Test")
 	else:
-		if get_node("../MyHealthBar").value <= 0:
-			get_tree().quit()
+		weeks += 1
+		if get_node("../MyHealthBar").value <= 90:
+			endPoint = 0
+			endInf = get_node("../InfantryLevelDisplay").get_text()
+			endArt = get_node("../ArtilleryLevelDisplay").get_text()
+			endNav = get_node("../NavalLevelDisplay").get_text()
+			endDiff = difficulty
+			endEnemyCastle = str(get_node("../TheirHealthBar").value)
+			endRound = weeks
+			get_tree().change_scene("res://Scenes/Defeat.tscn")
+			
 			
 		var enemyInfLevel = int(get_node("../InfantryLevelDisplayEnemy").get_text())
 		if enemyInfLevel == 1:
