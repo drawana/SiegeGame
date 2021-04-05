@@ -1,4 +1,4 @@
-[gd_scene load_steps=196 format=2]
+[gd_scene load_steps=197 format=2]
 
 [ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
@@ -34,8 +34,9 @@
 [ext_resource path="res://scripts/CancelInfantry.gd" type="Script" id=32]
 [ext_resource path="res://scripts/QuickAttackInfantry.gd" type="Script" id=33]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00000.png" type="Texture" id=34]
-[ext_resource path="res://clickable-removebg-preview.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Tile/medievalTile_57.png" type="Texture" id=35]
 [ext_resource path="res://scripts/InvadeInfantry.gd" type="Script" id=36]
+[ext_resource path="res://Sprites/Tile/medievalTile_27.png" type="Texture" id=37]
 [ext_resource path="res://scripts/NavalImage.gd" type="Script" id=38]
 [ext_resource path="res://scripts/CancelNaval.gd" type="Script" id=39]
 [ext_resource path="res://scripts/AttackNaval.gd" type="Script" id=40]
@@ -3055,7 +3056,7 @@ scale = Vector2( 0.0374438, 0.0393027 )
 texture = ExtResource( 26 )
 
 [node name="InfantryImage" type="TextureButton" parent="GUI"]
-modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+modulate = Color( 0.972549, 0.94902, 0.94902, 0.494118 )
 margin_left = 245.0
 margin_top = 472.0
 margin_right = 409.0
@@ -3217,12 +3218,14 @@ __meta__ = {
 }
 
 [node name="NavalImage" type="TextureButton" parent="GUI"]
-modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
-margin_left = 10.0
+modulate = Color( 0.972549, 0.94902, 0.94902, 0.494118 )
+margin_left = 15.0
 margin_top = 201.0
-margin_right = 193.0
-margin_bottom = 330.0
-texture_hover = ExtResource( 35 )
+margin_right = 645.0
+margin_bottom = 627.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0.5, 0.5 )
+texture_hover = ExtResource( 37 )
 expand = true
 stretch_mode = 1
 script = ExtResource( 38 )
@@ -3342,7 +3345,7 @@ __meta__ = {
 }
 
 [node name="ArtilleryImage" type="TextureButton" parent="GUI"]
-modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
+modulate = Color( 0.972549, 0.94902, 0.94902, 0.494118 )
 margin_left = 211.0
 margin_top = 385.0
 margin_right = 326.0
@@ -3882,7 +3885,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 26
+frame = 23
 speed_scale = 0.9
 playing = true
 
@@ -3893,7 +3896,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 26
+frame = 23
 speed_scale = 0.9
 playing = true
 
@@ -3904,7 +3907,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 25
+frame = 22
 speed_scale = 0.9
 playing = true
 
@@ -4093,6 +4096,7 @@ region_rect = Rect2( 53.0277, 44.1381, 13.1206, 7.30767 )
 [node name="group 2 - ships" type="Node" parent="game2"]
 
 [node name="Sprite" type="Sprite" parent="game2/group 2 - ships"]
+visible = false
 position = Vector2( 48.1084, 264.956 )
 rotation = 0.523598
 scale = Vector2( 4.15999, 4.46278 )
@@ -4103,6 +4107,7 @@ region_rect = Rect2( 33.5557, 15.5489, 17.2737, 12.7675 )
 [node name="group 2 - ships2" type="Node" parent="game2"]
 
 [node name="Sprite" type="Sprite" parent="game2/group 2 - ships2"]
+visible = false
 position = Vector2( 165.029, 234.485 )
 rotation = 0.261799
 scale = Vector2( 4.15999, 4.46278 )
@@ -4113,6 +4118,7 @@ region_rect = Rect2( 93.388, 15.7992, 20.2779, 15.0206 )
 [node name="group 2 - ships3" type="Node" parent="game2"]
 
 [node name="Sprite" type="Sprite" parent="game2/group 2 - ships3"]
+visible = false
 position = Vector2( 138.861, 299.865 )
 rotation = -1.0472
 scale = Vector2( 4.15999, 4.46278 )
@@ -4127,7 +4133,7 @@ rotation = 0.0493656
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 26
+frame = 23
 speed_scale = 0.9
 playing = true
 
@@ -4138,7 +4144,7 @@ rotation = 0.0995313
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 26
+frame = 23
 speed_scale = 0.9
 playing = true
 
@@ -4149,7 +4155,7 @@ rotation = 0.153884
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 25
+frame = 22
 speed_scale = 0.9
 playing = true
 

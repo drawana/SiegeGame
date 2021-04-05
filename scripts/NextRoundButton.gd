@@ -19,6 +19,14 @@ var infantryDefendEnemy = false
 var artilleryDefendEnemy = false
 var navalDefendEnemy = false
 
+var endPoint = 0
+var endInf = 0
+var endArt = 0
+var endNav = 0
+var endDiff = "Easy"
+var endEnemyCastle = 0
+var endRound = 0
+
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
 	setLevels()
@@ -137,7 +145,9 @@ func _on_Button_Pressed():
 	else:
 		if get_node("../MyHealthBar").value <= 0:
 			get_tree().quit()
-			
+		
+		endRound += 1
+		
 		var enemyInfLevel = int(get_node("../InfantryLevelDisplayEnemy").get_text())
 		if enemyInfLevel == 1:
 			get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND RETURN LEVEL 1")
