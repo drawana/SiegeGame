@@ -135,6 +135,9 @@ func _on_Button_Pressed():
 	if NextRoundButton.disabled == true:
 		redAnimation.play("Test")
 	else:
+		if get_node("../MyHealthBar").value <= 0:
+			get_tree().quit()
+		
 		if int(get_node("../InfantryLevelDisplay").get_text()) == 0:
 			infantryDone = true
 		if int(get_node("../NavalLevelDisplay").get_text()) == 0:
@@ -221,8 +224,36 @@ func _on_Button_Pressed():
 				infrantryLevel3.set_text(str(int(get_node("../InfantryLevelDisplayEnemy").get_text()) + 1))
 				PointsCounterEnemyUpdated2.set_text(str(int(get_node("../PointsCounterEnemy").get_text()) - 10))
 			
-			var myHealth = get_node("../MyHealthBar")
 			var level1 = int(get_node("../InfantryLevelDisplayEnemy").get_text())
+			var level2 = int(get_node("../NavalLevelDisplayEnemy").get_text())
+			var level3 = int(get_node("../ArtilleryLevelDisplayEnemy").get_text())
+			
+			if level1 >= 1:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").get_node("Sprite").visible = true
+			if level1 >= 2:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 2 - AnimationPlayer - Group1 - 3").get_node("Sprite").visible = true
+			if level1 >= 3:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 3 - AnimationPlayer - Group1 - 4").get_node("Sprite").visible = true
+			if level1 >= 4:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 4 - AnimationPlayer - Group1 - 5").get_node("Sprite").visible = true
+			if level1 >= 5:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 5 - AnimationPlayer - Group1 - 1").get_node("Sprite2").visible = true
+			
+			if level2 >= 1:
+				get_parent().get_parent().get_node("game2").get_node("group 1 - ships4").get_node("Sprite").visible = true
+			if level2 >= 3:
+				get_parent().get_parent().get_node("game2").get_node("group 1 - ships5").get_node("Sprite").visible = true
+			if level2 >= 5:
+				get_parent().get_parent().get_node("game2").get_node("group 1 - ships6").get_node("Sprite").visible = true
+
+			if level3 >= 1:
+				get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").visible = true
+			if level3 >= 3:
+				get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").visible = true
+			if level3 >= 5:
+				get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").visible = true
+			
+			var myHealth = get_node("../MyHealthBar")
 			var pointsToNotDecreaseBy = 0
 			var num1 = randi()%4 + 1
 			var num2 = randi()%4 + 1
@@ -240,7 +271,6 @@ func _on_Button_Pressed():
 				else:
 					setInfantryDefendEnemy(true)
 				
-			var level2 = int(get_node("../NavalLevelDisplayEnemy").get_text())
 			if level2 > 0:
 				if num2 != 2:
 					if navalDefend == true:
@@ -253,7 +283,6 @@ func _on_Button_Pressed():
 				else:
 					setNavalDefendEnemy(true)
 			
-			var level3 = int(get_node("../ArtilleryLevelDisplayEnemy").get_text())
 			if level3 > 0:
 				if num3 != 2:
 					if artilleryDefend == true:
@@ -265,9 +294,6 @@ func _on_Button_Pressed():
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
 				else:
 					setArtilleryDefendEnemy(true)
-			
-			if get_node("../MyHealthBar").value <= 0:
-				get_tree().quit()
 				
 			if get_node("../TheirHealthBar").value <= 0:
 				var InvadeInfantry = get_node("../InvadeInfantry")
