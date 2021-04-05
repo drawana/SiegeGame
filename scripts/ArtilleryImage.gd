@@ -17,7 +17,7 @@ func _ready():
 	if NextRoundButton.artilleryLevel >= 1:
 		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").visible = true
 	if NextRoundButton.artilleryLevel >= 3:
-		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").visible = true
+		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").visible = true
 
 	if NextRoundButton.usArtLevel >= 1:
 		get_parent().get_parent().get_node("game2").get_node("CANNON GROUP 2 AnimatedSprite1").visible = true

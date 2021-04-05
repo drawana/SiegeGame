@@ -295,9 +295,9 @@ func _on_Button_Pressed():
 			if level3 >= 1:
 				get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").visible = true
 			if level3 >= 3:
-				get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").visible = true
-			if level3 >= 5:
 				get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").visible = true
+			if level3 >= 5:
+				get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").visible = true
 			
 			var myHealth = get_node("../MyHealthBar")
 			var pointsToNotDecreaseBy = 0
