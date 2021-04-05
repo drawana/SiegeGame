@@ -18,7 +18,7 @@ func _on_UpgradeNav_pressed():
 func _on_UpgradeArt_pressed():
 	if points >= 15:
 		points -= 15
-		infLevel +=1 
+		artLevel +=1 
 		$CenterContainer/VBoxContainer/CenterContainer2/Label.text = "Points Available: " + str(points)
 		$CenterContainer/VBoxContainer/CenterContainer4/HBoxContainer/CenterContainer3/Label.text = "Level: " + str(artLevel)
 
