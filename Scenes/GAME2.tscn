@@ -68,54 +68,6 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 733.807, 147.454 ), Vector2( 792.669, 407.411 ) ]
 }
-tracks/1/type = "value"
-tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 776.948, 150.676 ), Vector2( 764.951, 279 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.2, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 821.804, 149.767 ), Vector2( 797.432, 296.5 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0.1, 1.6, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 768.72, 195.487 ), Vector2( 787.688, 326 ), Vector2( 785.453, 345.198 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0.3, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 810.67, 195.571 ), Vector2( 752.954, 368 ) ]
-}
 
 [sub_resource type="Animation" id=81]
 resource_name = "DEFEND RETURN LEVEL 5"
@@ -132,54 +84,6 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 792.669, 407.411 ), Vector2( 748.248, 160 ) ]
 }
-tracks/1/type = "value"
-tracks/1/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.1, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 752.954, 368 ), Vector2( 812.592, 200.939 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.2, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 785.453, 345.198 ), Vector2( 790.497, 160 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0.1, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 797.432, 296.5 ), Vector2( 770.846, 200.447 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0.4, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 764.951, 279 ), Vector2( 828.191, 160 ) ]
-}
 
 [sub_resource type="Animation" id=82]
 length = 7.0
@@ -195,81 +99,9 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 735.089, 146.676 ), Vector2( 218.973, 460 ), Vector2( 218.973, 460 ), Vector2( 741.4, 151 ) ]
 }
-tracks/1/type = "value"
-tracks/1/path = NodePath("LEVEL 1 - AnimationPlayer - Group1 - 2/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.1, 3.5, 4.1, 6.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 778.31, 149.767 ), Vector2( 230.234, 515.806 ), Vector2( 230.234, 515.806 ), Vector2( 779.76, 150.968 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0, 3.5, 4.1, 7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 821.804, 149.767 ), Vector2( 206, 555.765 ), Vector2( 206, 555.765 ), Vector2( 813.146, 150.381 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 3.6, 4.1, 6.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 768.72, 195.487 ), Vector2( 265.285, 539.157 ), Vector2( 265.285, 539.157 ), Vector2( 757.4, 191.146 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0.1, 3.3, 4.1, 7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 812.113, 194.837 ), Vector2( 265.285, 473 ), Vector2( 265.285, 473 ), Vector2( 805.157, 190 ) ]
-}
 
 [sub_resource type="Animation" id=83]
 length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 6.36359, -2.90063 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0.0 ]
-}
 
 [sub_resource type="Animation" id=84]
 resource_name = "DEFEND GO LEVEL 1"
@@ -306,86 +138,14 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=86]
 resource_name = "SHIP LEVEL 1 - group 1 fireball"
 length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("group1 - fireball2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.2, 2.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 803.088, 76.4395 ), Vector2( 179.792, 488.434 ) ]
-}
 
 [sub_resource type="Animation" id=87]
 resource_name = "SHIP LEVEL 3+4 - group 1 fireball"
 length = 2.7
-tracks/0/type = "value"
-tracks/0/path = NodePath("group1 - fireball2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 2.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 803.088, 76.4395 ), Vector2( 186.534, 492.94 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("group1 - fireball1:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.2, 2.6 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 622, 58.5392 ), Vector2( 184.494, 483.009 ) ]
-}
 
 [sub_resource type="Animation" id=88]
 resource_name = "SHIP LEVEL 5 - group 1 fireball"
 length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("group1 - fireball2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.3, 2.6 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 803.088, 76.4395 ), Vector2( 197.772, 488.434 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("group1 - fireball1:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 2.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 622, 58.5392 ), Vector2( 182.996, 474 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("group1 - fireball3:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.5, 2.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 727.15, 59.8704 ), Vector2( 183.265, 491.259 ) ]
-}
 
 [sub_resource type="Animation" id=89]
 resource_name = "group 1 attack "
@@ -806,34 +566,10 @@ animations = [ {
 [sub_resource type="Animation" id=99]
 resource_name = "DEFEND GO LEV 1"
 length = 2.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("../GUI/ships - NOT USING RN /PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.1, 1.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 272.56, 514.578 ), Vector2( 217.123, 439 ) ]
-}
 
 [sub_resource type="Animation" id=100]
 resource_name = "DEFEND RETURN LEVEL 1"
 length = 2.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("../GUI/ships - NOT USING RN /PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.2, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 217.123, 439 ), Vector2( 283.43, 515.806 ) ]
-}
 
 [sub_resource type="Animation" id=101]
 length = 6.4
@@ -949,48 +685,24 @@ tracks/0/keys = {
 "values": [ Vector2( 278.51, 515.806 ), Vector2( 223.41, 460 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/1/path = NodePath("../GUI/ships - NOT USING RN /PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 362.549, 564 ), Vector2( 154.284, 436.429 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.1, 1.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 296.101, 563.331 ), Vector2( 244.505, 541.976 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("../GUI/ships - NOT USING RN /PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
 "times": PoolRealArray( 0, 2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 379.694, 518.958 ), Vector2( 259.499, 491.434 ) ]
 }
-tracks/4/type = "value"
-tracks/4/path = NodePath("../GUI/ships - NOT USING RN /PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
+tracks/2/type = "value"
+tracks/2/path = NodePath("../GUI/ships - NOT USING RN /PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
 "times": PoolRealArray( 0.3, 1.9 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
@@ -1025,36 +737,12 @@ tracks/1/keys = {
 "values": [ Vector2( 191.95, 425.94 ), Vector2( 332.042, 511.291 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
+tracks/2/path = NodePath("../GUI/ships - NOT USING RN /PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.2, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 154.284, 436.429 ), Vector2( 376.783, 512.169 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0.1, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 244.505, 541.976 ), Vector2( 360.594, 559.289 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("../GUI/ships - NOT USING RN /PPL LEVEL 5 - AnimationPlayer - Group2 - 3/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
 "times": PoolRealArray( 0, 1.7 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
@@ -1099,155 +787,23 @@ tracks/2/keys = {
 "update": 0,
 "values": [ Vector2( 379.694, 518.958 ), Vector2( 743.4, 294.5 ), Vector2( 743.4, 294.5 ), Vector2( 344.85, 499.584 ) ]
 }
-tracks/3/type = "value"
-tracks/3/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 2.9, 3.4, 5.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 296.101, 563.331 ), Vector2( 723.344, 337.42 ), Vector2( 723.344, 337.42 ), Vector2( 319.695, 542.571 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0, 2.9, 3.4, 5.7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 362.549, 564 ), Vector2( 813.289, 428 ), Vector2( 813.289, 428 ), Vector2( 303.4, 502 ) ]
-}
 
 [sub_resource type="Animation" id=69]
 resource_name = "DEFEND GO LEVEL 3"
 length = 2.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 281.336, 515.282 ), Vector2( 219.156, 553.511 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.1, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 337.124, 514.288 ), Vector2( 170.812, 439 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("../GUI/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.1, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 296.101, 563.331 ), Vector2( 240.251, 491.434 ) ]
-}
 
 [sub_resource type="Animation" id=40]
 resource_name = "DEFEND RETURN LEVEL 3"
 length = 2.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 219.156, 553.511 ), Vector2( 284.333, 518.402 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.1, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 170.812, 439 ), Vector2( 315.975, 561.584 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("../GUI/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.1, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 240.251, 491.434 ), Vector2( 334.464, 520.737 ) ]
-}
 
 [sub_resource type="Animation" id=41]
 length = 7.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("../GUI/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.9 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 296.101, 563.331 ), Vector2( 761.389, 343.5 ), Vector2( 759.268, 341.457 ), Vector2( 760.911, 344.598 ), Vector2( 761.202, 342.793 ), Vector2( 763.16, 342.183 ), Vector2( 762.718, 342.744 ), Vector2( 327.69, 536.82 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.1, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 334.319, 515.67 ), Vector2( 765.113, 303.5 ), Vector2( 765.464, 304.766 ), Vector2( 765.464, 301.167 ), Vector2( 764.102, 300.846 ), Vector2( 766.398, 303.725 ), Vector2( 766.224, 302.722 ), Vector2( 766.625, 301.961 ), Vector2( 284.459, 541.61 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.4, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 6.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 278.51, 515.806 ), Vector2( 801, 419 ), Vector2( 799.669, 417.442 ), Vector2( 799.869, 418.009 ), Vector2( 800.521, 417.64 ), Vector2( 799.573, 417.372 ), Vector2( 802.039, 418.207 ), Vector2( 262.077, 499.584 ) ]
-}
 
 [sub_resource type="Animation" id=42]
 resource_name = "DEFEND GO LEVEL 4"
 length = 2.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/path = NodePath("../GUI/InfantryImageEnemy/PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -1256,333 +812,57 @@ tracks/0/keys = {
 "times": PoolRealArray( 0.1, 1.9 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 278.51, 515.806 ), Vector2( 154.9, 439 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("../GUI/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 296.101, 563.331 ), Vector2( 227.179, 458.158 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("../GUI/InfantryImageEnemy/PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.1, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
 "values": [ Vector2( 355.071, 560.869 ), Vector2( 217.561, 558.453 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0.3, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 334.319, 515.67 ), Vector2( 253.006, 510.879 ) ]
 }
 
 [sub_resource type="Animation" id=43]
 resource_name = "DEFEND RETURN LEVEL 4"
 length = 2.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
+tracks/0/path = NodePath("../GUI/InfantryImageEnemy/PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.2, 1.9 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 154.9, 439 ), Vector2( 290.496, 515.806 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("../GUI/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 227.179, 458.158 ), Vector2( 345.545, 556.218 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("../GUI/InfantryImageEnemy/PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
 "times": PoolRealArray( 0.1, 1.7 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Vector2( 217.561, 558.453 ), Vector2( 339.351, 515.806 ) ]
 }
-tracks/3/type = "value"
-tracks/3/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 253.006, 510.879 ), Vector2( 311.591, 555.125 ) ]
-}
 
 [sub_resource type="Animation" id=44]
 resource_name = "LEVEL 1 + 2 - Cannon GROUP 1"
 length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("AnimatedSprite/group1 - fireball6:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.2, 2.3 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( -14.5712, -150 ), Vector2( -590.192, 59.575 ) ]
-}
 
 [sub_resource type="Animation" id=45]
 resource_name = "LEVEL 1 - Cannon Group2"
 length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1/group2 - fireball4:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.2, 2.4 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 18.0411, -3.99997 ), Vector2( 632.503, -93.25 ) ]
-}
 
 [sub_resource type="Animation" id=46]
 resource_name = "LEVEL 3 + 4 - Cannon GROUP 1"
 length = 2.7
-tracks/0/type = "value"
-tracks/0/path = NodePath("AnimatedSprite3/group1 - fireball9:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.1, 2.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( -23.0742, -11.7964 ), Vector2( -687.075, 35.9401 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("AnimatedSprite/group1 - fireball6:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.3, 2.4 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( -17.1911, -149.046 ), Vector2( -600.325, 59.5747 ) ]
-}
 
 [sub_resource type="Animation" id=47]
 resource_name = "LEVEL 3 + 4 - Cannon Group 2"
 length = 2.6
-tracks/0/type = "value"
-tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1/group2 - fireball4:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.1, 2.4 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 20.3366, -4.33339 ), Vector2( 627.073, -88 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite2/group2 - fireball5:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.2, 2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 21.095, -1.00006 ), Vector2( 600.32, -100.5 ) ]
-}
 
 [sub_resource type="Animation" id=48]
 resource_name = "LEVEL 5 - Cannon GROUP 1"
 length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("AnimatedSprite/group1 - fireball6:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 2.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( -17.1911, -149.046 ), Vector2( -584.324, -39.3135 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("AnimatedSprite2/group1 - fireball8:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.2, 2.3 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( -15.6807, 126 ), Vector2( -594.33, 101.716 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("AnimatedSprite3/group1 - fireball9:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.3, 2.1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( -23.0742, -11.7964 ), Vector2( -687.075, 47.8519 ) ]
-}
 
 [sub_resource type="Animation" id=49]
 resource_name = "LEVEL 5 - Cannon Group 2"
 length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite2/group2 - fireball5:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.2, 2.3 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 23.2433, -1.36909 ), Vector2( 603.32, -125.25 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("CANNON GROUP 2 AnimatedSprite1/group2 - fireball4:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.1, 2.7 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 22.1661, -4.58567 ), Vector2( 653.003, -59.5 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("CANNON GROUP 2 AnimatedSprite3/group2 - fireball7:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.4, 2.4 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 25.9023, -4.38715 ), Vector2( 615.145, -63.6757 ) ]
-}
 
 [sub_resource type="Animation" id=50]
 length = 2.6
-tracks/0/type = "value"
-tracks/0/path = NodePath("group2 - fireball3:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.2, 2.4 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 49.8019, 93.713 ), Vector2( 853.644, 307 ) ]
-}
 
 [sub_resource type="Animation" id=51]
 length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("group2 - fireball3:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 2.6 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 49.8019, 93.713 ), Vector2( 865, 316 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("group2 - fireball2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.4, 2.2 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 170.632, 155.518 ), Vector2( 856.857, 302.5 ) ]
-}
 
 [sub_resource type="Animation" id=52]
 length = 3.0
-tracks/0/type = "value"
-tracks/0/path = NodePath("group2 - fireball3:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.2, 2.6 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 48.6889, 93.3767 ), Vector2( 877, 343.642 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("group2 - fireball2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.5, 2.3 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 168.824, 155.101 ), Vector2( 874, 318 ) ]
-}
 
 [sub_resource type="Animation" id=53]
 length = 6.3
@@ -1598,81 +878,9 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( 355.071, 560.869 ), Vector2( 778.758, 392 ), Vector2( 780.392, 390.528 ), Vector2( 781.459, 392.222 ), Vector2( 783.939, 392.986 ), Vector2( 782.741, 390.856 ), Vector2( 780.951, 391.949 ), Vector2( 781.545, 390.158 ), Vector2( 302.4, 501.363 ) ]
 }
-tracks/1/type = "value"
-tracks/1/path = NodePath("../GUI/PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.2, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 296.101, 563.331 ), Vector2( 745.22, 355 ), Vector2( 744.757, 355.727 ), Vector2( 746.795, 356.533 ), Vector2( 749.349, 355.5 ), Vector2( 747.37, 355.701 ), Vector2( 748.976, 351.109 ), Vector2( 329.964, 541.52 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.2, 2.7, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 6.2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 278.51, 515.806 ), Vector2( 772.822, 291 ), Vector2( 772.618, 289.121 ), Vector2( 772.003, 290.506 ), Vector2( 771.964, 291.073 ), Vector2( 774.456, 293.859 ), Vector2( 776.367, 292.806 ), Vector2( 774.679, 291.053 ), Vector2( 777.473, 292.645 ), Vector2( 776.553, 290.487 ), Vector2( 275.708, 540.222 ) ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("PPL LEVEL 2 - AnimationPlayer - Group2 - 2/Sprite:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 2.8, 2.9, 3, 3.1, 3.2, 3.3, 3.4, 3.5, 5.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 334.319, 515.67 ), Vector2( 750.901, 330 ), Vector2( 752.445, 334.535 ), Vector2( 756.368, 329.105 ), Vector2( 755.542, 329.067 ), Vector2( 755.085, 330.252 ), Vector2( 757.937, 329.628 ), Vector2( 756.908, 330.285 ), Vector2( 759.088, 332.192 ), Vector2( 257.219, 496.051 ) ]
-}
 
 [sub_resource type="Animation" id=54]
 length = 2.9
-tracks/0/type = "value"
-tracks/0/path = NodePath("group2 - fireball3:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.1, 2.6 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 81.1557, 102.262 ), Vector2( 854.282, 307 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("group2 - fireball2:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.3, 2.3 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 170.632, 155.518 ), Vector2( 866, 318 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("group2 - fireball:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0.8, 2.1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Vector2( 210.204, 67.529 ), Vector2( 855.975, 294 ) ]
-}
 
 [sub_resource type="AtlasTexture" id=55]
 flags = 4
@@ -2226,7 +1434,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 79 )
 animation = "shootball"
-frame = 18
+frame = 17
 speed_scale = 0.9
 playing = true
 
@@ -2236,7 +1444,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 79 )
 animation = "shootball"
-frame = 18
+frame = 17
 speed_scale = 0.9
 playing = true
 
@@ -2246,7 +1454,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 79 )
 animation = "shootball"
-frame = 17
+frame = 16
 speed_scale = 0.9
 playing = true
 
@@ -2463,7 +1671,7 @@ rotation = 0.523598
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 79 )
 animation = "shootball"
-frame = 18
+frame = 17
 speed_scale = 0.9
 playing = true
 
@@ -2473,7 +1681,7 @@ rotation = 0.523598
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 79 )
 animation = "shootball"
-frame = 18
+frame = 17
 speed_scale = 0.9
 playing = true
 
@@ -2483,7 +1691,7 @@ rotation = 0.523598
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 79 )
 animation = "shootball"
-frame = 17
+frame = 16
 speed_scale = 0.9
 playing = true
 

@@ -7,8 +7,10 @@ func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
 	
 func _on_Button_Pressed():
-	var points = get_node("../TheirHealthBar")
 	
+	
+	
+	var points = get_node("../TheirHealthBar")
 	var level = get_node("../InfantryLevelDisplay").getVal()
 	
 	var pointsToNotDecreaseBy = 0
