@@ -16,7 +16,7 @@
 [ext_resource path="res://Sprites/Ships/Preview_KenneyNL.png" type="Texture" id=14]
 [ext_resource path="res://Sprites/ships.png" type="Texture" id=15]
 [ext_resource path="res://Scenes/fireball.gd" type="Script" id=16]
-[ext_resource path="res://Sprites/fireball/kisspng-sprite-spaceshiptwo-spaceshipone-spacecraft-fire-effect-5abfdb2640f305.9266932215225229182661.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/fireball/fireball.png" type="Texture" id=17]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00019.png" type="Texture" id=18]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00022.png" type="Texture" id=19]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00017.png" type="Texture" id=20]
@@ -487,6 +487,42 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 821.804, 149.767 ), Vector2( 236.635, 532.045 ), Vector2( 237.283, 535.022 ), Vector2( 234.402, 535.587 ), Vector2( 232.127, 537.788 ), Vector2( 232.477, 536.552 ), Vector2( 235.407, 543.961 ), Vector2( 237.871, 540.704 ), Vector2( 819.321, 146.231 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 709.04, 631.018 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LEVEL 3 - AnimationPlayer - Group1 - 4/Sprite:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 768.72, 637.487 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("LEVEL 4 - AnimationPlayer - Group1 - 5/Sprite:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 811.392, 637.204 ) ]
 }
 
 [sub_resource type="Animation" id=14]
@@ -2066,7 +2102,7 @@ anims/group1_walking = SubResource( 3 )
 "anims/swords - group1" = SubResource( 4 )
 
 [node name="Sprite2" type="Sprite" parent="LEVEL 5 - AnimationPlayer - Group1 - 1"]
-position = Vector2( 734.448, 147.065 )
+position = Vector2( 709.04, 631.018 )
 scale = Vector2( 2.30063, 2.70535 )
 texture = ExtResource( 13 )
 region_enabled = true
@@ -2099,7 +2135,7 @@ region_rect = Rect2( 651.914, 138.304, 13.5917, 15.0611 )
 "anims/group 1 attack " = SubResource( 10 )
 
 [node name="Sprite" type="Sprite" parent="LEVEL 1 - AnimationPlayer - Group1 - 2"]
-position = Vector2( 777.63, 150.221 )
+position = Vector2( 776.205, 151.044 )
 scale = Vector2( 1.96508, 2.61567 )
 texture = ExtResource( 13 )
 region_enabled = true
@@ -2128,7 +2164,7 @@ region_rect = Rect2( 799.54, 154.537, 10.8012, 11.9382 )
 "anims/group 1 attack" = SubResource( 13 )
 
 [node name="Sprite" type="Sprite" parent="LEVEL 2 - AnimationPlayer - Group1 - 3"]
-position = Vector2( 820.466, 150.575 )
+position = Vector2( 821.804, 149.767 )
 scale = Vector2( 1.89502, 2.61567 )
 texture = ExtResource( 13 )
 region_enabled = true
@@ -2157,7 +2193,7 @@ region_rect = Rect2( 781.812, 101.371, 7.73096, 15.044 )
 "anims/group 1 attack" = SubResource( 16 )
 
 [node name="Sprite" type="Sprite" parent="LEVEL 3 - AnimationPlayer - Group1 - 4"]
-position = Vector2( 768.72, 195.487 )
+position = Vector2( 768.72, 637.487 )
 scale = Vector2( 2.05083, 2.74256 )
 texture = ExtResource( 13 )
 region_enabled = true
@@ -2187,7 +2223,7 @@ region_rect = Rect2( 864.632, 151.978, 12.791, 19.6128 )
 "anims/group 1 attack" = SubResource( 19 )
 
 [node name="Sprite" type="Sprite" parent="LEVEL 4 - AnimationPlayer - Group1 - 5"]
-position = Vector2( 811.392, 195.204 )
+position = Vector2( 811.392, 637.204 )
 scale = Vector2( 1.83519, 2.81902 )
 texture = ExtResource( 13 )
 region_enabled = true
@@ -2246,7 +2282,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 14
+frame = 30
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2257,7 +2293,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 14
+frame = 30
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2268,7 +2304,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 13
+frame = 29
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2486,7 +2522,7 @@ rotation = 0.523598
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 14
+frame = 30
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2497,7 +2533,7 @@ rotation = 0.523598
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 14
+frame = 30
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2508,7 +2544,7 @@ rotation = 0.523598
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 13
+frame = 29
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )

@@ -16,7 +16,7 @@
 [ext_resource path="res://Sprites/Ships/Preview_KenneyNL.png" type="Texture" id=14]
 [ext_resource path="res://Sprites/ships.png" type="Texture" id=15]
 [ext_resource path="res://Scenes/fireball.gd" type="Script" id=16]
-[ext_resource path="res://Sprites/fireball/kisspng-sprite-spaceshiptwo-spaceshipone-spacecraft-fire-effect-5abfdb2640f305.9266932215225229182661.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/fireball/fireball.png" type="Texture" id=17]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00019.png" type="Texture" id=18]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00022.png" type="Texture" id=19]
 [ext_resource path="res://Sprites/fireball/efecto_fuego_00017.png" type="Texture" id=20]
@@ -812,14 +812,14 @@ region = Rect2( 512, 512, 256, 256 )
 
 [sub_resource type="SpriteFrames" id=29]
 animations = [ {
-"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
-"loop": true,
-"name": "fire explosion",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 24 ), ExtResource( 34 ), ExtResource( 45 ), ExtResource( 23 ), ExtResource( 26 ), ExtResource( 47 ), ExtResource( 33 ), ExtResource( 27 ), ExtResource( 46 ), ExtResource( 48 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 28 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 29 ), ExtResource( 39 ), ExtResource( 20 ), ExtResource( 49 ), ExtResource( 18 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 19 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 32 ), ExtResource( 36 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 44 ), ExtResource( 25 ), ExtResource( 38 ), ExtResource( 51 ), ExtResource( 50 ), ExtResource( 52 ) ],
 "loop": true,
 "name": "shootball",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
+"loop": true,
+"name": "fire explosion",
 "speed": 5.0
 } ]
 
@@ -1367,7 +1367,7 @@ tracks/3/keys = {
 "values": [ Vector2( 253.006, 510.879 ), Vector2( 311.591, 555.125 ) ]
 }
 
-[sub_resource type="Animation" id=63]
+[sub_resource type="Animation" id=44]
 resource_name = "LEVEL 1 + 2 - Cannon GROUP 1"
 length = 3.0
 tracks/0/type = "value"
@@ -1383,7 +1383,7 @@ tracks/0/keys = {
 "values": [ Vector2( -14.5712, -150 ), Vector2( -590.192, 59.575 ) ]
 }
 
-[sub_resource type="Animation" id=64]
+[sub_resource type="Animation" id=45]
 resource_name = "LEVEL 1 - Cannon Group2"
 length = 3.0
 tracks/0/type = "value"
@@ -1399,7 +1399,7 @@ tracks/0/keys = {
 "values": [ Vector2( 18.0411, -3.99997 ), Vector2( 632.503, -93.25 ) ]
 }
 
-[sub_resource type="Animation" id=65]
+[sub_resource type="Animation" id=46]
 resource_name = "LEVEL 3 + 4 - Cannon GROUP 1"
 length = 2.7
 tracks/0/type = "value"
@@ -1427,7 +1427,7 @@ tracks/1/keys = {
 "values": [ Vector2( -17.1911, -149.046 ), Vector2( -600.325, 59.5747 ) ]
 }
 
-[sub_resource type="Animation" id=66]
+[sub_resource type="Animation" id=47]
 resource_name = "LEVEL 3 + 4 - Cannon Group 2"
 length = 2.6
 tracks/0/type = "value"
@@ -1455,7 +1455,7 @@ tracks/1/keys = {
 "values": [ Vector2( 21.095, -1.00006 ), Vector2( 600.32, -100.5 ) ]
 }
 
-[sub_resource type="Animation" id=67]
+[sub_resource type="Animation" id=48]
 resource_name = "LEVEL 5 - Cannon GROUP 1"
 length = 3.0
 tracks/0/type = "value"
@@ -1495,7 +1495,7 @@ tracks/2/keys = {
 "values": [ Vector2( -23.0742, -11.7964 ), Vector2( -687.075, 47.8519 ) ]
 }
 
-[sub_resource type="Animation" id=68]
+[sub_resource type="Animation" id=49]
 resource_name = "LEVEL 5 - Cannon Group 2"
 length = 3.0
 tracks/0/type = "value"
@@ -1535,7 +1535,7 @@ tracks/2/keys = {
 "values": [ Vector2( 25.9023, -4.38715 ), Vector2( 616.289, -257 ) ]
 }
 
-[sub_resource type="Animation" id=44]
+[sub_resource type="Animation" id=50]
 length = 2.6
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -1550,7 +1550,7 @@ tracks/0/keys = {
 "values": [ Vector2( 49.8019, 93.713 ), Vector2( 853.644, 307 ) ]
 }
 
-[sub_resource type="Animation" id=45]
+[sub_resource type="Animation" id=51]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -1577,7 +1577,7 @@ tracks/1/keys = {
 "values": [ Vector2( 170.632, 155.518 ), Vector2( 856.857, 302.5 ) ]
 }
 
-[sub_resource type="Animation" id=46]
+[sub_resource type="Animation" id=52]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -1604,7 +1604,7 @@ tracks/1/keys = {
 "values": [ Vector2( 168.824, 155.101 ), Vector2( 874, 318 ) ]
 }
 
-[sub_resource type="Animation" id=47]
+[sub_resource type="Animation" id=53]
 length = 6.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
@@ -1655,7 +1655,7 @@ tracks/3/keys = {
 "values": [ Vector2( 334.319, 515.67 ), Vector2( 750.901, 330 ), Vector2( 752.445, 334.535 ), Vector2( 756.368, 329.105 ), Vector2( 755.542, 329.067 ), Vector2( 755.085, 330.252 ), Vector2( 757.937, 329.628 ), Vector2( 756.908, 330.285 ), Vector2( 759.088, 332.192 ), Vector2( 257.219, 496.051 ) ]
 }
 
-[sub_resource type="Animation" id=48]
+[sub_resource type="Animation" id=54]
 length = 2.9
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -1694,77 +1694,77 @@ tracks/2/keys = {
 "values": [ Vector2( 210.204, 67.529 ), Vector2( 855.975, 294 ) ]
 }
 
-[sub_resource type="AtlasTexture" id=49]
+[sub_resource type="AtlasTexture" id=55]
 flags = 4
 atlas = ExtResource( 53 )
 region = Rect2( 0, 0, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=50]
+[sub_resource type="AtlasTexture" id=56]
 flags = 4
 atlas = ExtResource( 53 )
 region = Rect2( 103, 0, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=51]
+[sub_resource type="AtlasTexture" id=57]
 flags = 4
 atlas = ExtResource( 53 )
 region = Rect2( 206, 0, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=52]
+[sub_resource type="AtlasTexture" id=58]
 flags = 4
 atlas = ExtResource( 53 )
 region = Rect2( 206, 106, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=53]
+[sub_resource type="AtlasTexture" id=59]
 flags = 4
 atlas = ExtResource( 53 )
 region = Rect2( 103, 106, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=54]
+[sub_resource type="AtlasTexture" id=60]
 flags = 4
 atlas = ExtResource( 53 )
 region = Rect2( 0, 106, 103, 106 )
 
-[sub_resource type="SpriteFrames" id=55]
+[sub_resource type="SpriteFrames" id=61]
 animations = [ {
-"frames": [ SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ) ],
+"frames": [ SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
 } ]
 
-[sub_resource type="AtlasTexture" id=56]
+[sub_resource type="AtlasTexture" id=62]
 flags = 4
 atlas = ExtResource( 54 )
 region = Rect2( 0, 0, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=57]
+[sub_resource type="AtlasTexture" id=63]
 flags = 4
 atlas = ExtResource( 54 )
 region = Rect2( 103, 0, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=58]
+[sub_resource type="AtlasTexture" id=64]
 flags = 4
 atlas = ExtResource( 54 )
 region = Rect2( 206, 0, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=59]
+[sub_resource type="AtlasTexture" id=65]
 flags = 4
 atlas = ExtResource( 54 )
 region = Rect2( 0, 108, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=60]
+[sub_resource type="AtlasTexture" id=66]
 flags = 4
 atlas = ExtResource( 54 )
 region = Rect2( 103, 108, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=61]
+[sub_resource type="AtlasTexture" id=67]
 flags = 4
 atlas = ExtResource( 54 )
 region = Rect2( 206, 108, 103, 108 )
 
-[sub_resource type="SpriteFrames" id=62]
+[sub_resource type="SpriteFrames" id=68]
 animations = [ {
-"frames": [ SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ) ],
+"frames": [ SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -2246,7 +2246,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 29
+frame = 14
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2257,7 +2257,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 29
+frame = 14
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2268,7 +2268,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 28
+frame = 13
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2407,17 +2407,17 @@ region_rect = Rect2( 53.4169, 8.30119, 13.3469, 10.2668 )
 [node name="PPL LEVEL 4 - AnimationPlayer - Group2 - 5" type="AnimationPlayer" parent="."]
 "anims/DEFEND GO LEVEL 4" = SubResource( 42 )
 "anims/DEFEND RETURN LEVEL 4" = SubResource( 43 )
-"anims/LEVEL 1 + 2 - Cannon GROUP 1" = SubResource( 63 )
-"anims/LEVEL 1 - Cannon Group2" = SubResource( 64 )
-"anims/LEVEL 3 + 4 - Cannon GROUP 1" = SubResource( 65 )
-"anims/LEVEL 3 + 4 - Cannon Group 2" = SubResource( 66 )
-"anims/LEVEL 5 - Cannon GROUP 1" = SubResource( 67 )
-"anims/LEVEL 5 - Cannon Group 2" = SubResource( 68 )
-"anims/SHIP LEVEL 1 + 2 - group 2 fireball" = SubResource( 44 )
-"anims/SHIP LEVEL 3 - group 2 fireball" = SubResource( 45 )
-"anims/fireball attack g2" = SubResource( 46 )
-anims/group2_walking = SubResource( 47 )
-"anims/ship LEVEL 5 - group 2" = SubResource( 48 )
+"anims/LEVEL 1 + 2 - Cannon GROUP 1" = SubResource( 44 )
+"anims/LEVEL 1 - Cannon Group2" = SubResource( 45 )
+"anims/LEVEL 3 + 4 - Cannon GROUP 1" = SubResource( 46 )
+"anims/LEVEL 3 + 4 - Cannon Group 2" = SubResource( 47 )
+"anims/LEVEL 5 - Cannon GROUP 1" = SubResource( 48 )
+"anims/LEVEL 5 - Cannon Group 2" = SubResource( 49 )
+"anims/SHIP LEVEL 1 + 2 - group 2 fireball" = SubResource( 50 )
+"anims/SHIP LEVEL 3 - group 2 fireball" = SubResource( 51 )
+"anims/fireball attack g2" = SubResource( 52 )
+anims/group2_walking = SubResource( 53 )
+"anims/ship LEVEL 5 - group 2" = SubResource( 54 )
 
 [node name="Sprite" type="Sprite" parent="PPL LEVEL 4 - AnimationPlayer - Group2 - 5"]
 position = Vector2( 355.071, 560.869 )
@@ -2486,7 +2486,7 @@ rotation = 0.523598
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 29
+frame = 14
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2497,7 +2497,7 @@ rotation = 0.523598
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 29
+frame = 14
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
@@ -2508,14 +2508,14 @@ rotation = 0.523598
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 29 )
 animation = "shootball"
-frame = 28
+frame = 13
 speed_scale = 0.9
 playing = true
 script = ExtResource( 16 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 772.822, 416 )
-frames = SubResource( 55 )
+frames = SubResource( 61 )
 
 [node name="group1 - fireball6" type="AnimatedSprite" parent="AnimatedSprite"]
 position = Vector2( -17.1911, -149.046 )
@@ -2529,7 +2529,7 @@ script = ExtResource( 16 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 position = Vector2( 772.822, 278 )
-frames = SubResource( 55 )
+frames = SubResource( 61 )
 
 [node name="group1 - fireball8" type="AnimatedSprite" parent="AnimatedSprite2"]
 position = Vector2( -19.2544, 126.502 )
@@ -2543,7 +2543,7 @@ script = ExtResource( 16 )
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
 position = Vector2( 893.074, 457 )
-frames = SubResource( 55 )
+frames = SubResource( 61 )
 
 [node name="group1 - fireball9" type="AnimatedSprite" parent="AnimatedSprite3"]
 position = Vector2( -27.7199, -11.3791 )
@@ -2557,7 +2557,7 @@ script = ExtResource( 16 )
 
 [node name="CANNON GROUP 2 AnimatedSprite1" type="AnimatedSprite" parent="."]
 position = Vector2( 223.997, 404 )
-frames = SubResource( 62 )
+frames = SubResource( 68 )
 
 [node name="group2 - fireball4" type="AnimatedSprite" parent="CANNON GROUP 2 AnimatedSprite1"]
 position = Vector2( 24.1087, -4.75478 )
@@ -2571,7 +2571,7 @@ script = ExtResource( 16 )
 
 [node name="CANNON GROUP 2 AnimatedSprite2" type="AnimatedSprite" parent="."]
 position = Vector2( 273.68, 436 )
-frames = SubResource( 62 )
+frames = SubResource( 68 )
 
 [node name="group2 - fireball5" type="AnimatedSprite" parent="CANNON GROUP 2 AnimatedSprite2"]
 position = Vector2( 27.8265, -2.34789 )
@@ -2585,7 +2585,7 @@ script = ExtResource( 16 )
 
 [node name="CANNON GROUP 2 AnimatedSprite3" type="AnimatedSprite" parent="."]
 position = Vector2( 196.278, 564 )
-frames = SubResource( 62 )
+frames = SubResource( 68 )
 
 [node name="group2 - fireball7" type="AnimatedSprite" parent="CANNON GROUP 2 AnimatedSprite3"]
 position = Vector2( 31.3057, -6.69917 )
