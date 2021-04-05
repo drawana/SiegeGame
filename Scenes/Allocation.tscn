@@ -44,27 +44,27 @@ margin_bottom = 619.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 margin_left = 186.0
-margin_top = 132.0
+margin_top = 142.0
 margin_right = 838.0
-margin_bottom = 486.0
+margin_bottom = 477.0
 custom_constants/separation = 11
 
 [node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
 margin_right = 652.0
-margin_bottom = 56.0
+margin_bottom = 37.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer"]
-margin_left = 157.0
-margin_right = 495.0
-margin_bottom = 56.0
+margin_left = 215.0
+margin_right = 436.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Allocate Your Points"
 
 [node name="CenterContainer2" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 67.0
+margin_top = 48.0
 margin_right = 652.0
-margin_bottom = 113.0
+margin_bottom = 94.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2"]
 margin_left = 199.0
@@ -76,9 +76,9 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Points Available: 3"
 
 [node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 124.0
+margin_top = 105.0
 margin_right = 652.0
-margin_bottom = 173.0
+margin_bottom = 154.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer3"]
 margin_right = 652.0
@@ -155,9 +155,9 @@ __meta__ = {
 }
 
 [node name="CenterContainer4" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 184.0
+margin_top = 165.0
 margin_right = 652.0
-margin_bottom = 234.0
+margin_bottom = 215.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer4"]
 margin_right = 652.0
@@ -215,9 +215,9 @@ align = 1
 valign = 1
 
 [node name="CenterContainer5" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 245.0
+margin_top = 226.0
 margin_right = 652.0
-margin_bottom = 294.0
+margin_bottom = 275.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer5"]
 margin_left = 166.0
@@ -256,9 +256,9 @@ __meta__ = {
 }
 
 [node name="CenterContainer6" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
-margin_top = 305.0
+margin_top = 286.0
 margin_right = 652.0
-margin_bottom = 354.0
+margin_bottom = 335.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer6"]
 margin_left = 231.0

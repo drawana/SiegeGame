@@ -1,6 +1,36 @@
-[gd_scene load_steps=19 format=2]
+Skip to content
+Search or jump to…
 
-[ext_resource path="res://Tilesets/tileset_env.res" type="TileSet" id=1]
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@sniperdallas122 
+drawana
+/
+SiegeGame
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+SiegeGame/Scenes/Game.tscn
+@smarevci
+smarevci change world filename
+Latest commit f753974 33 minutes ago
+ History
+ 1 contributor
+840 lines (724 sloc)  28.8 KB
+  
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
 [ext_resource path="res://Sprites/Structure/medievalStructure_02.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Structure/medievalStructure_06.png" type="Texture" id=4]
@@ -8,10 +38,14 @@
 [ext_resource path="res://Sprites/Structure/medievalStructure_01.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/Menu.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/GUI.gd" type="Script" id=8]
-[ext_resource path="res://Scenes/World.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/MyGame.gd" type="Script" id=9]
 [ext_resource path="res://Fonts/smallCardinal.tres" type="DynamicFont" id=10]
 [ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=11]
 [ext_resource path="res://Textures/buttonLong_brown_pressed.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/roguelikeChar_transparent.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Ships/Preview_KenneyNL.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/ships.png" type="Texture" id=15]
+
 
 [sub_resource type="Animation" id=1]
 resource_name = "group1_walking"
@@ -225,7 +259,6 @@ tracks/0/keys = {
 }
 
 [node name="game" type="Node2D"]
-scale = Vector2( 1, 1.00568 )
 script = ExtResource( 9 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ]
@@ -330,49 +363,69 @@ rect_scale = Vector2( 0.5, 0.5 )
 margin_right = 250.0
 
 [node name="NavalLbl" parent="GUI/Menu/NavalContainer" index="0"]
+margin_top = 219.0
 margin_right = 250.0
+margin_bottom = 256.0
 
 [node name="Resupply" parent="GUI/Menu/NavalContainer" index="1"]
 margin_left = 30.0
+margin_top = 269.0
 margin_right = 220.0
+margin_bottom = 318.0
 
 [node name="Siege" parent="GUI/Menu/NavalContainer" index="2"]
 margin_left = 30.0
+margin_top = 331.0
 margin_right = 220.0
+margin_bottom = 380.0
 
 [node name="InfContainer" parent="GUI/Menu" index="1"]
 margin_left = 254.0
 margin_right = 504.0
 
 [node name="Inf" parent="GUI/Menu/InfContainer" index="0"]
+margin_top = 188.0
 margin_right = 250.0
+margin_bottom = 225.0
 
 [node name="InfSiege" parent="GUI/Menu/InfContainer" index="1"]
 margin_left = 30.0
+margin_top = 238.0
 margin_right = 220.0
+margin_bottom = 287.0
 
 [node name="InfRest" parent="GUI/Menu/InfContainer" index="2"]
 margin_left = 30.0
+margin_top = 300.0
 margin_right = 220.0
+margin_bottom = 349.0
 
 [node name="Storm" parent="GUI/Menu/InfContainer" index="3"]
 margin_left = 30.0
+margin_top = 362.0
 margin_right = 220.0
+margin_bottom = 411.0
 
 [node name="ArtilleryContainer" parent="GUI/Menu" index="2"]
 margin_left = 508.0
 margin_right = 758.0
 
 [node name="Artillery" parent="GUI/Menu/ArtilleryContainer" index="0"]
+margin_top = 219.0
 margin_right = 250.0
+margin_bottom = 256.0
 
 [node name="ArtillerySiege" parent="GUI/Menu/ArtilleryContainer" index="1"]
 margin_left = 30.0
+margin_top = 269.0
 margin_right = 220.0
+margin_bottom = 318.0
 
 [node name="ArtilleryRest" parent="GUI/Menu/ArtilleryContainer" index="2"]
 margin_left = 30.0
+margin_top = 331.0
 margin_right = 220.0
+margin_bottom = 380.0
 
 [node name="StartContainer" parent="GUI/Menu" index="3"]
 margin_left = 762.0
@@ -489,6 +542,7 @@ visible = false
 
 [node name="Sprite" type="Sprite" parent="ships - NOT USING RN "]
 position = Vector2( 162.635, 108.894 )
+texture = ExtResource( 14 )
 region_enabled = true
 region_rect = Rect2( 142.183, 105.09, 148.457, 140.494 )
 
@@ -497,6 +551,7 @@ region_rect = Rect2( 142.183, 105.09, 148.457, 140.494 )
 [node name="Sprite" type="Sprite" parent="ships"]
 position = Vector2( 101.017, 67.6711 )
 scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 15 )
 region_enabled = true
 region_rect = Rect2( 33.5557, 15.5489, 17.2737, 12.7675 )
 
@@ -505,6 +560,7 @@ region_rect = Rect2( 33.5557, 15.5489, 17.2737, 12.7675 )
 [node name="Sprite" type="Sprite" parent="ships2"]
 position = Vector2( 206, 67.6711 )
 scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 15 )
 region_enabled = true
 region_rect = Rect2( 93.388, 15.7992, 20.2779, 15.0206 )
 
@@ -514,6 +570,7 @@ region_rect = Rect2( 93.388, 15.7992, 20.2779, 15.0206 )
 position = Vector2( 142, 137.748 )
 rotation = -0.523599
 scale = Vector2( 4.15999, 4.46278 )
+texture = ExtResource( 15 )
 region_enabled = true
 region_rect = Rect2( 82.6232, -3.22694, 14.0193, 20.0275 )
 
@@ -524,21 +581,25 @@ anims/group1_walking = SubResource( 1 )
 [node name="Sprite2" type="Sprite" parent="AnimationPlayer - Group1 - 1"]
 position = Vector2( 732.708, 148.121 )
 scale = Vector2( 2.30063, 2.70535 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
 
 [node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 1/Sprite2"]
 position = Vector2( -0.0936279, 1.84186 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 153.283, 88.8639, 17.3223, 11.9681 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 1/Sprite2"]
 position = Vector2( -0.105103, -3.04825 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 445.622, 67.0724, 10.7131, 12.7867 )
 
 [node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 1/Sprite2"]
 position = Vector2( 3.36359, 4.09937 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 651.914, 138.304, 13.5917, 15.0611 )
 
@@ -547,20 +608,24 @@ region_rect = Rect2( 651.914, 138.304, 13.5917, 15.0611 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer - Group1 - 2"]
 position = Vector2( 775.782, 151.455 )
 scale = Vector2( 1.96508, 2.61567 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
 
 [node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 2/Sprite"]
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 119.167, 70.1561, 17.4776, 12.3372 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 2/Sprite"]
 position = Vector2( -0.105103, -4.04825 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 359.335, 31.149, 12.8657, 13.7633 )
 
 [node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 2/Sprite"]
 position = Vector2( 8.00001, 0.0152054 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 799.54, 154.537, 10.8012, 11.9382 )
 
@@ -569,20 +634,24 @@ region_rect = Rect2( 799.54, 154.537, 10.8012, 11.9382 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer - Group1 - 3"]
 position = Vector2( 821.804, 149.767 )
 scale = Vector2( 1.89502, 2.61567 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
 
 [node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 3/Sprite"]
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 119.167, 70.1561, 17.4776, 12.3372 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 3/Sprite"]
 position = Vector2( -0.688194, 0.334061 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 445.188, 53.0237, 13.3594, 11.9382 )
 
 [node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 3/Sprite"]
 position = Vector2( 6.36359, -2.90063 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 781.812, 101.371, 7.73096, 15.044 )
 
@@ -591,21 +660,25 @@ region_rect = Rect2( 781.812, 101.371, 7.73096, 15.044 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer - Group1 - 4"]
 position = Vector2( 768.72, 195.487 )
 scale = Vector2( 2.05083, 2.74256 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( -0.189335, 0, 16.4358, 17.5826 )
 
 [node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 4/Sprite"]
 position = Vector2( 0, 1 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 118.638, 20.2047, 17.9522, 12.2831 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 4/Sprite"]
 position = Vector2( -0.105103, -3.04825 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 445.622, 67.0724, 10.7131, 12.7867 )
 
 [node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 4/Sprite"]
 position = Vector2( 8, 0.526062 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 864.632, 151.978, 12.791, 19.6128 )
 
@@ -614,21 +687,25 @@ region_rect = Rect2( 864.632, 151.978, 12.791, 19.6128 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer - Group1 - 5"]
 position = Vector2( 809.663, 196.083 )
 scale = Vector2( 1.83519, 2.81902 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 0.748077, 34.4402, 16.3271, 17.3538 )
 
 [node name="shiirt" type="Sprite" parent="AnimationPlayer - Group1 - 5/Sprite"]
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 119.167, 70.1561, 17.4776, 12.3372 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group1 - 5/Sprite"]
 position = Vector2( -0.5, -3.40063 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 394.204, 102.41, 11.8813, 10.5312 )
 
 [node name="shield" type="Sprite" parent="AnimationPlayer - Group1 - 5/Sprite"]
 position = Vector2( 8.38855, 3.714 )
 scale = Vector2( 1.29133, 1 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 651.892, 123.638, 12.1748, 13.6629 )
 
@@ -638,20 +715,24 @@ anims/group2_walking = SubResource( 3 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 1"]
 position = Vector2( 778.758, 326 )
 scale = Vector2( 2.34389, 2.74724 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 16.695, 0.297779, 16.4933, 17.48 )
 
 [node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 1/Sprite"]
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 237.686, 36.9068, 18.3077, 13.5921 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 1/Sprite"]
 position = Vector2( -0.142426, -1.57977 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 445.392, 84.8228, 11.011, 14.4774 )
 
 [node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 1/Sprite"]
 position = Vector2( 9, -1.84311 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 799.255, 119.431, 9.34363, 12.8475 )
 
@@ -661,21 +742,25 @@ anims/group2_walking = SubResource( 4 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 2"]
 position = Vector2( 772.821, 379 )
 scale = Vector2( 2.1064, 2.72289 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 16.695, 0.297779, 16.4933, 17.48 )
 
 [node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 2/Sprite"]
 position = Vector2( 0.777252, 1.83282 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 154.131, 2.63564, 16.6434, 13.7235 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 2/Sprite"]
 position = Vector2( -0.142426, -5.75937 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 377.503, 33.0025, 10.8036, 8.17569 )
 
 [node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 2/Sprite"]
 position = Vector2( 8, -0.26059 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 689.389, 54.0257, 8.17566, 14.0155 )
 
@@ -685,26 +770,31 @@ anims/group2_walking = SubResource( 5 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 3"]
 position = Vector2( 743.4, 294.5 )
 scale = Vector2( 2.0171, 2.70799 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( -0.947884, 16.7399, 17.0448, 17.9917 )
 
 [node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 3/Sprite"]
 position = Vector2( 0.619843, 1.83282 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 272.936, 89.3564, 16.3514, 11.3876 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 3/Sprite"]
 position = Vector2( 0.465118, -5.66406 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 359.26, 99.6346, 13.5561, 9.89185 )
 
 [node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 3/Sprite"]
 position = Vector2( 8, -3.66718 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 746.725, 151.016, 10.2634, 17.7529 )
 
 [node name="pants" type="Sprite" parent="AnimationPlayer - Group2 - 3/Sprite"]
 position = Vector2( 0.0299072, 4.15689 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 53.0277, 44.1381, 13.1206, 7.30767 )
 
@@ -713,26 +803,31 @@ region_rect = Rect2( 53.0277, 44.1381, 13.1206, 7.30767 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 4"]
 position = Vector2( 723.344, 337.42 )
 scale = Vector2( 1.99923, 2.7061 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 17.3697, 33.4709, 15.2886, 18.2189 )
 
 [node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 4/Sprite"]
 position = Vector2( -0.798859, 1.39792 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 203.981, 105.708, 16.6434, 10.8036 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 4/Sprite"]
 position = Vector2( -0.310822, -4.90997 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 429.164, 67.8742, 9.4693, 8.79295 )
 
 [node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 4/Sprite"]
 position = Vector2( 8.4187, -0.910065 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 782.019, 84.3605, 9.01721, 17.6665 )
 
 [node name="pants" type="Sprite" parent="AnimationPlayer - Group2 - 4/Sprite"]
 position = Vector2( 0.161835, 4.59622 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 53.4169, 8.30119, 13.3469, 10.2668 )
 
@@ -742,29 +837,46 @@ anims/group2_walking = SubResource( 6 )
 [node name="Sprite" type="Sprite" parent="AnimationPlayer - Group2 - 5"]
 position = Vector2( 813.289, 428 )
 scale = Vector2( 2.03693, 2.65476 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( -0.145439, 33.9121, 16.8237, 17.7943 )
 
 [node name="shirt" type="Sprite" parent="AnimationPlayer - Group2 - 5/Sprite"]
 position = Vector2( -0.798859, 1.39792 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 289.106, 106.06, 17.2206, 9.76693 )
 
 [node name="hair" type="Sprite" parent="AnimationPlayer - Group2 - 5/Sprite"]
 position = Vector2( -0.310822, -4.90997 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 429.164, 67.8742, 9.4693, 8.79295 )
 
 [node name="weapon" type="Sprite" parent="AnimationPlayer - Group2 - 5/Sprite"]
 position = Vector2( 6.92487, 2.0488 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 653.972, 89.0926, 10.4162, 12.8512 )
 
 [node name="pants" type="Sprite" parent="AnimationPlayer - Group2 - 5/Sprite"]
 position = Vector2( -0.503418, 4.15689 )
+texture = ExtResource( 13 )
 region_enabled = true
 region_rect = Rect2( 53.7681, 146.72, 12.0396, 7.03436 )
 [connection signal="pressed" from="GUI/Menu/StartContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
 
 [editable path="GUI/Menu"]
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

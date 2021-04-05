@@ -38,16 +38,16 @@ custom_constants/separation = 20
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 1024.0
-margin_bottom = 56.0
+margin_bottom = 37.0
 custom_fonts/font = ExtResource( 3 )
 text = "Instructions"
 align = 1
 valign = 1
 
 [node name="Label2" type="Label" parent="VBoxContainer"]
-margin_top = 76.0
+margin_top = 57.0
 margin_right = 1024.0
-margin_bottom = 491.0
+margin_bottom = 472.0
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Your army is composed of three Factions: infantry, navy, and artillery.
@@ -73,9 +73,9 @@ align = 1
 valign = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
-margin_top = 511.0
+margin_top = 492.0
 margin_right = 1024.0
-margin_bottom = 560.0
+margin_bottom = 541.0
 
 [node name="Next" type="TextureButton" parent="VBoxContainer/CenterContainer"]
 margin_left = 417.0

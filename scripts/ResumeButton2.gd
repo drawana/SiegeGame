@@ -50,14 +50,29 @@ func _on_Button_Pressed():
 	var labelArtillery = get_node("../LabelArtillery")
 	labelArtillery.visible = false
 	
-	var InfantryImage = get_node("../InfantryImage")
-	InfantryImage.visible = true
-	
 	var MyHealthBar = get_node("../MyHealthBar")
 	MyHealthBar.visible = true
 	
 	var TheirHealthBar = get_node("../TheirHealthBar")
 	TheirHealthBar.visible = true
+	
+	if int(get_node("../InfantryLevelDisplay").get_text()) != 0:
+		get_node("../InfantryImage").visible = true
+		
+	if int(get_node("../InfantryLevelDisplayEnemy").get_text()) != 0:
+		get_node("../InfantryImageEnemy").visible = true
+	
+	if int(get_node("../ArtilleryLevelDisplay").get_text()) != 0:
+		get_node("../ArtilleryImage").visible = true
+		
+	if int(get_node("../ArtilleryLevelDisplayEnemy").get_text()) != 0:
+		get_node("../ArtilleryImageEnemy").visible = true
+		
+	if int(get_node("../NavalLevelDisplay").get_text()) != 0:
+		get_node("../NavalImage").visible = true
+			
+	if int(get_node("../NavalLevelDisplayEnemy").get_text()) != 0:
+		get_node("../NavalImageEnemy").visible = true
 	
 	if (val >= 15):
 		var upgradeAvaliable = get_node("../UpgradeAvaliable2")
