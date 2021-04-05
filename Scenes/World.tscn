@@ -1,6 +1,6 @@
 [gd_scene load_steps=94 format=2]
 
-[ext_resource path="res://Textures/tileset_env.res" type="TileSet" id=1]
+[ext_resource path="res://Tilesets/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Tilesets/tileset_path.res" type="TileSet" id=2]
 [ext_resource path="res://Sprites/Structure/medievalStructure_02.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Structure/medievalStructure_06.png" type="Texture" id=4]

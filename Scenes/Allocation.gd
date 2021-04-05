@@ -5,7 +5,7 @@ onready var infLevel = 0
 onready var navLevel = 0
 onready var artLevel = 0
 onready var difficulty = "Easy"
-const next_scene = preload("res://Scenes/Game.tscn")
+const next_scene = preload("res://Scenes/World.tscn")
 
 func _on_UpgradeNav_pressed():
 	if points >= 1:
@@ -43,5 +43,6 @@ func _on_DifficultyButton_pressed():
 
 
 func _on_PlayButton_pressed():
-	get_parent().add_child(next_scene.instance())
-	queue_free()
+	if points < 1:
+		get_parent().add_child(next_scene.instance())
+		queue_free()
