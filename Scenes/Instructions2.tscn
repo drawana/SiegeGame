@@ -38,7 +38,7 @@ valign = 1
 [node name="Label2" type="Label" parent="VBoxContainer"]
 margin_top = 66.0
 margin_right = 1024.0
-margin_bottom = 343.0
+margin_bottom = 511.0
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Your army is composed of three factions: infantry, navy, and artillery.
@@ -49,15 +49,21 @@ while levelling up the navy or artillery costs 15 points.
 You will receive more points during the game to continue upgrading.
 
 During each week, you must choose an action for each part of the army. 
+Actions can be chosen by clicking on the units on the battlefield. 
+
+Infantry initially has two options:  Attack the enemy or defend base. 
+if infantry is ordered to attack, damage will be dealt to the enemy
+castle based on infantry level plus a random dice roll. 
+Defending the base will attempt to repel enemy attacks.
 
 "
 align = 1
 valign = 1
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
-margin_top = 353.0
+margin_top = 521.0
 margin_right = 1024.0
-margin_bottom = 402.0
+margin_bottom = 570.0
 
 [node name="Next" type="TextureButton" parent="VBoxContainer/CenterContainer"]
 margin_left = 417.0

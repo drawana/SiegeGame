@@ -1,6 +1,7 @@
 extends MarginContainer
 
 const first_scene = preload("res://Scenes/Allocation.tscn")
+const instructions = preload("res://Scenes/Instructions.tscn")
 
 onready var selector1 = $CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer/Selector
 onready var selector2 = $CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer2/HBoxContainer/Selector
@@ -22,7 +23,8 @@ func handle_selection(_current_selection):
 		get_parent().add_child(first_scene.instance())
 		queue_free()
 	elif _current_selection == 1:
-		print("Add options!")
+		get_parent().add_child(instructions.instance())
+		queue_free()
 	elif _current_selection == 2:
 		get_tree().quit()
 

@@ -67,13 +67,13 @@ margin_right = 652.0
 margin_bottom = 113.0
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2"]
-margin_left = 187.0
-margin_right = 464.0
+margin_left = 199.0
+margin_right = 453.0
 margin_bottom = 46.0
 rect_min_size = Vector2( 160, 0 )
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-text = "Points Available: 30"
+text = "Points Available: 3"
 
 [node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
 margin_top = 124.0
@@ -100,8 +100,7 @@ margin_right = 0.840897
 margin_bottom = 1.0
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Upgrade Infantry
-(10 Points)"
+text = "Upgrade Infantry"
 align = 1
 valign = 1
 __meta__ = {
@@ -125,8 +124,7 @@ margin_right = 0.840897
 margin_bottom = 0.0561562
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Upgrade Navy
-(15 Points)"
+text = "Upgrade Navy"
 align = 1
 valign = 1
 __meta__ = {
@@ -149,8 +147,7 @@ margin_right = 0.840897
 margin_bottom = 1.0
 custom_fonts/font = ExtResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Upgrade Artillery
-(15 Points)"
+text = "Upgrade Artillery"
 align = 1
 valign = 1
 __meta__ = {

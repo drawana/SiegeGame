@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Tilesets/tileset_env.res" type="TileSet" id=1]
 [ext_resource path="res://Fonts/Instructions.tres" type="DynamicFont" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://Textures/buttonLong_brown.png" type="Texture" id=5]
 [ext_resource path="res://Textures/buttonLong_brown_pressed.png" type="Texture" id=6]
 [ext_resource path="res://Scenes/Instructions.gd" type="Script" id=7]
+[ext_resource path="res://Sprites/Flags/OttoFlag.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Flags/ByzFlag.png" type="Texture" id=9]
 
 [node name="Instructions" type="MarginContainer"]
 anchor_right = 1.0
@@ -87,4 +89,14 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ByzFlag" type="Sprite" parent="."]
+position = Vector2( 95.5638, 164.303 )
+scale = Vector2( 0.262025, 0.178121 )
+texture = ExtResource( 9 )
+
+[node name="OttoFlag" type="Sprite" parent="."]
+position = Vector2( 926.921, 164.302 )
+scale = Vector2( 0.657172, 0.657172 )
+texture = ExtResource( 8 )
 [connection signal="pressed" from="VBoxContainer/CenterContainer/Next" to="." method="_on_Next_pressed"]
