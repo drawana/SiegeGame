@@ -700,7 +700,7 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="Animation" id=44]
+[sub_resource type="Animation" id=40]
 resource_name = "DEFEND GO LEVEL 1"
 length = 2.0
 tracks/0/type = "value"
@@ -716,7 +716,7 @@ tracks/0/keys = {
 "values": [ Vector2( 777.066, 149.057 ), Vector2( 767.439, 343.5 ) ]
 }
 
-[sub_resource type="Animation" id=45]
+[sub_resource type="Animation" id=41]
 resource_name = "DEFEND RETURN LEVEL 1"
 length = 2.0
 tracks/0/type = "value"
@@ -732,7 +732,7 @@ tracks/0/keys = {
 "values": [ Vector2( 767.439, 343.5 ), Vector2( 779.76, 149.469 ) ]
 }
 
-[sub_resource type="Animation" id=46]
+[sub_resource type="Animation" id=42]
 resource_name = "SHIP LEVEL 1 - group 1 fireball"
 length = 3.0
 tracks/0/type = "value"
@@ -748,7 +748,7 @@ tracks/0/keys = {
 "values": [ Vector2( 803.088, 76.4395 ), Vector2( 179.792, 488.434 ) ]
 }
 
-[sub_resource type="Animation" id=47]
+[sub_resource type="Animation" id=43]
 resource_name = "SHIP LEVEL 3+4 - group 1 fireball"
 length = 2.7
 tracks/0/type = "value"
@@ -776,7 +776,7 @@ tracks/1/keys = {
 "values": [ Vector2( 622, 58.5392 ), Vector2( 184.494, 483.009 ) ]
 }
 
-[sub_resource type="Animation" id=48]
+[sub_resource type="Animation" id=44]
 resource_name = "SHIP LEVEL 5 - group 1 fireball"
 length = 3.0
 tracks/0/type = "value"
@@ -816,7 +816,7 @@ tracks/2/keys = {
 "values": [ Vector2( 727.15, 59.8704 ), Vector2( 183.265, 491.259 ) ]
 }
 
-[sub_resource type="Animation" id=49]
+[sub_resource type="Animation" id=45]
 resource_name = "group 1 attack "
 length = 6.0
 tracks/0/type = "value"
@@ -832,7 +832,7 @@ tracks/0/keys = {
 "values": [ Vector2( 779.76, 147.579 ), Vector2( 225.386, 451.736 ), Vector2( 227.185, 451.846 ), Vector2( 222.651, 453.549 ), Vector2( 223.078, 455.752 ), Vector2( 222.346, 459.395 ), Vector2( 223.571, 454.372 ), Vector2( 779.76, 146.83 ) ]
 }
 
-[sub_resource type="Animation" id=50]
+[sub_resource type="Animation" id=46]
 resource_name = "DEFEND GO LEVEL 2"
 length = 2.0
 tracks/0/type = "value"
@@ -860,7 +860,7 @@ tracks/1/keys = {
 "values": [ Vector2( 797.422, 165.695 ), Vector2( 781.314, 368 ) ]
 }
 
-[sub_resource type="Animation" id=51]
+[sub_resource type="Animation" id=47]
 resource_name = "DEFEND RETURN LEVEL 2"
 length = 2.0
 tracks/0/type = "value"
@@ -888,7 +888,7 @@ tracks/1/keys = {
 "values": [ Vector2( 781.314, 368 ), Vector2( 820.756, 150.892 ) ]
 }
 
-[sub_resource type="Animation" id=52]
+[sub_resource type="Animation" id=48]
 resource_name = "group 1 attack"
 length = 6.0
 tracks/0/type = "value"
@@ -916,7 +916,7 @@ tracks/1/keys = {
 "values": [ Vector2( 821.804, 149.767 ), Vector2( 236.635, 532.045 ), Vector2( 237.283, 535.022 ), Vector2( 234.402, 535.587 ), Vector2( 232.127, 537.788 ), Vector2( 232.477, 536.552 ), Vector2( 235.407, 543.961 ), Vector2( 237.871, 540.704 ), Vector2( 819.321, 146.231 ) ]
 }
 
-[sub_resource type="Animation" id=53]
+[sub_resource type="Animation" id=49]
 resource_name = "DEFEND GO LEVEL 3"
 length = 2.0
 tracks/0/type = "value"
@@ -956,7 +956,7 @@ tracks/2/keys = {
 "values": [ Vector2( 767.378, 196.367 ), Vector2( 744.4, 365.5 ) ]
 }
 
-[sub_resource type="Animation" id=54]
+[sub_resource type="Animation" id=50]
 resource_name = "DEFEND RETUN LEVEL 3"
 length = 2.0
 tracks/0/type = "value"
@@ -996,7 +996,7 @@ tracks/2/keys = {
 "values": [ Vector2( 744.4, 365.5 ), Vector2( 764.093, 194.509 ) ]
 }
 
-[sub_resource type="Animation" id=55]
+[sub_resource type="Animation" id=51]
 resource_name = "group 1 attack"
 length = 6.4
 tracks/0/type = "value"
@@ -1036,7 +1036,7 @@ tracks/2/keys = {
 "values": [ Vector2( 821.804, 149.767 ), Vector2( 256.06, 491.434 ), Vector2( 254.177, 491.154 ), Vector2( 256.108, 493.43 ), Vector2( 254.77, 493.13 ), Vector2( 253.352, 494.309 ), Vector2( 248.934, 496.863 ), Vector2( 250.734, 496.678 ), Vector2( 252.579, 495.811 ), Vector2( 819.321, 147.608 ) ]
 }
 
-[sub_resource type="Animation" id=56]
+[sub_resource type="Animation" id=52]
 resource_name = "DEFEND GO LEVEL 4"
 length = 2.0
 tracks/0/type = "value"
@@ -1088,7 +1088,7 @@ tracks/3/keys = {
 "values": [ Vector2( 768.72, 195.487 ), Vector2( 751.288, 321 ) ]
 }
 
-[sub_resource type="Animation" id=57]
+[sub_resource type="Animation" id=53]
 resource_name = "DEFEND RETURN LEVEL 4"
 length = 2.0
 tracks/0/type = "value"
@@ -1140,7 +1140,7 @@ tracks/3/keys = {
 "values": [ Vector2( 751.288, 321 ), Vector2( 764.093, 192.87 ) ]
 }
 
-[sub_resource type="Animation" id=58]
+[sub_resource type="Animation" id=54]
 resource_name = "group 1 attack"
 length = 7.0
 tracks/0/type = "value"
@@ -1192,8 +1192,7 @@ tracks/3/keys = {
 "values": [ Vector2( 768.72, 195.487 ), Vector2( 251.804, 537.215 ), Vector2( 250.131, 537.215 ), Vector2( 245.837, 539.693 ), Vector2( 243.722, 539.693 ), Vector2( 244.097, 537.215 ), Vector2( 251.17, 536.545 ), Vector2( 243.611, 539.209 ), Vector2( 244.801, 538.373 ), Vector2( 245.992, 542.203 ), Vector2( 247.183, 538.034 ), Vector2( 244.374, 538.865 ), Vector2( 764.711, 196.872 ) ]
 }
 
-[sub_resource type="Animation" id=40]
-resource_name = "DEFEND GO LEVEL 5"
+[sub_resource type="Animation" id=55]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
@@ -1256,8 +1255,7 @@ tracks/4/keys = {
 "values": [ Vector2( 810.67, 195.571 ), Vector2( 752.954, 368 ) ]
 }
 
-[sub_resource type="Animation" id=41]
-resource_name = "DEFEND RETURN LEVEL 5"
+[sub_resource type="Animation" id=56]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
@@ -1320,7 +1318,7 @@ tracks/4/keys = {
 "values": [ Vector2( 764.951, 279 ), Vector2( 828.191, 160 ) ]
 }
 
-[sub_resource type="Animation" id=42]
+[sub_resource type="Animation" id=57]
 length = 7.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("LEVEL 5 - AnimationPlayer - Group1 - 1/Sprite2:position")
@@ -1383,7 +1381,7 @@ tracks/4/keys = {
 "values": [ Vector2( 812.113, 194.837 ), Vector2( 265.285, 473 ), Vector2( 265.285, 473 ), Vector2( 805.157, 190 ) ]
 }
 
-[sub_resource type="Animation" id=43]
+[sub_resource type="Animation" id=58]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("LEVEL 2 - AnimationPlayer - Group1 - 3/Sprite/shield:position")
@@ -1580,7 +1578,7 @@ tracks/1/keys = {
 "values": [ Vector2( 281.107, 515.806 ), Vector2( 768.44, 298.5 ), Vector2( 770.404, 300.998 ), Vector2( 767.91, 299.582 ), Vector2( 771.064, 297.372 ), Vector2( 770.672, 300.404 ), Vector2( 771.812, 303.53 ), Vector2( 770.403, 302.752 ), Vector2( 263.133, 496.432 ) ]
 }
 
-[sub_resource type="Animation" id=78]
+[sub_resource type="Animation" id=75]
 resource_name = "DEFEND GO LEVEL 3"
 length = 2.0
 tracks/0/type = "value"
@@ -1620,7 +1618,7 @@ tracks/2/keys = {
 "values": [ Vector2( 296.101, 563.331 ), Vector2( 240.251, 491.434 ) ]
 }
 
-[sub_resource type="Animation" id=79]
+[sub_resource type="Animation" id=76]
 resource_name = "DEFEND RETURN LEVEL 3"
 length = 2.0
 tracks/0/type = "value"
@@ -1660,7 +1658,7 @@ tracks/2/keys = {
 "values": [ Vector2( 240.251, 491.434 ), Vector2( 334.464, 520.737 ) ]
 }
 
-[sub_resource type="Animation" id=80]
+[sub_resource type="Animation" id=77]
 length = 7.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 3 - AnimationPlayer - Group2 - 4/Sprite:position")
@@ -1699,7 +1697,7 @@ tracks/2/keys = {
 "values": [ Vector2( 278.51, 515.806 ), Vector2( 801, 419 ), Vector2( 799.669, 417.442 ), Vector2( 799.869, 418.009 ), Vector2( 800.521, 417.64 ), Vector2( 799.573, 417.372 ), Vector2( 802.039, 418.207 ), Vector2( 262.077, 499.584 ) ]
 }
 
-[sub_resource type="Animation" id=81]
+[sub_resource type="Animation" id=78]
 resource_name = "DEFEND GO LEVEL 4"
 length = 2.0
 tracks/0/type = "value"
@@ -1751,7 +1749,7 @@ tracks/3/keys = {
 "values": [ Vector2( 334.319, 515.67 ), Vector2( 253.006, 510.879 ) ]
 }
 
-[sub_resource type="Animation" id=82]
+[sub_resource type="Animation" id=79]
 resource_name = "DEFEND RETURN LEVEL 4"
 length = 2.0
 tracks/0/type = "value"
@@ -1803,7 +1801,7 @@ tracks/3/keys = {
 "values": [ Vector2( 253.006, 510.879 ), Vector2( 311.591, 555.125 ) ]
 }
 
-[sub_resource type="Animation" id=83]
+[sub_resource type="Animation" id=80]
 resource_name = "LEVEL 1 + 2 - Cannon GROUP 1"
 length = 3.0
 tracks/0/type = "value"
@@ -1819,7 +1817,7 @@ tracks/0/keys = {
 "values": [ Vector2( 6.8103, -88.5278 ), Vector2( -566.192, -22.425 ) ]
 }
 
-[sub_resource type="Animation" id=84]
+[sub_resource type="Animation" id=81]
 resource_name = "LEVEL 1 - Cannon Group2"
 length = 3.0
 tracks/0/type = "value"
@@ -1835,7 +1833,7 @@ tracks/0/keys = {
 "values": [ Vector2( 18.0411, -3.99997 ), Vector2( 632.503, -93.25 ) ]
 }
 
-[sub_resource type="Animation" id=85]
+[sub_resource type="Animation" id=82]
 resource_name = "LEVEL 3 + 4 - Cannon GROUP 1"
 length = 2.7
 tracks/0/type = "value"
@@ -1863,7 +1861,7 @@ tracks/1/keys = {
 "values": [ Vector2( -50.4888, -2.17896 ), Vector2( -592.388, -12.6519 ) ]
 }
 
-[sub_resource type="Animation" id=86]
+[sub_resource type="Animation" id=83]
 resource_name = "LEVEL 3 + 4 - Cannon Group 2"
 length = 2.6
 tracks/0/type = "value"
@@ -1891,7 +1889,7 @@ tracks/1/keys = {
 "values": [ Vector2( 21.095, -1.00006 ), Vector2( 600.32, -100.5 ) ]
 }
 
-[sub_resource type="Animation" id=87]
+[sub_resource type="Animation" id=84]
 resource_name = "LEVEL 5 - Cannon GROUP 1"
 length = 3.0
 tracks/0/type = "value"
@@ -1931,7 +1929,7 @@ tracks/2/keys = {
 "values": [ Vector2( -39.7417, -3.85938 ), Vector2( -615.149, 42.1062 ) ]
 }
 
-[sub_resource type="Animation" id=88]
+[sub_resource type="Animation" id=85]
 resource_name = "LEVEL 5 - Cannon Group 2"
 length = 3.0
 tracks/0/type = "value"
@@ -1971,7 +1969,7 @@ tracks/2/keys = {
 "values": [ Vector2( 25.9023, -4.38715 ), Vector2( 546.289, -92 ) ]
 }
 
-[sub_resource type="Animation" id=89]
+[sub_resource type="Animation" id=86]
 length = 2.6
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -1986,7 +1984,7 @@ tracks/0/keys = {
 "values": [ Vector2( 219.802, 258.713 ), Vector2( 853.644, 307 ) ]
 }
 
-[sub_resource type="Animation" id=90]
+[sub_resource type="Animation" id=87]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -2013,7 +2011,7 @@ tracks/1/keys = {
 "values": [ Vector2( 233.632, 261.518 ), Vector2( 856.857, 302.5 ) ]
 }
 
-[sub_resource type="Animation" id=91]
+[sub_resource type="Animation" id=88]
 length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -2040,7 +2038,7 @@ tracks/1/keys = {
 "values": [ Vector2( 168.824, 155.101 ), Vector2( 874, 318 ) ]
 }
 
-[sub_resource type="Animation" id=92]
+[sub_resource type="Animation" id=89]
 length = 6.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 4 - AnimationPlayer - Group2 - 5/Sprite:position")
@@ -2091,7 +2089,7 @@ tracks/3/keys = {
 "values": [ Vector2( 334.319, 515.67 ), Vector2( 750.901, 330 ), Vector2( 752.445, 334.535 ), Vector2( 756.368, 329.105 ), Vector2( 755.542, 329.067 ), Vector2( 755.085, 330.252 ), Vector2( 757.937, 329.628 ), Vector2( 756.908, 330.285 ), Vector2( 759.088, 332.192 ), Vector2( 257.219, 496.051 ) ]
 }
 
-[sub_resource type="Animation" id=93]
+[sub_resource type="Animation" id=90]
 length = 2.9
 tracks/0/type = "value"
 tracks/0/path = NodePath("group2 - fireball3:position")
@@ -2130,8 +2128,7 @@ tracks/2/keys = {
 "values": [ Vector2( 196.046, 319.543 ), Vector2( 855.975, 294 ) ]
 }
 
-[sub_resource type="Animation" id=75]
-resource_name = "DEFEND LEVEL 5"
+[sub_resource type="Animation" id=91]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2194,8 +2191,7 @@ tracks/4/keys = {
 "values": [ Vector2( 329.794, 514.691 ), Vector2( 191.95, 425.94 ) ]
 }
 
-[sub_resource type="Animation" id=76]
-resource_name = "DEFEND RETURN LEVEL 5"
+[sub_resource type="Animation" id=92]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -2258,7 +2254,7 @@ tracks/4/keys = {
 "values": [ Vector2( 259.499, 491.434 ), Vector2( 309.045, 555.808 ) ]
 }
 
-[sub_resource type="Animation" id=77]
+[sub_resource type="Animation" id=93]
 length = 6.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("PPL LEVEL 1 - AnimationPlayer - Group2 - 1/Sprite:position")
@@ -3692,12 +3688,12 @@ region_enabled = true
 region_rect = Rect2( 142.183, 105.09, 148.457, 140.494 )
 
 [node name="LEVEL 1 - AnimationPlayer - Group1 - 2" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 1" = SubResource( 44 )
-"anims/DEFEND RETURN LEVEL 1" = SubResource( 45 )
-"anims/SHIP LEVEL 1 - group 1 fireball" = SubResource( 46 )
-"anims/SHIP LEVEL 3+4 - group 1 fireball" = SubResource( 47 )
-"anims/SHIP LEVEL 5 - group 1 fireball" = SubResource( 48 )
-"anims/group 1 attack " = SubResource( 49 )
+"anims/DEFEND GO LEVEL 1" = SubResource( 40 )
+"anims/DEFEND RETURN LEVEL 1" = SubResource( 41 )
+"anims/SHIP LEVEL 1 - group 1 fireball" = SubResource( 42 )
+"anims/SHIP LEVEL 3+4 - group 1 fireball" = SubResource( 43 )
+"anims/SHIP LEVEL 5 - group 1 fireball" = SubResource( 44 )
+"anims/group 1 attack " = SubResource( 45 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 1 - AnimationPlayer - Group1 - 2"]
 visible = false
@@ -3725,9 +3721,9 @@ region_enabled = true
 region_rect = Rect2( 799.54, 154.537, 10.8012, 11.9382 )
 
 [node name="LEVEL 2 - AnimationPlayer - Group1 - 3" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 2" = SubResource( 50 )
-"anims/DEFEND RETURN LEVEL 2" = SubResource( 51 )
-"anims/group 1 attack" = SubResource( 52 )
+"anims/DEFEND GO LEVEL 2" = SubResource( 46 )
+"anims/DEFEND RETURN LEVEL 2" = SubResource( 47 )
+"anims/group 1 attack" = SubResource( 48 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 2 - AnimationPlayer - Group1 - 3"]
 visible = false
@@ -3755,9 +3751,9 @@ region_enabled = true
 region_rect = Rect2( 781.812, 101.371, 7.73096, 15.044 )
 
 [node name="LEVEL 3 - AnimationPlayer - Group1 - 4" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 3" = SubResource( 53 )
-"anims/DEFEND RETUN LEVEL 3" = SubResource( 54 )
-"anims/group 1 attack" = SubResource( 55 )
+"anims/DEFEND GO LEVEL 3" = SubResource( 49 )
+"anims/DEFEND RETUN LEVEL 3" = SubResource( 50 )
+"anims/group 1 attack" = SubResource( 51 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 3 - AnimationPlayer - Group1 - 4"]
 visible = false
@@ -3786,9 +3782,9 @@ region_enabled = true
 region_rect = Rect2( 864.632, 151.978, 12.791, 19.6128 )
 
 [node name="LEVEL 4 - AnimationPlayer - Group1 - 5" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 4" = SubResource( 56 )
-"anims/DEFEND RETURN LEVEL 4" = SubResource( 57 )
-"anims/group 1 attack" = SubResource( 58 )
+"anims/DEFEND GO LEVEL 4" = SubResource( 52 )
+"anims/DEFEND RETURN LEVEL 4" = SubResource( 53 )
+"anims/group 1 attack" = SubResource( 54 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 4 - AnimationPlayer - Group1 - 5"]
 visible = false
@@ -3817,10 +3813,10 @@ region_enabled = true
 region_rect = Rect2( 651.892, 123.638, 12.1748, 13.6629 )
 
 [node name="LEVEL 5 - AnimationPlayer - Group1 - 1" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 5" = SubResource( 40 )
-"anims/DEFEND RETURN LEVEL 5" = SubResource( 41 )
-anims/group1_walking = SubResource( 42 )
-"anims/swords - group1" = SubResource( 43 )
+"anims/DEFEND GO LEVEL 5" = SubResource( 55 )
+"anims/DEFEND RETURN LEVEL 5" = SubResource( 56 )
+anims/group1_walking = SubResource( 57 )
+"anims/swords - group1" = SubResource( 58 )
 
 [node name="Sprite2" type="Sprite" parent="game2/LEVEL 5 - AnimationPlayer - Group1 - 1"]
 visible = false
@@ -3887,7 +3883,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 29
+frame = 7
 speed_scale = 0.9
 playing = true
 
@@ -3898,7 +3894,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 29
+frame = 7
 speed_scale = 0.9
 playing = true
 
@@ -3909,7 +3905,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 28
+frame = 6
 speed_scale = 0.9
 playing = true
 
@@ -3975,9 +3971,9 @@ region_enabled = true
 region_rect = Rect2( 689.389, 54.0257, 8.17566, 14.0155 )
 
 [node name="PPL LEVEL 3 - AnimationPlayer - Group2 - 4" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 3" = SubResource( 78 )
-"anims/DEFEND RETURN LEVEL 3" = SubResource( 79 )
-"anims/group 2 attach" = SubResource( 80 )
+"anims/DEFEND GO LEVEL 3" = SubResource( 75 )
+"anims/DEFEND RETURN LEVEL 3" = SubResource( 76 )
+"anims/group 2 attach" = SubResource( 77 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 3 - AnimationPlayer - Group2 - 4"]
 visible = false
@@ -4012,19 +4008,19 @@ region_enabled = true
 region_rect = Rect2( 53.4169, 8.30119, 13.3469, 10.2668 )
 
 [node name="PPL LEVEL 4 - AnimationPlayer - Group2 - 5" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND GO LEVEL 4" = SubResource( 81 )
-"anims/DEFEND RETURN LEVEL 4" = SubResource( 82 )
-"anims/LEVEL 1 + 2 - Cannon GROUP 1" = SubResource( 83 )
-"anims/LEVEL 1 - Cannon Group2" = SubResource( 84 )
-"anims/LEVEL 3 + 4 - Cannon GROUP 1" = SubResource( 85 )
-"anims/LEVEL 3 + 4 - Cannon Group 2" = SubResource( 86 )
-"anims/LEVEL 5 - Cannon GROUP 1" = SubResource( 87 )
-"anims/LEVEL 5 - Cannon Group 2" = SubResource( 88 )
-"anims/SHIP LEVEL 1 + 2 - group 2 fireball" = SubResource( 89 )
-"anims/SHIP LEVEL 3 - group 2 fireball" = SubResource( 90 )
-"anims/fireball attack g2" = SubResource( 91 )
-anims/group2_walking = SubResource( 92 )
-"anims/ship LEVEL 5 - group 2" = SubResource( 93 )
+"anims/DEFEND GO LEVEL 4" = SubResource( 78 )
+"anims/DEFEND RETURN LEVEL 4" = SubResource( 79 )
+"anims/LEVEL 1 + 2 - Cannon GROUP 1" = SubResource( 80 )
+"anims/LEVEL 1 - Cannon Group2" = SubResource( 81 )
+"anims/LEVEL 3 + 4 - Cannon GROUP 1" = SubResource( 82 )
+"anims/LEVEL 3 + 4 - Cannon Group 2" = SubResource( 83 )
+"anims/LEVEL 5 - Cannon GROUP 1" = SubResource( 84 )
+"anims/LEVEL 5 - Cannon Group 2" = SubResource( 85 )
+"anims/SHIP LEVEL 1 + 2 - group 2 fireball" = SubResource( 86 )
+"anims/SHIP LEVEL 3 - group 2 fireball" = SubResource( 87 )
+"anims/fireball attack g2" = SubResource( 88 )
+anims/group2_walking = SubResource( 89 )
+"anims/ship LEVEL 5 - group 2" = SubResource( 90 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 4 - AnimationPlayer - Group2 - 5"]
 visible = false
@@ -4059,9 +4055,9 @@ region_enabled = true
 region_rect = Rect2( 53.7681, 146.72, 12.0396, 7.03436 )
 
 [node name="PPL LEVEL 5 - AnimationPlayer - Group2 - 3" type="AnimationPlayer" parent="game2"]
-"anims/DEFEND LEVEL 5" = SubResource( 75 )
-"anims/DEFEND RETURN LEVEL 5" = SubResource( 76 )
-anims/group2_walking = SubResource( 77 )
+"anims/DEFEND LEVEL 5" = SubResource( 91 )
+"anims/DEFEND RETURN LEVEL 5" = SubResource( 92 )
+anims/group2_walking = SubResource( 93 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 5 - AnimationPlayer - Group2 - 3"]
 visible = false
@@ -4135,7 +4131,7 @@ rotation = 0.0493656
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 29
+frame = 7
 speed_scale = 0.9
 playing = true
 
@@ -4146,7 +4142,7 @@ rotation = 0.0995313
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 29
+frame = 7
 speed_scale = 0.9
 playing = true
 
@@ -4157,7 +4153,7 @@ rotation = 0.153884
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 28
+frame = 6
 speed_scale = 0.9
 playing = true
 

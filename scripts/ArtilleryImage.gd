@@ -6,8 +6,11 @@ onready var greenAnimation = $GreenAnimation
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
 
-	print("bb", NextRoundButton.artilleryLevel)
-
+	var artillery = get_node("../ArtilleryLevelDisplayEnemy")
+	artillery.set_text(str(NextRoundButton.artilleryLevel))
+	
+	print("artillery ", get_node("../ArtilleryLevelDisplayEnemy").get_text(), NextRoundButton.artilleryLevel)
+	
 	if NextRoundButton.artilleryLevel >= 1:
 		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").visible = true
 	if NextRoundButton.artilleryLevel >= 2:

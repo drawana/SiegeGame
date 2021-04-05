@@ -23,8 +23,6 @@ func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
 	setLevels()
 	
-	#setLevelsPlayer(difficulty, usInfLevel, usNavLevel, usArtLevel)
-	
 func setInfantryDefend(param):
 	infantryDefend = param
 	
@@ -101,10 +99,6 @@ func setLevels():
 			elif num3 == 2:
 				infantryLevel = 0
 				navalLevel = 1
-				
-	print("navalLevel", navalLevel)
-	print("infantryLevel", infantryLevel)
-	print("artilleryLevel", artilleryLevel)
 		
 func getNavalLevel():
 	return navalLevel

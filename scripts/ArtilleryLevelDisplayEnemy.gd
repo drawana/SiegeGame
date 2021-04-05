@@ -11,4 +11,4 @@ func getVal():
 	
 func setVal(param):
 	level = param
-	get_node("../ArtilleryLevelDisplayEnemy").set_text(str(level))
+	#get_node("../ArtilleryLevelDisplayEnemy").set_text(str(level))

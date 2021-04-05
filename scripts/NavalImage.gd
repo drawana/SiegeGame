@@ -5,22 +5,12 @@ onready var greenAnimation = $GreenAnimation
 
 func _ready():
 	connect("pressed",self,"_on_Button_Pressed")
-
-	if int(get_node("../NavalLevelDisplay").get_text()) == 0:
-		get_node("../NavalImage").visible = false
-	if int(get_node("../NavalLevelDisplayEnemy").get_text()) == 0:
-		get_node("../NavalImageEnemy").visible = false
-
-	if NextRoundButton.usNavLevel >= 1:
-		print(get_parent().get_parent().get_node("game2").get_node("group 2 - ships").name)
-		get_parent().get_parent().get_node("game2").get_node("group 2 - ships").get_node("Sprite").visible = true
-		#get_parent().get_parent().get_node("game2").get_node("group2 - fireball").visible = true #might need this
-	if NextRoundButton.usNavLevel >= 2:
-		get_parent().get_parent().get_node("game2").get_node("group 2 - ships2").get_node("Sprite").visible = true
-		#get_parent().get_parent().get_node("game2").get_node("group2 - fireball2").visible = true #might need this
-	if NextRoundButton.usNavLevel == 3:
-		get_parent().get_parent().get_node("game2").get_node("group 2 - ships3").get_node("Sprite").visible = true
-		#get_parent().get_parent().get_node("game2").get_node("group2 - fireball3").visible = true #might need this
+	
+	var naval = get_node("../NavalLevelDisplayEnemy")
+	naval.set_text(str(NextRoundButton.navalLevel))
+	
+	print("naval ", get_node("../NavalLevelDisplayEnemy").get_text(), NextRoundButton.navalLevel)
+	
 
 	if NextRoundButton.navalLevel >= 1:
 		get_parent().get_parent().get_node("game2").get_node("group 1 - ships4").get_node("Sprite").visible = true
