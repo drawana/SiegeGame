@@ -3,6 +3,5 @@
 [ext_resource path="res://Fonts/Cardinal.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 30
-outline_size = 2
+size = 46
 font_data = ExtResource( 1 )
