@@ -1437,14 +1437,14 @@ region = Rect2( 512, 512, 256, 256 )
 
 [sub_resource type="SpriteFrames" id=68]
 animations = [ {
-"frames": [ ExtResource( 34 ), ExtResource( 29 ), ExtResource( 77 ), ExtResource( 65 ), ExtResource( 58 ), ExtResource( 85 ), ExtResource( 27 ), ExtResource( 72 ), ExtResource( 81 ), ExtResource( 87 ), ExtResource( 62 ), ExtResource( 56 ), ExtResource( 74 ), ExtResource( 64 ), ExtResource( 80 ), ExtResource( 41 ), ExtResource( 63 ), ExtResource( 71 ), ExtResource( 86 ), ExtResource( 59 ), ExtResource( 75 ), ExtResource( 55 ), ExtResource( 66 ), ExtResource( 78 ), ExtResource( 76 ), ExtResource( 12 ), ExtResource( 61 ), ExtResource( 60 ), ExtResource( 67 ), ExtResource( 79 ), ExtResource( 68 ), ExtResource( 57 ), ExtResource( 84 ), ExtResource( 83 ), ExtResource( 89 ) ],
-"loop": true,
-"name": "shootball",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 59 ), SubResource( 60 ), SubResource( 61 ), SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ) ],
 "loop": true,
 "name": "fire explosion",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 29 ), ExtResource( 77 ), ExtResource( 65 ), ExtResource( 58 ), ExtResource( 85 ), ExtResource( 27 ), ExtResource( 72 ), ExtResource( 81 ), ExtResource( 87 ), ExtResource( 62 ), ExtResource( 56 ), ExtResource( 74 ), ExtResource( 64 ), ExtResource( 80 ), ExtResource( 41 ), ExtResource( 63 ), ExtResource( 71 ), ExtResource( 86 ), ExtResource( 59 ), ExtResource( 75 ), ExtResource( 55 ), ExtResource( 66 ), ExtResource( 78 ), ExtResource( 76 ), ExtResource( 12 ), ExtResource( 61 ), ExtResource( 60 ), ExtResource( 67 ), ExtResource( 79 ), ExtResource( 68 ), ExtResource( 57 ), ExtResource( 84 ), ExtResource( 83 ), ExtResource( 89 ) ],
+"loop": true,
+"name": "shootball",
 "speed": 5.0
 } ]
 
@@ -5341,7 +5341,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 7
+frame = 23
 speed_scale = 0.9
 playing = true
 
@@ -5352,7 +5352,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 7
+frame = 23
 speed_scale = 0.9
 playing = true
 
@@ -5363,7 +5363,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 6
+frame = 22
 speed_scale = 0.9
 playing = true
 
@@ -5697,7 +5697,7 @@ rotation = 0.0493656
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 7
+frame = 23
 speed_scale = 0.9
 playing = true
 
@@ -5708,7 +5708,7 @@ rotation = 0.0995313
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 7
+frame = 23
 speed_scale = 0.9
 playing = true
 
@@ -5719,7 +5719,7 @@ rotation = 0.153884
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 6
+frame = 22
 speed_scale = 0.9
 playing = true
 
