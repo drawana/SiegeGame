@@ -8,6 +8,11 @@ func _ready():
 
 	var artillery = get_node("../ArtilleryLevelDisplayEnemy")
 	artillery.set_text(str(NextRoundButton.artilleryLevel))
+	
+	if NextRoundButton.usArtLevel == 0:
+		get_node("../ArtilleryImage").visible = false
+	if NextRoundButton.artilleryLevel == 0:
+		get_node("../ArtilleryImageEnemy").visible = false
 
 	if NextRoundButton.artilleryLevel >= 1:
 		get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").visible = true

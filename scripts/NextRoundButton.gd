@@ -143,38 +143,6 @@ func _on_Button_Pressed():
 	if NextRoundButton.disabled == true:
 		redAnimation.play("Test")
 	else:
-		if get_node("../MyHealthBar").value <= 0:
-			get_tree().quit()
-		
-		endRound += 1
-		
-		var enemyInfLevel = int(get_node("../InfantryLevelDisplayEnemy").get_text())
-		if enemyInfLevel == 1:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND RETURN LEVEL 1")
-		elif enemyInfLevel == 2:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 2 - AnimationPlayer - Group1 - 3").play("DEFEND RETURN LEVEL 2")
-		elif enemyInfLevel == 3:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 3 - AnimationPlayer - Group1 - 4").play("DEFEND RETUN LEVEL 3")
-		elif enemyInfLevel == 4:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 4 - AnimationPlayer - Group1 - 5").play("DEFEND RETURN LEVEL 4")
-		elif enemyInfLevel == 5:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 5 - AnimationPlayer - Group1 - 1").play("DEFEND RETURN LEVEL 5")
-		
-		var enemyArtLevel = int(get_node("../ArtilleryLevelDisplayEnemy").get_text())
-		if enemyArtLevel == 1 or enemyArtLevel == 2:
-			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND RETURN level 1+2")
-		if enemyArtLevel == 3 or enemyArtLevel == 4:
-			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND RETURN Level 3+4")
-		if enemyArtLevel >= 5:
-			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND RETURN Level 5")
-		
-		var enemyNavalLevel = int(get_node("../NavalLevelDisplayEnemy").get_text())
-		if enemyNavalLevel == 1 or enemyNavalLevel == 2:
-			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND RETURN level 1+2")
-		if enemyNavalLevel == 3 or enemyNavalLevel == 4:
-			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND RETURN level 3+4")
-		if enemyNavalLevel >= 5:
-			get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND RETURN level 5")
 		
 		
 		if int(get_node("../InfantryLevelDisplay").get_text()) == 0:
@@ -185,6 +153,40 @@ func _on_Button_Pressed():
 			artilleryDone = true
 			
 		if infantryDone == true and navalDone == true and artilleryDone == true:
+			if get_node("../MyHealthBar").value <= 0:
+				get_tree().quit()
+			
+			endRound += 1
+			
+			var enemyInfLevel = int(get_node("../InfantryLevelDisplayEnemy").get_text())
+			if enemyInfLevel == 1:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND RETURN LEVEL 1")
+			elif enemyInfLevel == 2:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 2 - AnimationPlayer - Group1 - 3").play("DEFEND RETURN LEVEL 2")
+			elif enemyInfLevel == 3:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 3 - AnimationPlayer - Group1 - 4").play("DEFEND RETUN LEVEL 3")
+			elif enemyInfLevel == 4:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 4 - AnimationPlayer - Group1 - 5").play("DEFEND RETURN LEVEL 4")
+			elif enemyInfLevel == 5:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 5 - AnimationPlayer - Group1 - 1").play("DEFEND RETURN LEVEL 5")
+			
+			var enemyArtLevel = int(get_node("../ArtilleryLevelDisplayEnemy").get_text())
+			if enemyArtLevel == 1 or enemyArtLevel == 2:
+				get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND RETURN level 1+2")
+			if enemyArtLevel == 3 or enemyArtLevel == 4:
+				get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND RETURN Level 3+4")
+			if enemyArtLevel >= 5:
+				get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Cannonss DEFEND RETURN Level 5")
+			
+			var enemyNavalLevel = int(get_node("../NavalLevelDisplayEnemy").get_text())
+			if enemyNavalLevel == 1 or enemyNavalLevel == 2:
+				get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND RETURN level 1+2")
+			if enemyNavalLevel == 3 or enemyNavalLevel == 4:
+				get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND RETURN level 3+4")
+			if enemyNavalLevel >= 5:
+				get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("Ships DEFEND RETURN level 5")
+		
+			
 			setInfantryDefendEnemy(false)
 			setNavalDefendEnemy(false)
 			setArtilleryDefendEnemy(false)
@@ -221,7 +223,7 @@ func _on_Button_Pressed():
 			var PointsCounterEnemy = get_node("../PointsCounterEnemy")
 			
 			var multiplier = 1
-			var pointsToAdd2 = randi()%15 + 5
+			var pointsToAdd2 = 0
 			var curr = 0
 			var together = 0
 			if difficulty == "Easy":
@@ -470,7 +472,25 @@ func _on_Button_Pressed():
 					get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2").play("GR2 Cannonss DEFEND RETURN Level 5")
 				
 				yield(get_tree().create_timer(1), "timeout")
-				
+			
+			var ourNumPointUpdater = get_node("../plusPointsNum")
+			ourNumPointUpdater.set_text(str(pointsToAdd))
+			
+			var ourNumPointUpdaterEnemy = get_node("../plusPointsNumEnemy")
+			ourNumPointUpdaterEnemy.set_text(str(pointsToAdd2))
+			
+			get_node("../plusPoints").visible = true
+			get_node("../plusPointsEnemy").visible = true
+			get_node("../plusPointsNum").visible = true
+			get_node("../plusPointsNumEnemy").visible = true
+			
+			yield(get_tree().create_timer(7), "timeout")
+			
+			get_node("../plusPoints").visible = false
+			get_node("../plusPointsEnemy").visible = false
+			get_node("../plusPointsNum").visible = false
+			get_node("../plusPointsNumEnemy").visible = false
+			
 			
 			setInfantryDefend(false)
 			setNavalDefend(false)

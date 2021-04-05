@@ -9,6 +9,10 @@ func _ready():
 	var naval = get_node("../NavalLevelDisplayEnemy")
 	naval.set_text(str(NextRoundButton.navalLevel))
 	
+	if NextRoundButton.usNavLevel == 0:
+		get_node("../NavalImage").visible = false
+	if NextRoundButton.navalLevel == 0:
+		get_node("../NavalImageEnemy").visible = false
 
 	if NextRoundButton.navalLevel >= 1:
 		get_parent().get_parent().get_node("game2").get_node("group 1 - ships4").get_node("Sprite").visible = true
