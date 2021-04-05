@@ -55,72 +55,7 @@
 [ext_resource path="res://scripts/DefendArtillery.gd" type="Script" id=53]
 [ext_resource path="res://scripts/DefendInfantry.gd" type="Script" id=54]
 
-[sub_resource type="Animation" id=36]
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
-[sub_resource type="Animation" id=37]
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
-[sub_resource type="Animation" id=38]
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
-[sub_resource type="Animation" id=39]
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
 [sub_resource type="Animation" id=1]
-resource_name = "Test"
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -133,11 +68,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=2]
-resource_name = "Test"
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -150,7 +84,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -166,7 +100,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -182,9 +116,8 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
-
 
 [sub_resource type="Animation" id=5]
 length = 0.3
@@ -250,7 +183,21 @@ tracks/0/keys = {
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
-[sub_resource type="GDScript" id=9]
+[sub_resource type="Animation" id=9]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
 
 [sub_resource type="Animation" id=10]
 length = 0.3
@@ -297,24 +244,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
-}
-
-[sub_resource type="Animation" id=13]
-length = 0.3
-step = 0.03
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.12, 0.24 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
 "values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
+
+[sub_resource type="GDScript" id=13]
 
 [sub_resource type="Animation" id=14]
 length = 0.3
@@ -329,7 +262,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=15]
@@ -345,7 +278,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=16]
@@ -393,7 +326,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=19]
@@ -409,7 +342,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=20]
@@ -457,7 +390,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=23]
@@ -473,7 +406,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=24]
@@ -489,7 +422,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=25]
@@ -505,7 +438,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=26]
@@ -553,7 +486,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=29]
@@ -569,7 +502,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=30]
@@ -585,7 +518,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=31]
@@ -601,7 +534,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=32]
@@ -617,7 +550,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=33]
@@ -633,7 +566,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.12, 0.24 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
 }
 
 [sub_resource type="Animation" id=34]
@@ -653,6 +586,70 @@ tracks/0/keys = {
 }
 
 [sub_resource type="Animation" id=35]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=36]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.0352941, 0.956863, 0.113725, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=38]
+length = 0.3
+step = 0.03
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.12, 0.24 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.972549, 0.94902, 0.94902, 1 ), Color( 0.988235, 0.0901961, 0.0235294, 1 ), Color( 0.984375, 0.984375, 0.976685, 1 ) ]
+}
+
+[sub_resource type="Animation" id=39]
 length = 0.3
 step = 0.03
 tracks/0/type = "value"
@@ -900,10 +897,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/MenuButton"]
-anims/Test = SubResource( 36 )
+anims/Test = SubResource( 1 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/MenuButton"]
-anims/Test = SubResource( 37 )
+anims/Test = SubResource( 2 )
 
 [node name="UpgradeButton" type="TextureButton" parent="GUI"]
 modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
@@ -936,10 +933,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/UpgradeButton"]
-anims/Test = SubResource( 38 )
+anims/Test = SubResource( 3 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/UpgradeButton"]
-anims/Test = SubResource( 39 )
+anims/Test = SubResource( 4 )
 
 [node name="NextRoundButton" type="TextureButton" parent="GUI"]
 modulate = Color( 0.972549, 0.94902, 0.94902, 1 )
@@ -972,10 +969,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/NextRoundButton"]
-anims/Test = SubResource( 1 )
+anims/Test = SubResource( 5 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/NextRoundButton"]
-anims/Test = SubResource( 2 )
+anims/Test = SubResource( 6 )
 
 [node name="ResumeButton" type="TextureButton" parent="GUI"]
 visible = false
@@ -1069,10 +1066,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
-anims/Test = SubResource( 3 )
+anims/Test = SubResource( 7 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Infantry"]
-anims/Test = SubResource( 4 )
+anims/Test = SubResource( 8 )
 
 [node name="Artillery" type="TextureButton" parent="GUI"]
 visible = false
@@ -1106,10 +1103,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
-anims/Test = SubResource( 5 )
+anims/Test = SubResource( 9 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Artillery"]
-anims/Test = SubResource( 6 )
+anims/Test = SubResource( 10 )
 
 [node name="Naval" type="TextureButton" parent="GUI"]
 visible = false
@@ -1142,10 +1139,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/Naval"]
-anims/Test = SubResource( 7 )
+anims/Test = SubResource( 11 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/Naval"]
-anims/Test = SubResource( 8 )
+anims/Test = SubResource( 12 )
 
 [node name="ExitButton" type="TextureButton" parent="GUI"]
 visible = false
@@ -1241,7 +1238,7 @@ margin_bottom = 52.119
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
-script = SubResource( 9 )
+script = SubResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1254,7 +1251,7 @@ margin_bottom = 448.986
 custom_fonts/font = ExtResource( 13 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "0"
-script = SubResource( 9 )
+script = SubResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1467,10 +1464,10 @@ scale = Vector2( 0.9, 0.767 )
 texture = ExtResource( 27 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/InfantryImage"]
-anims/Test = SubResource( 10 )
+anims/Test = SubResource( 14 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/InfantryImage"]
-anims/Test = SubResource( 11 )
+anims/Test = SubResource( 15 )
 
 [node name="QuickAttackInfantry" type="TextureButton" parent="GUI"]
 visible = false
@@ -1504,10 +1501,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/QuickAttackInfantry"]
-anims/Test = SubResource( 12 )
+anims/Test = SubResource( 16 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/QuickAttackInfantry"]
-anims/Test = SubResource( 13 )
+anims/Test = SubResource( 17 )
 
 [node name="InvadeInfantry" type="TextureButton" parent="GUI"]
 visible = false
@@ -1542,10 +1539,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/InvadeInfantry"]
-anims/Test = SubResource( 14 )
+anims/Test = SubResource( 18 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/InvadeInfantry"]
-anims/Test = SubResource( 15 )
+anims/Test = SubResource( 19 )
 
 [node name="DefendInfantry" type="TextureButton" parent="GUI"]
 visible = false
@@ -1579,10 +1576,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/DefendInfantry"]
-anims/Test = SubResource( 16 )
+anims/Test = SubResource( 20 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/DefendInfantry"]
-anims/Test = SubResource( 17 )
+anims/Test = SubResource( 21 )
 
 [node name="CancelInfantry" type="TextureButton" parent="GUI"]
 visible = false
@@ -1629,10 +1626,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/NavalImage"]
-anims/Test = SubResource( 18 )
+anims/Test = SubResource( 22 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/NavalImage"]
-anims/Test = SubResource( 19 )
+anims/Test = SubResource( 23 )
 
 [node name="Sprite" type="Sprite" parent="GUI/NavalImage"]
 position = Vector2( 41.6867, 40.1952 )
@@ -1674,10 +1671,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/AttackNaval"]
-anims/Test = SubResource( 20 )
+anims/Test = SubResource( 24 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/AttackNaval"]
-anims/Test = SubResource( 21 )
+anims/Test = SubResource( 25 )
 
 [node name="DefendNaval" type="TextureButton" parent="GUI"]
 visible = false
@@ -1711,10 +1708,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/DefendNaval"]
-anims/Test = SubResource( 22 )
+anims/Test = SubResource( 26 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/DefendNaval"]
-anims/Test = SubResource( 23 )
+anims/Test = SubResource( 27 )
 
 [node name="CancelNaval" type="TextureButton" parent="GUI"]
 visible = false
@@ -1761,10 +1758,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/ArtilleryImage"]
-anims/Test = SubResource( 24 )
+anims/Test = SubResource( 28 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/ArtilleryImage"]
-anims/Test = SubResource( 25 )
+anims/Test = SubResource( 29 )
 
 [node name="cursorSword_silver" type="Sprite" parent="GUI/ArtilleryImage"]
 position = Vector2( 46.8763, 41.0489 )
@@ -1834,10 +1831,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/BigAttackArtillery"]
-anims/Test = SubResource( 26 )
+anims/Test = SubResource( 30 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/BigAttackArtillery"]
-anims/Test = SubResource( 27 )
+anims/Test = SubResource( 31 )
 
 [node name="DefendArtillery" type="TextureButton" parent="GUI"]
 visible = false
@@ -1871,10 +1868,10 @@ __meta__ = {
 }
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/DefendArtillery"]
-anims/Test = SubResource( 28 )
+anims/Test = SubResource( 32 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/DefendArtillery"]
-anims/Test = SubResource( 29 )
+anims/Test = SubResource( 33 )
 
 [node name="InfantryTag" type="Label" parent="GUI"]
 margin_left = 21.1893
@@ -2039,10 +2036,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/NavalImageEnemy"]
-anims/Test = SubResource( 30 )
+anims/Test = SubResource( 34 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/NavalImageEnemy"]
-anims/Test = SubResource( 31 )
+anims/Test = SubResource( 35 )
 
 [node name="Sprite" type="Sprite" parent="GUI/NavalImageEnemy"]
 position = Vector2( 41.6867, 40.1952 )
@@ -2064,10 +2061,10 @@ __meta__ = {
 }
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/ArtilleryImageEnemy"]
-anims/Test = SubResource( 32 )
+anims/Test = SubResource( 36 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/ArtilleryImageEnemy"]
-anims/Test = SubResource( 33 )
+anims/Test = SubResource( 37 )
 
 [node name="cursorSword_silver" type="Sprite" parent="GUI/ArtilleryImageEnemy"]
 position = Vector2( 46.8763, 41.0489 )
@@ -2112,9 +2109,9 @@ scale = Vector2( 0.9, 0.767 )
 texture = ExtResource( 27 )
 
 [node name="RedAnimation" type="AnimationPlayer" parent="GUI/InfantryImageEnemy"]
-anims/Test = SubResource( 34 )
+anims/Test = SubResource( 38 )
 
 [node name="GreenAnimation" type="AnimationPlayer" parent="GUI/InfantryImageEnemy"]
-anims/Test = SubResource( 35 )
+anims/Test = SubResource( 39 )
 [connection signal="pressed" from="GUI/Recap/TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="button_up" from="GUI/ExitButton" to="GUI/ExitButton" method="_on_ExitButton_button_up"]
