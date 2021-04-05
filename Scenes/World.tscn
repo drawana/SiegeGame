@@ -3697,7 +3697,7 @@ region_rect = Rect2( 142.183, 105.09, 148.457, 140.494 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 1 - AnimationPlayer - Group1 - 2"]
 visible = false
-position = Vector2( 776.948, 150.676 )
+position = Vector2( 774.998, 151.764 )
 scale = Vector2( 1.96508, 2.61567 )
 texture = ExtResource( 69 )
 region_enabled = true
@@ -3727,7 +3727,7 @@ region_rect = Rect2( 799.54, 154.537, 10.8012, 11.9382 )
 
 [node name="Sprite" type="Sprite" parent="game2/LEVEL 2 - AnimationPlayer - Group1 - 3"]
 visible = false
-position = Vector2( 820.466, 150.575 )
+position = Vector2( 821.804, 149.767 )
 scale = Vector2( 1.89502, 2.61567 )
 texture = ExtResource( 69 )
 region_enabled = true
@@ -3883,7 +3883,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 16
+frame = 15
 speed_scale = 0.9
 playing = true
 
@@ -3894,7 +3894,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 16
+frame = 15
 speed_scale = 0.9
 playing = true
 
@@ -3905,7 +3905,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 15
+frame = 14
 speed_scale = 0.9
 playing = true
 
@@ -4131,7 +4131,7 @@ rotation = 0.0493656
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 16
+frame = 15
 speed_scale = 0.9
 playing = true
 
@@ -4142,7 +4142,7 @@ rotation = 0.0995313
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 16
+frame = 15
 speed_scale = 0.9
 playing = true
 
@@ -4153,7 +4153,7 @@ rotation = 0.153884
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 15
+frame = 14
 speed_scale = 0.9
 playing = true
 
@@ -4164,7 +4164,7 @@ frames = SubResource( 100 )
 
 [node name="group1 - fireball6" type="AnimatedSprite" parent="game2/AnimatedSprite"]
 visible = false
-position = Vector2( -580.356, -19.0015 )
+position = Vector2( -43.8877, -11.5574 )
 rotation = 3.20236
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 68 )

@@ -255,6 +255,7 @@ func _on_Button_Pressed():
 			
 			var myHealth = get_node("../MyHealthBar")
 			var pointsToNotDecreaseBy = 0
+			randomize()
 			var num1 = randi()%4 + 1
 			var num2 = randi()%4 + 1
 			var num3 = randi()%4 + 1
@@ -264,11 +265,25 @@ func _on_Button_Pressed():
 					if infantryDefend == true:
 						var ourInfantryLevel = int(get_node("../InfantryLevelDisplay").get_text())
 						pointsToNotDecreaseBy = ((ourInfantryLevel * 2) + randi()%5 + (1 * ourInfantryLevel)) * 0.8
-						
+				
+					if level1 == 1:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("group 1 attack ")
+					elif level1 == 2:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 2 - AnimationPlayer - Group1 - 3").play("group 1 attack")
+					elif level1 == 3:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 3 - AnimationPlayer - Group1 - 4").play("group 1 attack")
+					elif level1 == 4:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 4 - AnimationPlayer - Group1 - 5").play("group 1 attack")
+					elif level1 == 5:
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 5 - AnimationPlayer - Group1 - 1").play("group1_walking")
+	
+					#yield(get_tree().create_timer(4), "timeout")
+					
 					var pointsToDecreaseBy = ((level1 * 2) + randi()%5 + (1 * level1)) - pointsToNotDecreaseBy
 					if pointsToDecreaseBy > 0:
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
 				else:
+					print("Infantry Defend")
 					setInfantryDefendEnemy(true)
 				
 			if level2 > 0:
@@ -276,11 +291,32 @@ func _on_Button_Pressed():
 					if navalDefend == true:
 						var ourNavalLevel = int(get_node("../NavalLevelDisplay").get_text())
 						pointsToNotDecreaseBy = ((ourNavalLevel * 2) + randi()%5 + (1 * ourNavalLevel)) * 0.8
-						
+					
+					
+					if level2 == 1 or level2 == 2:
+						get_parent().get_parent().get_node("game2").get_node("group1 - fireball2").visible = true
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("SHIP LEVEL 1 - group 1 fireball")
+					if level2 == 3 or level2 == 4:
+						get_parent().get_parent().get_node("game2").get_node("group1 - fireball2").visible = true
+						get_parent().get_parent().get_node("game2").get_node("group1 - fireball1").visible = true
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("SHIP LEVEL 3+4 - group 1 fireball")
+					if level2 >= 5:
+						get_parent().get_parent().get_node("game2").get_node("group1 - fireball2").visible = true
+						get_parent().get_parent().get_node("game2").get_node("group1 - fireball1").visible = true
+						get_parent().get_parent().get_node("game2").get_node("group1 - fireball3").visible = true
+						get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("SHIP LEVEL 5 - group 1 fireball")
+					
+					yield(get_tree().create_timer(2.7), "timeout")
+					
+					get_parent().get_parent().get_node("game2").get_node("group1 - fireball2").visible = false
+					get_parent().get_parent().get_node("game2").get_node("group1 - fireball1").visible = false
+					get_parent().get_parent().get_node("game2").get_node("group1 - fireball3").visible = false
+					
 					var pointsToDecreaseBy2 = ((level2 * 4) + randi()%10 + (1 * level2)) - pointsToNotDecreaseBy
 					if pointsToDecreaseBy2 > 0:
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy2)
 				else:
+					print("Naval Defend")
 					setNavalDefendEnemy(true)
 			
 			if level3 > 0:
@@ -289,10 +325,40 @@ func _on_Button_Pressed():
 						var ourArtilleryLevel = int(get_node("../ArtilleryLevelDisplay").get_text())
 						pointsToNotDecreaseBy = ((ourArtilleryLevel * 2) + randi()%5 + (1 * ourArtilleryLevel)) * 0.8
 					
+					if level3 == 1 or level3 == 2:
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").playing = true
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").get_node("group1 - fireball6").visible = true
+						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 4 - AnimationPlayer - Group2 - 5").play("LEVEL 1 + 2 - Cannon GROUP 1")
+					if level3 == 3 or level3 == 4:
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").playing = true
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").get_node("group1 - fireball6").visible = true
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").playing = true
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").get_node("group1 - fireball9").visible = true
+						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 4 - AnimationPlayer - Group2 - 5").play("LEVEL 3 + 4 - Cannon GROUP 1")
+					if level3 >= 5:
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").playing = true
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").get_node("group1 - fireball6").visible = true
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").playing = true
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").get_node("group1 - fireball9").visible = true
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").playing = true
+						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").get_node("group1 - fireball8").visible = true
+						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 4 - AnimationPlayer - Group2 - 5").play("LEVEL 5 - Cannon GROUP 1")
+					
+					yield(get_tree().create_timer(.9), "timeout")
+					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").playing = false
+					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").playing = false
+					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").playing = false
+					
+					yield(get_tree().create_timer(1.8), "timeout")
+					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").get_node("group1 - fireball6").visible = false
+					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").get_node("group1 - fireball9").visible = false
+					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").get_node("group1 - fireball8").visible = false
+					
 					var pointsToDecreaseBy3 = ((level3 * 3) + randi()%20 + (1 * level3)) - pointsToNotDecreaseBy
 					if pointsToDecreaseBy3 > 0:
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
 				else:
+					print("Artillery Defend")
 					setArtilleryDefendEnemy(true)
 				
 			if get_node("../TheirHealthBar").value <= 0:
