@@ -189,7 +189,8 @@ func _on_Button_Pressed():
 				pointsToAdd2 = randi()%15 + 10
 				PointsCounterEnemy.set_text(str(int(PointsCounterEnemy.get_text()) + pointsToAdd2))
 				multiplier = 3
-				
+			
+			
 			var PointsCounterEnemyUpdated = get_node("../PointsCounterEnemy")
 			
 			while int(PointsCounterEnemyUpdated.get_text()) >= 15:

@@ -8,8 +8,18 @@ func _ready():
 	
 func _on_Button_Pressed():
 	var points = get_node("../TheirHealthBar")
-	
 	var level = get_node("../InfantryLevelDisplay").getVal()
+	#var animation = 
+	
+	#if level == 1:
+		
+	#elif level == 2:
+		
+	#elif level == 3:
+		
+	#elif level == 4:
+		
+	#elif level == 5:
 	
 	var pointsToNotDecreaseBy = 0
 	if get_node("../NextRoundButton").getInfantryDefendEnemy() == true:
