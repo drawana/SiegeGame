@@ -2974,7 +2974,7 @@ tracks/4/keys = {
 "values": [ Vector2( 362.549, 564 ), Vector2( 813.289, 428 ), Vector2( 813.289, 428 ), Vector2( 303.4, 502 ) ]
 }
 
-[sub_resource type="Animation" id=135]
+[sub_resource type="Animation" id=121]
 resource_name = "Cannonss DEFEND GO Level 3+4"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:position")
@@ -3001,7 +3001,7 @@ tracks/1/keys = {
 "values": [ Vector2( 786.134, 464.605 ), Vector2( 876.134, 460.605 ) ]
 }
 
-[sub_resource type="Animation" id=136]
+[sub_resource type="Animation" id=122]
 resource_name = "Cannonss DEFEND GO Level 5"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:position")
@@ -3040,7 +3040,7 @@ tracks/2/keys = {
 "values": [ Vector2( 773.778, 420.819 ), Vector2( 830.778, 427.819 ) ]
 }
 
-[sub_resource type="Animation" id=137]
+[sub_resource type="Animation" id=123]
 resource_name = "Cannonss DEFEND GO level 1+2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:position")
@@ -3055,7 +3055,7 @@ tracks/0/keys = {
 "values": [ Vector2( 781.822, 501.144 ), Vector2( 869.822, 404.144 ) ]
 }
 
-[sub_resource type="Animation" id=138]
+[sub_resource type="Animation" id=124]
 resource_name = "Cannonss DEFEND RETURN Level 3+4"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite3:position")
@@ -3082,7 +3082,7 @@ tracks/1/keys = {
 "values": [ Vector2( 870.822, 407.144 ), Vector2( 775.822, 497.144 ) ]
 }
 
-[sub_resource type="Animation" id=139]
+[sub_resource type="Animation" id=125]
 resource_name = "Cannonss DEFEND RETURN Level 5"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite2:position")
@@ -3121,7 +3121,7 @@ tracks/2/keys = {
 "values": [ Vector2( 874.822, 409.144 ), Vector2( 785.822, 488.144 ) ]
 }
 
-[sub_resource type="Animation" id=140]
+[sub_resource type="Animation" id=126]
 resource_name = "Cannonss DEFEND RETURN level 1+2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("AnimatedSprite:position")
@@ -3136,7 +3136,7 @@ tracks/0/keys = {
 "values": [ Vector2( 869.822, 404.144 ), Vector2( 778.822, 499.144 ) ]
 }
 
-[sub_resource type="Animation" id=141]
+[sub_resource type="Animation" id=127]
 resource_name = "DEFEND GO LEV 1"
 length = 2.0
 tracks/0/type = "value"
@@ -3152,7 +3152,7 @@ tracks/0/keys = {
 "values": [ Vector2( 272.56, 514.578 ), Vector2( 217.123, 439 ) ]
 }
 
-[sub_resource type="Animation" id=142]
+[sub_resource type="Animation" id=128]
 resource_name = "DEFEND RETURN LEVEL 1"
 length = 2.0
 tracks/0/type = "value"
@@ -3168,7 +3168,7 @@ tracks/0/keys = {
 "values": [ Vector2( 217.123, 439 ), Vector2( 283.43, 515.806 ) ]
 }
 
-[sub_resource type="Animation" id=143]
+[sub_resource type="Animation" id=129]
 resource_name = "GR2 Cannonss DEFEND GO Level 1+2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
@@ -3183,7 +3183,7 @@ tracks/0/keys = {
 "values": [ Vector2( 270.997, 385 ), Vector2( 163.997, 404 ) ]
 }
 
-[sub_resource type="Animation" id=144]
+[sub_resource type="Animation" id=130]
 resource_name = "GR2 Cannonss DEFEND GO Level 3+4"
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
@@ -3210,7 +3210,7 @@ tracks/1/keys = {
 "values": [ Vector2( 273.68, 436 ), Vector2( 235.68, 442 ) ]
 }
 
-[sub_resource type="Animation" id=145]
+[sub_resource type="Animation" id=131]
 resource_name = "GR2 Cannonss DEFEND GO Level 5"
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
@@ -3249,7 +3249,7 @@ tracks/2/keys = {
 "values": [ Vector2( 302.658, 384.952 ), Vector2( 220.658, 399.952 ) ]
 }
 
-[sub_resource type="Animation" id=146]
+[sub_resource type="Animation" id=132]
 resource_name = "GR2 Cannonss DEFEND RETURN Level 1+2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
@@ -3264,7 +3264,7 @@ tracks/0/keys = {
 "values": [ Vector2( 163.997, 404 ), Vector2( 267.997, 396 ) ]
 }
 
-[sub_resource type="Animation" id=147]
+[sub_resource type="Animation" id=133]
 resource_name = "GR2 Cannonss DEFEND RETURN Level 3+4"
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite2:position")
@@ -3291,7 +3291,7 @@ tracks/1/keys = {
 "values": [ Vector2( 158.997, 404 ), Vector2( 234.997, 404 ) ]
 }
 
-[sub_resource type="Animation" id=148]
+[sub_resource type="Animation" id=134]
 resource_name = "GR2 Cannonss DEFEND RETURN Level 5"
 tracks/0/type = "value"
 tracks/0/path = NodePath("CANNON GROUP 2 AnimatedSprite1:position")
@@ -3330,7 +3330,7 @@ tracks/2/keys = {
 "values": [ Vector2( 220.658, 399.952 ), Vector2( 296.658, 393.952 ) ]
 }
 
-[sub_resource type="Animation" id=149]
+[sub_resource type="Animation" id=135]
 resource_name = "GR2 Ships DEFEND GO Level 1+2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships/Sprite:position")
@@ -3345,7 +3345,7 @@ tracks/0/keys = {
 "values": [ Vector2( 48.1084, 325.956 ), Vector2( 48.1084, 381.956 ) ]
 }
 
-[sub_resource type="Animation" id=150]
+[sub_resource type="Animation" id=136]
 resource_name = "GR2 Ships DEFEND GO Level 3+4"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships/Sprite:position")
@@ -3372,7 +3372,7 @@ tracks/1/keys = {
 "values": [ Vector2( 75.029, 234.485 ), Vector2( 75.029, 385.485 ) ]
 }
 
-[sub_resource type="Animation" id=151]
+[sub_resource type="Animation" id=137]
 resource_name = "GR2 Ships DEFEND GO Level 5"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships3/Sprite:position")
@@ -3411,7 +3411,7 @@ tracks/2/keys = {
 "values": [ Vector2( 165.029, 234.485 ), Vector2( 75.029, 234.485 ) ]
 }
 
-[sub_resource type="Animation" id=152]
+[sub_resource type="Animation" id=138]
 resource_name = "GR2 Ships DEFEND RETURN Level 1+2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships/Sprite:position")
@@ -3426,7 +3426,7 @@ tracks/0/keys = {
 "values": [ Vector2( 48.1084, 381.956 ), Vector2( 48.1084, 321.956 ) ]
 }
 
-[sub_resource type="Animation" id=153]
+[sub_resource type="Animation" id=139]
 resource_name = "GR2 Ships DEFEND RETURN Level 5"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships2/Sprite:position")
@@ -3465,7 +3465,7 @@ tracks/2/keys = {
 "values": [ Vector2( 68.861, 395.865 ), Vector2( 129.861, 310.865 ) ]
 }
 
-[sub_resource type="Animation" id=154]
+[sub_resource type="Animation" id=140]
 resource_name = "GR2 Ships RETURN GO Level 3+4"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 2 - ships/Sprite:position")
@@ -3492,7 +3492,7 @@ tracks/1/keys = {
 "values": [ Vector2( 75.029, 385.485 ), Vector2( 75.029, 257.485 ) ]
 }
 
-[sub_resource type="Animation" id=155]
+[sub_resource type="Animation" id=141]
 resource_name = "Ships DEFEND GO level 1+2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
@@ -3507,7 +3507,7 @@ tracks/0/keys = {
 "values": [ Vector2( 820.544, 60.0747 ), Vector2( 844.544, 33.0747 ) ]
 }
 
-[sub_resource type="Animation" id=156]
+[sub_resource type="Animation" id=142]
 resource_name = "Ships DEFEND GO level 3+4"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
@@ -3534,7 +3534,7 @@ tracks/1/keys = {
 "values": [ Vector2( 660, 41.894 ), Vector2( 786, 91.894 ) ]
 }
 
-[sub_resource type="Animation" id=157]
+[sub_resource type="Animation" id=143]
 resource_name = "Ships DEFEND GO level 5"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
@@ -3573,7 +3573,7 @@ tracks/2/keys = {
 "values": [ Vector2( 660, 41.894 ), Vector2( 771, 54.894 ) ]
 }
 
-[sub_resource type="Animation" id=158]
+[sub_resource type="Animation" id=144]
 resource_name = "Ships DEFEND RETURN level 1+2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
@@ -3588,7 +3588,7 @@ tracks/0/keys = {
 "values": [ Vector2( 844.544, 33.0747 ), Vector2( 814.544, 60.0747 ) ]
 }
 
-[sub_resource type="Animation" id=159]
+[sub_resource type="Animation" id=145]
 resource_name = "Ships DEFEND RETURN level 3+4"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships6/Sprite:position")
@@ -3615,7 +3615,7 @@ tracks/1/keys = {
 "values": [ Vector2( 786, 91.894 ), Vector2( 602, 82.894 ) ]
 }
 
-[sub_resource type="Animation" id=160]
+[sub_resource type="Animation" id=146]
 resource_name = "Ships DEFEND RETURN level 5"
 tracks/0/type = "value"
 tracks/0/path = NodePath("group 1 - ships4/Sprite:position")
@@ -3654,7 +3654,7 @@ tracks/2/keys = {
 "values": [ Vector2( 843.544, 26.0747 ), Vector2( 812.544, 67.0747 ) ]
 }
 
-[sub_resource type="Animation" id=161]
+[sub_resource type="Animation" id=147]
 length = 6.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2/Sprite:position")
@@ -3669,77 +3669,77 @@ tracks/0/keys = {
 "values": [ Vector2( 272.56, 514.578 ), Vector2( 762.589, 294.5 ), Vector2( 764.894, 294.536 ), Vector2( 766.599, 294.806 ), Vector2( 764.684, 295.317 ), Vector2( 764.233, 296.078 ), Vector2( 765.152, 295.098 ), Vector2( 765.34, 293.465 ), Vector2( 276.051, 512.625 ) ]
 }
 
-[sub_resource type="AtlasTexture" id=121]
+[sub_resource type="AtlasTexture" id=148]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 0, 0, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=122]
+[sub_resource type="AtlasTexture" id=149]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 103, 0, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=123]
+[sub_resource type="AtlasTexture" id=150]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 206, 0, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=124]
+[sub_resource type="AtlasTexture" id=151]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 206, 106, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=125]
+[sub_resource type="AtlasTexture" id=152]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 103, 106, 103, 106 )
 
-[sub_resource type="AtlasTexture" id=126]
+[sub_resource type="AtlasTexture" id=153]
 flags = 4
 atlas = ExtResource( 88 )
 region = Rect2( 0, 106, 103, 106 )
 
-[sub_resource type="SpriteFrames" id=127]
+[sub_resource type="SpriteFrames" id=154]
 animations = [ {
-"frames": [ SubResource( 121 ), SubResource( 122 ), SubResource( 123 ), SubResource( 124 ), SubResource( 125 ), SubResource( 126 ) ],
+"frames": [ SubResource( 148 ), SubResource( 149 ), SubResource( 150 ), SubResource( 151 ), SubResource( 152 ), SubResource( 153 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
 } ]
 
-[sub_resource type="AtlasTexture" id=128]
+[sub_resource type="AtlasTexture" id=155]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 0, 0, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=129]
+[sub_resource type="AtlasTexture" id=156]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 103, 0, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=130]
+[sub_resource type="AtlasTexture" id=157]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 206, 0, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=131]
+[sub_resource type="AtlasTexture" id=158]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 0, 108, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=132]
+[sub_resource type="AtlasTexture" id=159]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 103, 108, 103, 108 )
 
-[sub_resource type="AtlasTexture" id=133]
+[sub_resource type="AtlasTexture" id=160]
 flags = 4
 atlas = ExtResource( 82 )
 region = Rect2( 206, 108, 103, 108 )
 
-[sub_resource type="SpriteFrames" id=134]
+[sub_resource type="SpriteFrames" id=161]
 animations = [ {
-"frames": [ SubResource( 128 ), SubResource( 129 ), SubResource( 130 ), SubResource( 131 ), SubResource( 132 ), SubResource( 133 ) ],
+"frames": [ SubResource( 155 ), SubResource( 156 ), SubResource( 157 ), SubResource( 158 ), SubResource( 159 ), SubResource( 160 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -5341,7 +5341,7 @@ rotation = 2.35619
 scale = Vector2( 0.192536, 0.235167 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 23
+frame = 29
 speed_scale = 0.9
 playing = true
 
@@ -5352,7 +5352,7 @@ rotation = 2.35619
 scale = Vector2( 0.176594, 0.224132 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 23
+frame = 29
 speed_scale = 0.9
 playing = true
 
@@ -5363,7 +5363,7 @@ rotation = 2.35619
 scale = Vector2( 0.231775, 0.294027 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 22
+frame = 28
 speed_scale = 0.9
 playing = true
 
@@ -5604,33 +5604,33 @@ region_enabled = true
 region_rect = Rect2( 53.0277, 44.1381, 13.1206, 7.30767 )
 
 [node name="PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2 - 2" type="AnimationPlayer" parent="game2"]
-"anims/Cannonss DEFEND GO Level 3+4" = SubResource( 135 )
-"anims/Cannonss DEFEND GO Level 5" = SubResource( 136 )
-"anims/Cannonss DEFEND GO level 1+2" = SubResource( 137 )
-"anims/Cannonss DEFEND RETURN Level 3+4" = SubResource( 138 )
-"anims/Cannonss DEFEND RETURN Level 5" = SubResource( 139 )
-"anims/Cannonss DEFEND RETURN level 1+2" = SubResource( 140 )
-"anims/DEFEND GO LEV 1" = SubResource( 141 )
-"anims/DEFEND RETURN LEVEL 1" = SubResource( 142 )
-"anims/GR2 Cannonss DEFEND GO Level 1+2" = SubResource( 143 )
-"anims/GR2 Cannonss DEFEND GO Level 3+4" = SubResource( 144 )
-"anims/GR2 Cannonss DEFEND GO Level 5" = SubResource( 145 )
-"anims/GR2 Cannonss DEFEND RETURN Level 1+2" = SubResource( 146 )
-"anims/GR2 Cannonss DEFEND RETURN Level 3+4" = SubResource( 147 )
-"anims/GR2 Cannonss DEFEND RETURN Level 5" = SubResource( 148 )
-"anims/GR2 Ships DEFEND GO Level 1+2" = SubResource( 149 )
-"anims/GR2 Ships DEFEND GO Level 3+4" = SubResource( 150 )
-"anims/GR2 Ships DEFEND GO Level 5" = SubResource( 151 )
-"anims/GR2 Ships DEFEND RETURN Level 1+2" = SubResource( 152 )
-"anims/GR2 Ships DEFEND RETURN Level 5" = SubResource( 153 )
-"anims/GR2 Ships RETURN GO Level 3+4" = SubResource( 154 )
-"anims/Ships DEFEND GO level 1+2" = SubResource( 155 )
-"anims/Ships DEFEND GO level 3+4" = SubResource( 156 )
-"anims/Ships DEFEND GO level 5" = SubResource( 157 )
-"anims/Ships DEFEND RETURN level 1+2" = SubResource( 158 )
-"anims/Ships DEFEND RETURN level 3+4" = SubResource( 159 )
-"anims/Ships DEFEND RETURN level 5" = SubResource( 160 )
-anims/group2_walking = SubResource( 161 )
+"anims/Cannonss DEFEND GO Level 3+4" = SubResource( 121 )
+"anims/Cannonss DEFEND GO Level 5" = SubResource( 122 )
+"anims/Cannonss DEFEND GO level 1+2" = SubResource( 123 )
+"anims/Cannonss DEFEND RETURN Level 3+4" = SubResource( 124 )
+"anims/Cannonss DEFEND RETURN Level 5" = SubResource( 125 )
+"anims/Cannonss DEFEND RETURN level 1+2" = SubResource( 126 )
+"anims/DEFEND GO LEV 1" = SubResource( 127 )
+"anims/DEFEND RETURN LEVEL 1" = SubResource( 128 )
+"anims/GR2 Cannonss DEFEND GO Level 1+2" = SubResource( 129 )
+"anims/GR2 Cannonss DEFEND GO Level 3+4" = SubResource( 130 )
+"anims/GR2 Cannonss DEFEND GO Level 5" = SubResource( 131 )
+"anims/GR2 Cannonss DEFEND RETURN Level 1+2" = SubResource( 132 )
+"anims/GR2 Cannonss DEFEND RETURN Level 3+4" = SubResource( 133 )
+"anims/GR2 Cannonss DEFEND RETURN Level 5" = SubResource( 134 )
+"anims/GR2 Ships DEFEND GO Level 1+2" = SubResource( 135 )
+"anims/GR2 Ships DEFEND GO Level 3+4" = SubResource( 136 )
+"anims/GR2 Ships DEFEND GO Level 5" = SubResource( 137 )
+"anims/GR2 Ships DEFEND RETURN Level 1+2" = SubResource( 138 )
+"anims/GR2 Ships DEFEND RETURN Level 5" = SubResource( 139 )
+"anims/GR2 Ships RETURN GO Level 3+4" = SubResource( 140 )
+"anims/Ships DEFEND GO level 1+2" = SubResource( 141 )
+"anims/Ships DEFEND GO level 3+4" = SubResource( 142 )
+"anims/Ships DEFEND GO level 5" = SubResource( 143 )
+"anims/Ships DEFEND RETURN level 1+2" = SubResource( 144 )
+"anims/Ships DEFEND RETURN level 3+4" = SubResource( 145 )
+"anims/Ships DEFEND RETURN level 5" = SubResource( 146 )
+anims/group2_walking = SubResource( 147 )
 
 [node name="Sprite" type="Sprite" parent="game2/PPL LEVEL 1 - AnimationPlayer - Group2 - 1 - 2 - 2"]
 visible = false
@@ -5697,7 +5697,7 @@ rotation = 0.0493656
 scale = Vector2( 0.14501, 0.203818 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 23
+frame = 29
 speed_scale = 0.9
 playing = true
 
@@ -5708,7 +5708,7 @@ rotation = 0.0995313
 scale = Vector2( 0.182617, 0.278595 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 23
+frame = 29
 speed_scale = 0.9
 playing = true
 
@@ -5719,14 +5719,14 @@ rotation = 0.153884
 scale = Vector2( 0.124495, 0.189294 )
 frames = SubResource( 68 )
 animation = "shootball"
-frame = 22
+frame = 28
 speed_scale = 0.9
 playing = true
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 778.822, 499.144 )
-frames = SubResource( 127 )
+frames = SubResource( 154 )
 
 [node name="group1 - fireball6" type="AnimatedSprite" parent="game2/AnimatedSprite"]
 visible = false
@@ -5741,7 +5741,7 @@ speed_scale = 0.9
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 782.778, 467.819 )
-frames = SubResource( 127 )
+frames = SubResource( 154 )
 
 [node name="group1 - fireball8" type="AnimatedSprite" parent="game2/AnimatedSprite2"]
 visible = false
@@ -5756,7 +5756,7 @@ speed_scale = 0.9
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 786.134, 464.605 )
-frames = SubResource( 127 )
+frames = SubResource( 154 )
 
 [node name="group1 - fireball9" type="AnimatedSprite" parent="game2/AnimatedSprite3"]
 visible = false
@@ -5771,7 +5771,7 @@ speed_scale = 0.9
 [node name="CANNON GROUP 2 AnimatedSprite1" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 223.997, 404 )
-frames = SubResource( 134 )
+frames = SubResource( 161 )
 frame = 4
 
 [node name="group2 - fireball4" type="AnimatedSprite" parent="game2/CANNON GROUP 2 AnimatedSprite1"]
@@ -5787,7 +5787,7 @@ speed_scale = 0.9
 [node name="CANNON GROUP 2 AnimatedSprite2" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 273.68, 436 )
-frames = SubResource( 134 )
+frames = SubResource( 161 )
 frame = 1
 
 [node name="group2 - fireball5" type="AnimatedSprite" parent="game2/CANNON GROUP 2 AnimatedSprite2"]
@@ -5803,7 +5803,7 @@ speed_scale = 0.9
 [node name="CANNON GROUP 2 AnimatedSprite3" type="AnimatedSprite" parent="game2"]
 visible = false
 position = Vector2( 302.658, 384.952 )
-frames = SubResource( 134 )
+frames = SubResource( 161 )
 
 [node name="group2 - fireball7" type="AnimatedSprite" parent="game2/CANNON GROUP 2 AnimatedSprite3"]
 visible = false

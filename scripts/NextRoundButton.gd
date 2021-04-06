@@ -21,16 +21,6 @@ var navalDefend = false
 var infantryDefendEnemy = false
 var artilleryDefendEnemy = false
 var navalDefendEnemy = false
-var endPoint = 0
-var endInf = 0
-var endArt = 0
-var endNav = 0
-var endDiff = "Easy"
-var endEnemyCastle = 0
-var endRound = 0
-
-
-
 
 var endPoint = 0
 var endInf = 0
@@ -132,6 +122,12 @@ func getArtilleryLevel():
 
 func getInfantryLevel():
 	return infantryLevel
+	
+func setEndInf(param):
+	endInf = param
+	
+func getEndInf():
+	return endInf
 
 func getDifficulty():
 	return difficulty
@@ -159,31 +155,26 @@ func _on_Button_Pressed():
 	if NextRoundButton.disabled == true:
 		redAnimation.play("Test")
 	else:
-		weeks += 1
-		if get_node("../MyHealthBar").value <= 90:
-			endPoint = 0
-			endInf = get_node("../InfantryLevelDisplay").get_text()
+		if get_node("../MyHealthBar").value <= 95: #CHANGED THIS
+			print("in 95")
+			setEndInf(get_node("../InfantryLevelDisplay").get_text())
+			#endInf = get_node("../InfantryLevelDisplay").get_text()
 			endArt = get_node("../ArtilleryLevelDisplay").get_text()
 			endNav = get_node("../NavalLevelDisplay").get_text()
 			endDiff = difficulty
 			endEnemyCastle = str(get_node("../TheirHealthBar").value)
 			endRound = weeks
+			
+			print("endNAv ", endNav)
+			Defeat.nav = endNav
+			Defeat.onDefeat(endDiff, endRound, endInf, endNav, endArt, endEnemyCastle)
+			#print(endInf, get_node("../InfantryLevelDisplay").get_text())
+			#print(endArt, get_node("../ArtilleryLevelDisplay").get_text())
+			#print(endNav, get_node("../NavalLevelDisplay").get_text())
+			#print(endDiff, difficulty)
+			#print(endEnemyCastle, get_node("../TheirHealthBar").get_value())
+			
 			get_tree().change_scene("res://Scenes/Defeat.tscn")
-
-
-		var enemyInfLevel = int(get_node("../InfantryLevelDisplayEnemy").get_text())
-		if enemyInfLevel == 1:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND RETURN LEVEL 1")
-		elif enemyInfLevel == 2:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 2 - AnimationPlayer - Group1 - 3").play("DEFEND RETURN LEVEL 2")
-		elif enemyInfLevel == 3:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 3 - AnimationPlayer - Group1 - 4").play("DEFEND RETUN LEVEL 3")
-		elif enemyInfLevel == 4:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 4 - AnimationPlayer - Group1 - 5").play("DEFEND RETURN LEVEL 4")
-		elif enemyInfLevel == 5:
-			get_parent().get_parent().get_node("game2").get_node("LEVEL 5 - AnimationPlayer - Group1 - 1").play("DEFEND RETURN LEVEL 5")
-
-
 
 		if int(get_node("../InfantryLevelDisplay").get_text()) == 0:
 			infantryDone = true
@@ -193,12 +184,22 @@ func _on_Button_Pressed():
 			artilleryDone = true
 
 		if infantryDone == true and navalDone == true and artilleryDone == true:
-			if get_node("../MyHealthBar").value <= 0:
-				get_tree().quit()
+			weeks += 1
+			var enemyInfLevel = int(get_node("../InfantryLevelDisplayEnemy").get_text())
+			if enemyInfLevel == 1:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND RETURN LEVEL 1")
+			elif enemyInfLevel == 2:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 2 - AnimationPlayer - Group1 - 3").play("DEFEND RETURN LEVEL 2")
+			elif enemyInfLevel == 3:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 3 - AnimationPlayer - Group1 - 4").play("DEFEND RETUN LEVEL 3")
+			elif enemyInfLevel == 4:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 4 - AnimationPlayer - Group1 - 5").play("DEFEND RETURN LEVEL 4")
+			elif enemyInfLevel == 5:
+				get_parent().get_parent().get_node("game2").get_node("LEVEL 5 - AnimationPlayer - Group1 - 1").play("DEFEND RETURN LEVEL 5")
 
 			endRound += 1
 
-			var enemyInfLevel = int(get_node("../InfantryLevelDisplayEnemy").get_text())
+			enemyInfLevel = int(get_node("../InfantryLevelDisplayEnemy").get_text())
 			if enemyInfLevel == 1:
 				get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND RETURN LEVEL 1")
 			elif enemyInfLevel == 2:
@@ -364,6 +365,14 @@ func _on_Button_Pressed():
 					if pointsToDecreaseBy > 0:
 						totalDamage += pointsToDecreaseBy
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
+						if get_node("../MyHealthBar").value <= 0:
+							endInf = get_node("../InfantryLevelDisplay").get_text()
+							endArt = get_node("../ArtilleryLevelDisplay").get_text()
+							endNav = get_node("../NavalLevelDisplay").get_text()
+							endDiff = difficulty
+							endEnemyCastle = str(get_node("../TheirHealthBar").value)
+							endRound = weeks
+							get_tree().change_scene("res://Scenes/Defeat.tscn")
 				else:
 					if level1 == 1:
 						get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND GO LEVEL 1")
@@ -379,6 +388,7 @@ func _on_Button_Pressed():
 
 			if level2 > 0:
 				if num2 != 2:
+					pointsToNotDecreaseBy = 0
 					if navalDefend == true:
 						var ourNavalLevel = int(get_node("../NavalLevelDisplay").get_text())
 						pointsToNotDecreaseBy = ((ourNavalLevel * 2) + randi()%5 + (1 * ourNavalLevel)) * 0.8
@@ -396,14 +406,29 @@ func _on_Button_Pressed():
 						get_parent().get_parent().get_node("game2").get_node("group1 - fireball1").visible = true
 						get_parent().get_parent().get_node("game2").get_node("group1 - fireball3").visible = true
 						get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("SHIP LEVEL 5 - group 1 fireball")
-
+					
+					var pointsToDecreaseBy2 = ((level2 * 4) + randi()%10 + (1 * level2)) - pointsToNotDecreaseBy
+					var healthBarTest = 100
+					if pointsToDecreaseBy2 > 0:
+						healthBarTest = get_node("../MyHealthBar").value - pointsToDecreaseBy2
+					
+					if healthBarTest <= 0:
+						endInf = get_node("../InfantryLevelDisplay").get_text()
+						endArt = get_node("../ArtilleryLevelDisplay").get_text()
+						endNav = get_node("../NavalLevelDisplay").get_text()
+						endDiff = difficulty
+						endEnemyCastle = str(get_node("../TheirHealthBar").value)
+						endRound = weeks
+						get_tree().change_scene("res://Scenes/Defeat.tscn")
+					
+					
 					yield(get_tree().create_timer(2.7), "timeout")
 
 					get_parent().get_parent().get_node("game2").get_node("group1 - fireball2").visible = false
 					get_parent().get_parent().get_node("game2").get_node("group1 - fireball1").visible = false
 					get_parent().get_parent().get_node("game2").get_node("group1 - fireball3").visible = false
 
-					var pointsToDecreaseBy2 = ((level2 * 4) + randi()%10 + (1 * level2)) - pointsToNotDecreaseBy
+					pointsToDecreaseBy2 = ((level2 * 4) + randi()%10 + (1 * level2)) - pointsToNotDecreaseBy
 					if pointsToDecreaseBy2 > 0:
 						totalDamage += pointsToDecreaseBy2
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy2)
@@ -420,6 +445,7 @@ func _on_Button_Pressed():
 
 			if level3 > 0:
 				if num3 != 2:
+					pointsToNotDecreaseBy = 0
 					if artilleryDefend == true:
 						var ourArtilleryLevel = int(get_node("../ArtilleryLevelDisplay").get_text())
 						pointsToNotDecreaseBy = ((ourArtilleryLevel * 2) + randi()%5 + (1 * ourArtilleryLevel)) * 0.8
@@ -442,7 +468,22 @@ func _on_Button_Pressed():
 						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").playing = true
 						get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").get_node("group1 - fireball8").visible = true
 						get_parent().get_parent().get_node("game2").get_node("PPL LEVEL 4 - AnimationPlayer - Group2 - 5").play("LEVEL 5 - Cannon GROUP 1")
-
+					
+					var pointsToDecreaseBy3 = ((level3 * 3) + randi()%20 + (1 * level3)) - pointsToNotDecreaseBy
+					var healthBarTest = 100
+					if pointsToDecreaseBy3 > 0:
+						healthBarTest = get_node("../MyHealthBar").value - pointsToDecreaseBy3
+					
+					if healthBarTest <= 0:
+						endInf = get_node("../InfantryLevelDisplay").get_text()
+						endArt = get_node("../ArtilleryLevelDisplay").get_text()
+						endNav = get_node("../NavalLevelDisplay").get_text()
+						endDiff = difficulty
+						endEnemyCastle = str(get_node("../TheirHealthBar").value)
+						endRound = weeks
+						get_tree().change_scene("res://Scenes/Defeat.tscn")
+					
+					
 					yield(get_tree().create_timer(.9), "timeout")
 					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite").playing = false
 					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").playing = false
@@ -453,7 +494,7 @@ func _on_Button_Pressed():
 					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite3").get_node("group1 - fireball9").visible = false
 					get_parent().get_parent().get_node("game2").get_node("AnimatedSprite2").get_node("group1 - fireball8").visible = false
 
-					var pointsToDecreaseBy3 = ((level3 * 3) + randi()%20 + (1 * level3)) - pointsToNotDecreaseBy
+					pointsToDecreaseBy3 = ((level3 * 3) + randi()%20 + (1 * level3)) - pointsToNotDecreaseBy
 					if pointsToDecreaseBy3 > 0:
 						totalDamage += pointsToDecreaseBy3
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy3)
@@ -530,9 +571,6 @@ func _on_Button_Pressed():
 			var ourNumPointUpdaterEnemy = get_node("../plusPointsNumEnemy")
 			ourNumPointUpdaterEnemy.set_text(str(pointsToAdd2))
 
-			print("Em", totalDamage)
-			print("damEm", totalDamageEnemy)
-
 			get_node("../plusPoints").visible = true
 			get_node("../plusPointsEnemy").visible = true
 			get_node("../plusPointsNum").visible = true
@@ -543,7 +581,7 @@ func _on_Button_Pressed():
 			get_node("../Damage").visible = true
 			get_node("../DamageEnemy").visible = true
 
-			yield(get_tree().create_timer(7), "timeout")
+			yield(get_tree().create_timer(3), "timeout")
 
 			get_node("../plusPoints").visible = false
 			get_node("../plusPointsEnemy").visible = false

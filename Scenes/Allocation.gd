@@ -65,9 +65,7 @@ func _on_PlayButton_pressed():
 		#get_tree().change_scene("res://Scenes/World.tscn")
 		NextRoundButton.difficulty = difficulty
 		NextRoundButton.usInfLevel = infLevel
-		print(navLevel)
 		NextRoundButton.usNavLevel = navLevel
-		print(NextRoundButton.usNavLevel)
 		NextRoundButton.usArtLevel = artLevel
 		get_tree().change_scene("res://Scenes/World.tscn")
 		#queue_free()
