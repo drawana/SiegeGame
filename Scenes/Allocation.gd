@@ -67,5 +67,6 @@ func _on_PlayButton_pressed():
 		NextRoundButton.usInfLevel = infLevel
 		NextRoundButton.usNavLevel = navLevel
 		NextRoundButton.usArtLevel = artLevel
+		#get_node("top").visible = false
 		get_tree().change_scene("res://Scenes/World.tscn")
 		#queue_free()

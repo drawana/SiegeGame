@@ -201,14 +201,17 @@ position = Vector2( 329.414, 381.592 )
 texture = ExtResource( 6 )
 
 [node name="medievalEnvironment_04" type="Sprite" parent="."]
+visible = false
 position = Vector2( 229.52, 223.362 )
 texture = ExtResource( 13 )
 
 [node name="medievalEnvironment_05" type="Sprite" parent="."]
+visible = false
 position = Vector2( 646.553, 399.751 )
 texture = ExtResource( 13 )
 
 [node name="medievalEnvironment_02" type="Sprite" parent="."]
+visible = false
 position = Vector2( 722.149, 161.626 )
 texture = ExtResource( 12 )
 

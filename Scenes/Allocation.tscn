@@ -292,46 +292,57 @@ __meta__ = {
 [node name="Background" type="CanvasLayer" parent="."]
 
 [node name="medievalEnvironment_03" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 800, 162 )
 texture = ExtResource( 17 )
 
 [node name="medievalEnvironment_04" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 816, 173 )
 texture = ExtResource( 17 )
 
 [node name="medievalEnvironment_08" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 779, 196 )
 texture = ExtResource( 20 )
 
 [node name="medievalEnvironment_01" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 215, 418 )
 texture = ExtResource( 19 )
 
 [node name="medievalEnvironment_02" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 232, 405 )
 texture = ExtResource( 19 )
 
 [node name="medievalEnvironment_07" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 232, 443 )
 texture = ExtResource( 16 )
 
 [node name="medievalStructure_11" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 801, 456 )
 texture = ExtResource( 18 )
 
 [node name="medievalStructure_10" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 801, 392 )
 texture = ExtResource( 14 )
 
 [node name="medievalTile_04" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 855, 440 )
 texture = ExtResource( 15 )
 
 [node name="medievalTile_46" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 207.003, 175.054 )
 texture = ExtResource( 21 )
 
 [node name="medievalTile_51" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 290.248, 424.787 )
 texture = ExtResource( 22 )
 [connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer/UpgradeInf" to="." method="_on_UpgradeInf_pressed"]

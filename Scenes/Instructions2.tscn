@@ -117,7 +117,8 @@ position = Vector2( 195.3, 543.675 )
 texture = ExtResource( 9 )
 
 [node name="medievalTile_46" type="Sprite" parent="CanvasLayer"]
-position = Vector2( 819.389, 181.12 )
+visible = false
+position = Vector2( 818.129, 181.12 )
 texture = ExtResource( 10 )
 
 [node name="medievalTile_49" type="Sprite" parent="CanvasLayer"]
@@ -125,6 +126,7 @@ position = Vector2( 850.818, 434.796 )
 texture = ExtResource( 11 )
 
 [node name="medievalTile_50" type="Sprite" parent="CanvasLayer"]
+visible = false
 position = Vector2( 189.688, 49.7918 )
 texture = ExtResource( 9 )
 

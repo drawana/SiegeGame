@@ -37,31 +37,38 @@ __meta__ = {
 [node name="Background" type="CanvasLayer" parent="."]
 
 [node name="medievalEnvironment_03" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 800, 162 )
 texture = ExtResource( 15 )
 
 [node name="medievalEnvironment_04" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 816, 173 )
 texture = ExtResource( 15 )
 
 [node name="medievalEnvironment_08" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 779, 196 )
 texture = ExtResource( 7 )
 
 [node name="medievalEnvironment_01" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 214, 450 )
 texture = ExtResource( 8 )
 
 [node name="medievalEnvironment_02" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 232, 460 )
 scale = Vector2( 0.789945, 0.884499 )
 texture = ExtResource( 8 )
 
 [node name="medievalEnvironment_07" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 216, 490 )
 texture = ExtResource( 11 )
 
 [node name="medievalTile_46" type="Sprite" parent="Background"]
+visible = false
 position = Vector2( 207.003, 175.054 )
 texture = ExtResource( 10 )
 
