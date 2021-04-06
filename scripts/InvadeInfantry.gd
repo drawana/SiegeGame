@@ -23,5 +23,18 @@ func _on_Button_Pressed():
 	
 	get_node("../NextRoundButton").infantrySet()
 	
-	get_tree().quit()
+	var endInf = get_node("../InfantryLevelDisplay").get_text()
+	var endArt = get_node("../ArtilleryLevelDisplay").get_text()
+	var endNav = get_node("../NavalLevelDisplay").get_text()
+	var endDiff = NextRoundButton.difficulty
+	var endEnemyCastle = str(get_node("../TheirHealthBar").value)
+	var endRound = NextRoundButton.weeks
+	
+	get_tree().change_scene("res://Scenes/Victory.tscn")
+	Victory.diffculty =endDiff
+	Victory.rounds =endRound
+	Victory.inf =endInf
+	Victory.nav  = endNav
+	Victory.art  = endArt
+	Victory.emHealth  = endEnemyCastle
 		

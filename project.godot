@@ -23,6 +23,8 @@ config/icon="res://icon.png"
 
 NextRoundButton="*res://scripts/NextRoundButton.gd"
 Defeat="*res://Scenes/Defeat.gd"
+Victory="*res://Scenes/Victory.tscn"
+Restart="*res://Scenes/Restart.tscn"
 
 [display]
 

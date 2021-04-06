@@ -155,8 +155,7 @@ func _on_Button_Pressed():
 	if NextRoundButton.disabled == true:
 		redAnimation.play("Test")
 	else:
-		if get_node("../MyHealthBar").value <= 95: #CHANGED THIS
-			#setEndInf(get_node("../InfantryLevelDisplay").get_text())
+		if get_node("../MyHealthBar").value <= 0:
 			endInf = get_node("../InfantryLevelDisplay").get_text()
 			endArt = get_node("../ArtilleryLevelDisplay").get_text()
 			endNav = get_node("../NavalLevelDisplay").get_text()
@@ -164,26 +163,13 @@ func _on_Button_Pressed():
 			endEnemyCastle = str(get_node("../TheirHealthBar").value)
 			endRound = weeks
 			
-			print("endNAv ", endNav)
 			get_tree().change_scene("res://Scenes/Defeat.tscn")
-			#PRELODD
 			Defeat.diffculty =endDiff
 			Defeat.rounds =endRound
 			Defeat.inf =endInf
 			Defeat.nav  = endNav
 			Defeat.art  = endArt
 			Defeat.emHealth  = endEnemyCastle
-			#Defeat.setNav(endNav)
-			#Defeat.nav = endNav
-			
-			#Defeat.onDefeat(endDiff, endRound, endInf, endNav, endArt, endEnemyCastle)
-			#print(endInf, get_node("../InfantryLevelDisplay").get_text())
-			#print(endArt, get_node("../ArtilleryLevelDisplay").get_text())
-			#print(endNav, get_node("../NavalLevelDisplay").get_text())
-			#print(endDiff, difficulty)
-			#print(endEnemyCastle, get_node("../TheirHealthBar").get_value())
-			
-			#get_tree().change_scene("res://Scenes/Defeat.tscn")
 
 		if int(get_node("../InfantryLevelDisplay").get_text()) == 0:
 			infantryDone = true
@@ -374,14 +360,21 @@ func _on_Button_Pressed():
 					if pointsToDecreaseBy > 0:
 						totalDamage += pointsToDecreaseBy
 						myHealth.set_value(get_node("../MyHealthBar").value - pointsToDecreaseBy)
-						if get_node("../MyHealthBar").value <= 0:
+						if get_node("../MyHealthBar").value <= 0: #CHANGED THIS
 							endInf = get_node("../InfantryLevelDisplay").get_text()
 							endArt = get_node("../ArtilleryLevelDisplay").get_text()
 							endNav = get_node("../NavalLevelDisplay").get_text()
 							endDiff = difficulty
 							endEnemyCastle = str(get_node("../TheirHealthBar").value)
 							endRound = weeks
+							
 							get_tree().change_scene("res://Scenes/Defeat.tscn")
+							Defeat.diffculty =endDiff
+							Defeat.rounds =endRound
+							Defeat.inf =endInf
+							Defeat.nav  = endNav
+							Defeat.art  = endArt
+							Defeat.emHealth  = endEnemyCastle
 				else:
 					if level1 == 1:
 						get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND GO LEVEL 1")
@@ -428,7 +421,14 @@ func _on_Button_Pressed():
 						endDiff = difficulty
 						endEnemyCastle = str(get_node("../TheirHealthBar").value)
 						endRound = weeks
+						
 						get_tree().change_scene("res://Scenes/Defeat.tscn")
+						Defeat.diffculty =endDiff
+						Defeat.rounds =endRound
+						Defeat.inf =endInf
+						Defeat.nav  = endNav
+						Defeat.art  = endArt
+						Defeat.emHealth  = endEnemyCastle
 					
 					
 					yield(get_tree().create_timer(2.7), "timeout")
@@ -484,13 +484,19 @@ func _on_Button_Pressed():
 						healthBarTest = get_node("../MyHealthBar").value - pointsToDecreaseBy3
 					
 					if healthBarTest <= 0:
-						endInf = get_node("../InfantryLevelDisplay").get_text()
 						endArt = get_node("../ArtilleryLevelDisplay").get_text()
 						endNav = get_node("../NavalLevelDisplay").get_text()
 						endDiff = difficulty
 						endEnemyCastle = str(get_node("../TheirHealthBar").value)
 						endRound = weeks
+						
 						get_tree().change_scene("res://Scenes/Defeat.tscn")
+						Defeat.diffculty =endDiff
+						Defeat.rounds =endRound
+						Defeat.inf =endInf
+						Defeat.nav  = endNav
+						Defeat.art  = endArt
+						Defeat.emHealth  = endEnemyCastle
 					
 					
 					yield(get_tree().create_timer(.9), "timeout")
