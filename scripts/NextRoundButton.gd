@@ -170,6 +170,7 @@ func _on_Button_Pressed():
 			Defeat.nav  = endNav
 			Defeat.art  = endArt
 			Defeat.emHealth  = endEnemyCastle
+			queue_free()
 
 		if int(get_node("../InfantryLevelDisplay").get_text()) == 0:
 			infantryDone = true
@@ -375,6 +376,7 @@ func _on_Button_Pressed():
 							Defeat.nav  = endNav
 							Defeat.art  = endArt
 							Defeat.emHealth  = endEnemyCastle
+							queue_free()
 				else:
 					if level1 == 1:
 						get_parent().get_parent().get_node("game2").get_node("LEVEL 1 - AnimationPlayer - Group1 - 2").play("DEFEND GO LEVEL 1")
@@ -429,6 +431,7 @@ func _on_Button_Pressed():
 						Defeat.nav  = endNav
 						Defeat.art  = endArt
 						Defeat.emHealth  = endEnemyCastle
+						queue_free()
 					
 					
 					yield(get_tree().create_timer(2.7), "timeout")
@@ -497,6 +500,7 @@ func _on_Button_Pressed():
 						Defeat.nav  = endNav
 						Defeat.art  = endArt
 						Defeat.emHealth  = endEnemyCastle
+						queue_free()
 					
 					
 					yield(get_tree().create_timer(.9), "timeout")
