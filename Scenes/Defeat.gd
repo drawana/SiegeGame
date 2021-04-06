@@ -1,29 +1,26 @@
 extends MarginContainer
 
+var diffculty = "Easy"
+var rounds = 0
+var inf = 0
 var nav = 0
+var art = 0
+var emHealth = 0
 
 func _ready():
 	pass
 
-func onDefeat(diff, length, inf, navs, art, emHealth):
-	print($Contain/VBoxContainer1/VBoxContainer2/Difficulty.text)
-	
-	#$MarginContainer/VBoxContainer/VBoxContainer/Difficulty.text = "Difficulty: " + diff
-	#$MarginContainer/VBoxContainer/VBoxContainer/Length.text = "Length of Siege: " + str(length) + " Rounds"
-	#print("INSIDE", diff, " ", length, " ", inf, " ", nav, " ", art, " ", emHealth)
-	#print(get_parent().name)
-	#print(get_parent().get_node("Defeat").name)
-	#get_parent().get_node(".").get_node()
-	#print(get_parent().get_node("Defeat").get_node("Contain").name)
-	#print(get_node("MarginContainer/VBoxContainer1/VBoxContainer2").name)
-	#print(get_node("MarginContainer/VBoxContainer1/VBoxContainer2/NavLevel").name)
-	#var navLevel = get_node("/MarginContainer/VBoxContainer1/VBoxContainer2/NavLevel")
-	#navLevel.set_text(str(nav))
-	#$MarginContainer/VBoxContainer/VBoxContainer/InfLevel.text = "Infantry Level: " + str(inf)
-	#$MarginContainer/VBoxContainer/VBoxContainer/NavLevel.text = "Navy Level: " + str(nav)
-	#$MarginContainer/VBoxContainer/VBoxContainer/ArtLevel.text = "Artillery Level: " + str(art)
-	#$MarginContainer/VBoxContainer/VBoxContainer/EnemyHP.text = "Enemy Castle Health: " + str(emHealth)
-	#$MarginContainer/VBoxContainer/VBoxContainer/NavLevel.text = "Navy Level: " + get_node("../../World/NavalLevelDisplay").get_text()
 
 func _on_TextureButton_pressed():
 	get_tree().change_scene("res://Scenes/TitleMenu.tscn")
+
+
+func _on_StatsButton_pressed():
+	$Contain/VBoxContainer1/CenterContainer2.visible = false
+	$Contain/VBoxContainer1/VBoxContainer2/Length.text = "Length of Siege " + str(Defeat.rounds)
+	$Contain/VBoxContainer1/VBoxContainer2/NavLevel.text = "Naval Level: " + str(Defeat.nav)
+	$Contain/VBoxContainer1/VBoxContainer2/Difficulty.text = "Difficulty: " + str(Defeat.diffculty)
+	$Contain/VBoxContainer1/VBoxContainer2/InfLevel.text = "Infantry Level: " + str(Defeat.inf)
+	$Contain/VBoxContainer1/VBoxContainer2/ArtLevel.text = "Artillery Level: " + str(Defeat.art)
+	$Contain/VBoxContainer1/VBoxContainer2/EnemyHP.text = "Enemy Castle Health: " + str(Defeat.emHealth)
+	$Contain/VBoxContainer1/VBoxContainer2.visible = true
